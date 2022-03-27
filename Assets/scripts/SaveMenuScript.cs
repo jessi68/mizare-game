@@ -14,6 +14,7 @@ public class SaveMenuScript : MonoBehaviour
     #region Methods
     public void onClick()
     {
+        Debug.Log(m_isMenuShown);
         for (int i = 0; i < incidentRecordButtons.Length; i++)
         {
             incidentRecordButtons[i].gameObject.SetActive(!m_isMenuShown);

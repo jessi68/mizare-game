@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36857b654518b747a08edc8b60216df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inactiveButtons:
+  controlledButtons:
   - {fileID: 836156678}
   - {fileID: 1340313002}
   - {fileID: 1625982931}

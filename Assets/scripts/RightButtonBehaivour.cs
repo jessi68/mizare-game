@@ -6,30 +6,38 @@ using UnityEngine.UI;
 public class RightButtonBehaivour : MonoBehaviour
 {
     #region Field;
-    public Button[] inactiveButtons;
+    public Button[] controlledButtons;
     const int M_WILL_ACTIVE_BUTTON_MAX_INDEX = 4;
 
     bool m_isMenuShown = false;
     #endregion
 
-    // Start is called before the first frame update
     #region Unity Methods
     void Start()
     {
-        for(int i = 0; i < inactiveButtons.Length; i++)
-        {
-            inactiveButtons[i].gameObject.SetActive(false);
-        }
+        setActiveAtButtons(false, controlledButtons.Length - 1);
     }
     #endregion
 
     #region Methods
+    private void setActiveAtButtons(bool activeValue, int maxIndex)
+    {
+        for(int i = 0; i <= maxIndex; i++)
+        {
+            controlledButtons[i].gameObject.SetActive(activeValue);
+        }
+    }
+
     public void onClick()
     {
-        for (int i = 0; i <= M_WILL_ACTIVE_BUTTON_MAX_INDEX; i++)
+        if(m_isMenuShown == true)
         {
-            inactiveButtons[i].gameObject.SetActive(!m_isMenuShown);
+            setActiveAtButtons(!m_isMenuShown, controlledButtons.Length - 1);
+        } else
+        {
+            setActiveAtButtons(!m_isMenuShown, M_WILL_ACTIVE_BUTTON_MAX_INDEX);
         }
+        
         m_isMenuShown = !m_isMenuShown;
     }
     #endregion
