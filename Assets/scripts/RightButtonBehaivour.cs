@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class RightButtonBehaivour : MonoBehaviour
 {
     #region Field;
-    public Button[] willActivateButtons;
+    public Button[] inactiveButtons;
+    const int M_WILL_ACTIVE_BUTTON_MAX_INDEX = 4;
+
     bool m_isMenuShown = false;
     #endregion
 
@@ -14,9 +16,9 @@ public class RightButtonBehaivour : MonoBehaviour
     #region Unity Methods
     void Start()
     {
-        for(int i = 0; i < willActivateButtons.Length; i++)
+        for(int i = 0; i < inactiveButtons.Length; i++)
         {
-            willActivateButtons[i].gameObject.SetActive(false);
+            inactiveButtons[i].gameObject.SetActive(false);
         }
     }
     #endregion
@@ -24,9 +26,9 @@ public class RightButtonBehaivour : MonoBehaviour
     #region Methods
     public void onClick()
     {
-        for (int i = 0; i < willActivateButtons.Length; i++)
+        for (int i = 0; i <= M_WILL_ACTIVE_BUTTON_MAX_INDEX; i++)
         {
-            willActivateButtons[i].gameObject.SetActive(!m_isMenuShown);
+            inactiveButtons[i].gameObject.SetActive(!m_isMenuShown);
         }
         m_isMenuShown = !m_isMenuShown;
     }
