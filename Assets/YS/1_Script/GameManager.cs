@@ -36,36 +36,11 @@ namespace YS
         public GameObject logUI;
         public TMP_Text logTMP;
 
-        private SaveData[] saveDatas = new SaveData[3];
+        private static SaveData[] saveDatas = new SaveData[3];
         // UI 상태 변수
         private STATE state;
         private int scriptIndex;
         private string log;
-
-        // 스크립트 데이터들
-        public static readonly DialogScript[] scripts = new DialogScript[5]
-        {
-            new DialogScript("미자르", "미자르가 이야기합니다...", () => {
-                Instance.leftSideImg.color = new Color(0.3f, 0.3f, 0.3f);
-                Instance.rightSideImg.color = Color.white;
-            }),
-            new DialogScript("알코르", "<link=v_wave>알코르가 이야기합니다...</link>", () => {
-                Instance.leftSideImg.color = Color.white; 
-                Instance.rightSideImg.color = new Color(0.3f, 0.3f, 0.3f);
-            }),
-            new DialogScript("미자르", "미자르가 두번째 이야기합니다...", () => {
-                Instance.leftSideImg.color = new Color(0.3f, 0.3f, 0.3f);
-                Instance.rightSideImg.color = Color.white;
-            }),
-            new DialogScript("알코르", "<link=shake>알코르</link>가 이야기합니다...", () => {
-                Instance.leftSideImg.color = Color.white;
-                Instance.rightSideImg.color = new Color(0.3f, 0.3f, 0.3f);
-            }),
-            new DialogScript("미자르", "미자르가 <color=#ff0000>마저</color> 이야기합니다...", () => {
-                Instance.leftSideImg.color = new Color(0.3f, 0.3f, 0.3f);
-                Instance.rightSideImg.color = Color.white;
-            })
-        };
         #endregion
 
         #region Unity Methods
@@ -134,10 +109,10 @@ namespace YS
         /// </summary>
         private void SetDialog()
         {
-            log += "<b>" + scripts[scriptIndex].Name + "</b>\n<size=40>" + scripts[scriptIndex].Script + "</size>\n";
-            nameTMP.SetText(scripts[scriptIndex].Name);
-            scriptTMP.SetText(scripts[scriptIndex].Script);
-            scripts[scriptIndex].OnScriptStart?.Invoke();
+            log += "<b>" + ScriptData.scripts[scriptIndex].Name + "</b>\n<size=40>" + ScriptData.scripts[scriptIndex].Script + "</size>\n";
+            nameTMP.SetText(ScriptData.scripts[scriptIndex].Name);
+            scriptTMP.SetText(ScriptData.scripts[scriptIndex].Script);
+            ScriptData.scripts[scriptIndex].OnScriptStart?.Invoke();
             ++scriptIndex;
         }
         /// <summary>
@@ -175,27 +150,22 @@ namespace YS
             {
                 case STATE.GAME:
                     ShowMenu();
-                    break;
-                case STATE.MENU:
-                    CloseMenu();
-                    break;
+                    return;
                 case STATE.SAVE:
                     CloseSave();
-                    CloseMenu();
                     break;
                 case STATE.LOAD:
                     CloseLoad();
-                    CloseMenu();
                     break;
                 case STATE.GALLERY:
                     CloseGallery();
-                    CloseMenu();
                     break;
                 case STATE.LOG:
                     CloseLog();
-                    CloseMenu();
                     break;
             }
+
+            CloseMenu();
         }
         // 아래 전부 버튼 클릭시 해당 버튼에 해당하는 상호작용함수들
         public void ShowMenu()
