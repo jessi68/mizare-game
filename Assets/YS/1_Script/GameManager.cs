@@ -51,6 +51,7 @@ namespace YS
         }
         void Update()
         {
+            // UI가 켜져있지 않고 UI가 아닌곳에 마우스 클릭이 일어났을때
             if (state == STATE.GAME && Input.GetKeyDown(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject())
             {
                 // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
