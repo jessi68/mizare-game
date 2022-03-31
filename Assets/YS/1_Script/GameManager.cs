@@ -204,9 +204,12 @@ namespace YS
         }
         public void ShowGallery()
         {
+            GameObject photoAlbum = GameObject.Find("Canvas/UI/PhotoAlbumPanel");
+ 
             if (state != STATE.MENU)
                 PopUIState();
             state = STATE.GALLERY;
+            photoAlbum.SetActive(!photoAlbum.activeSelf);
         }
         public void CloseGallery()
         {
