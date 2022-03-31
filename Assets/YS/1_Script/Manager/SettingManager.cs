@@ -14,6 +14,9 @@ namespace YS
 
         public float TypingSpeed => typingSpeed;
         
+        /// <summary>
+        /// 매 씬이 로드될때마다 초기화하는 함수
+        /// </summary>
         public static void Initialize()
         {
             TMPContainer tmpContainer = GameObject.FindGameObjectWithTag("TMPContainer").GetComponent<TMPContainer>();
@@ -38,10 +41,18 @@ namespace YS
                 }
             }
         }
+        /// <summary>
+        /// 설정창에서 타이핑 스피드 슬라이더의 이벤트 함수
+        /// </summary>
+        /// <param name="slider">조작된 슬라이더UI</param>
         public static void OnChangeTypingSpeedSlider(Slider slider)
         {
             ChangeTypingSpeed((int)slider.value);
         }
+        /// <summary>
+        /// 타이핑 속도 변경
+        /// </summary>
+        /// <param name="level">속도 단계</param>
         public static void ChangeTypingSpeed(int level)
         {
             switch (level)
