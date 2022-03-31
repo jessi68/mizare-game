@@ -36,11 +36,13 @@ namespace YS
         public bool IsDoneTyping => isDoneTyping;
 
         #region Unity Methods
-        private void Start()
+        private void Awake()
         {
             textComponent = gameObject.GetComponent<TMP_Text>();
             textInfo = textComponent.textInfo;
-
+        }
+        private void OnEnable()
+        {
             // 유니티 업데이트 함수 대신 코루틴 함수를 사용
             StartCoroutine(TextUpdate());
         }
