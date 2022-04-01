@@ -9,7 +9,7 @@ namespace YS
         private static T instance = null;
 
         public static T Instance => instance;
-        private void Awake()
+        protected virtual void Awake()
         {
             if (instance == null)
                 instance = this as T;
