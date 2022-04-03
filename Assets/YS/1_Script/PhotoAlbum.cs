@@ -32,9 +32,14 @@ public class PhotoAlbum : MonoBehaviour
         this.Add(Resources.Load<Sprite>("dumiPhotos/four"));
         this.Add(Resources.Load<Sprite>("dumiPhotos/five"));
 
-        lastPageIndex = (int) Mathf.Ceil(sprites.Count / shownPictures.Length) - 1; 
+        lastPageIndex = (int) Mathf.Ceil((float) sprites.Count / shownPictures.Length) - 1;
+   
+        leftButton.interactable = false;
 
-        leftButton.enabled = false;
+        if(!IsNextPageExist())
+        {
+            rightButton.interactable = false;
+        }
 
     }
 
@@ -84,36 +89,36 @@ public class PhotoAlbum : MonoBehaviour
     
     public void GoToPreivousPage()
     {
-        currentPageIndex = currentPageIndex - 1;
+        currentPageIndex--;
         
         ChangeShownPictures();
 
         if (!IsPreiviousPageExist())
         {
-            leftButton.enabled = false;
+            leftButton.interactable = false;
         }
 
         if(IsNextPageExist())
         {
-            rightButton.enabled = true;
+            rightButton.interactable = true;
         }
        
     }
 
     public void GoToNextPage()
     {
-        currentPageIndex = currentPageIndex + 1;
+        currentPageIndex++;
 
         ChangeShownPictures();
 
         if(!IsNextPageExist())
         {
-            rightButton.enabled = false;
+            rightButton.interactable = false;
         }
 
         if(IsPreiviousPageExist())
         {
-            leftButton.enabled = true;
+            leftButton.interactable = true;
         }
     }
     #endregion
