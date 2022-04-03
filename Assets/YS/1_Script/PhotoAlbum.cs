@@ -32,9 +32,6 @@ public class PhotoAlbum : MonoBehaviour
         this.Add(Resources.Load<Sprite>("dumiPhotos/four"));
         this.Add(Resources.Load<Sprite>("dumiPhotos/five"));
 
-        // 처음에는 비활성화된 상태 
-        this.transform.gameObject.SetActive(false);
-
         leftButton.enabled = false;
 
     }
