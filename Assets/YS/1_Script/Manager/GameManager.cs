@@ -35,6 +35,7 @@ namespace YS
         public CustomTMPEffect scriptTMP;
         public GameObject logUI;
         public TMP_Text logTMP;
+        public GameObject photoAlbum;
 
         private static SaveData[] saveDatas = new SaveData[3];
         // UI 상태 변수
@@ -205,7 +206,7 @@ namespace YS
         }
         public void ShowGallery()
         {
-            GameObject photoAlbum = GameObject.Find("Canvas/UI/PhotoAlbumPanel");
+           
  
             if (state != STATE.MENU)
                 PopUIState();

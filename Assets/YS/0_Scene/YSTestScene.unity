@@ -1388,6 +1388,7 @@ MonoBehaviour:
   scriptTMP: {fileID: 316845423}
   logUI: {fileID: 672563107}
   logTMP: {fileID: 236268519}
+  photoAlbum: {fileID: 1733058988}
 --- !u!4 &471057962
 Transform:
   m_ObjectHideFlags: 0
