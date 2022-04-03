@@ -7,9 +7,9 @@ public class PhotoAlbum : MonoBehaviour
 {
     #region Field
     private List<Sprite> sprites;
-    public GameObject[] shownPictures;
-    int currentFirstIndex = 0;
-    int finalIndex = 2;
+    public Image[] shownPictures;
+    int currentPageIndex = 0;
+    int lastPageIndex;
 
     public Button leftButton;
     public Button rightButton;
@@ -32,6 +32,8 @@ public class PhotoAlbum : MonoBehaviour
         this.Add(Resources.Load<Sprite>("dumiPhotos/four"));
         this.Add(Resources.Load<Sprite>("dumiPhotos/five"));
 
+        lastPageIndex = (int) Mathf.Ceil(sprites.Count / shownPictures.Length) - 1; 
+
         leftButton.enabled = false;
 
     }
@@ -47,12 +49,12 @@ public class PhotoAlbum : MonoBehaviour
 
     bool IsPreiviousPageExist()
     {
-        return currentFirstIndex >= shownPictures.Length;
+        return currentPageIndex >= 1;
     }
 
     bool IsNextPageExist()
     {
-        return currentFirstIndex + shownPictures.Length < sprites.Count;
+        return currentPageIndex < lastPageIndex;
     }
 
     void Add(Sprite sprite)
@@ -66,21 +68,24 @@ public class PhotoAlbum : MonoBehaviour
 
     private void ChangeShownPictures()
     {
-        for (int i = currentFirstIndex; i <= finalIndex; i++)
+        int firstIndex = currentPageIndex * shownPictures.Length;
+        int finalIndex = firstIndex + shownPictures.Length - 1;
+
+        for (int i = firstIndex; i <= finalIndex; i++)
         {
             if(i >= sprites.Count) 
             {
-                shownPictures[i - currentFirstIndex].GetComponent<Image>().sprite = null;
+                shownPictures[i - firstIndex].sprite = null;
                 continue;
             }
-            shownPictures[i - currentFirstIndex].GetComponent<Image>().sprite = sprites[i];
+            shownPictures[i - firstIndex].sprite = sprites[i];
         }
     }
     
     public void GoToPreivousPage()
     {
-        finalIndex = currentFirstIndex - 1;
-        currentFirstIndex -= shownPictures.Length;
+        currentPageIndex = currentPageIndex - 1;
+        
         ChangeShownPictures();
 
         if (!IsPreiviousPageExist())
@@ -97,8 +102,8 @@ public class PhotoAlbum : MonoBehaviour
 
     public void GoToNextPage()
     {
-        currentFirstIndex += shownPictures.Length;
-        finalIndex = currentFirstIndex + shownPictures.Length - 1;
+        currentPageIndex = currentPageIndex + 1;
+
         ChangeShownPictures();
 
         if(!IsNextPageExist())

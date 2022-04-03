@@ -982,7 +982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e4c43ff21e5dc1f49844ab9bc4bbeb2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3586,7 +3586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 30d1ac70cca12c647aa1161667fa0a6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3793,7 +3793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d7bd3795a23645848884cb4e0cd95f78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4947,9 +4947,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shownPictures:
-  - {fileID: 289901278}
-  - {fileID: 1142437483}
-  - {fileID: 1296058776}
+  - {fileID: 289901280}
+  - {fileID: 1142437485}
+  - {fileID: 1296058778}
   leftButton: {fileID: 1420477954}
   rightButton: {fileID: 1838737610}
 --- !u!114 &1733058993
