@@ -26,11 +26,11 @@ public class PhotoAlbum : MonoBehaviour
         sprites = new List<Sprite>();
 
         // dumi photo 넣는 코드
-        this.add(Resources.Load<Sprite>("dumiPhotos/one"));
-        this.add(Resources.Load<Sprite>("dumiPhotos/two"));
-        this.add(Resources.Load<Sprite>("dumiPhotos/three"));
-        this.add(Resources.Load<Sprite>("dumiPhotos/four"));
-        this.add(Resources.Load<Sprite>("dumiPhotos/five"));
+        this.Add(Resources.Load<Sprite>("dumiPhotos/one"));
+        this.Add(Resources.Load<Sprite>("dumiPhotos/two"));
+        this.Add(Resources.Load<Sprite>("dumiPhotos/three"));
+        this.Add(Resources.Load<Sprite>("dumiPhotos/four"));
+        this.Add(Resources.Load<Sprite>("dumiPhotos/five"));
 
         // 처음에는 비활성화된 상태 
         this.transform.gameObject.SetActive(false);
@@ -48,17 +48,17 @@ public class PhotoAlbum : MonoBehaviour
 
     #region Methods
 
-    bool isPreiviousPageExist()
+    bool IsPreiviousPageExist()
     {
         return currentFirstIndex >= shownPictures.Length;
     }
 
-    bool isNextPageExist()
+    bool IsNextPageExist()
     {
         return currentFirstIndex + shownPictures.Length < sprites.Count;
     }
 
-    void add(Sprite sprite)
+    void Add(Sprite sprite)
     {
         if(sprites.Count < shownPictures.Length)
         {
@@ -67,7 +67,7 @@ public class PhotoAlbum : MonoBehaviour
         sprites.Add(sprite);
     }
 
-    private void changeShownPictures()
+    private void ChangeShownPictures()
     {
         for (int i = currentFirstIndex; i <= finalIndex; i++)
         {
@@ -80,36 +80,36 @@ public class PhotoAlbum : MonoBehaviour
         }
     }
     
-    public void goToPreivousPage()
+    public void GoToPreivousPage()
     {
         finalIndex = currentFirstIndex - 1;
         currentFirstIndex -= shownPictures.Length;
-        changeShownPictures();
+        ChangeShownPictures();
 
-        if (!isPreiviousPageExist())
+        if (!IsPreiviousPageExist())
         {
             leftButton.enabled = false;
         }
 
-        if(isNextPageExist())
+        if(IsNextPageExist())
         {
             rightButton.enabled = true;
         }
        
     }
 
-    public void goToNextPage()
+    public void GoToNextPage()
     {
         currentFirstIndex += shownPictures.Length;
         finalIndex = currentFirstIndex + shownPictures.Length - 1;
-        changeShownPictures();
+        ChangeShownPictures();
 
-        if(!isNextPageExist())
+        if(!IsNextPageExist())
         {
             rightButton.enabled = false;
         }
 
-        if(isPreiviousPageExist())
+        if(IsPreiviousPageExist())
         {
             leftButton.enabled = true;
         }

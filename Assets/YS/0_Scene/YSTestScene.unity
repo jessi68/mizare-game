@@ -4109,7 +4109,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1733058992}
         m_TargetAssemblyTypeName: PhotoAlbum, Assembly-CSharp
-        m_MethodName: goToPreivousPage
+        m_MethodName: GoToPreivousPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5288,7 +5288,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1733058992}
         m_TargetAssemblyTypeName: PhotoAlbum, Assembly-CSharp
-        m_MethodName: goToNextPage
+        m_MethodName: GoToNextPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
