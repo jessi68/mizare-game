@@ -22,7 +22,7 @@ MonoBehaviour:
     rightEffect: 2
     choices: []
     name: "\uBBF8\uC790\uB974"
-    script: "\uC544\uC774\uBAB0\uB77C"
+    script: "0\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
     nextIdx: 1
   - screenEffect: 2
     leftImage: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     rightEffect: 4
     choices: []
     name: "\uC54C\uCF54\uB974"
-    script: "\uC544\uC774\uBAB0\uB77C\uC789"
+    script: "1\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
     nextIdx: 2
   - screenEffect: 3
     leftImage: 1
@@ -42,7 +42,11 @@ MonoBehaviour:
     rightImage: 0
     rightHighlight: 0
     rightEffect: 4
-    choices: []
+    choices:
+    - str: aerjhah
+      nextIdx: 0
+    - str: rtkjtykdkykd
+      nextIdx: 1
     name: "\uAD00\uB9AC\uC790"
     script: "\uC120\uD0DD\uD560 \uC2DC\uAC04\uC774\uAD70"
     nextIdx: 0

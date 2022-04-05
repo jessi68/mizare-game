@@ -33,6 +33,7 @@ namespace YS
         public SlideEffect menuPanel;
         public SlideEffect savePanel;
         public GameObject logUI;
+        public RectTransform[] choices;
         public Material bgMtrl;
 
         public Image[] sideImg = new Image[2];
@@ -90,7 +91,16 @@ namespace YS
                         SetDialog(scripts[scriptIndex].nextIdx);
                     else
                     {
-
+                        float padding = (1 - (scripts[scriptIndex].choices.Length * 0.15f)) / (scripts[scriptIndex].choices.Length + 1);
+                        float height = 1.0f;
+                        for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
+                        {
+                            choices[i].gameObject.SetActive(true);
+                            height -= padding;
+                            choices[i].anchorMax = new Vector2(1.0f, height);
+                            height -= 0.15f;
+                            choices[i].anchorMin = new Vector2(0.0f, height);
+                        }
                     }
                 }
             }
@@ -156,6 +166,13 @@ namespace YS
             ScreenEffect(data.screenEffect);
             SetCharSetting(SIDE_IMAGE.LEFT_SIDE, data.leftImage, data.leftHighlight, data.leftEffect);
             SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, data.rightImage, data.rightHighlight, data.rightEffect);
+        }
+        public void ChooseChoice(int index)
+        {
+            for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
+                choices[i].gameObject.SetActive(false);
+
+            SetDialog(scripts[scriptIndex].choices[index].nextIdx);
         }
         private void ScreenEffect(SCREEN_EFFECT screenFX)
         {
