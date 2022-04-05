@@ -66,7 +66,7 @@ namespace YS
 
                 LinkEffect();
 
-                yield return new WaitForSeconds(typingSpeed);
+                yield return CachedWaitForSeconds.Get(typingSpeed);
             }
 
             isDoneTyping = true;
@@ -77,11 +77,12 @@ namespace YS
         /// </summary>
         IEnumerator TextUpdate()
         {
+            WaitForSeconds wfUpdateTime = CachedWaitForSeconds.Get(updateTime);
             while (true)
             {
                 LinkEffect();
 
-                yield return new WaitForSeconds(updateTime);
+                yield return wfUpdateTime;
             }
         }
 
