@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -14,15 +14,6 @@ namespace YS
 
     public class GameManager : Singleton<GameManager>
     {
-        enum STATE
-        {
-            GAME,
-            MENU,
-            SAVE,
-            LOAD,
-            GALLERY,
-            LOG
-        }
         enum SIDE_IMAGE
         {
             LEFT_SIDE,
@@ -30,10 +21,8 @@ namespace YS
         }
 
         #region Field
-        public SlideEffect menuPanel;
-        public SlideEffect savePanel;
-        public GameObject logUI;
         public RectTransform[] choices;
+        private TMP_Text[] choiceTMPs;
         public Material bgMtrl;
 
         public Image[] sideImg = new Image[2];
@@ -52,10 +41,8 @@ namespace YS
         private Coroutine[] sideFXCoroutine = new Coroutine[2];
         private Coroutine bgFXCoroutine;
 
-        // UI 상태 변수
-        private STATE state;
         private uint scriptIndex;
-        private string log;
+        private StringBuilder log = new StringBuilder();
         #endregion
 
         #region Unity Methods
@@ -63,73 +50,27 @@ namespace YS
         {
             base.Awake();
 
+            // 초기화를 위해 처음의 Left, Right 사이드 이미지의 위치 얻기
             for (int i = 0; i < 2; ++i)
                 sidePos[i] = sideImg[i].transform.position;
 
+            choiceTMPs = new TMP_Text[choices.Length];
+            for (int i = 0; i < choices.Length; ++i)
+                choiceTMPs[i] = choices[i].GetChild(0).GetComponent<TMP_Text>();
+
+            // 사용할 캐릭터들 이미지 로딩
             charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR] = ResourceManager.GetResource<Sprite>("image001");
             charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR] = ResourceManager.GetResource<Sprite>("image018");
         }
         void Start()
         {
-            state = STATE.GAME;
+            // 나중에 로드시 로드한 index값으로 설정
             SetDialog(0);
         }
         void Update()
         {
-            // UI가 켜져있지 않고 UI가 아닌곳에 마우스 클릭이 일어났을때
-            if (state == STATE.GAME && Input.GetKeyDown(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject())
-            {
-                // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
-                if (!scriptTMP.IsDoneTyping)
-                {
-                    ResetEffects();
-                    scriptTMP.SkipTyping();
-                }
-                else
-                {
-                    if (scripts[scriptIndex].choices.Length == 0)
-                        SetDialog(scripts[scriptIndex].nextIdx);
-                    else
-                    {
-                        float padding = (1 - (scripts[scriptIndex].choices.Length * 0.15f)) / (scripts[scriptIndex].choices.Length + 1);
-                        float height = 1.0f;
-                        for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
-                        {
-                            choices[i].gameObject.SetActive(true);
-                            height -= padding;
-                            choices[i].anchorMax = new Vector2(1.0f, height);
-                            height -= 0.15f;
-                            choices[i].anchorMin = new Vector2(0.0f, height);
-                        }
-                    }
-                }
-            }
-
-            // esc키 눌리면 UI 뒤로가기
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                switch (state)
-                {
-                    case STATE.GAME:
-                        ShowMenu();
-                        break;
-                    case STATE.MENU:
-                        CloseMenu();
-                        break;
-                    case STATE.SAVE:
-                        CloseSave();
-                        break;
-                    case STATE.LOAD:
-                        CloseLoad();
-                        break;
-                    case STATE.GALLERY:
-                        CloseGallery();
-                        break;
-                    case STATE.LOG:
-                        CloseLog();
-                        break;
-                }
-            }
+            if (IsKeyDownForDialogEvent())
+                OnDialogEvent();
         }
         #endregion
 
@@ -149,6 +90,54 @@ namespace YS
 
         }
         /// <summary>
+        /// 다이얼로그 이벤트가 발생했는가
+        /// </summary>
+        /// <returns>발생했다면 true</returns>
+        private bool IsKeyDownForDialogEvent()
+        {
+            bool result;
+
+                     // GameState이고
+            result = InGameUIManager.IsGameState() &&
+                     // 스페이스 키가 눌렸거나
+                     Input.GetKeyDown(KeyCode.Space) ||
+                     // UI가 아닌곳에 마우스 클릭 이벤트가 발생했을때
+                     (Input.GetKeyDown(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject());
+
+            return result;
+        }
+        /// <summary>
+        /// 다이얼로그 이벤트 발생시 호출되는 함수
+        /// </summary>
+        private void OnDialogEvent()
+        {
+            // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
+            if (!scriptTMP.IsDoneTyping)
+            {
+                ResetEffects();
+                scriptTMP.SkipTyping();
+            }
+            else
+            {
+                if (scripts[scriptIndex].choices.Length == 0)
+                    SetDialog(scripts[scriptIndex].nextIdx);
+                else
+                {
+                    float padding = (1 - (scripts[scriptIndex].choices.Length * 0.15f)) / (scripts[scriptIndex].choices.Length + 1);
+                    float height = 1.0f;
+                    for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
+                    {
+                        choiceTMPs[i].SetText(scripts[scriptIndex].choices[i].str);
+                        choices[i].gameObject.SetActive(true);
+                        height -= padding;
+                        choices[i].anchorMax = new Vector2(1.0f, height);
+                        height -= 0.15f;
+                        choices[i].anchorMin = new Vector2(0.0f, height);
+                    }
+                }
+            }
+        }
+        /// <summary>
         /// 다이얼로그 설정
         /// </summary>
         private void SetDialog(uint index)
@@ -159,7 +148,13 @@ namespace YS
 
             ResetEffects();
 
-            log += "<b>" + data.name + "</b>\n<size=40>" + data.script + "</size>\n";
+            log.Append("<b>");
+            log.Append(data.name);
+            log.Append("</b>\n<size=40>");
+            log.Append(data.script);
+            log.Append("</size>\n");
+
+            logTMP.SetText(log);
             nameTMP.SetText(data.name);
             scriptTMP.SetText(data.script);
 
@@ -167,13 +162,23 @@ namespace YS
             SetCharSetting(SIDE_IMAGE.LEFT_SIDE, data.leftImage, data.leftHighlight, data.leftEffect);
             SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, data.rightImage, data.rightHighlight, data.rightEffect);
         }
-        public void ChooseChoice(int index)
+        /// <summary>
+        /// 선택지 고르면 호출되는 이벤트 함수
+        /// </summary>
+        /// <param name="index">선택지 번호</param>
+        public void OnChooseChoice(int index)
         {
+            // 모든 선택지들 비활성화하고
             for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
                 choices[i].gameObject.SetActive(false);
 
+            // 선택된 선택지의 index로 Dialog이동
             SetDialog(scripts[scriptIndex].choices[index].nextIdx);
         }
+        /// <summary>
+        /// 화면 효과
+        /// </summary>
+        /// <param name="screenFX">적용할 효과</param>
         private void ScreenEffect(SCREEN_EFFECT screenFX)
         {
             switch (screenFX)
@@ -190,6 +195,13 @@ namespace YS
                     break;
             }
         }
+        /// <summary>
+        /// 캐릭터 이미지 설정
+        /// </summary>
+        /// <param name="side">왼쪽 사이드인지 오른쪽 사이드인지 설정</param>
+        /// <param name="charImgIdx">보여줄 이미지</param>
+        /// <param name="isHighlight">하이라이트 여부</param>
+        /// <param name="charFX">사이드 이미지에 줄 효과</param>
         private void SetCharSetting(SIDE_IMAGE side, CHARACTER_IMAGE_INDEX charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
         {
             sideImg[(int)side].sprite = charImgs[(int)charImgIdx];
@@ -208,7 +220,6 @@ namespace YS
                     break;
             }
         }
-
         private IEnumerator ShakeEffect(Transform target, float intensity, float time, float intervalTime, CHARACTER_EFFECT_INDEX type)
         {
             WaitForSeconds interval = CachedWaitForSeconds.Get(intervalTime);
@@ -284,6 +295,9 @@ namespace YS
         {
             bgMtrl.SetColor("_AddColor", Vector4.zero);
         }
+        /// <summary>
+        /// 효과 중간에 스킵될 수 있으므로, 효과들이 재생중이라면 종료시키고 이미지들의 위치 원상태로 복구하는 함수
+        /// </summary>
         private void ResetEffects()
         {
             // 작동중인 효과 코루틴 멈추기
@@ -297,122 +311,6 @@ namespace YS
             bgMtrl.SetFloat("_CurTime", 1.0f);
             ResetFlash();
         }
-        /// <summary>
-        /// UI상태 전단계로 가기
-        /// (UI 스택이 최대 2개일거같아서 그런 경우 전 상태로 되돌아가게끔 작성했는데, 추후에 더 깊고 복잡하게 들어가서 저장해야하는경우 스택자료구조 사용해서 복구해야할거 같습니다)
-        /// </summary>
-        private void PopUIState()
-        {
-            switch (state)
-            {
-                case STATE.MENU:
-                    CloseMenu();
-                    break;
-                case STATE.SAVE:
-                    CloseSave();
-                    break;
-                case STATE.LOAD:
-                    CloseLoad();
-                    break;
-                case STATE.GALLERY:
-                    CloseGallery();
-                    break;
-                case STATE.LOG:
-                    CloseLog();
-                    break;
-            }
-        }
-        #region State Methods
-        /// <summary>
-        /// 메뉴 버튼 클릭시 호출
-        /// </summary>
-        public void OnClickMenuBtn()
-        {
-            switch (state)
-            {
-                case STATE.GAME:
-                    ShowMenu();
-                    return;
-                case STATE.SAVE:
-                    CloseSave();
-                    break;
-                case STATE.LOAD:
-                    CloseLoad();
-                    break;
-                case STATE.GALLERY:
-                    CloseGallery();
-                    break;
-                case STATE.LOG:
-                    CloseLog();
-                    break;
-            }
-
-            CloseMenu();
-        }
-        // 아래 전부 버튼 클릭시 해당 버튼에 해당하는 상호작용함수들
-        public void ShowMenu()
-        {
-            state = STATE.MENU;
-            menuPanel.SetSlide(Vector3.zero);
-        }
-        public void CloseMenu()
-        {
-            state = STATE.GAME;
-            menuPanel.SetSlide(new Vector2(-500.0f, 0.0f));
-        }
-        public void ShowSave()
-        {
-            if (state != STATE.MENU)
-                PopUIState();
-            state = STATE.SAVE;
-            savePanel.SetSlide(new Vector2(0.0f, -340.0f));
-        }
-        public void CloseSave()
-        {
-            state = STATE.MENU;
-            savePanel.SetSlide(new Vector2(-500.0f, -340.0f));
-        }
-        public void ShowLoad()
-        {
-            if (state != STATE.MENU)
-                PopUIState();
-            state = STATE.LOAD;
-            savePanel.SetSlide(new Vector2(0.0f, -340.0f));
-        }
-        public void CloseLoad()
-        {
-            state = STATE.MENU;
-            savePanel.SetSlide(new Vector2(-500.0f, -340.0f));
-        }
-        public void ShowGallery()
-        {
-            if (state != STATE.MENU)
-                PopUIState();
-            state = STATE.GALLERY;
-        }
-        public void CloseGallery()
-        {
-            state = STATE.MENU;
-        }
-        public void ShowLog()
-        {
-            if (state != STATE.MENU)
-                PopUIState();
-            state = STATE.LOG;
-            logTMP.SetText(log);
-            logUI.SetActive(true);
-        }
-        public void CloseLog()
-        {
-            state = STATE.MENU;
-            logUI.SetActive(false);
-        }
-        public void ExitGame()
-        {
-            // 타이틀 씬으로 돌아가게 구현
-            // 필요하다면 저장할건지 물어보는것도 생각해야할듯
-        }
-        #endregion
         #endregion
     }
 }

@@ -43,9 +43,9 @@ MonoBehaviour:
     rightHighlight: 0
     rightEffect: 4
     choices:
-    - str: aerjhah
+    - str: "0\uBC88\uC73C\uB85C \uC774\uB3D9"
       nextIdx: 0
-    - str: rtkjtykdkykd
+    - str: "1\uBC88\uC73C\uB85C \uC774\uB3D9"
       nextIdx: 1
     name: "\uAD00\uB9AC\uC790"
     script: "\uC120\uD0DD\uD560 \uC2DC\uAC04\uC774\uAD70"
