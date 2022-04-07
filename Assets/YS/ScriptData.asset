@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7715a9c50eda54f995ce5f05397eee, type: 3}
+  m_Name: ScriptData
+  m_EditorClassIdentifier: 
+  scripts:
+  - screenEffect: 1
+    leftImage: 1
+    leftHighlight: 0
+    leftEffect: 1
+    rightImage: 0
+    rightHighlight: 1
+    rightEffect: 2
+    choices: []
+    name: "\uBBF8\uC790\uB974"
+    script: "0\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
+    nextIdx: 1
+  - screenEffect: 2
+    leftImage: 1
+    leftHighlight: 1
+    leftEffect: 3
+    rightImage: 0
+    rightHighlight: 0
+    rightEffect: 4
+    choices: []
+    name: "\uC54C\uCF54\uB974"
+    script: "1\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
+    nextIdx: 2
+  - screenEffect: 3
+    leftImage: 1
+    leftHighlight: 1
+    leftEffect: 3
+    rightImage: 0
+    rightHighlight: 0
+    rightEffect: 4
+    choices:
+    - str: "0\uBC88\uC73C\uB85C \uC774\uB3D9"
+      nextIdx: 0
+    - str: "1\uBC88\uC73C\uB85C \uC774\uB3D9"
+      nextIdx: 1
+    name: "\uAD00\uB9AC\uC790"
+    script: "\uC120\uD0DD\uD560 \uC2DC\uAC04\uC774\uAD70"
+    nextIdx: 0

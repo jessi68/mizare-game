@@ -56,13 +56,16 @@ namespace YS
         /// </summary>
         public static IEnumerator TextPreview()
         {
+            WaitForSeconds wf100ms = CachedWaitForSeconds.Get(0.1f);
+            WaitForSeconds wf1s = CachedWaitForSeconds.Get(1.0f);
+
             while (true)
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return wf100ms;
 
                 if (Instance.previewTMP.IsDoneTyping)
                 {
-                    yield return new WaitForSeconds(1.0f);
+                    yield return wf1s;
                     Instance.previewTMP.SetText("안녕하세요. 텍스트 타이핑 속도 미리보기입니다.\n<link=v_wave>물결치는 글자</link>와 <link=shake>흔들리는 글자</link>입니다.");
                 }
             }

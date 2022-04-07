@@ -12,6 +12,7 @@ namespace YS
         private RectTransform rt;
         private Vector2 dest;
         private bool isInDest = true;
+        private bool bInactive = false;
 
         void Start()
         {
@@ -28,6 +29,8 @@ namespace YS
                 {
                     rt.anchoredPosition = dest;
                     isInDest = true;
+                    if (bInactive)
+                        gameObject.SetActive(false);
                 }
             }
         }
@@ -36,9 +39,11 @@ namespace YS
         /// dest 위치로 이동
         /// </summary>
         /// <param name="dest">이동할 위치</param>
-        public void SetSlide(Vector2 dest)
+        /// <param name="bInactive">도착 시 비활성화 여부</param>
+        public void SetSlide(Vector2 dest, bool bInactive)
         {
             this.dest = dest;
+            this.bInactive = bInactive;
             isInDest = false;
         }
     }
