@@ -3376,12 +3376,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177650563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb55420418987c479b3cfb12bcab2e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3256c023be8c31c41ba948588b53b7aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameUI: {fileID: 365005529}
+  newGameUI: {fileID: 1969296368}
   loadGameUI: {fileID: 244583363}
-  gameSettingUI: {fileID: 1004715483}
+  gameSettingUI: {fileID: 1560636025}
 --- !u!4 &1177650565
 Transform:
   m_ObjectHideFlags: 0

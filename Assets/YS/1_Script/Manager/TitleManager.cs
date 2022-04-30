@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Seoyoon
+namespace YS
 {
     public struct SceneMeta
     {
@@ -25,7 +25,7 @@ namespace Seoyoon
         #region Unity Methods
         private void Start()
         {
-            YS.SettingManager.Initialize();
+            SettingManager.Initialize();
         }
         #endregion
 
@@ -50,7 +50,7 @@ namespace Seoyoon
         public void ShowGameSettingUIPanel()
         {
             gameSettingUI.SetActive(true);
-            cTextPreview = StartCoroutine(YS.SettingManager.TextPreview());
+            cTextPreview = StartCoroutine(SettingManager.TextPreview());
         }
         public void CloseGameSettingUIPanel()
         {
@@ -67,7 +67,7 @@ namespace Seoyoon
         public void OnNewGame(int saveIndex)
         {
             // 새로운 게임이므로, saveIndex에 해당하는 세이브데이터를 지우고 새 게임으로 덮어쓴다 (아직 어떻게 새로운 게임에 대한 세이브데이터를 설정할지 못정함)
-            OnOverwriteGame(saveIndex, new YS.SaveData());
+            OnOverwriteGame(saveIndex, new SaveData());
 
             // 빈 세이브파일에 새로운 게임을 시작하는것은 로드게임과 같은 기능을 하므로 로드게임시 호출되는 함수와 같은 함수 호출
             OnStartGame(saveIndex);
@@ -77,7 +77,7 @@ namespace Seoyoon
         /// </summary>
         /// <param name="saveIndex">저장할 save파일 번호</param>
         /// <param name="newData">새롭게 저장할 데이터</param>
-        public void OnOverwriteGame(int saveIndex, YS.SaveData newData)
+        public void OnOverwriteGame(int saveIndex, SaveData newData)
         {
             // saveIndex로 해당 세이브 슬롯을 얻어와서 newData로 처리
             // ...

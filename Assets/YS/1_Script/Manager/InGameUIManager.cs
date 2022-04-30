@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Seoyoon
+namespace YS
 {
-    public class InGameUIManager : YS.Singleton<InGameUIManager>
+    public class InGameUIManager : Singleton<InGameUIManager>
     {
         enum STATE
         {
@@ -27,8 +27,8 @@ namespace Seoyoon
 
         [Space(10.0f)]
 
-        public YS.SlideEffect menuPanel;
-        public YS.SlideEffect savePanel;
+        public SlideEffect menuPanel;
+        public SlideEffect savePanel;
         public GameObject logPanel;
 
         // UI 상태 변수
