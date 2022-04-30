@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace YS
 {
@@ -13,7 +14,8 @@ namespace YS
             SAVE,
             LOAD,
             SETTING,
-            LOG
+            LOG,
+            EXIT
         }
         #region Field
         public Button menuBtn;
@@ -42,7 +44,7 @@ namespace YS
             loadBtn.onClick.AddListener(() => { OnPushState(STATE.LOAD); });
             settingBtn.onClick.AddListener(() => { OnPushState(STATE.SETTING); });
             logBtn.onClick.AddListener(() => { OnPushState(STATE.LOG); });
-            exitBtn.onClick.AddListener(() => {  });
+            exitBtn.onClick.AddListener(() => { OnPushState(STATE.EXIT); });
         }
 
         private void Update()
@@ -78,6 +80,10 @@ namespace YS
                 case STATE.LOG:
                     logPanel.SetActive(false);
                     break;
+                case STATE.EXIT:
+                    SceneManager.LoadScene("Seoyoon/Scenes/SeoyoonScene");
+                    break;
+
             }
         }
         #region State Methods
@@ -121,10 +127,14 @@ namespace YS
                 case STATE.LOG:
                     logPanel.SetActive(true);
                     break;
+                case STATE.EXIT:
+                    ExitGame();
+                    break;
             }
         }
         public void ExitGame()
         {
+            SceneManager.LoadScene("Seoyoon/Scenes/TitleProto");
             // 타이틀 씬으로 돌아가게 구현
             // 필요하다면 저장할건지 물어보는것도 생각해야할듯
         }

@@ -1,7 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace YS
 {
+    public struct SceneMeta
+    {
+        public SceneMeta(int saveIndex)
+        {
+            this.saveIndex = saveIndex;
+        }
+
+        int saveIndex { get; }
+    }
     public class TitleManager : MonoBehaviour
     {
         #region Field
@@ -81,9 +91,11 @@ namespace YS
         {
             // 씬 전환하기 전 몇번 세이브를 호출했는지 인게임씬에서 알아야하므로 특정 객체에 정보를 담아 DontDestroyOnLoad(정보가 담긴 객체); 함수 호출
             // ...
-
+            
+            SceneManager.LoadScene("Seoyoon/Scenes/SeoyoonScene");
             // 씬 전환
         }
+
         #endregion
     }
 }
