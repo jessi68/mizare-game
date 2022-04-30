@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/YS/0_Scene/YSTestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Seoyoon/Scenes/TitleProto.unity
+    guid: 4b475850dbd763a42ac471194c6f302c
+  - enabled: 1
+    path: Assets/Seoyoon/Scenes/LoadingScene.unity
+    guid: 62d211e427c3fbd4092f232104158c01
+  - enabled: 1
+    path: Assets/Seoyoon/Scenes/SeoyoonScene.unity
+    guid: b4eccab184d06534a8c50b5db5c0eeec
   m_configObjects: {}
