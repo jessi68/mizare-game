@@ -1425,15 +1425,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 471057960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b115e83bcf218dd42b3c059fce86a50b, type: 3}
+  m_Script: {fileID: 11500000, guid: d5a91361fdc18144d83be03d6c3e9910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
-  - {fileID: 1962001784}
-  - {fileID: 1835670536}
-  - {fileID: 479795768}
-  - {fileID: 1181743222}
-  - {fileID: 1756622008}
+  - {fileID: 1834463885}
+  - {fileID: 2074975505}
+  - {fileID: 1734722037}
+  - {fileID: 365180231}
+  - {fileID: 1419010344}
   bgMtrl: {fileID: 2100000, guid: 951629b5f98d2f74da99858ae220203a, type: 2}
   sideImg:
   - {fileID: 953260448}

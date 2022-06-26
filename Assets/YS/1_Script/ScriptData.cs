@@ -8,14 +8,16 @@ namespace YS
     public class ScriptData : ScriptableObject
     {
         [SerializeField]
-        private DialogScript[] scripts;
+        private BaseScriptEvent[] scripts;
+        private BaseScriptEvent curScript;
 
-        public DialogScript this[uint index]
+        public BaseScriptEvent CurrentScript => curScript;
+
+        public void SetScript(uint index)
         {
-            get
-            {
-                return scripts[index];
-            }
+            curScript?.OnExit();
+            curScript = scripts[index];
+            curScript.OnEnter();
         }
     }
 }

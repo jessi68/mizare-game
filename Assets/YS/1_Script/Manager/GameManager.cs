@@ -22,7 +22,8 @@ namespace YS
 
         #region Field
         public RectTransform[] choices;
-        private TMP_Text[] choiceTMPs;
+        [HideInInspector]
+        public TMP_Text[] choiceTMPs;
         public Material bgMtrl;
 
         public Image[] sideImg = new Image[2];
@@ -32,7 +33,6 @@ namespace YS
         public TMP_Text logTMP;
 
         public ScriptData scripts;
-
         
         private Sprite[] charImgs = new Sprite[(int)CHARACTER_IMAGE_INDEX.MAX];
         // sideImg의 초기 위치 (FX초기화 할 때 사용)
@@ -41,8 +41,10 @@ namespace YS
         private Coroutine[] sideFXCoroutine = new Coroutine[2];
         private Coroutine bgFXCoroutine;
 
-        private uint scriptIndex;
         private StringBuilder log = new StringBuilder();
+
+        public delegate void OnUpdate();
+        public event OnUpdate OnUpdateEvent;
         #endregion
 
         #region Unity Methods
@@ -59,18 +61,18 @@ namespace YS
                 choiceTMPs[i] = choices[i].GetChild(0).GetComponent<TMP_Text>();
 
             // 사용할 캐릭터들 이미지 로딩
+            charImgs[(int)CHARACTER_IMAGE_INDEX.NONE] = ResourceManager.GetResource<Sprite>("image001");
             charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR] = ResourceManager.GetResource<Sprite>("image001");
             charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR] = ResourceManager.GetResource<Sprite>("image018");
         }
         void Start()
         {
             // 나중에 로드시 로드한 index값으로 설정
-            SetDialog(0);
+            scripts.SetScript(0);
         }
         void Update()
         {
-            if (IsKeyDownForDialogEvent())
-                OnDialogEvent();
+            OnUpdateEvent?.Invoke();
         }
         #endregion
 
@@ -89,27 +91,32 @@ namespace YS
         {
 
         }
+        #region Dialog Event Methods
         /// <summary>
-        /// 다이얼로그 이벤트가 발생했는가
+        /// 다이얼로그 설정
         /// </summary>
-        /// <returns>발생했다면 true</returns>
-        private bool IsKeyDownForDialogEvent()
+        public void SetDialog(DialogEvent de)
         {
-            bool result;
+            ResetEffects();
 
-                     // GameState이고
-            result = InGameUIManager.IsGameState() &&
-                     // 스페이스 키가 눌렸거나
-                     Input.GetKeyDown(KeyCode.Space) ||
-                     // UI가 아닌곳에 마우스 클릭 이벤트가 발생했을때
-                     (Input.GetKeyDown(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject());
+            log.Append("<b>");
+            log.Append(de.name);
+            log.Append("</b>\n<size=40>");
+            log.Append(de.script);
+            log.Append("</size>\n");
 
-            return result;
+            logTMP.SetText(log);
+            nameTMP.SetText(de.name);
+            scriptTMP.SetText(de.script);
+
+            ScreenEffect(de.screenEffect);
+            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.leftImage, de.leftHighlight, de.leftEffect);
+            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.rightImage, de.rightHighlight, de.rightEffect);
         }
         /// <summary>
         /// 다이얼로그 이벤트 발생시 호출되는 함수
         /// </summary>
-        private void OnDialogEvent()
+        public void OnDialogEvent(DialogEvent de)
         {
             // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
             if (!scriptTMP.IsDoneTyping)
@@ -118,63 +125,22 @@ namespace YS
                 scriptTMP.SkipTyping();
             }
             else
-            {
-                if (scripts[scriptIndex].choices.Length == 0)
-                    SetDialog(scripts[scriptIndex].nextIdx);
-                else
-                {
-                    float padding = (1 - (scripts[scriptIndex].choices.Length * 0.15f)) / (scripts[scriptIndex].choices.Length + 1);
-                    float height = 1.0f;
-                    for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
-                    {
-                        choiceTMPs[i].SetText(scripts[scriptIndex].choices[i].str);
-                        choices[i].gameObject.SetActive(true);
-                        height -= padding;
-                        choices[i].anchorMax = new Vector2(1.0f, height);
-                        height -= 0.15f;
-                        choices[i].anchorMin = new Vector2(0.0f, height);
-                    }
-                }
-            }
+                scripts.SetScript(de.nextIdx);
         }
-        /// <summary>
-        /// 다이얼로그 설정
-        /// </summary>
-        private void SetDialog(uint index)
-        {
-            scriptIndex = index;
+        #endregion
 
-            DialogScript data = scripts[scriptIndex];
-
-            ResetEffects();
-
-            log.Append("<b>");
-            log.Append(data.name);
-            log.Append("</b>\n<size=40>");
-            log.Append(data.script);
-            log.Append("</size>\n");
-
-            logTMP.SetText(log);
-            nameTMP.SetText(data.name);
-            scriptTMP.SetText(data.script);
-
-            ScreenEffect(data.screenEffect);
-            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, data.leftImage, data.leftHighlight, data.leftEffect);
-            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, data.rightImage, data.rightHighlight, data.rightEffect);
-        }
+        #region Choice Event Methods
         /// <summary>
         /// 선택지 고르면 호출되는 이벤트 함수
         /// </summary>
         /// <param name="index">선택지 번호</param>
         public void OnChooseChoice(int index)
         {
-            // 모든 선택지들 비활성화하고
-            for (int i = 0; i < scripts[scriptIndex].choices.Length; ++i)
-                choices[i].gameObject.SetActive(false);
-
-            // 선택된 선택지의 index로 Dialog이동
-            SetDialog(scripts[scriptIndex].choices[index].nextIdx);
+            (scripts.CurrentScript as ChoiceEvent).OnChooseChoice(index);
         }
+        #endregion
+
+        #region FX
         /// <summary>
         /// 화면 효과
         /// </summary>
@@ -311,6 +277,7 @@ namespace YS
             bgMtrl.SetFloat("_CurTime", 1.0f);
             ResetFlash();
         }
+        #endregion
         #endregion
     }
 }
