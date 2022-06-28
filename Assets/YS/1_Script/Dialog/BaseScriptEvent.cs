@@ -5,29 +5,6 @@ using UnityEngine.UI;
 
 namespace YS
 {
-    public enum SCREEN_EFFECT
-    {
-        NONE,
-        FADE_IN,
-        FADE_OUT,
-        RED_FLASH
-    }
-    public enum CHARACTER_IMAGE_INDEX
-    {
-        NONE,
-        MIZAR,
-        ALCOR,
-        MAX
-    }
-    public enum CHARACTER_EFFECT_INDEX
-    {
-        NONE,
-        SHAKE_VERTICAL,
-        SHAKE_HORIZONTAL,
-        SHAKE_RANDOM,
-        BOUNCE
-    }
-
     [System.Serializable]
     public abstract class BaseScriptEvent
     {
@@ -42,6 +19,6 @@ namespace YS
         {
             gm.OnUpdateEvent -= OnUpdate;
         }
-        protected virtual void OnUpdate() { }
+        protected abstract void OnUpdate();
     }
 }

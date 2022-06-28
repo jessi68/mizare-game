@@ -7,6 +7,7 @@ namespace YS
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class CustomTMPEffect : MonoBehaviour
     {
+        public delegate void OnTypingDone();
         #region Field
         private TMP_Text textComponent;
         private TMP_TextInfo textInfo;
@@ -31,6 +32,8 @@ namespace YS
         public float rainbowStrength = 10.0f;
 
         private bool isPerVertex = false;
+
+        public event OnTypingDone OnTypingDoneEvent;
         #endregion
 
         public bool IsDoneTyping => isDoneTyping;
@@ -51,8 +54,13 @@ namespace YS
         #region Methods
         public void SkipTyping()
         {
+            if (isDoneTyping)
+                return;
+
             textComponent.maxVisibleCharacters = cursor = textInfo.characterCount;
             isDoneTyping = true;
+
+            OnTypingDoneEvent?.Invoke();
         }
 
         /// <summary>
@@ -69,7 +77,11 @@ namespace YS
                 yield return CachedWaitForSeconds.Get(typingSpeed);
             }
 
-            isDoneTyping = true;
+            if (!isDoneTyping)
+            {
+                isDoneTyping = true;
+                OnTypingDoneEvent?.Invoke();
+            }
         }
 
         /// <summary>

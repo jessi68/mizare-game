@@ -13,40 +13,63 @@ MonoBehaviour:
   m_Name: ScriptData
   m_EditorClassIdentifier: 
   scripts:
-  - screenEffect: 1
-    leftImage: 1
-    leftHighlight: 0
-    leftEffect: 1
-    rightImage: 0
-    rightHighlight: 1
-    rightEffect: 2
-    choices: []
-    name: "\uBBF8\uC790\uB974"
-    script: "0\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
-    nextIdx: 1
-  - screenEffect: 2
-    leftImage: 1
-    leftHighlight: 1
-    leftEffect: 3
-    rightImage: 0
-    rightHighlight: 0
-    rightEffect: 4
-    choices: []
-    name: "\uC54C\uCF54\uB974"
-    script: "1\uBC88 \uC2A4\uD06C\uB9BD\uD2B8 \uC785\uB2C8\uB2E4."
-    nextIdx: 2
-  - screenEffect: 3
-    leftImage: 1
-    leftHighlight: 1
-    leftEffect: 3
-    rightImage: 0
-    rightHighlight: 0
-    rightEffect: 4
-    choices:
-    - str: "0\uBC88\uC73C\uB85C \uC774\uB3D9"
-      nextIdx: 0
-    - str: "1\uBC88\uC73C\uB85C \uC774\uB3D9"
-      nextIdx: 1
-    name: "\uAD00\uB9AC\uC790"
-    script: "\uC120\uD0DD\uD560 \uC2DC\uAC04\uC774\uAD70"
-    nextIdx: 0
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  references:
+    version: 1
+    00000000:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 2
+        leftImage: 1
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: 2
+        rightHighlight: 0
+        rightEffect: 3
+        name: "\uBBF8\uC790\uB974"
+        script: "\uBBF8\uC790\uB974\uAC00 \uC774\uC57C\uAE30\uD569\uB2C8\uB2E4"
+        nextIdx: 1
+    00000001:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 3
+        leftImage: 1
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: 2
+        rightHighlight: 1
+        rightEffect: 4
+        name: "\uC54C\uCF54\uB974"
+        script: "\uC54C\uCF54\uB974\uAC00 \uC774\uC57C\uAE30\uD569\uB2C8\uB2E4."
+        nextIdx: 2
+    00000002:
+      type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        choices:
+        - str: "1\uBC88 \uC120\uD0DD\uC9C0"
+          nextIdx: 0
+        - str: "2\uBC88 \uC120\uD0DD\uC9C0"
+          nextIdx: 1
+        - str: "3\uBC88 \uC120\uD0DD\uC9C0"
+          nextIdx: 3
+    00000003:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 1
+        leftImage: 1
+        leftHighlight: 1
+        leftEffect: 1
+        rightImage: 2
+        rightHighlight: 1
+        rightEffect: 2
+        name: "\uB2E4\uAC19\uC774"
+        script: "\uC870\uC0AC\uD558\uC790"
+        nextIdx: 4
+    00000004:
+      type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: 180287ce9be04cb428428403f332887d, type: 3}

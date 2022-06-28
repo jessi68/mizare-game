@@ -8,8 +8,9 @@ namespace YS
 {
     public class InGameUIManager : Singleton<InGameUIManager>
     {
-        enum STATE
+        public enum STATE
         {
+            INVEN,
             MENU,
             SAVE,
             LOAD,
@@ -18,6 +19,8 @@ namespace YS
             EXIT
         }
         #region Field
+        public Button invenBtn;
+        public Button invenExitBtn;
         public Button menuBtn;
         public Button saveBtn;
         public Button loadBtn;
@@ -27,6 +30,8 @@ namespace YS
 
         [Space(10.0f)]
 
+        public InventoryComponent invenComp;
+        public GameObject ui;
         public SlideEffect menuPanel;
         public SlideEffect savePanel;
         public GameObject logPanel;
@@ -35,10 +40,14 @@ namespace YS
         private Stack<STATE> stateStack = new Stack<STATE>();
         #endregion
 
+        public bool IsShowingInventory => stateStack.Count != 0 && stateStack.Peek() == STATE.INVEN;
+
         #region Unity Methods
         private void Start()
         {
             // 버튼들에 이벤트 등록
+            invenBtn.onClick.AddListener(() => { OnPushState(STATE.INVEN); });
+            invenExitBtn.onClick.AddListener(() => { PopState(stateStack.Pop()); });
             menuBtn.onClick.AddListener(() => { OnPushState(STATE.MENU); });
             saveBtn.onClick.AddListener(() => { OnPushState(STATE.SAVE); });
             loadBtn.onClick.AddListener(() => { OnPushState(STATE.LOAD); });
@@ -68,6 +77,10 @@ namespace YS
         {
             switch (popState)
             {
+                case STATE.INVEN:
+                    invenComp.CloseInventory();
+                    ui.SetActive(true);
+                    break;
                 case STATE.MENU:
                     menuPanel.SetSlide(new Vector2(-500.0f, 0.0f), true);
                     break;
@@ -83,7 +96,6 @@ namespace YS
                 case STATE.EXIT:
                     SceneManager.LoadScene("Seoyoon/Scenes/SeoyoonScene");
                     break;
-
             }
         }
         #region State Methods
@@ -104,6 +116,10 @@ namespace YS
 
             switch (pushState)
             {
+                case STATE.INVEN:
+                    ui.SetActive(false);
+                    invenComp.OpenInventory();
+                    break;
                 case STATE.MENU:
                     if (stateStack.Count > 1)
                     {

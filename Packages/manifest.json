@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.textus-games.serialized-reference-ui": "https://github.com/TextusGames/UnitySerializedReferenceUI.git",
     "com.unity.2d.animation": "5.1.0",
     "com.unity.2d.pixel-perfect": "4.0.1",
     "com.unity.2d.psdimporter": "4.2.0",
