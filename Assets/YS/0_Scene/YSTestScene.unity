@@ -1708,7 +1708,7 @@ MonoBehaviour:
     inferencePanel: {fileID: 763724227}
     choicePanel: {fileID: 1711738032}
     choiceItemImg: {fileID: 761678297}
-    choicesItemDescTMP: {fileID: 810174270}
+    choiceItemDescTMP: {fileID: 810174270}
     choicesTMP:
     - {fileID: 1791282058}
     - {fileID: 670990148}
@@ -1718,7 +1718,9 @@ MonoBehaviour:
     isInChooseResult: 0
     retryCount: 0
     items: []
+    curItemIndex: 0
     findCount: 0
+    choicedIndex: 0
   bgUI: {fileID: 549581127}
   bgMtrl: {fileID: 2100000, guid: 951629b5f98d2f74da99858ae220203a, type: 2}
   logTMP: {fileID: 236268519}
@@ -8313,7 +8315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1785617738
 RectTransform:
   m_ObjectHideFlags: 0

@@ -24,12 +24,6 @@ MonoBehaviour:
       resultStr: "\uC633\uC740 \uC120\uD0DD"
     - choiceStr: "\uC138\uBC88\uC9F8 \uC120\uD0DD\uC9C0"
       resultStr: "\uD2C0\uB838"
-    correctIndex: 1
-  - img: {fileID: 0}
-    name: 
-    desc: 
-    inferenceDesc: 
-    choicesInfo: []
     correctIndex: 0
   - img: {fileID: 0}
     name: 

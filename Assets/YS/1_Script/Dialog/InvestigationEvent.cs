@@ -42,7 +42,7 @@ namespace YS
                         if (gm.itemData[gm.ivStruct.items[gm.ivStruct.curItemIndex].index].correctIndex == gm.ivStruct.choicedIndex || --gm.ivStruct.retryCount == 0)
                         {
                             if (gm.ivStruct.items.Length == ++gm.ivStruct.curItemIndex)
-                                gm.scriptData.SetScript();
+                                gm.scriptData.SetScript(nextIndex);
                             else
                                 gm.ivStruct.SetChoicePanel();
                         }
