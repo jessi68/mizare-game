@@ -26,9 +26,7 @@ namespace YS
 
         public string name;
         public string desc;
-        public string inferenceDesc;
         public InferenceChoiceInfo[] choicesInfo;
-        [Range(0, 2)]
         public uint correctIndex;
     }
 }

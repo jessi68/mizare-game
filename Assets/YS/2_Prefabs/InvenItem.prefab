@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  image: {fileID: 4078292189997228561}
+  imageComp: {fileID: 4078292189997228561}
 --- !u!222 &4078292189997228562
 CanvasRenderer:
   m_ObjectHideFlags: 0

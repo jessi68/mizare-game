@@ -66,6 +66,7 @@ namespace YS
         public override void OnExit()
         {
             gm.dialogStruct.dialogUI.SetActive(false);
+            gm.ResetEffects();
 
             base.OnExit();
         }

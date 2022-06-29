@@ -33,7 +33,7 @@ namespace YS
             inven.Add(itemIndex);
             Item item = Instantiate(invenItemPrefab, rootItemTr).GetComponent<Item>();
             item.index = itemIndex;
-            item.image.sprite = GameManager.Instance.itemData[itemIndex].img;
+            item.imageComp.sprite = GameManager.Instance.itemData[itemIndex].img;
         }
         public void SetItemInfo(ITEM_INDEX itemIndex)
         {

@@ -25,7 +25,8 @@ MonoBehaviour:
     00000000:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        bgPrefab: {fileID: 0}
+        screenEffect: 2
         leftImage: 1
         leftHighlight: 1
         leftEffect: 0
@@ -33,12 +34,13 @@ MonoBehaviour:
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
-        script: "\uB300\uC0AC.."
+        script: 
         nextIdx: 1
     00000001:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        bgPrefab: {fileID: 0}
+        screenEffect: 1
         leftImage: 1
         leftHighlight: 0
         leftEffect: 0
@@ -51,6 +53,7 @@ MonoBehaviour:
     00000002:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
+        bgPrefab: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -64,6 +67,7 @@ MonoBehaviour:
     00000003:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
+        bgPrefab: {fileID: 0}
         choices:
         - str: "\uC218\uB77D\uD55C\uB2E4"
           nextIdx: 5
@@ -72,6 +76,7 @@ MonoBehaviour:
     00000004:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
+        bgPrefab: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -85,6 +90,7 @@ MonoBehaviour:
     00000005:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
+        bgPrefab: {fileID: 0}
         choices:
         - str: "\uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38"
           nextIdx: 6
@@ -93,5 +99,5 @@ MonoBehaviour:
     00000006:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
+        bgPrefab: {fileID: 1840710139639415007, guid: 180287ce9be04cb428428403f332887d, type: 3}
         nextIndex: 5

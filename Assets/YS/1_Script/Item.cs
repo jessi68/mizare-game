@@ -10,9 +10,22 @@ namespace YS
     {
         #region Fields
         public ITEM_INDEX index;
-        public Image image;
+        public Image imageComp;
+        private ItemData itemData;
         #endregion
 
+        public Sprite ItemImage => itemData[index].img;
+
+        public string Name => itemData[index].name;
+        public string Desc => itemData[index].desc;
+        public InferenceChoiceInfo[] ChoicesInfo => itemData[index].choicesInfo;
+        public uint CorrectIndex => itemData[index].correctIndex;
+
+        private void Start()
+        {
+            itemData = GameManager.Instance.itemData;
+            imageComp.sprite = ItemImage;
+        }
         public void OnPointerClick(PointerEventData eventData)
         {
             if (InGameUIManager.Instance.IsShowingInventory)

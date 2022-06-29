@@ -85,24 +85,38 @@ namespace YS
         }
 
         #region Dialog Event
+        public void EnterDialogEvent()
+        {
+
+        }
+
         /// <summary>
         /// 다이얼로그 설정
         /// </summary>
         public void SetDialog(DialogEvent de)
         {
-            ResetEffects();
+            ScreenEffect(de.ScreenEffect);
 
-            log.Append("<b>");
-            log.Append(de.Name);
-            log.Append("</b>\n<size=40>");
-            log.Append(de.Script);
-            log.Append("</size>\n");
+            if (de.Name == null || de.Name == "")
+            {
+                if (de.Script == null || de.Script == "")
+                {
+                    dialogStruct.dialogUI.SetActive(false);
+                    return;
+                }
+                
+                dialogStruct.nameTMP.transform.parent.gameObject.SetActive(false);
+            }
+            else
+                dialogStruct.nameTMP.transform.parent.gameObject.SetActive(true);
 
-            logTMP.SetText(log);
+            log.Append($"<b>{de.Name}</b>\n<size=40>{de.Script}</size>\n");
+
             dialogStruct.nameTMP.SetText(de.Name);
             dialogStruct.scriptTMP.SetText(de.Script);
 
-            ScreenEffect(de.ScreenEffect);
+            logTMP.SetText(log);
+
             SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftImage, de.LeftHighlight, de.LeftEffect);
             SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightImage, de.RightHighlight, de.RightEffect);
         }
@@ -113,10 +127,7 @@ namespace YS
         {
             // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
             if (!dialogStruct.scriptTMP.IsDoneTyping)
-            {
-                ResetEffects();
                 dialogStruct.scriptTMP.SkipTyping();
-            }
             else
                 scriptData.SetScript(de.NextIdx);
         }
@@ -156,6 +167,9 @@ namespace YS
             item.gameObject.SetActive(false);
             --ivStruct.findCount;
             invenComp.AddItem(item.index);
+
+            if (ivStruct.findCount == 0)
+                ivStruct.OnFindAllItems();
         }
         public void OnInference()
         {
@@ -212,7 +226,11 @@ namespace YS
         private void SetCharSetting(SIDE_IMAGE side, CHARACTER_IMAGE_INDEX charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
         {
             dialogStruct.sideImg[(int)side].sprite = charImgs[(int)charImgIdx];
-            dialogStruct.sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
+
+            if (charImgIdx == CHARACTER_IMAGE_INDEX.NONE)
+                dialogStruct.sideImg[(int)side].color = Color.clear;
+            else
+                dialogStruct.sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
 
             switch (charFX)
             {
@@ -305,7 +323,7 @@ namespace YS
         /// <summary>
         /// 효과 중간에 스킵될 수 있으므로, 효과들이 재생중이라면 종료시키고 이미지들의 위치 원상태로 복구하는 함수
         /// </summary>
-        private void ResetEffects()
+        public void ResetEffects()
         {
             // 작동중인 효과 코루틴 멈추기
             if (sideFXCoroutine[0] != null) StopCoroutine(sideFXCoroutine[0]);
@@ -316,6 +334,7 @@ namespace YS
                 dialogStruct.sideImg[i].transform.position = dialogStruct.SidePosition[i];
 
             bgMtrl.SetFloat("_CurTime", 1.0f);
+            bgMtrl.SetFloat("_IsIn", 0.0f);
             ResetFlash();
         }
         #endregion
@@ -330,7 +349,7 @@ namespace YS
             newBGTr.anchoredPosition = Vector2.zero;
             newBGTr.anchorMin = Vector2.zero;
             newBGTr.anchorMax = Vector2.one;
-            newBGTr.sizeDelta = bgUI.GetComponent<RectTransform>().sizeDelta;
+            newBGTr.sizeDelta = Vector2.zero;
 
             Destroy(bgUI);
 

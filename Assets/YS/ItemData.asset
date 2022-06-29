@@ -16,36 +16,9 @@ MonoBehaviour:
   - img: {fileID: 21300000, guid: e4c43ff21e5dc1f49844ab9bc4bbeb2c, type: 3}
     name: one
     desc: "1\uBC88\uC785\uB2C8\uB2E4"
-    inferenceDesc: "1\uBC88\uC758 \uAD00\uCC30 \uB0B4\uC6A9"
     choicesInfo:
     - choiceStr: "\uCCAB\uBC88\uC9F8 \uC120\uD0DD\uC9C0"
       resultStr: "\uD2C0\uB9B0 \uC120\uD0DD"
     - choiceStr: "\uB450\uBC88\uC9F8 \uC120\uD0DD\uC9C0"
       resultStr: "\uC633\uC740 \uC120\uD0DD"
-    - choiceStr: "\uC138\uBC88\uC9F8 \uC120\uD0DD\uC9C0"
-      resultStr: "\uD2C0\uB838"
-    correctIndex: 0
-  - img: {fileID: 0}
-    name: 
-    desc: 
-    inferenceDesc: 
-    choicesInfo: []
-    correctIndex: 0
-  - img: {fileID: 0}
-    name: 
-    desc: 
-    inferenceDesc: 
-    choicesInfo: []
-    correctIndex: 0
-  - img: {fileID: 0}
-    name: 
-    desc: 
-    inferenceDesc: 
-    choicesInfo: []
-    correctIndex: 0
-  - img: {fileID: 0}
-    name: 
-    desc: 
-    inferenceDesc: 
-    choicesInfo: []
-    correctIndex: 0
+    correctIndex: 1

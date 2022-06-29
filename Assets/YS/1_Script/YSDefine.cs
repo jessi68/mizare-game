@@ -20,7 +20,9 @@ namespace YS
         NONE,
         FADE_IN,
         FADE_OUT,
-        RED_FLASH
+        RED_FLASH,
+        SENIOR,
+        RAT,
     }
     public enum CHARACTER_IMAGE_INDEX
     {
@@ -106,6 +108,7 @@ namespace YS
         public GameObject investigationUI;
 
         public GameObject investigationPanel;
+        public Animator findAllItemFXAnimator;
         public GameObject investigationDialog;
         [HideInInspector]
         public CustomTMPEffect investigationDialogTMP;
@@ -122,7 +125,6 @@ namespace YS
 
         [HideInInspector]
         public bool isInChooseResult;
-        private ItemData itemData;
         [HideInInspector]
         public uint retryCount;
         [HideInInspector]
@@ -131,27 +133,47 @@ namespace YS
         public int curItemIndex;
         [HideInInspector]
         public int findCount;
-        [HideInInspector]
-        public int choicedIndex;
+
+        private int lastChoice;
+        private uint nextIndex;
+        private GameManager gm;
 
         public void Initialize()
         {
             investigationDialogTMP = investigationDialog.transform.GetChild(0).GetComponent<CustomTMPEffect>();
             inferenceDialogTMP = inferenceDialog.transform.GetChild(0).GetComponent<CustomTMPEffect>();
 
-            itemData = GameManager.Instance.itemData;
+            gm = GameManager.Instance;
         }
 
-        public void SetInvestigationMode()
+        public void SetInvestigationMode(uint nextIndex)
         {
+            this.nextIndex = nextIndex;
+
+            isInChooseResult = false;
+
+            investigationUI.SetActive(true);
             inferencePanel.SetActive(false);
             investigationPanel.SetActive(true);
+            
+            items = new Item[gm.bgUI.transform.childCount];
+            for (int i = 0; i < items.Length; ++i)
+            {
+                items[i] = gm.bgUI.transform.GetChild(i).GetComponent<Item>();
+                items[i].imageComp.raycastTarget = true;
+            }
+
+            findCount = items.Length;
+
+            gm.bgMtrl.SetFloat("_IsIn", 0.0f);
         }
         public void SetInferenceMode()
         {
+            findAllItemFXAnimator.SetBool("IsFindAllItem", false);
             investigationPanel.SetActive(false);
             inferencePanel.SetActive(true);
 
+            lastChoice = -1;
             curItemIndex = 0;
             retryCount = 2;
 
@@ -164,20 +186,60 @@ namespace YS
             inferenceDialog.SetActive(false);
             choicePanel.SetActive(true);
 
-            choiceItemImg.sprite = itemData[items[curItemIndex].index].img;
-            choiceItemDescTMP.SetText(itemData[items[curItemIndex].index].inferenceDesc);
-            for (int i = 0; i < 3; ++i)
-                choicesTMP[i].text = itemData[items[curItemIndex].index].choicesInfo[i].choiceStr;
+            choiceItemImg.sprite = items[curItemIndex].ItemImage;
+            choiceItemDescTMP.SetText(items[curItemIndex].Desc);
+            for (int i = 0; i < items[curItemIndex].ChoicesInfo.Length; ++i)
+            {
+                choicesTMP[i].transform.parent.gameObject.SetActive(true);
+                choicesTMP[i].text = items[curItemIndex].ChoicesInfo[i].choiceStr;
+            }
         }
         public void ChooseChoice(int choice)
         {
             isInChooseResult = true;
-            choicedIndex = choice;
 
             choicePanel.SetActive(false);
             inferenceDialog.SetActive(true);
 
-            inferenceDialogTMP.SetText(itemData[items[curItemIndex].index].choicesInfo[choice].resultStr);
+            for (int i = 0; i < items[curItemIndex].ChoicesInfo.Length; ++i)
+                choicesTMP[i].transform.parent.gameObject.SetActive(false);
+
+            string resultStr = items[curItemIndex].ChoicesInfo[choice].resultStr;
+            if (lastChoice == choice)
+                resultStr = "장난하는건가..";
+            lastChoice = choice;
+
+            inferenceDialogTMP.SetText(resultStr);
+        }
+        public void OnUpdate()
+        {
+            if (gm.IsKeyDownForDialogEvent())
+            {
+                if (isInChooseResult)
+                {
+                    if (inferenceDialogTMP.IsDoneTyping)
+                    {
+                        if (items[curItemIndex].CorrectIndex == lastChoice || --retryCount == 0)
+                        {
+                            if (items.Length == ++curItemIndex)
+                            {
+                                gm.scriptData.SetScript(nextIndex);
+                                return;
+                            }
+                            lastChoice = -1;
+                        }
+                        SetChoicePanel();
+                    }
+                    else
+                        inferenceDialogTMP.SkipTyping();
+                }
+                else if (!choiceItemDescTMP.IsDoneTyping)
+                    choiceItemDescTMP.SkipTyping();
+            }
+        }
+        public void OnFindAllItems()
+        {
+            findAllItemFXAnimator.SetBool("IsFindAllItem", true);
         }
     }
     public class ResourceManager

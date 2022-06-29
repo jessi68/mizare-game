@@ -89,4 +89,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  image: {fileID: 4380771475004814671}
+  imageComp: {fileID: 4380771475004814671}
