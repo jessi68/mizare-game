@@ -9,6 +9,7 @@ namespace YS
     [System.Serializable]
     public class ChoiceEvent : BaseScriptEvent
     {
+        [Tooltip("º±≈√¡ˆ")]
         public ChoiceData[] choices;
 
         public override void OnEnter()

@@ -21,14 +21,14 @@ namespace YS
         FADE_IN,
         FADE_OUT,
         RED_FLASH,
-        SENIOR,
-        RAT,
     }
     public enum CHARACTER_IMAGE_INDEX
     {
         NONE,
         MIZAR,
         ALCOR,
+        SENIOR,
+        RAT,
         MAX
     }
     public enum CHARACTER_EFFECT_INDEX
@@ -69,7 +69,9 @@ namespace YS
     [System.Serializable]
     public struct ChoiceData
     {
+        [Tooltip("선택지 내용")]
         public string str;
+        [Tooltip("해당 선택지 선택시 이동할 이벤트 번호")]
         public uint nextIdx;
     }
     [System.Serializable]

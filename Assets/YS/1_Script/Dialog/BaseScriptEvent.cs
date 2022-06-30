@@ -8,7 +8,7 @@ namespace YS
     [System.Serializable]
     public abstract class BaseScriptEvent
     {
-        [SerializeField]
+        [SerializeField, Tooltip("배경에 대한 프리팹을 정해줍니다.\n지정해 주지 않으면 지난 이벤트의 배경을 사용합니다.")]
         private GameObject bgPrefab;
 
         protected GameManager gm;
