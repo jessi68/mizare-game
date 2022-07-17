@@ -29,7 +29,8 @@ namespace YS
         public ScriptData scriptData;
         public ItemData itemData;
         
-        private Sprite[] charImgs = new Sprite[(int)CHARACTER_IMAGE_INDEX.MAX];
+        [HideInInspector]
+        public Sprite[] charImgs = new Sprite[(int)CHARACTER_IMAGE_INDEX.MAX];
 
         // sideFX 코루틴 정보 (스킵 시 사용)
         private Coroutine[] sideFXCoroutine = new Coroutine[2];
@@ -50,8 +51,23 @@ namespace YS
 
             // 사용할 캐릭터들 이미지 로딩
             charImgs[(int)CHARACTER_IMAGE_INDEX.NONE] = null;
-            charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR] = ResourceManager.GetResource<Sprite>("image001");
-            charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR] = ResourceManager.GetResource<Sprite>("image018");
+            charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Normal");
+            charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Normal");
+            charImgs[(int)CHARACTER_IMAGE_INDEX.SENIOR] = ResourceManager.GetResource<Sprite>("Characters/Senior/Senior");
+            charImgs[(int)CHARACTER_IMAGE_INDEX.SCHOLAR] = ResourceManager.GetResource<Sprite>("Characters/Scholar/Scholar");
+            charImgs[(int)CHARACTER_IMAGE_INDEX.BLACKROBE] = ResourceManager.GetResource<Sprite>("Characters/BlackRobe/BlackRobe");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_NORMAL] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Normal");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SMILE1] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Smile1");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SMILE2] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Smile2");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_WINK] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Wink");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SURPRISED] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Surprised");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR_NORMAL] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Normal");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR_ANGRY] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Angry");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.SENIOR] = ResourceManager.GetResource<Sprite>("Characters/Senior/Senior");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.CHLID] = ResourceManager.GetResource<Sprite>("Characters/Child/Child");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.WOMAN] = ResourceManager.GetResource<Sprite>("Characters/Woman/Woman");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.SCHOLAR] = ResourceManager.GetResource<Sprite>("Characters/Scholar/Scholar");
+            //charImgs[(int)CHARACTER_IMAGE_INDEX.BLACKROBE] = ResourceManager.GetResource<Sprite>("Characters/BlackRobe/BlackRobe");
         }
         void Start()
         {
@@ -65,6 +81,14 @@ namespace YS
         void Update()
         {
             OnUpdateEvent?.Invoke();
+
+            if (IsKeyDownForDialogEvent())
+            {
+                if (ivStruct.getItemAnimator.gameObject.activeInHierarchy)
+                {
+                    ivStruct.getItemAnimator.GetCurrentAnimatorStateInfo(0).IsName("Skip");
+                }
+            }
         }
         #endregion
 
@@ -82,6 +106,19 @@ namespace YS
         private void LoadGame()
         {
 
+        }
+        public bool IsKeyDown()
+        {
+            bool result;
+
+            // GameState이고
+            result = InGameUIManager.IsGameState() &&
+                     // 스페이스 키가 눌렸거나
+                     Input.GetKeyDown(KeyCode.Space) ||
+                     // UI가 아닌곳에 마우스 클릭 이벤트가 발생했을때
+                     (Input.GetKeyDown(KeyCode.Mouse0));
+
+            return result;
         }
 
         #region Dialog Event
@@ -168,6 +205,11 @@ namespace YS
             --ivStruct.findCount;
             invenComp.AddItem(item.index);
 
+            ivStruct.getItemAnimator.gameObject.SetActive(true);
+            ivStruct.getItemUI_ItemImg.sprite = item.ItemImage;
+            ivStruct.getItemUI_ItemName.text = item.Name;
+            ivStruct.getItemUI_ItemDesc.text = item.Desc;
+
             if (ivStruct.findCount == 0)
                 ivStruct.OnFindAllItems();
         }
@@ -175,7 +217,8 @@ namespace YS
         {
             if (ivStruct.findCount == 0)
             {
-                ivStruct.SetInferenceMode();
+                scriptData.SetScript(ivStruct.nextIndex);
+                //ivStruct.SetInferenceMode();
             }
             else
             {
@@ -230,7 +273,10 @@ namespace YS
             if (charImgIdx == CHARACTER_IMAGE_INDEX.NONE)
                 dialogStruct.sideImg[(int)side].color = Color.clear;
             else
+            {
                 dialogStruct.sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
+                dialogStruct.sideImg[(int)side].SetNativeSize();
+            }
 
             switch (charFX)
             {

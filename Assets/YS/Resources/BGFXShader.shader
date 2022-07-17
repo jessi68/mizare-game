@@ -48,6 +48,7 @@ Shader "Hidden/NewImageEffectShader"
             fixed4 frag (v2f i) : SV_Target
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
+                clip(col.a - 0.0001f);
                 col.rgb = col.rgb * abs(_IsIn - _CurTime);
                 return col + _AddColor;
             }

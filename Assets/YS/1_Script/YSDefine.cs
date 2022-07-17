@@ -8,11 +8,11 @@ namespace YS
 {
     public enum ITEM_INDEX
     {
-        ITEM_1,
-        ITEM_2,
-        ITEM_3,
-        ITEM_4,
-        ITEM_5,
+        RAT,
+        EMPTY_BOTTLE,
+        HAT,
+        BLACK_CLOTH,
+        CLOCK,
         MAX
     }
     public enum SCREEN_EFFECT
@@ -28,7 +28,8 @@ namespace YS
         MIZAR,
         ALCOR,
         SENIOR,
-        RAT,
+        SCHOLAR,
+        BLACKROBE,
         MAX
     }
     public enum CHARACTER_EFFECT_INDEX
@@ -110,8 +111,13 @@ namespace YS
         public GameObject investigationUI;
 
         public GameObject investigationPanel;
+        public Image investigationCharacter;
         public Animator findAllItemFXAnimator;
         public GameObject investigationDialog;
+        public Animator getItemAnimator;
+        public Image getItemUI_ItemImg;
+        public TMP_Text getItemUI_ItemName;
+        public TMP_Text getItemUI_ItemDesc;
         [HideInInspector]
         public CustomTMPEffect investigationDialogTMP;
         
@@ -137,7 +143,7 @@ namespace YS
         public int findCount;
 
         private int lastChoice;
-        private uint nextIndex;
+        public uint nextIndex;
         private GameManager gm;
 
         public void Initialize()
@@ -237,6 +243,20 @@ namespace YS
                 }
                 else if (!choiceItemDescTMP.IsDoneTyping)
                     choiceItemDescTMP.SkipTyping();
+            }
+
+            if (gm.IsKeyDown())
+            {
+                if (getItemAnimator.gameObject.activeInHierarchy)
+                {
+                    if (getItemAnimator.GetCurrentAnimatorStateInfo(0).IsName("Skip"))
+                    {
+                        getItemAnimator.gameObject.SetActive(false);
+                        getItemAnimator.SetBool("Skip", false);
+                    }
+                    else
+                        getItemAnimator.SetBool("Skip", true);
+                }
             }
         }
         public void OnFindAllItems()

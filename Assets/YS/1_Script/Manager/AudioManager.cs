@@ -8,7 +8,8 @@ namespace YS
         #region Field
         public Slider volumeSlider;
         
-        private AudioSource audioSource;
+        private AudioSource audioBGM;
+        private AudioSource audioFX;
         #endregion
 
         #region Unity Methods
@@ -16,7 +17,8 @@ namespace YS
         {
             base.Awake();
 
-            audioSource = GetComponent<AudioSource>();
+            audioBGM = transform.GetChild(0).GetComponent<AudioSource>();
+            audioFX = transform.GetChild(1).GetComponent<AudioSource>();
             DontDestroyOnLoad(gameObject);
         }
         #endregion
@@ -29,26 +31,41 @@ namespace YS
             // 슬라이더도 볼륨에 맞게 조정
             //Instance.volumeSlider.value = Instance.audioSource.volume;
         }
-        public static void ChangeMusic()
+        public static void PlayBGM(AudioClip newBGM)
         {
-            // 추후에 음악 변경할 일있다면 구현
+            var am = Instance;
+
+            am.audioBGM.Stop();
+            am.audioBGM.clip = newBGM;
+            am.audioBGM.Play();
         }
-        public static void PlayMusic()
+        public static void PlayFX(AudioClip newBGM)
         {
-            if (Instance.audioSource.isPlaying) return;
-            Instance.audioSource.Play();
+            var am = Instance;
+
+            am.audioFX.Stop();
+            am.audioFX.clip = newBGM;
+            am.audioFX.Play();
         }
-        public static void StopMusic()
+        public static void StopBGM()
         {
-            Instance.audioSource.Stop();
+            Instance.audioBGM.Stop();
         }
-        public static void SetVolume(float volume)
+        public static void StopFX()
         {
-            Instance.audioSource.volume = volume;
+            Instance.audioFX.Stop();
+        }
+        public static void SetBGMVolume(float volume)
+        {
+            Instance.audioBGM.volume = volume;
+        }
+        public static void SetFXVolume(float volume)
+        {
+            Instance.audioFX.volume = volume;
         }
         public static void OnChangeBGMVolumeSlider()
         {
-            SetVolume(Instance.volumeSlider.value);
+            SetBGMVolume(Instance.volumeSlider.value);
         }
         #endregion
     }
