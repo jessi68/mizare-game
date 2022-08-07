@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
     [System.Serializable]
     public class ChoiceEvent : BaseScriptEvent
     {
-        [Tooltip("선택지")]
+        [LabelText("선택지"), Tooltip("선택지")]
         public ChoiceData[] choices;
 
         public override void OnEnter()

@@ -39,13 +39,16 @@ namespace YS
             am.audioBGM.clip = newBGM;
             am.audioBGM.Play();
         }
-        public static void PlayFX(AudioClip newBGM)
+        public static void PlayFX(AudioClip newBGM, float delay = 0.0f)
         {
             var am = Instance;
 
             am.audioFX.Stop();
             am.audioFX.clip = newBGM;
-            am.audioFX.Play();
+            if (delay == 0.0f)
+                am.audioFX.Play();
+            else
+                am.audioFX.PlayDelayed(delay);
         }
         public static void StopBGM()
         {

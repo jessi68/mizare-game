@@ -188,14 +188,13 @@ MonoBehaviour:
   - id: 171
   - id: 172
   - id: 173
+  insertIndex: 0
+  swapIndex: {x: 5, y: 6}
   references:
     version: 1
     00000000:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
-        audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 2
         leftImage: 5
         leftHighlight: 1
@@ -209,9 +208,6 @@ MonoBehaviour:
     00000001:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 0
@@ -225,9 +221,6 @@ MonoBehaviour:
     00000002:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 1
@@ -242,9 +235,6 @@ MonoBehaviour:
     00000003:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 1
@@ -260,9 +250,6 @@ MonoBehaviour:
     00000004:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 0
@@ -276,9 +263,6 @@ MonoBehaviour:
     00000005:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 1
@@ -294,9 +278,6 @@ MonoBehaviour:
     00000006:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 1
@@ -312,9 +293,6 @@ MonoBehaviour:
     00000007:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 0
@@ -328,9 +306,6 @@ MonoBehaviour:
     00000008:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 5
         leftHighlight: 1
@@ -345,9 +320,6 @@ MonoBehaviour:
     00000009:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 1
         leftImage: 0
         leftHighlight: 0
@@ -361,9 +333,6 @@ MonoBehaviour:
     0000000A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 2
         leftImage: 1
         leftHighlight: 1
@@ -377,9 +346,6 @@ MonoBehaviour:
     0000000B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -393,9 +359,6 @@ MonoBehaviour:
     0000000C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -409,9 +372,6 @@ MonoBehaviour:
     0000000D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -426,9 +386,6 @@ MonoBehaviour:
     0000000E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -445,9 +402,6 @@ MonoBehaviour:
     0000000F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -462,9 +416,6 @@ MonoBehaviour:
     00000010:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -480,9 +431,6 @@ MonoBehaviour:
     00000011:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 7ae66b9ddff029b4c9784cb6ee7acbec, type: 3}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -496,9 +444,6 @@ MonoBehaviour:
     00000012:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         screenEffect: 0
         leftImage: 0
         leftHighlight: 0
@@ -512,9 +457,6 @@ MonoBehaviour:
     00000013:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -529,9 +471,6 @@ MonoBehaviour:
     00000014:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -545,9 +484,6 @@ MonoBehaviour:
     00000015:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -562,9 +498,6 @@ MonoBehaviour:
     00000016:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -579,9 +512,6 @@ MonoBehaviour:
     00000017:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -596,9 +526,6 @@ MonoBehaviour:
     00000018:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -614,9 +541,6 @@ MonoBehaviour:
     00000019:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -631,9 +555,6 @@ MonoBehaviour:
     0000001A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -649,9 +570,6 @@ MonoBehaviour:
     0000001B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -665,9 +583,6 @@ MonoBehaviour:
     0000001C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -682,9 +597,6 @@ MonoBehaviour:
     0000001D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -698,9 +610,6 @@ MonoBehaviour:
     0000001E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -714,9 +623,6 @@ MonoBehaviour:
     0000001F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -733,9 +639,6 @@ MonoBehaviour:
     00000020:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -749,9 +652,6 @@ MonoBehaviour:
     00000021:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -766,9 +666,6 @@ MonoBehaviour:
     00000022:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -784,9 +681,6 @@ MonoBehaviour:
     00000023:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -802,9 +696,6 @@ MonoBehaviour:
     00000024:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -818,9 +709,6 @@ MonoBehaviour:
     00000025:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -836,9 +724,6 @@ MonoBehaviour:
     00000026:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -853,9 +738,6 @@ MonoBehaviour:
     00000027:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -870,9 +752,6 @@ MonoBehaviour:
     00000028:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -886,9 +765,6 @@ MonoBehaviour:
     00000029:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -904,9 +780,6 @@ MonoBehaviour:
     0000002A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -921,9 +794,6 @@ MonoBehaviour:
     0000002B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -939,9 +809,6 @@ MonoBehaviour:
     0000002C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -957,9 +824,6 @@ MonoBehaviour:
     0000002D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -975,9 +839,6 @@ MonoBehaviour:
     0000002E:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uC758\uB8B0\uB97C \uBC1B\uB294\uB2E4"
           nextIdx: 49
@@ -986,9 +847,6 @@ MonoBehaviour:
     0000002F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1002,9 +860,6 @@ MonoBehaviour:
     00000030:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1020,9 +875,6 @@ MonoBehaviour:
     00000031:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1036,9 +888,6 @@ MonoBehaviour:
     00000032:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1053,9 +902,6 @@ MonoBehaviour:
     00000033:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1070,9 +916,6 @@ MonoBehaviour:
     00000034:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1086,9 +929,6 @@ MonoBehaviour:
     00000035:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1102,9 +942,6 @@ MonoBehaviour:
     00000036:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 1
         leftImage: 0
         leftHighlight: 0
@@ -1118,9 +955,6 @@ MonoBehaviour:
     00000037:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
-        audioBGM: {fileID: 8300000, guid: 2947823f702ed43b9867d418f837e0da, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 2
         leftImage: 3
         leftHighlight: 1
@@ -1136,9 +970,6 @@ MonoBehaviour:
     00000038:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 3
         leftHighlight: 1
@@ -1157,9 +988,6 @@ MonoBehaviour:
     00000039:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 3
         leftHighlight: 1
@@ -1175,9 +1003,6 @@ MonoBehaviour:
     0000003A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 3
         leftHighlight: 1
@@ -1193,9 +1018,6 @@ MonoBehaviour:
     0000003B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 1
         leftImage: 0
         leftHighlight: 0
@@ -1209,9 +1031,6 @@ MonoBehaviour:
     0000003C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 2
         leftImage: 1
         leftHighlight: 1
@@ -1226,9 +1045,6 @@ MonoBehaviour:
     0000003D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1245,9 +1061,6 @@ MonoBehaviour:
     0000003E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1263,9 +1076,6 @@ MonoBehaviour:
     0000003F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1281,9 +1091,6 @@ MonoBehaviour:
     00000040:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1298,9 +1105,6 @@ MonoBehaviour:
     00000041:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1315,9 +1119,6 @@ MonoBehaviour:
     00000042:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1331,9 +1132,6 @@ MonoBehaviour:
     00000043:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1349,9 +1147,6 @@ MonoBehaviour:
     00000044:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1366,9 +1161,6 @@ MonoBehaviour:
     00000045:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1384,9 +1176,6 @@ MonoBehaviour:
     00000046:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1401,9 +1190,6 @@ MonoBehaviour:
     00000047:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1417,9 +1203,6 @@ MonoBehaviour:
     00000048:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1434,9 +1217,6 @@ MonoBehaviour:
     00000049:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uB4B7\uB3D9\uC0B0"
           nextIdx: 75
@@ -1445,9 +1225,6 @@ MonoBehaviour:
     0000004A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1461,9 +1238,6 @@ MonoBehaviour:
     0000004B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1478,9 +1252,6 @@ MonoBehaviour:
     0000004C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 3dad8fae8c381d64abc1860bd8d5ab14, type: 3}
         screenEffect: 1
         leftImage: 0
         leftHighlight: 0
@@ -1494,9 +1265,6 @@ MonoBehaviour:
     0000004D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 0
         leftHighlight: 0
@@ -1510,9 +1278,6 @@ MonoBehaviour:
     0000004E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: 3b6c09b8047cc9f458fcd0db3b922820, type: 3}
-        audioBGM: {fileID: 8300000, guid: a79a5353ad9e7a645a6e7f249ed9318d, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 2
         leftImage: 1
         leftHighlight: 1
@@ -1527,9 +1292,6 @@ MonoBehaviour:
     0000004F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1544,9 +1306,6 @@ MonoBehaviour:
     00000050:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1561,9 +1320,6 @@ MonoBehaviour:
     00000051:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1577,17 +1333,11 @@ MonoBehaviour:
     00000052:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         character: 1
         nextIndex: 165
     00000053:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1603,9 +1353,6 @@ MonoBehaviour:
     00000054:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 3dad8fae8c381d64abc1860bd8d5ab14, type: 3}
         screenEffect: 1
         leftImage: 0
         leftHighlight: 0
@@ -1619,9 +1366,6 @@ MonoBehaviour:
     00000055:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1635,9 +1379,6 @@ MonoBehaviour:
     00000056:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1652,9 +1393,6 @@ MonoBehaviour:
     00000057:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1668,9 +1406,6 @@ MonoBehaviour:
     00000058:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 8300000, guid: 3dad8fae8c381d64abc1860bd8d5ab14, type: 3}
         screenEffect: 0
         leftImage: 0
         leftHighlight: 0
@@ -1684,9 +1419,6 @@ MonoBehaviour:
     00000059:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 8300000, guid: 72368974817d70142815fb02c6691d3d, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 0
         leftHighlight: 0
@@ -1700,9 +1432,6 @@ MonoBehaviour:
     0000005A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1717,9 +1446,6 @@ MonoBehaviour:
     0000005B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1733,9 +1459,6 @@ MonoBehaviour:
     0000005C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1750,9 +1473,6 @@ MonoBehaviour:
     0000005D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1766,9 +1486,6 @@ MonoBehaviour:
     0000005E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1786,9 +1503,6 @@ MonoBehaviour:
     0000005F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1802,9 +1516,6 @@ MonoBehaviour:
     00000060:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1821,9 +1532,6 @@ MonoBehaviour:
     00000061:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1841,9 +1549,6 @@ MonoBehaviour:
     00000062:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1858,9 +1563,6 @@ MonoBehaviour:
     00000063:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1874,9 +1576,6 @@ MonoBehaviour:
     00000064:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1890,9 +1589,6 @@ MonoBehaviour:
     00000065:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1909,9 +1605,6 @@ MonoBehaviour:
     00000066:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1925,9 +1618,6 @@ MonoBehaviour:
     00000067:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1943,9 +1633,6 @@ MonoBehaviour:
     00000068:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -1959,9 +1646,6 @@ MonoBehaviour:
     00000069:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -1981,9 +1665,6 @@ MonoBehaviour:
     0000006A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2008,9 +1689,6 @@ MonoBehaviour:
     0000006B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2030,9 +1708,6 @@ MonoBehaviour:
     0000006C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2052,9 +1727,6 @@ MonoBehaviour:
     0000006D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2068,9 +1740,6 @@ MonoBehaviour:
     0000006E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2085,9 +1754,6 @@ MonoBehaviour:
     0000006F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2102,9 +1768,6 @@ MonoBehaviour:
     00000070:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2120,9 +1783,6 @@ MonoBehaviour:
     00000071:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2138,9 +1798,6 @@ MonoBehaviour:
     00000072:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2155,9 +1812,6 @@ MonoBehaviour:
     00000073:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2172,9 +1826,6 @@ MonoBehaviour:
     00000074:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2188,9 +1839,6 @@ MonoBehaviour:
     00000075:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2206,9 +1854,6 @@ MonoBehaviour:
     00000076:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2224,17 +1869,11 @@ MonoBehaviour:
     00000077:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         character: 2
         nextIndex: 121
     00000078:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2249,9 +1888,6 @@ MonoBehaviour:
     00000079:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2266,9 +1902,6 @@ MonoBehaviour:
     0000007A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2284,9 +1917,6 @@ MonoBehaviour:
     0000007B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2300,9 +1930,6 @@ MonoBehaviour:
     0000007C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2318,9 +1945,6 @@ MonoBehaviour:
     0000007D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2334,9 +1958,6 @@ MonoBehaviour:
     0000007E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2351,9 +1972,6 @@ MonoBehaviour:
     0000007F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2367,9 +1985,6 @@ MonoBehaviour:
     00000080:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2383,9 +1998,6 @@ MonoBehaviour:
     00000081:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2399,9 +2011,6 @@ MonoBehaviour:
     00000082:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2416,9 +2025,6 @@ MonoBehaviour:
     00000083:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2434,9 +2040,6 @@ MonoBehaviour:
     00000084:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2450,9 +2053,6 @@ MonoBehaviour:
     00000085:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2467,9 +2067,6 @@ MonoBehaviour:
     00000086:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2483,9 +2080,6 @@ MonoBehaviour:
     00000087:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uBAA8\uC790\uC758 \uBC1C\uC790\uAD6D\uC744 \uBCF4\uB77C!"
           nextIdx: 137
@@ -2494,9 +2088,6 @@ MonoBehaviour:
     00000088:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2513,9 +2104,6 @@ MonoBehaviour:
     00000089:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2529,9 +2117,6 @@ MonoBehaviour:
     0000008A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2545,9 +2130,6 @@ MonoBehaviour:
     0000008B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2562,9 +2144,6 @@ MonoBehaviour:
     0000008C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2579,9 +2158,6 @@ MonoBehaviour:
     0000008D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2597,9 +2173,6 @@ MonoBehaviour:
     0000008E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2615,9 +2188,6 @@ MonoBehaviour:
     0000008F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2631,9 +2201,6 @@ MonoBehaviour:
     00000090:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2647,9 +2214,6 @@ MonoBehaviour:
     00000091:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uBC1C\uC790\uAD6D\uC758 \uBB38\uC591\uC744 \uBCF4\uB77C!"
           nextIdx: 147
@@ -2658,9 +2222,6 @@ MonoBehaviour:
     00000092:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2676,9 +2237,6 @@ MonoBehaviour:
     00000093:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2693,9 +2251,6 @@ MonoBehaviour:
     00000094:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2709,9 +2264,6 @@ MonoBehaviour:
     00000095:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2726,9 +2278,6 @@ MonoBehaviour:
     00000096:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2745,9 +2294,6 @@ MonoBehaviour:
     00000097:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2761,9 +2307,6 @@ MonoBehaviour:
     00000098:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uCC9C\uC870\uAC01\uACFC \uBD80\uC234\uC9C4 \uC2DC\uACC4"
           nextIdx: 154
@@ -2772,9 +2315,6 @@ MonoBehaviour:
     00000099:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2791,9 +2331,6 @@ MonoBehaviour:
     0000009A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2808,9 +2345,6 @@ MonoBehaviour:
     0000009B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2827,9 +2361,6 @@ MonoBehaviour:
     0000009C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2844,9 +2375,6 @@ MonoBehaviour:
     0000009D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 8300000, guid: a79a5353ad9e7a645a6e7f249ed9318d, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2862,9 +2390,6 @@ MonoBehaviour:
     0000009E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2879,9 +2404,6 @@ MonoBehaviour:
     0000009F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2896,9 +2418,6 @@ MonoBehaviour:
     000000A0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2915,9 +2434,6 @@ MonoBehaviour:
     000000A1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2931,9 +2447,6 @@ MonoBehaviour:
     000000A2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2947,9 +2460,6 @@ MonoBehaviour:
     000000A3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 0
@@ -2964,9 +2474,6 @@ MonoBehaviour:
     000000A4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -2981,9 +2488,6 @@ MonoBehaviour:
     000000A5:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uC544\uC774\uB4E4\uC758 \uC7A5\uB09C\uC774\uB2E4!"
           nextIdx: 167
@@ -2994,9 +2498,6 @@ MonoBehaviour:
     000000A6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3011,9 +2512,6 @@ MonoBehaviour:
     000000A7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3027,9 +2525,6 @@ MonoBehaviour:
     000000A8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3045,9 +2540,6 @@ MonoBehaviour:
     000000A9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3061,9 +2553,6 @@ MonoBehaviour:
     000000AA:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         choices:
         - str: "\uC774 \uB3D9\uBB3C\uC758 \uC0AC\uCCB4\uB97C \uBCF4\uB77C!"
           nextIdx: 172
@@ -3072,9 +2561,6 @@ MonoBehaviour:
     000000AB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3090,9 +2576,6 @@ MonoBehaviour:
     000000AC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1
@@ -3107,9 +2590,6 @@ MonoBehaviour:
     000000AD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-        audioBGM: {fileID: 0}
-        audioFX: {fileID: 0}
         screenEffect: 0
         leftImage: 1
         leftHighlight: 1

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
@@ -70,10 +71,10 @@ namespace YS
     [System.Serializable]
     public struct ChoiceData
     {
-        [Tooltip("선택지 내용")]
+        [LabelText("선택지 내용"), Tooltip("선택지 내용")]
         public string str;
-        [Tooltip("해당 선택지 선택시 이동할 이벤트 번호")]
-        public uint nextIdx;
+        [LabelText("선택 후 이동될 이벤트 번호"), Tooltip("해당 선택지 선택시 이동할 이벤트 번호")]
+        public int nextIdx;
     }
     [System.Serializable]
     public struct ChoiceStruct
@@ -143,7 +144,7 @@ namespace YS
         public int findCount;
 
         private int lastChoice;
-        public uint nextIndex;
+        public int nextIndex;
         private GameManager gm;
 
         public void Initialize()
@@ -154,7 +155,7 @@ namespace YS
             gm = GameManager.Instance;
         }
 
-        public void SetInvestigationMode(uint nextIndex)
+        public void SetInvestigationMode(int nextIndex)
         {
             this.nextIndex = nextIndex;
 

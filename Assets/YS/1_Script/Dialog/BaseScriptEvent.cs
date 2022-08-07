@@ -2,36 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
     [System.Serializable]
     public abstract class BaseScriptEvent
     {
-        [SerializeField, Tooltip("배경에 대한 프리팹을 정해줍니다.\n지정해 주지 않으면 지난 이벤트의 배경을 사용합니다.")]
-        private GameObject bgPrefab;
-        [SerializeField, Tooltip("배경음악 선택\n지정해 주지 않으면 지난 이벤트의 배경음악을 사용합니다.")]
-        private AudioClip audioBGM;
-        [SerializeField, Tooltip("효과음 선택")]
-        private AudioClip audioFX;
         protected GameManager gm;
-
 
         public virtual void OnEnter()
         {
             gm = GameManager.Instance;
             gm.OnUpdateEvent += OnUpdate;
-
-            if (bgPrefab != null)
-                gm.ChangeBackground(Object.Instantiate(bgPrefab));
-
-            if (audioBGM != null)
-                AudioManager.PlayBGM(audioBGM);
-
-            if (audioFX != null)
-                AudioManager.PlayFX(audioFX);
-            else
-                AudioManager.StopFX();
         }
         public virtual void OnExit()
         {
