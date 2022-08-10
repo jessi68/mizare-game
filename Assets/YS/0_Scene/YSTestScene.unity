@@ -284,7 +284,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &23006988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,7 +343,8 @@ RectTransform:
   - {fileID: 549581128}
   - {fileID: 1785617738}
   - {fileID: 180747287}
-  - {fileID: 763436983}
+  - {fileID: 940831214}
+  - {fileID: 763724228}
   - {fileID: 699404624}
   - {fileID: 1343145467}
   m_Father: {fileID: 0}
@@ -829,7 +830,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!223 &180747289
 Canvas:
   m_ObjectHideFlags: 0
@@ -1144,7 +1145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &280302098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2135,39 +2136,20 @@ MonoBehaviour:
     - {fileID: 479795768}
     - {fileID: 1181743222}
     - {fileID: 1756622008}
-    choiceTMPs: []
   ivStruct:
-    investigationUI: {fileID: 763436982}
     investigationPanel: {fileID: 940831213}
     investigationCharacter: {fileID: 1175851478}
     findAllItemFXAnimator: {fileID: 1825518617}
-    investigationDialog: {fileID: 1239438151}
+    investigationDialogTMP: {fileID: 1564223885}
     getItemAnimator: {fileID: 280302101}
     getItemUI_ItemImg: {fileID: 759564549}
     getItemUI_ItemName: {fileID: 1152951232}
     getItemUI_ItemDesc: {fileID: 356485865}
-    investigationDialogTMP: {fileID: 0}
-    inferencePanel: {fileID: 763724227}
-    choicePanel: {fileID: 1711738032}
-    choiceItemImg: {fileID: 761678297}
-    choiceItemDescTMP: {fileID: 810174270}
-    choicesTMP:
-    - {fileID: 1791282058}
-    - {fileID: 670990148}
-    - {fileID: 1437277197}
-    inferenceDialog: {fileID: 166221840}
-    inferenceDialogTMP: {fileID: 1401885643}
-    isInChooseResult: 0
-    retryCount: 0
-    items: []
-    curItemIndex: 0
-    findCount: 0
-    nextIndex: 0
-  bgUI: {fileID: 549581127}
-  bgMtrl: {fileID: 2100000, guid: 951629b5f98d2f74da99858ae220203a, type: 2}
   logTMP: {fileID: 236268519}
   scriptData: {fileID: 11400000, guid: fe8d1b12d7c37c642be69e9ea0ae4e2a, type: 2}
   itemData: {fileID: 11400000, guid: 8309f41304dfa534390612ee98d40755, type: 2}
+  invenComp: {fileID: 1343145470}
+  bgUI: {fileID: 549581127}
   charImgs:
   - {fileID: 0}
   - {fileID: 0}
@@ -2175,7 +2157,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  invenComp: {fileID: 1343145470}
 --- !u!4 &471057962
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,7 +2165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471057960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 286.59296, y: 258.02377, z: -257.6773}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 592550375}
@@ -3717,7 +3698,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!223 &664336953
 Canvas:
   m_ObjectHideFlags: 0
@@ -4118,7 +4099,7 @@ RectTransform:
   - {fileID: 672563108}
   - {fileID: 5268692239139002268}
   m_Father: {fileID: 23006990}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4471,43 +4452,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761678295}
   m_CullTransparentMesh: 1
---- !u!1 &763436982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 763436983}
-  m_Layer: 5
-  m_Name: InvestigationUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &763436983
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763436982}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 940831214}
-  - {fileID: 763724228}
-  m_Father: {fileID: 23006990}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &763724227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4531,15 +4475,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763724227}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 62257241}
   - {fileID: 1711738033}
   - {fileID: 166221841}
-  m_Father: {fileID: 763436983}
-  m_RootOrder: 1
+  m_Father: {fileID: 23006990}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5344,7 +5288,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!223 &915812549
 Canvas:
   m_ObjectHideFlags: 0
@@ -5463,7 +5407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &940831214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5471,7 +5415,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940831213}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5479,8 +5423,8 @@ RectTransform:
   - {fileID: 1175851476}
   - {fileID: 1239438152}
   - {fileID: 280302098}
-  m_Father: {fileID: 763436983}
-  m_RootOrder: 0
+  m_Father: {fileID: 23006990}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6515,7 +6459,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!223 &1249018605
 Canvas:
   m_ObjectHideFlags: 0
@@ -6827,7 +6771,7 @@ RectTransform:
   - {fileID: 830283701}
   - {fileID: 401649293}
   m_Father: {fileID: 23006990}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9236,7 +9180,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!223 &1790428222
 Canvas:
   m_ObjectHideFlags: 0
@@ -10596,6 +10540,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 699404624}
     m_Modifications:
+    - target: {fileID: 3339806593685184974, guid: 580b1e72e7110fa41b335d9bf7d77134, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 3339806593685184978, guid: 580b1e72e7110fa41b335d9bf7d77134, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

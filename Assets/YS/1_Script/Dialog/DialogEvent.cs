@@ -58,20 +58,18 @@ namespace YS
         {
             base.OnEnter();
 
-            gm.dialogStruct.dialogUI.SetActive(true);
-            gm.SetDialog(this);
+            gm.dialogStruct.Setup(this);
         }
 
         protected override void OnUpdate()
         {
-            if (gm.IsKeyDownForDialogEvent())
-                gm.OnDialogEvent(this);
+            if (gm.IsKeyDown())
+                gm.dialogStruct.OnDialogEvent(this);
         }
 
         public override void OnExit()
         {
-            gm.dialogStruct.dialogUI.SetActive(false);
-            gm.ResetEffects();
+            gm.dialogStruct.Release();
 
             base.OnExit();
         }

@@ -5,38 +5,51 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
     public class GameManager : Singleton<GameManager>
     {
-        enum SIDE_IMAGE
-        {
-            LEFT_SIDE,
-            RIGHT_SIDE
-        }
-
         #region Field
+        /// <summary>
+        /// 다이얼로그 데이터 구조
+        /// </summary>
+        [HideLabel]
         public DialogStruct dialogStruct;
+        /// <summary>
+        /// 선택지 데이터 구조
+        /// </summary>
+        [HideLabel]
         public ChoiceStruct choiceStruct;
+        /// <summary>
+        /// 조사 데이터 구조
+        /// </summary>
+        [HideLabel]
         public InvestigationStruct ivStruct;
+        /// <summary>
+        /// 추리 데이터 구조
+        /// </summary>
+        [HideLabel]
+        public InferenceStruct ifStruct;
 
-        public GameObject bgUI;
-        public Material bgMtrl;
-
+        [LabelText("로그 TMP")]
         public TMP_Text logTMP;
 
+        [LabelText("스크립트 데이터")]
         public ScriptData scriptData;
+        [LabelText("아이템 데이터")]
         public ItemData itemData;
-        
+        [LabelText("인벤토리 컴포넌트")]
+        public InventoryComponent invenComp;
+        [LabelText("배경오브젝트")]
+        public GameObject bgUI;
+        private Material bgMtrl;
+
         [HideInInspector]
         public Sprite[] charImgs = new Sprite[(int)CHARACTER_IMAGE_INDEX.MAX];
-
-        // sideFX 코루틴 정보 (스킵 시 사용)
-        private Coroutine[] sideFXCoroutine = new Coroutine[2];
-        private Coroutine bgFXCoroutine;
-
-        public InventoryComponent invenComp;
+        [HideInInspector]
+        public Coroutine bgFXCoroutine;
 
         private StringBuilder log = new StringBuilder();
 
@@ -44,10 +57,16 @@ namespace YS
         public event OnUpdate OnUpdateEvent;
         #endregion
 
+        #region Properties
+        public int ItemCount => bgUI.transform.childCount;
+        #endregion
+
         #region Unity Methods
         protected override void Awake()
         {
             base.Awake();
+
+            bgMtrl = ResourceManager.GetResource<Material>("BGFXShader");
 
             // 사용할 캐릭터들 이미지 로딩
             charImgs[(int)CHARACTER_IMAGE_INDEX.NONE] = null;
@@ -82,7 +101,7 @@ namespace YS
         {
             OnUpdateEvent?.Invoke();
 
-            if (IsKeyDownForDialogEvent())
+            if (IsKeyDown())
             {
                 if (ivStruct.getItemAnimator.gameObject.activeInHierarchy)
                 {
@@ -116,134 +135,61 @@ namespace YS
                      // 스페이스 키가 눌렸거나
                      Input.GetKeyDown(KeyCode.Space) ||
                      // UI가 아닌곳에 마우스 클릭 이벤트가 발생했을때
-                     (Input.GetKeyDown(KeyCode.Mouse0));
-
-            return result;
-        }
-
-        #region Dialog Event
-        public void EnterDialogEvent()
-        {
-
-        }
-
-        /// <summary>
-        /// 다이얼로그 설정
-        /// </summary>
-        public void SetDialog(DialogEvent de)
-        {
-            ScreenEffect(de.ScreenEffect);
-
-            if (de.Name == null || de.Name == "")
-            {
-                if (de.Script == null || de.Script == "")
-                {
-                    dialogStruct.dialogUI.SetActive(false);
-                    return;
-                }
-                
-                dialogStruct.nameTMP.transform.parent.gameObject.SetActive(false);
-            }
-            else
-                dialogStruct.nameTMP.transform.parent.gameObject.SetActive(true);
-
-            log.Append($"<b>{de.Name}</b>\n<size=40>{de.Script}</size>\n");
-
-            dialogStruct.nameTMP.SetText(de.Name);
-            dialogStruct.scriptTMP.SetText(de.Script);
-
-            logTMP.SetText(log);
-
-            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftImage, de.LeftHighlight, de.LeftEffect);
-            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightImage, de.RightHighlight, de.RightEffect);
-        }
-        /// <summary>
-        /// 다이얼로그 이벤트 발생시 호출되는 함수
-        /// </summary>
-        public void OnDialogEvent(DialogEvent de)
-        {
-            // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
-            if (!dialogStruct.scriptTMP.IsDoneTyping)
-                dialogStruct.scriptTMP.SkipTyping();
-            else
-                scriptData.SetScript(de.NextIdx);
-        }
-        /// <summary>
-        /// 다이얼로그 이벤트가 발생했는가
-        /// </summary>
-        /// <returns>발생했다면 true</returns>
-        public bool IsKeyDownForDialogEvent()
-        {
-            bool result;
-
-            // GameState이고
-            result = InGameUIManager.IsGameState() &&
-                     // 스페이스 키가 눌렸거나
-                     Input.GetKeyDown(KeyCode.Space) ||
-                     // UI가 아닌곳에 마우스 클릭 이벤트가 발생했을때
                      (Input.GetKeyDown(KeyCode.Mouse0) && !EventSystem.current.IsPointerOverGameObject());
 
             return result;
         }
-        #endregion
-
-        #region Choice Event
+        public Item GetItem(int index)
+        {
+            return bgUI.transform.GetChild(index).GetComponent<Item>();
+        }
         /// <summary>
-        /// 선택지 고르면 호출되는 이벤트 함수
+        /// 배경 페이드효과 진행도 설정
         /// </summary>
-        /// <param name="index">선택지 번호</param>
-        public void OnChooseChoice(int index)
+        /// <param name="curTime">페이드 효과 진행도 변경 (0 ~ 1)</param>
+        public void SetBGCurTime(float curTime)
         {
-            (scriptData.CurrentScript as ChoiceEvent).OnChooseChoice(index);
+            bgMtrl.SetFloat("_CurTime", curTime);
         }
-        #endregion
+        /// <summary>
+        /// 배경 페이드 설정
+        /// </summary>
+        /// <param name="fadeCondition">true면 FadeIn, false면 FadeOut</param>
+        public void SetBGFadeInOut(bool fadeCondition)
+        {
+            bgMtrl.SetFloat("_IsIn", fadeCondition ? 1.0f : 0.0f);
+        }
+        /// <summary>
+        /// 로그 남기기
+        /// </summary>
+        public void Logging(string str)
+        {
+            log.Append(str);
+            logTMP.SetText(log);
+        }
+        public void ChangeBackground(GameObject newBG)
+        {
+            Transform canvasTr = bgUI.transform.parent;
+            RectTransform newBGTr = newBG.GetComponent<RectTransform>();
 
-        #region Investigation Event
-        public void OnFindItem(Item item)
-        {
-            item.gameObject.SetActive(false);
-            --ivStruct.findCount;
-            invenComp.AddItem(item.index);
+            newBGTr.SetParent(canvasTr, true);
+            newBGTr.SetAsFirstSibling();
+            newBGTr.anchoredPosition = Vector2.zero;
+            newBGTr.anchorMin = Vector2.zero;
+            newBGTr.anchorMax = Vector2.one;
+            newBGTr.sizeDelta = Vector2.zero;
 
-            ivStruct.getItemAnimator.gameObject.SetActive(true);
-            ivStruct.getItemUI_ItemImg.sprite = item.ItemImage;
-            ivStruct.getItemUI_ItemName.text = item.Name;
-            ivStruct.getItemUI_ItemDesc.text = item.Desc;
+            Destroy(bgUI);
 
-            if (ivStruct.findCount == 0)
-                ivStruct.OnFindAllItems();
+            bgUI = newBG;
         }
-        public void OnInference()
-        {
-            if (ivStruct.findCount == 0)
-            {
-                scriptData.SetScript(ivStruct.nextIndex);
-                //ivStruct.SetInferenceMode();
-            }
-            else
-            {
-                ivStruct.investigationDialog.SetActive(true);
-                CancelInvoke(nameof(HideInferenceDialogTMP));
-                ivStruct.investigationDialogTMP.SetText("아직 다 조사하지 않은 것 같군..");
-                Invoke(nameof(HideInferenceDialogTMP), 3.0f);
-            }
-        }
-        public void OnInferenceChoose(int choice)
-        {
-            ivStruct.ChooseChoice(choice);
-        }
-        private void HideInferenceDialogTMP()
-        {
-            ivStruct.investigationDialog.SetActive(false);
-        }
-        #endregion
 
         #region FX
         /// <summary>
         /// 화면 효과
         /// </summary>
         /// <param name="screenFX">적용할 효과</param>
-        private void ScreenEffect(SCREEN_EFFECT screenFX)
+        public void ScreenEffect(SCREEN_EFFECT screenFX)
         {
             switch (screenFX)
             {
@@ -255,43 +201,11 @@ namespace YS
                     break;
                 case SCREEN_EFFECT.RED_FLASH:
                     bgMtrl.SetColor("_AddColor", Color.red);
-                    Invoke("ResetFlash", 0.25f);
+                    Invoke(nameof(ResetFlash), 0.25f);
                     break;
             }
         }
-        /// <summary>
-        /// 캐릭터 이미지 설정
-        /// </summary>
-        /// <param name="side">왼쪽 사이드인지 오른쪽 사이드인지 설정</param>
-        /// <param name="charImgIdx">보여줄 이미지</param>
-        /// <param name="isHighlight">하이라이트 여부</param>
-        /// <param name="charFX">사이드 이미지에 줄 효과</param>
-        private void SetCharSetting(SIDE_IMAGE side, CHARACTER_IMAGE_INDEX charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
-        {
-            dialogStruct.sideImg[(int)side].sprite = charImgs[(int)charImgIdx];
-
-            if (charImgIdx == CHARACTER_IMAGE_INDEX.NONE)
-                dialogStruct.sideImg[(int)side].color = Color.clear;
-            else
-            {
-                dialogStruct.sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
-                dialogStruct.sideImg[(int)side].SetNativeSize();
-            }
-
-            switch (charFX)
-            {
-                case CHARACTER_EFFECT_INDEX.SHAKE_HORIZONTAL:
-                case CHARACTER_EFFECT_INDEX.SHAKE_VERTICAL:
-                case CHARACTER_EFFECT_INDEX.SHAKE_RANDOM:
-                    sideFXCoroutine[(int)side] = StartCoroutine(ShakeEffect(dialogStruct.sideImg[(int)side].gameObject.transform, 5, 0.5f, 0.01f, charFX));
-                    break;
-
-                case CHARACTER_EFFECT_INDEX.BOUNCE:
-                    sideFXCoroutine[(int)side] = StartCoroutine(BounceEffect(dialogStruct.sideImg[(int)side].gameObject.transform, 3.0f));
-                    break;
-            }
-        }
-        private IEnumerator ShakeEffect(Transform target, float intensity, float time, float intervalTime, CHARACTER_EFFECT_INDEX type)
+        public IEnumerator ShakeEffect(Transform target, float intensity, float time, float intervalTime, CHARACTER_EFFECT_INDEX type)
         {
             WaitForSeconds interval = CachedWaitForSeconds.Get(intervalTime);
 
@@ -329,7 +243,7 @@ namespace YS
 
             target.position -= curShakeVector;
         }
-        private IEnumerator BounceEffect(Transform target, float time)
+        public IEnumerator BounceEffect(Transform target, float time)
         {
             float t = 0.0f;
             WaitForSeconds wf = CachedWaitForSeconds.Get(0.01f);
@@ -348,7 +262,7 @@ namespace YS
                 yield return wf;
             }
         }
-        private IEnumerator FadeEffect(bool isIn, float time)
+        public IEnumerator FadeEffect(bool isIn, float time)
         {
             WaitForSeconds wf = CachedWaitForSeconds.Get(0.01f);
             float curTime = 0.0f;
@@ -362,45 +276,11 @@ namespace YS
                 curTime += 0.01f;
             }
         }
-        private void ResetFlash()
+        public void ResetFlash()
         {
-            bgMtrl.SetColor("_AddColor", Vector4.zero);
-        }
-        /// <summary>
-        /// 효과 중간에 스킵될 수 있으므로, 효과들이 재생중이라면 종료시키고 이미지들의 위치 원상태로 복구하는 함수
-        /// </summary>
-        public void ResetEffects()
-        {
-            // 작동중인 효과 코루틴 멈추기
-            if (sideFXCoroutine[0] != null) StopCoroutine(sideFXCoroutine[0]);
-            if (sideFXCoroutine[1] != null) StopCoroutine(sideFXCoroutine[1]);
-            if (bgFXCoroutine != null)      StopCoroutine(bgFXCoroutine);
-
-            for (int i = 0; i < 2; ++i)
-                dialogStruct.sideImg[i].transform.position = dialogStruct.SidePosition[i];
-
-            bgMtrl.SetFloat("_CurTime", 1.0f);
-            bgMtrl.SetFloat("_IsIn", 0.0f);
-            ResetFlash();
+            bgMtrl.SetColor("_AddColor", Color.black);
         }
         #endregion
-
-        public void ChangeBackground(GameObject newBG)
-        {
-            Transform canvasTr = bgUI.transform.parent;
-            RectTransform newBGTr = newBG.GetComponent<RectTransform>();
-
-            newBGTr.SetParent(canvasTr, true);
-            newBGTr.SetAsFirstSibling();
-            newBGTr.anchoredPosition = Vector2.zero;
-            newBGTr.anchorMin = Vector2.zero;
-            newBGTr.anchorMax = Vector2.one;
-            newBGTr.sizeDelta = Vector2.zero;
-
-            Destroy(bgUI);
-
-            bgUI = newBG;
-        }
         #endregion
     }
 }

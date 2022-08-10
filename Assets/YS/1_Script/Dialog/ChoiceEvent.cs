@@ -13,24 +13,14 @@ namespace YS
         {
             base.OnEnter();
 
-            gm.choiceStruct.choiceUI.SetActive(true);
-
-            gm.choiceStruct.SetChoice(choices);
+            gm.choiceStruct.Setup(choices);
         }
         protected override void OnUpdate() { }
         public override void OnExit()
         {
-            gm.choiceStruct.choiceUI.SetActive(false);
+            gm.choiceStruct.Release();
 
             base.OnExit();
-        }
-        public void OnChooseChoice(int index)
-        {
-            // 모든 선택지들 비활성화하고
-            for (int i = 0; i < choices.Length; ++i)
-                gm.choiceStruct.choiceBtns[i].gameObject.SetActive(false);
-
-            gm.scriptData.SetScript(choices[index].nextIdx);
         }
     }
 }

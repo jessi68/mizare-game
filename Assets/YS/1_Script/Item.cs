@@ -31,7 +31,7 @@ namespace YS
             if (InGameUIManager.Instance.IsShowingInventory)
                 GameManager.Instance.invenComp.SetItemInfo(index);
             else
-                GameManager.Instance.OnFindItem(this);
+                GameManager.Instance.ivStruct.OnFindItem(this);
         }
     }
 }

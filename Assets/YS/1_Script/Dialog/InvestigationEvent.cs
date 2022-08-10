@@ -16,8 +16,7 @@ namespace YS
         {
             base.OnEnter();
 
-            gm.ivStruct.investigationCharacter.sprite = gm.charImgs[(int)character];
-            gm.ivStruct.SetInvestigationMode(nextIndex);
+            gm.ivStruct.Setup(character, nextIndex);
         }
         protected override void OnUpdate()
         {
@@ -25,7 +24,7 @@ namespace YS
         }
         public override void OnExit()
         {
-            gm.ivStruct.investigationUI.SetActive(false);
+            gm.ivStruct.Release();
 
             base.OnExit();
         }
