@@ -2124,8 +2124,8 @@ MonoBehaviour:
   dialogStruct:
     dialogUI: {fileID: 1785617737}
     sideImg:
-    - {fileID: 953260448}
-    - {fileID: 1071733182}
+    - {fileID: 0}
+    - {fileID: 0}
     nameTMP: {fileID: 708927141}
     scriptTMP: {fileID: 316845423}
   choiceStruct:
@@ -2145,6 +2145,15 @@ MonoBehaviour:
     getItemUI_ItemImg: {fileID: 759564549}
     getItemUI_ItemName: {fileID: 1152951232}
     getItemUI_ItemDesc: {fileID: 356485865}
+  ifStruct:
+    rootObj: {fileID: 763724227}
+    character: {fileID: 1925883194}
+    item: {fileID: 761678297}
+    tmp_itemDesc: {fileID: 810174268}
+    choiceBtns:
+    - {fileID: 633399857}
+    - {fileID: 1475283559}
+    - {fileID: 511171926}
   logTMP: {fileID: 236268519}
   scriptData: {fileID: 11400000, guid: fe8d1b12d7c37c642be69e9ea0ae4e2a, type: 2}
   itemData: {fileID: 11400000, guid: 8309f41304dfa534390612ee98d40755, type: 2}

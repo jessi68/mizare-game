@@ -119,32 +119,6 @@ namespace YS
             SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftImage, de.LeftHighlight, de.LeftEffect);
             SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightImage, de.RightHighlight, de.RightEffect);
         }
-        public void Setup(SCREEN_EFFECT se, string name, string script, CHARACTER_IMAGE_INDEX leftImg, bool leftHighlight, CHARACTER_EFFECT_INDEX leftFX, CHARACTER_IMAGE_INDEX rightImg, bool rightHighlight, CHARACTER_EFFECT_INDEX rightFX)
-        {
-            dialogUI.SetActive(true);
-            gm.ScreenEffect(se);
-
-            if (name == null || name == "")
-            {
-                if (script == null || script == "")
-                {
-                    dialogUI.SetActive(false);
-                    return;
-                }
-
-                nameTMP.transform.parent.gameObject.SetActive(false);
-            }
-            else
-                nameTMP.transform.parent.gameObject.SetActive(true);
-
-            gm.Logging($"<b>{name}</b>\n<size=40>{script}</size>\n");
-
-            nameTMP.SetText(name);
-            scriptTMP.SetText(script);
-
-            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, leftImg, leftHighlight, leftFX);
-            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, rightImg, rightHighlight, rightFX);
-        }
         public void Release()
         {
             dialogUI.SetActive(false);
@@ -397,21 +371,33 @@ namespace YS
         }
         #endregion
     }
+    [System.Serializable]
     public struct InferenceStruct
     {
         #region Fields
+        [FoldoutGroup("추리 UI", false)]
+        [LabelText("추리 패널 UI"), Tooltip("조사 패널 루트 게임오브젝트")]
         public GameObject rootObj;
+        [FoldoutGroup("추리 UI")]
+        [LabelText("추리 캐릭터 이미지"), Tooltip("추리하는 캐릭터 이미지 컴포넌트")]
         public Image character;
+        [FoldoutGroup("추리 UI")]
+        [LabelText("추리 아이템 이미지"), Tooltip("추리하는 아이템 이미지 컴포넌트")]
         public Image item;
+        [FoldoutGroup("추리 UI")]
+        [LabelText("아이템 설명 TMP"), Tooltip("추리 아이템 설명 TMP 컴포넌트")]
         public TMP_Text tmp_itemDesc;
+        [FoldoutGroup("추리 UI")]
+        [LabelText("추리 선택지들"), Tooltip("추리에 대한 선택지의 버튼 컴포넌트들")]
         public Button[] choiceBtns;
-        public uint correctIndex;
-        public int nextIndex;
 
         private TMP_Text[] choiceTMPs;
         private InferenceDialogData[] choiceDatas;
-        private string twiceFailStr;
+        private DialogEvent twiceFailDialogData;
+        private uint correctIndex;
         private int lastChoiceIndex;
+        private int curDialogIndex;
+        private int nextIndex;
         private bool bExit;
         private GameManager gm;
         #endregion
@@ -438,9 +424,17 @@ namespace YS
             choiceDatas = ie.ChoiceDatas;
             for (int i = 0; i < choiceDatas.Length; ++i)
                 choiceTMPs[i].text = choiceDatas[i].choiceStr;
-
+            twiceFailDialogData = ie.TwiceFailDialogData;
+            correctIndex = ie.CorrectIndex;
             lastChoiceIndex = -1;
+            curDialogIndex = 0;
+            nextIndex = ie.NextIndex;
             bExit = false;
+        }
+        public void OnUpdate()
+        {
+            if (!rootObj.activeInHierarchy && gm.IsKeyDown())
+                OnDialogEvent();
         }
         public void Release()
         {
@@ -448,38 +442,40 @@ namespace YS
         }
         private void Choice(uint choiceIndex)
         {
-            // 올바른 선택시
-            if (correctIndex == choiceIndex)
+            rootObj.SetActive(false);
+
+            // 2번의 기회를 다 사용헀는지
+            if (lastChoiceIndex != -1)
             {
                 bExit = true;
+                if (lastChoiceIndex == choiceIndex)
+                {
+                    gm.dialogStruct.Setup(twiceFailDialogData);
+                    return;
+                }
             }
-            // 틀렸던 선택을 또 선택시
-            else if (lastChoiceIndex == choiceIndex)
-            {
-                bExit = true;
-            }
-            // 틀린 선택시
-            else if (lastChoiceIndex == -1)
-                lastChoiceIndex = (int)choiceIndex;
-            else
-                bExit = true;
 
-            //gm.dialogStruct.Setup(SCREEN_EFFECT.NONE, choiceDatas[choiceIndex].dialogs);
-        }
-        private void SetDialog(uint dialogIndex)
-        {
+            lastChoiceIndex = (int)choiceIndex;
 
+            gm.dialogStruct.Setup(choiceDatas[lastChoiceIndex].dialogs[curDialogIndex = 0]);
         }
         /// <summary>
         /// 다이얼로그 이벤트 발생시 호출되는 함수
         /// </summary>
-        public void OnDialogEvent(DialogEvent de)
+        public void OnDialogEvent()
         {
-            //// 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
-            //if (!scriptTMP.IsDoneTyping)
-            //    scriptTMP.SkipTyping();
-            //else
-            //    gm.scriptData.SetScript(de.NextIdx);
+            // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
+            if (!gm.dialogStruct.scriptTMP.IsDoneTyping)
+                gm.dialogStruct.scriptTMP.SkipTyping();
+            else if (++curDialogIndex == choiceDatas[lastChoiceIndex].dialogs.Length)
+            {
+                gm.dialogStruct.Release();
+
+                if (bExit)  gm.scriptData.SetScript(nextIndex);
+                else        rootObj.SetActive(true);
+            }
+            else
+                gm.dialogStruct.Setup(choiceDatas[lastChoiceIndex].dialogs[curDialogIndex]);
         }
         #endregion
     }

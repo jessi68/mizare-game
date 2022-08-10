@@ -19,7 +19,10 @@ namespace YS
         private InferenceDialogData[] choiceDatas;
         [SerializeField]
         [LabelText("틀렸던 선택지 선택시 나오는 문구")]
-        private string twiceFailStr;
+        private DialogEvent twiceFailDialogData = new DialogEvent(false);
+        [SerializeField, MaxValue("@choiceDatas.Length - 1")]
+        [LabelText("정답"), Tooltip("추리 선택지들중 올바른 답")]
+        private uint correctIndex;
         [SerializeField]
         [LabelText("추리 이벤트가 끝난 후 이동할 이벤트 번호")]
         private int nextIndex;
@@ -29,6 +32,8 @@ namespace YS
         public CHARACTER_IMAGE_INDEX CharacterIndex => charIndex;
         public ITEM_INDEX ItemIndex => itemIndex;
         public InferenceDialogData[] ChoiceDatas => choiceDatas;
+        public DialogEvent TwiceFailDialogData => twiceFailDialogData;
+        public uint CorrectIndex => correctIndex;
         public int NextIndex => nextIndex;
         #endregion
 
@@ -40,6 +45,7 @@ namespace YS
         }
         protected override void OnUpdate()
         {
+            gm.ifStruct.OnUpdate();
         }
         public override void OnExit()
         {
@@ -53,7 +59,13 @@ namespace YS
     {
         [LabelText("선택지 내용")]
         public string choiceStr;
+        [ListDrawerSettings(CustomAddFunction = nameof(AddFunction))]
         [LabelText("선택 후 대화내용")]
         public DialogEvent[] dialogs;
+
+        private DialogEvent AddFunction()
+        {
+            return new DialogEvent(false);
+        }
     }
 }

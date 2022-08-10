@@ -6,6 +6,9 @@ namespace YS
     [System.Serializable]
     public class DialogEvent : BaseScriptEvent
     {
+#if UNITY_EDITOR
+        private bool isEvent = true;
+#endif
         [SerializeField]
         [LabelText("화면 효과"), Tooltip("화면 효과\nNONE : 화면 효과 없음\nFADE_IN : 검은 화면에서 점차 배경 화면으로 전환\nFADE_OUT : 배경 화면에서 점차 검은 화면으로 전환\nRED_FLASH : 화면 빨간색으로 깜빡임")]
         private SCREEN_EFFECT screenEffect;
@@ -37,7 +40,7 @@ namespace YS
         [BoxGroup("다이얼로그 UI"), SerializeField, TextArea]
         [LabelText("스크립트 내용"), Tooltip("대화 상자의 내용\n이름과 내용 모두 빈칸일 시 대화 상자 숨김")]
         private string script;
-        [SerializeField]
+        [SerializeField, ShowIf("isEvent")]
         [LabelText("이동할 이벤트 위치"), Tooltip("대화 이벤트가 끝난 후 이동할 이벤트 번호")]
         private int nextIdx;
 
@@ -54,6 +57,10 @@ namespace YS
         public int NextIdx => nextIdx;
         #endregion
 
+        public DialogEvent(bool isEvent)
+        {
+            this.isEvent = isEvent;
+        }
         public override void OnEnter()
         {
             base.OnEnter();
