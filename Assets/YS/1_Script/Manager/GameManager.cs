@@ -51,6 +51,7 @@ namespace YS
         [HideInInspector]
         public Coroutine bgFXCoroutine;
 
+        private InGameUIManager um;
         private StringBuilder log = new StringBuilder();
 
         public delegate void OnUpdate();
@@ -90,6 +91,8 @@ namespace YS
         }
         void Start()
         {
+            um = InGameUIManager.Instance;
+
             SetBGFadeInOut(true);
             SetBGCurTime(0.0f);
             dialogStruct.Initialize();
@@ -102,15 +105,10 @@ namespace YS
         }
         void Update()
         {
-            OnUpdateEvent?.Invoke();
-
-            if (IsKeyDown())
-            {
-                if (ivStruct.getItemAnimator.gameObject.activeInHierarchy)
-                {
-                    ivStruct.getItemAnimator.GetCurrentAnimatorStateInfo(0).IsName("Skip");
-                }
-            }
+            if (um.CurrentState != InGameUIManager.STATE.GAME && IsKeyDown())
+                um.PopState(um.StateStack.Pop());
+            else
+                OnUpdateEvent?.Invoke();
         }
         #endregion
 

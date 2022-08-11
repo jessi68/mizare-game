@@ -11,6 +11,7 @@ namespace YS
     {
         public enum STATE
         {
+            GAME,
             INVEN,
             MENU,
             SAVE,
@@ -46,13 +47,20 @@ namespace YS
         [LabelText("인벤토리 닫기 버튼")]
         public Button exitBtn;
 
-        [Space(10.0f)]
-
+        [BoxGroup("패널들", true, true)]
+        [LabelText("인벤토리 UI")]
         public InventoryComponent invenComp;
-        
+        [BoxGroup("패널들")]
+        [LabelText("메인메뉴 UI")]
         public GameObject ui;
+        [BoxGroup("패널들")]
+        [LabelText("메뉴 패널 UI")]
         public SlideEffect menuPanel;
+        [BoxGroup("패널들")]
+        [LabelText("세이브 패널 UI")]
         public SlideEffect savePanel;
+        [BoxGroup("패널들")]
+        [LabelText("로그 패널 UI")]
         public GameObject logPanel;
 
         // UI 상태 변수
@@ -60,7 +68,9 @@ namespace YS
         #endregion
 
         public bool IsShowingInventory => stateStack.Count != 0 && stateStack.Peek() == STATE.INVEN;
-        public STATE CurrentState => stateStack.Peek();
+        [ShowInInspector]
+        public STATE CurrentState => stateStack.Count == 0 ? STATE.GAME : stateStack.Peek();
+        public Stack<STATE> StateStack => stateStack;
 
         #region Unity Methods
         private void Start()
@@ -93,7 +103,7 @@ namespace YS
         /// UI상태 전단계로 가기
         /// </summary>
         /// <param name="popState">제거된 상태</param>
-        private void PopState(STATE popState)
+        public void PopState(STATE popState)
         {
             switch (popState)
             {
