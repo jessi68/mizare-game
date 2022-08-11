@@ -17,8 +17,8 @@ namespace YS
         [SerializeField]
         [LabelText("선택지들")]
         private InferenceDialogData[] choiceDatas;
-        [SerializeField]
-        [LabelText("틀렸던 선택지 선택시 나오는 문구")]
+        [BoxGroup("틀렸던 선택지 선택시 나오는 문구", true, true), SerializeField]
+        [HideLabel]
         private DialogEvent twiceFailDialogData = new DialogEvent(false);
         [SerializeField, MaxValue("@choiceDatas.Length - 1")]
         [LabelText("정답"), Tooltip("추리 선택지들중 올바른 답")]

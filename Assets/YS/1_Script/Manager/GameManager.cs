@@ -90,9 +90,12 @@ namespace YS
         }
         void Start()
         {
+            SetBGFadeInOut(true);
+            SetBGCurTime(0.0f);
             dialogStruct.Initialize();
             choiceStruct.Initialize();
             ivStruct.Initialize();
+            ifStruct.Initialize();
 
             // 나중에 로드시 로드한 index값으로 설정
             scriptData.SetScript(0);

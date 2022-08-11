@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7715a9c50eda54f995ce5f05397eee, type: 3}
+  m_Name: ScriptData 1
+  m_EditorClassIdentifier: 
+  scripts:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  insertIndex: -1
+  swapIndex: {x: 5, y: 6}
+  references:
+    version: 1
+    00000000:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
+    00000001:
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+      data:
+        audioBGM: {fileID: 8300000, guid: ddbb5c598218ed24fb0e8d1b0d1323b2, type: 3}
+    00000002:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: 1
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: 4
+        rightHighlight: 0
+        rightEffect: 3
+        name: "\uBBF8\uC790\uB974"
+        script: "\uC548\uB155"
+        nextIdx: 3
+    00000003:
+      type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        character: 1
+        nextIndex: 4
+    00000004:
+      type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        charIndex: 1
+        itemIndex: 1
+        choiceDatas:
+        - choiceStr: "1\uBC88 \uC120\uD0DD\uC9C0"
+          dialogs:
+          - screenEffect: 0
+            leftImage: 1
+            leftHighlight: 1
+            leftEffect: 1
+            rightImage: 2
+            rightHighlight: 0
+            rightEffect: 2
+            name: "\uBBF8\uC790\uB974"
+            script: "1\uBC88\uC744 \uC120\uD0DD\uD588\uB530\uACE0?"
+            nextIdx: 0
+        - choiceStr: "2\uBC88 \uC120\uD0DD\uC9C0"
+          dialogs:
+          - screenEffect: 0
+            leftImage: 1
+            leftHighlight: 1
+            leftEffect: 0
+            rightImage: 2
+            rightHighlight: 0
+            rightEffect: 0
+            name: "\uBBF8\uC790\uB974"
+            script: "2\uBC88\uC744 \uC120\uD0DD\uD574\uBD24\uC5B4"
+            nextIdx: 0
+          - screenEffect: 0
+            leftImage: 1
+            leftHighlight: 0
+            leftEffect: 0
+            rightImage: 2
+            rightHighlight: 1
+            rightEffect: 0
+            name: "\uC54C\uCF54\uB974"
+            script: "\uC62C\uBC14\uB978 \uC120\uD0DD\uC774\uC5C8\uB2E4"
+            nextIdx: 0
+        twiceFailDialogData:
+          screenEffect: 3
+          leftImage: 1
+          leftHighlight: 1
+          leftEffect: 4
+          rightImage: 0
+          rightHighlight: 0
+          rightEffect: 0
+          name: "\uBBF8\uC790\uB974"
+          script: "\uB09C \uBC14\uBCF8\uAC00.."
+          nextIdx: 0
+        correctIndex: 1
+        nextIndex: 0

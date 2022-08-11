@@ -57,13 +57,13 @@ namespace YS
         [FoldoutGroup("다이얼로그 UI", false)]
         [LabelText("다이얼로그 패널 UI"), Tooltip("다이얼로그 루트 게임오브젝트")]
         public GameObject dialogUI;
-        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true), OnInspectorInit(nameof(OnInspectorInitFunc))]
+        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
         [LabelText("양쪽 이미지"), Tooltip("다이얼로그 왼쪽/오른쪽 Image 컴포넌트")]
         public Image[] sideImg;
-        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true), OnInspectorInit(nameof(OnInspectorInitFunc))]
+        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
         [LabelText("이름 TMP"), Tooltip("다이얼로그 창 이름 TMP")]
         public TMP_Text nameTMP;
-        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true), OnInspectorInit(nameof(OnInspectorInitFunc))]
+        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
         [LabelText("스크립트 TMP"), Tooltip("다이얼로그 창 스크립트 TMP")]
         public CustomTMPEffect scriptTMP;
 
@@ -180,13 +180,9 @@ namespace YS
             for (int i = 0; i < 2; ++i)
                 sideImg[i].transform.position = SidePosition[i];
 
-            gm.SetBGCurTime(1.0f);
-            gm.SetBGFadeInOut(false);
+            gm.SetBGCurTime(0.0f);
+            gm.SetBGFadeInOut(true);
             gm.ResetFlash();
-        }
-        private void OnInspectorInitFunc()
-        {
-            sideImg = new Image[2];
         }
         #endregion
     }
@@ -216,12 +212,12 @@ namespace YS
         #region Methods
         public void Initialize()
         {
-            var cd = this;
             choiceTMPs = new TMP_Text[choiceBtns.Length];
             for (int i = 0; i < choiceBtns.Length; ++i)
             {
+                int index = i;
                 choiceTMPs[i] = choiceBtns[i].GetChild(0).GetComponent<TMP_Text>();
-                choiceBtns[i].GetComponent<Button>().onClick.AddListener(() => { cd.OnChooseChoice(i); });
+                choiceBtns[i].GetComponent<Button>().onClick.AddListener(() => { GameManager.Instance.choiceStruct.OnChooseChoice(index); });
             }
         }
         public void Setup(ChoiceData[] choices)
@@ -286,7 +282,9 @@ namespace YS
         [FoldoutGroup("조사 UI/아이템 획득 창 UI")]
         [LabelText("획득 아이템 설명 UI"), Tooltip("아이템 획득 창에서의 설명 TMP")]
         public TMP_Text getItemUI_ItemDesc;
-        
+
+        private GameObject investigationDialog;
+        private Button clearBtn;
         /// <summary>
         /// 남은 아이템 개수
         /// </summary>
@@ -302,6 +300,8 @@ namespace YS
         public void Initialize()
         {
             gm = GameManager.Instance;
+            investigationCharacter.GetComponent<Button>().onClick.AddListener(() => { GameManager.Instance.ivStruct.OnClearBtnDown(); });
+            investigationDialog = investigationDialogTMP.transform.parent.gameObject;
         }
 
         /// <summary>
@@ -324,8 +324,8 @@ namespace YS
             }
 
             findCount = items.Length;
-
-            gm.SetBGCurTime(0.0f);
+            if (findCount == 0)
+                findAllItemFXAnimator.SetBool("IsFindAllItem", true);
         }
         /// <summary>
         /// 조사 모드 해제 함수
@@ -333,7 +333,6 @@ namespace YS
         public void Release()
         {
             investigationPanel.SetActive(false);
-            gm.scriptData.SetScript(nextIndex);
         }
         public void OnUpdate()
         {
@@ -368,6 +367,22 @@ namespace YS
 
             if (findCount == 0)
                 findAllItemFXAnimator.SetBool("IsFindAllItem", true);
+        }
+        private void OnClearBtnDown()
+        {
+            if (findCount == 0)
+                gm.scriptData.SetScript(nextIndex);
+            else
+            {
+                investigationDialog.SetActive(true);
+                gm.CancelInvoke(nameof(HideInferenceDialogTMP));
+                investigationDialogTMP.SetText("아직 조사가 끝나지 않았어");
+                gm.Invoke(nameof(HideInferenceDialogTMP), 3.0f);
+            }
+        }
+        private void HideInferenceDialogTMP()
+        {
+            investigationDialog.SetActive(false);
         }
         #endregion
     }
@@ -406,12 +421,12 @@ namespace YS
         public void Initialize()
         {
             gm = GameManager.Instance;
-
-            var id = this;
+            choiceTMPs = new TMP_Text[choiceBtns.Length];
             for (uint i = 0; i < choiceBtns.Length; ++i)
             {
+                uint index = i;
                 choiceTMPs[i] = choiceBtns[i].transform.GetChild(0).GetComponent<TMP_Text>();
-                choiceBtns[i].onClick.AddListener(() => { id.Choice(i); });
+                choiceBtns[i].onClick.AddListener(() => { GameManager.Instance.ifStruct.Choice(index); });
             }
         }
         public void Setup(InferenceEvent ie)
@@ -423,7 +438,10 @@ namespace YS
 
             choiceDatas = ie.ChoiceDatas;
             for (int i = 0; i < choiceDatas.Length; ++i)
+            {
                 choiceTMPs[i].text = choiceDatas[i].choiceStr;
+                choiceBtns[i].gameObject.SetActive(true);
+            }
             twiceFailDialogData = ie.TwiceFailDialogData;
             correctIndex = ie.CorrectIndex;
             lastChoiceIndex = -1;
@@ -439,13 +457,16 @@ namespace YS
         public void Release()
         {
             rootObj.SetActive(false);
+            for (int i = 0; i < choiceDatas.Length; ++i)
+                choiceBtns[i].gameObject.SetActive(false);
         }
         private void Choice(uint choiceIndex)
         {
+            curDialogIndex = 0;
             rootObj.SetActive(false);
 
-            // 2번의 기회를 다 사용헀는지
-            if (lastChoiceIndex != -1)
+            // 정답이거나 2번의 기회를 다 사용헀는지
+            if (choiceIndex == correctIndex || lastChoiceIndex != -1)
             {
                 bExit = true;
                 if (lastChoiceIndex == choiceIndex)
@@ -457,7 +478,7 @@ namespace YS
 
             lastChoiceIndex = (int)choiceIndex;
 
-            gm.dialogStruct.Setup(choiceDatas[lastChoiceIndex].dialogs[curDialogIndex = 0]);
+            gm.dialogStruct.Setup(choiceDatas[lastChoiceIndex].dialogs[curDialogIndex]);
         }
         /// <summary>
         /// 다이얼로그 이벤트 발생시 호출되는 함수

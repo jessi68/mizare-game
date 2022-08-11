@@ -6,9 +6,6 @@ namespace YS
     [System.Serializable]
     public class DialogEvent : BaseScriptEvent
     {
-#if UNITY_EDITOR
-        private bool isEvent = true;
-#endif
         [SerializeField]
         [LabelText("화면 효과"), Tooltip("화면 효과\nNONE : 화면 효과 없음\nFADE_IN : 검은 화면에서 점차 배경 화면으로 전환\nFADE_OUT : 배경 화면에서 점차 검은 화면으로 전환\nRED_FLASH : 화면 빨간색으로 깜빡임")]
         private SCREEN_EFFECT screenEffect;
@@ -57,10 +54,6 @@ namespace YS
         public int NextIdx => nextIdx;
         #endregion
 
-        public DialogEvent(bool isEvent)
-        {
-            this.isEvent = isEvent;
-        }
         public override void OnEnter()
         {
             base.OnEnter();
@@ -80,5 +73,17 @@ namespace YS
 
             base.OnExit();
         }
+
+#if UNITY_EDITOR
+        private bool isEvent = true;
+        public DialogEvent()
+        {
+            isEvent = true;
+        }
+        public DialogEvent(bool isEvent)
+        {
+            this.isEvent = isEvent;
+        }
+#endif
     }
 }
