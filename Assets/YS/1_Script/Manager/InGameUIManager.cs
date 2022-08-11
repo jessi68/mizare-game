@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
@@ -18,19 +19,37 @@ namespace YS
             LOG,
             EXIT
         }
+
         #region Field
+        [BoxGroup("버튼들", true, true)]
+        [LabelText("인벤토리 버튼")]
         public Button invenBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("인벤토리 닫기 버튼")]
         public Button invenExitBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("메뉴 버튼")]
         public Button menuBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("저장 버튼")]
         public Button saveBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("불러오기 버튼")]
         public Button loadBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("설정 버튼")]
         public Button settingBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("로그 버튼")]
         public Button logBtn;
+        [BoxGroup("버튼들")]
+        [LabelText("인벤토리 닫기 버튼")]
         public Button exitBtn;
 
         [Space(10.0f)]
 
         public InventoryComponent invenComp;
+        
         public GameObject ui;
         public SlideEffect menuPanel;
         public SlideEffect savePanel;
@@ -41,6 +60,7 @@ namespace YS
         #endregion
 
         public bool IsShowingInventory => stateStack.Count != 0 && stateStack.Peek() == STATE.INVEN;
+        public STATE CurrentState => stateStack.Peek();
 
         #region Unity Methods
         private void Start()
