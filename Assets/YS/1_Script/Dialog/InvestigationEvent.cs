@@ -9,14 +9,12 @@ namespace YS
         [SerializeField]
         [Tooltip("조사를 진행할 캐릭터")]
         private CHARACTER_IMAGE_INDEX character;
-        [Tooltip("조사이벤트가 끝난 후 이동할 이벤트 번호")]
-        public int nextIndex;
 
         public override void OnEnter()
         {
             base.OnEnter();
 
-            gm.ivStruct.Setup(character, nextIndex);
+            gm.ivStruct.Setup(character);
         }
         protected override void OnUpdate()
         {

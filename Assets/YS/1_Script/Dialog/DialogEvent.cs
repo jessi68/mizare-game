@@ -37,9 +37,6 @@ namespace YS
         [BoxGroup("다이얼로그 UI"), SerializeField, TextArea]
         [LabelText("스크립트 내용"), Tooltip("대화 상자의 내용\n이름과 내용 모두 빈칸일 시 대화 상자 숨김")]
         private string script;
-        [SerializeField, ShowIf("isEvent")]
-        [LabelText("이동할 이벤트 위치"), Tooltip("대화 이벤트가 끝난 후 이동할 이벤트 번호")]
-        private int nextIdx;
 
         #region Properties
         public SCREEN_EFFECT ScreenEffect => screenEffect;
@@ -51,7 +48,6 @@ namespace YS
         public CHARACTER_EFFECT_INDEX RightEffect => rightEffect;
         public string Name => name;
         public string Script => script;
-        public int NextIdx => nextIdx;
         #endregion
 
         public override void OnEnter()
@@ -73,17 +69,5 @@ namespace YS
 
             base.OnExit();
         }
-
-#if UNITY_EDITOR
-        private bool isEvent = true;
-        public DialogEvent()
-        {
-            isEvent = true;
-        }
-        public DialogEvent(bool isEvent)
-        {
-            this.isEvent = isEvent;
-        }
-#endif
     }
 }

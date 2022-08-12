@@ -19,13 +19,10 @@ namespace YS
         private InferenceDialogData[] choiceDatas;
         [BoxGroup("틀렸던 선택지 선택시 나오는 문구", true, true), SerializeField]
         [HideLabel]
-        private DialogEvent twiceFailDialogData = new DialogEvent(false);
+        private DialogEvent twiceFailDialogData;
         [SerializeField, MaxValue("@choiceDatas.Length - 1")]
         [LabelText("정답"), Tooltip("추리 선택지들중 올바른 답")]
         private uint correctIndex;
-        [SerializeField]
-        [LabelText("추리 이벤트가 끝난 후 이동할 이벤트 번호")]
-        private int nextIndex;
         #endregion
 
         #region Properties
@@ -34,7 +31,6 @@ namespace YS
         public InferenceDialogData[] ChoiceDatas => choiceDatas;
         public DialogEvent TwiceFailDialogData => twiceFailDialogData;
         public uint CorrectIndex => correctIndex;
-        public int NextIndex => nextIndex;
         #endregion
 
         public override void OnEnter()
@@ -59,13 +55,7 @@ namespace YS
     {
         [LabelText("선택지 내용")]
         public string choiceStr;
-        [ListDrawerSettings(CustomAddFunction = nameof(AddFunction))]
         [LabelText("선택 후 대화내용")]
         public DialogEvent[] dialogs;
-
-        private DialogEvent AddFunction()
-        {
-            return new DialogEvent(false);
-        }
     }
 }

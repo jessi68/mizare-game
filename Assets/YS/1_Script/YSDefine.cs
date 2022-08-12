@@ -133,7 +133,7 @@ namespace YS
             if (!scriptTMP.IsDoneTyping)
                 scriptTMP.SkipTyping();
             else
-                gm.scriptData.SetScript(de.NextIdx);
+                gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
         }
         /// <summary>
         /// 캐릭터 이미지 설정
@@ -289,10 +289,6 @@ namespace YS
         /// 남은 아이템 개수
         /// </summary>
         private int findCount;
-        /// <summary>
-        /// 이벤트 끝난 후 이동할 인덱스
-        /// </summary>
-        private int nextIndex;
         private GameManager gm;
         #endregion
 
@@ -309,10 +305,9 @@ namespace YS
         /// </summary>
         /// <param name="ivChar">조사를 진행할 캐릭터 인덱스</param>
         /// <param name="nextIndex">조사가 끝난 후 이동할 다음 스크립트 인덱스</param>
-        public void Setup(CHARACTER_IMAGE_INDEX ivChar, int nextIndex)
+        public void Setup(CHARACTER_IMAGE_INDEX ivChar)
         {
             investigationCharacter.sprite = gm.charImgs[(int)ivChar];
-            this.nextIndex = nextIndex;
 
             investigationPanel.SetActive(true);
             
@@ -371,7 +366,7 @@ namespace YS
         private void OnClearBtnDown()
         {
             if (findCount == 0)
-                gm.scriptData.SetScript(nextIndex);
+                gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
             else
             {
                 investigationDialog.SetActive(true);
@@ -412,7 +407,6 @@ namespace YS
         private uint correctIndex;
         private int lastChoiceIndex;
         private int curDialogIndex;
-        private int nextIndex;
         private bool bExit;
         private GameManager gm;
         #endregion
@@ -446,7 +440,6 @@ namespace YS
             correctIndex = ie.CorrectIndex;
             lastChoiceIndex = -1;
             curDialogIndex = 0;
-            nextIndex = ie.NextIndex;
             bExit = false;
         }
         public void OnUpdate()
@@ -492,7 +485,7 @@ namespace YS
             {
                 gm.dialogStruct.Release();
 
-                if (bExit)  gm.scriptData.SetScript(nextIndex);
+                if (bExit)  gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
                 else        rootObj.SetActive(true);
             }
             else
