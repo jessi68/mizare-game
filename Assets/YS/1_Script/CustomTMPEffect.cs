@@ -7,13 +7,24 @@ namespace YS
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class CustomTMPEffect : MonoBehaviour
     {
+        public delegate void OnChangedValue();
         public delegate void OnTypingDone();
+        public static event OnChangedValue OnChangedTypingSpeedEvent;
+
+        private static float typingSpeed = 0.05f;
+        public static float TypingSpeed
+        {
+            get { return typingSpeed; }
+            set
+            {
+                typingSpeed = value;
+                OnChangedTypingSpeedEvent.Invoke();
+            }
+        }
+
         #region Field
         private TMP_Text textComponent;
         private TMP_TextInfo textInfo;
-
-        [Header("TypingEffect Setup")]
-        public float typingSpeed = 0.05f;
 
         private int cursor = 0;
         private bool isDoneTyping = true;
@@ -43,6 +54,7 @@ namespace YS
         {
             textComponent = gameObject.GetComponent<TMP_Text>();
             textInfo = textComponent.textInfo;
+            OnChangedTypingSpeedEvent += OnChangedTypingSpeed;
         }
         private void OnEnable()
         {
@@ -74,7 +86,7 @@ namespace YS
 
                 LinkEffect();
 
-                yield return CachedWaitForSeconds.Get(typingSpeed);
+                yield return CachedWaitForSeconds.Get(TypingSpeed);
             }
 
             if (!isDoneTyping)
@@ -229,12 +241,18 @@ namespace YS
         /// <param name="text">출력할 문자열</param>
         public void SetText(string text)
         {
+            if (!gameObject.activeInHierarchy)
+                return;
             textComponent.text = text;
             textComponent.maxVisibleCharacters = cursor = 0;
             isDoneTyping = false;
 
             textComponent.ForceMeshUpdate();
             StartCoroutine(TypingStart());
+        }
+        private void OnChangedTypingSpeed()
+        {
+
         }
         #endregion
     }

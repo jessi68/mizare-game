@@ -51,6 +51,7 @@ namespace YS
         [HideInInspector]
         public Coroutine bgFXCoroutine;
 
+        private SaveData currentData;
         private InGameUIManager um;
         private StringBuilder log = new StringBuilder();
 
@@ -60,6 +61,7 @@ namespace YS
 
         #region Properties
         public int ItemCount => bgUI.transform.childCount;
+        public SaveData CurrentData => currentData;
         #endregion
 
         #region Unity Methods
@@ -105,28 +107,18 @@ namespace YS
         }
         void Update()
         {
-            if (um.CurrentState != InGameUIManager.STATE.GAME && IsKeyDown())
+            if (um.CurrentState != InGameUIManager.INGAME_UI_STATE.GAME && IsKeyDown())
                 um.PopState(um.StateStack.Pop());
             else
                 OnUpdateEvent?.Invoke();
         }
+        private void OnDestroy()
+        {
+            scriptData.Clear();
+        }
         #endregion
 
         #region Methods
-        /// <summary>
-        /// 게임 저장
-        /// </summary>
-        private void SaveGame()
-        {
-
-        }
-        /// <summary>
-        /// 게임 불러오기
-        /// </summary>
-        private void LoadGame()
-        {
-
-        }
         public bool IsKeyDown()
         {
             bool result;

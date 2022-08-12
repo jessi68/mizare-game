@@ -46,5 +46,9 @@ namespace YS
             curScript = scripts[curIndex = index];
             curScript.OnEnter();
         }
+        public void Clear()
+        {
+            curScript = null;
+        }
     }
 }

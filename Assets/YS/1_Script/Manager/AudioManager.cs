@@ -6,8 +6,6 @@ namespace YS
     public class AudioManager : Singleton<AudioManager>
     {
         #region Field
-        public Slider volumeSlider;
-        
         private AudioSource audioBGM;
         private AudioSource audioFX;
         #endregion
@@ -20,6 +18,19 @@ namespace YS
             audioBGM = transform.GetChild(0).GetComponent<AudioSource>();
             audioFX = transform.GetChild(1).GetComponent<AudioSource>();
             DontDestroyOnLoad(gameObject);
+        }
+        #endregion
+
+        #region Properties
+        public static float BGMVolume
+        {
+            get => Instance.audioBGM.volume;
+            set => Instance.audioBGM.volume = value;
+        }
+        public static float FXVolume
+        {
+            get => Instance.audioFX.volume;
+            set => Instance.audioFX.volume = value;
         }
         #endregion
 
@@ -57,18 +68,6 @@ namespace YS
         public static void StopFX()
         {
             Instance.audioFX.Stop();
-        }
-        public static void SetBGMVolume(float volume)
-        {
-            Instance.audioBGM.volume = volume;
-        }
-        public static void SetFXVolume(float volume)
-        {
-            Instance.audioFX.volume = volume;
-        }
-        public static void OnChangeBGMVolumeSlider()
-        {
-            SetBGMVolume(Instance.volumeSlider.value);
         }
         #endregion
     }
