@@ -32,6 +32,11 @@ namespace YS
         /// </summary>
         [HideLabel]
         public InferenceStruct ifStruct;
+        /// <summary>
+        /// 정리 데이터 구조
+        /// </summary>
+        [HideLabel]
+        public ArrangeStruct arStruct;
 
         [LabelText("로그 TMP")]
         public TMP_Text logTMP;

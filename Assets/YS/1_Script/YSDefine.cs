@@ -493,6 +493,80 @@ namespace YS
         }
         #endregion
     }
+    [System.Serializable]
+    public struct ArrangeStruct
+    {
+        #region Fields
+        [FoldoutGroup("정리 UI", false)]
+        [LabelText("정리 패널 UI"), Tooltip("정리 패널 루트 게임오브젝트")]
+        public GameObject rootObj;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("질문 TMP"), Tooltip("질문에 대한 내용이 보여질 TMP")]
+        public TMP_Text questionTMP;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("단어 컴포넌트"), Tooltip("정리 패널의 단어들의 컴포넌트")]
+        public WordComponent[] words;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("다이얼로그 UI"), Tooltip("다이얼로그 UI")]
+        public GameObject dialogUI;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("다이얼로그 화자 TMP"), Tooltip("다이얼로그에서 말하는 사람을 나타내는 TMP")]
+        public GameObject nameTMP;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("다이얼로그 대화내용 TMP"), Tooltip("다이얼로그에서 대화 내용을 나타내는 TMP")]
+        public GameObject descTMP;
+        [FoldoutGroup("정리 UI")]
+        [LabelText("제출 버튼"), Tooltip("문장 완성 이벤트를 발생시키는 버튼")]
+        public Button submitBtn;
+
+        private ArrangeEvent.Word[] wordsData;
+        #endregion
+
+        #region Methods
+        public void Initialize()
+        {
+            submitBtn.onClick.AddListener(Submit);
+        }
+        public void Setup(ArrangeEvent ae)
+        {
+            rootObj.SetActive(true);
+
+            questionTMP.text = ae.Question;
+
+            for (int i = 0; i < 4; ++i)
+                words[i].SetSetting(ae.Words[i]);
+
+            wordsData = ae.Words;
+        }
+        public void OnUpdate()
+        {
+        }
+        public void Release()
+        {
+            rootObj.SetActive(false);
+        }
+        private void Submit()
+        {
+            for (int i = 0; i < 4; ++i)
+            {
+                if (wordsData[i].correctIndex != words[i].Index)
+                {
+                    Fail();
+                    return;
+                }
+            }
+            Success();
+        }
+        private void Fail()
+        {
+
+        }
+        private void Success()
+        {
+
+        }
+        #endregion
+    }
     public class ResourceManager
     {
         static Dictionary<string, Object> resourceMap = new Dictionary<string, Object>();

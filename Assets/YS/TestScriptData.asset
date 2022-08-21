@@ -16,8 +16,6 @@ MonoBehaviour:
   - id: 0
   - id: 1
   - id: 2
-  - id: 3
-  - id: 4
   insertIndex: -1
   swapIndex: {x: 5, y: 6}
   references:
@@ -31,73 +29,31 @@ MonoBehaviour:
       data:
         audioBGM: {fileID: 8300000, guid: ddbb5c598218ed24fb0e8d1b0d1323b2, type: 3}
     00000002:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      type: {class: ArrangeEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
-        leftImage: 1
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: 4
-        rightHighlight: 0
-        rightEffect: 3
-        name: "\uBBF8\uC790\uB974"
-        script: "\uC548\uB155"
-        nextIdx: 3
-    00000003:
-      type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        character: 1
-        nextIndex: 4
-    00000004:
-      type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        charIndex: 1
-        itemIndex: 1
-        choiceDatas:
-        - choiceStr: "1\uBC88 \uC120\uD0DD\uC9C0"
-          dialogs:
-          - screenEffect: 0
-            leftImage: 1
-            leftHighlight: 1
-            leftEffect: 1
-            rightImage: 2
-            rightHighlight: 0
-            rightEffect: 2
-            name: "\uBBF8\uC790\uB974"
-            script: "1\uBC88\uC744 \uC120\uD0DD\uD588\uB530\uACE0?"
-            nextIdx: 0
-        - choiceStr: "2\uBC88 \uC120\uD0DD\uC9C0"
-          dialogs:
-          - screenEffect: 0
-            leftImage: 1
-            leftHighlight: 1
-            leftEffect: 0
-            rightImage: 2
-            rightHighlight: 0
-            rightEffect: 0
-            name: "\uBBF8\uC790\uB974"
-            script: "2\uBC88\uC744 \uC120\uD0DD\uD574\uBD24\uC5B4"
-            nextIdx: 0
-          - screenEffect: 0
-            leftImage: 1
-            leftHighlight: 0
-            leftEffect: 0
-            rightImage: 2
-            rightHighlight: 1
-            rightEffect: 0
-            name: "\uC54C\uCF54\uB974"
-            script: "\uC62C\uBC14\uB978 \uC120\uD0DD\uC774\uC5C8\uB2E4"
-            nextIdx: 0
-        twiceFailDialogData:
-          screenEffect: 3
-          leftImage: 1
-          leftHighlight: 1
-          leftEffect: 4
-          rightImage: 0
-          rightHighlight: 0
-          rightEffect: 0
-          name: "\uBBF8\uC790\uB974"
-          script: "\uB09C \uBC14\uBCF8\uAC00.."
-          nextIdx: 0
-        correctIndex: 1
-        nextIndex: 0
+        question: "\uD558\uC580 \uAC00\uB8E8\uB294 \uBB34\uC5C7\uC778\uAC00?"
+        words:
+        - isFixedWord: 1
+          fixedWord: "\uD558\uC580 \uAC00\uB8E8\uB294"
+          choiceWords: []
+          correctIndex: -1
+        - isFixedWord: 0
+          fixedWord: 
+          choiceWords:
+          - "\uD558\uC218\uB3C4 \uC791\uC740 \uBC29\uC5D0\uC11C \uCC3E\uC740 \uB9C8\uCDE8\uC57D\uACFC
+            \uAC19\uC740 \uC131\uBD84\uC73C\uB85C"
+          - "\uC2DD\uB2F9\uC5D0\uC11C"
+          - 
+          - 
+          correctIndex: 0
+        - isFixedWord: 0
+          fixedWord: 
+          choiceWords:
+          - "\uB9C8\uC57D\uC131 \uC9C4\uD1B5\uC81C"
+          - "\uC124\uD0D5"
+          - "\uC18C\uAE08"
+          correctIndex: 0
+        - isFixedWord: 1
+          fixedWord: "\uC758 \uC5ED\uD560\uB85C \uC0AC\uC6A9\uB418\uC5C8\uB2E4"
+          choiceWords: []
+          correctIndex: -1
