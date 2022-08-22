@@ -241,7 +241,7 @@ namespace YS
 
             target.position -= curShakeVector;
         }
-        public IEnumerator BounceEffect(Transform target, float time)
+        public IEnumerator BounceEffect(Transform target, float time, float height)
         {
             float t = 0.0f;
             WaitForSeconds wf = CachedWaitForSeconds.Get(0.01f);
@@ -249,7 +249,7 @@ namespace YS
             bezier.bezierPos = new Vector3[3]
             {
                 target.position,
-                target.position + Vector3.up * 100.0f,
+                target.position + Vector3.up * height,
                 target.position
             };
 

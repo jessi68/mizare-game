@@ -60,12 +60,27 @@ namespace YS
         [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
         [LabelText("양쪽 이미지"), Tooltip("다이얼로그 왼쪽/오른쪽 Image 컴포넌트")]
         public Image[] sideImg;
-        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
+        [FoldoutGroup("다이얼로그 UI")]
         [LabelText("이름 TMP"), Tooltip("다이얼로그 창 이름 TMP")]
         public TMP_Text nameTMP;
-        [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
+        [FoldoutGroup("다이얼로그 UI")]
         [LabelText("스크립트 TMP"), Tooltip("다이얼로그 창 스크립트 TMP")]
         public CustomTMPEffect scriptTMP;
+        [FoldoutGroup("다이얼로그 UI/캐릭터 떨림 효과", false)]
+        [LabelText("강도"), Tooltip("캐릭터 떨림의 강도")]
+        public float shakeIntensity;
+        [FoldoutGroup("다이얼로그 UI/캐릭터 떨림 효과", false)]
+        [LabelText("지속 시간"), Tooltip("캐릭터 떨림 효과 시간")]
+        public float shakeTime;
+        [FoldoutGroup("다이얼로그 UI/캐릭터 떨림 효과", false)]
+        [LabelText("떨림 간격"), Tooltip("캐릭터가 얼만큼의 시간간격으로 떨릴지에 대한 수치")]
+        public float shakeIntervalTime;
+        [FoldoutGroup("다이얼로그 UI/캐릭터 바운스 효과", false)]
+        [LabelText("지속 시간"), Tooltip("캐릭터가 뛰는 시간\n'1 / 지속시간'sec\nex)1 = 1sec, 2 = 0.5sec, 0.5 = 2sec")]
+        public float bounceTime;
+        [FoldoutGroup("다이얼로그 UI/캐릭터 바운스 효과", false)]
+        [LabelText("높이"), Tooltip("캐릭터가 뛰어오르는 높이")]
+        public float bounceHeight;
 
         // sideImg의 초기 위치 (FX초기화 할 때 사용)
         private Vector3[] sidePos;
@@ -159,11 +174,11 @@ namespace YS
                 case CHARACTER_EFFECT_INDEX.SHAKE_HORIZONTAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_VERTICAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_RANDOM:
-                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, 5, 0.5f, 0.01f, charFX));
+                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, shakeIntensity, shakeTime, shakeIntervalTime, charFX));
                     break;
 
                 case CHARACTER_EFFECT_INDEX.BOUNCE:
-                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.BounceEffect(sideImg[(int)side].gameObject.transform, 3.0f));
+                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.BounceEffect(sideImg[(int)side].gameObject.transform, bounceTime, bounceHeight));
                     break;
             }
         }
