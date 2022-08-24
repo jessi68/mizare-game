@@ -7,6 +7,10 @@ using Sirenix.OdinInspector;
 
 namespace YS
 {
+    public class ImageReference
+    {
+        public const string Mizar_Normal = "아트/미자르/미자르3-무표정2.png";
+    }
     public enum ITEM_INDEX
     {
         RAT,
@@ -27,16 +31,6 @@ namespace YS
         FADE_IN,
         FADE_OUT,
         RED_FLASH,
-    }
-    public enum CHARACTER_IMAGE_INDEX
-    {
-        NONE,
-        MIZAR,
-        ALCOR,
-        SENIOR,
-        SCHOLAR,
-        BLACKROBE,
-        MAX
     }
     public enum CHARACTER_EFFECT_INDEX
     {
@@ -157,11 +151,11 @@ namespace YS
         /// <param name="charImgIdx">보여줄 이미지</param>
         /// <param name="isHighlight">하이라이트 여부</param>
         /// <param name="charFX">사이드 이미지에 줄 효과</param>
-        private void SetCharSetting(SIDE_IMAGE side, CHARACTER_IMAGE_INDEX charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
+        private void SetCharSetting(SIDE_IMAGE side, Sprite charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
         {
-            sideImg[(int)side].sprite = gm.charImgs[(int)charImgIdx];
+            sideImg[(int)side].sprite = charImgIdx;
 
-            if (charImgIdx == CHARACTER_IMAGE_INDEX.NONE)
+            if (charImgIdx == null)
                 sideImg[(int)side].color = Color.clear;
             else
             {
@@ -320,9 +314,9 @@ namespace YS
         /// </summary>
         /// <param name="ivChar">조사를 진행할 캐릭터 인덱스</param>
         /// <param name="nextIndex">조사가 끝난 후 이동할 다음 스크립트 인덱스</param>
-        public void Setup(CHARACTER_IMAGE_INDEX ivChar)
+        public void Setup(Sprite ivChar)
         {
-            investigationCharacter.sprite = gm.charImgs[(int)ivChar];
+            investigationCharacter.sprite = ivChar;
 
             investigationPanel.SetActive(true);
             
@@ -441,7 +435,7 @@ namespace YS
         public void Setup(InferenceEvent ie)
         {
             rootObj.SetActive(true);
-            character.sprite = gm.charImgs[(int)ie.CharacterIndex];
+            character.sprite = ie.CharacterIndex;
             item.sprite = gm.itemData[ie.ItemIndex].img;
             tmp_itemDesc.text = gm.itemData[ie.ItemIndex].desc;
 
@@ -522,24 +516,26 @@ namespace YS
         [LabelText("단어 컴포넌트"), Tooltip("정리 패널의 단어들의 컴포넌트")]
         public WordComponent[] words;
         [FoldoutGroup("정리 UI")]
-        [LabelText("다이얼로그 UI"), Tooltip("다이얼로그 UI")]
-        public GameObject dialogUI;
-        [FoldoutGroup("정리 UI")]
-        [LabelText("다이얼로그 화자 TMP"), Tooltip("다이얼로그에서 말하는 사람을 나타내는 TMP")]
-        public GameObject nameTMP;
+        [LabelText("미자르 이미지 컴포넌트"), Tooltip("미자르의 이미지 컴포넌트")]
+        public Image mizarImg;
         [FoldoutGroup("정리 UI")]
         [LabelText("다이얼로그 대화내용 TMP"), Tooltip("다이얼로그에서 대화 내용을 나타내는 TMP")]
-        public GameObject descTMP;
+        public TMP_Text descTMP;
         [FoldoutGroup("정리 UI")]
         [LabelText("제출 버튼"), Tooltip("문장 완성 이벤트를 발생시키는 버튼")]
         public Button submitBtn;
 
         private ArrangeEvent.Word[] wordsData;
+        private string successStr, failStr;
+        private bool isSubmit;
+        private GameManager gm;
         #endregion
 
         #region Methods
         public void Initialize()
         {
+            gm = GameManager.Instance;
+
             submitBtn.onClick.AddListener(Submit);
         }
         public void Setup(ArrangeEvent ae)
@@ -547,14 +543,22 @@ namespace YS
             rootObj.SetActive(true);
 
             questionTMP.text = ae.Question;
+            descTMP.text = ae.HintStr;
+            mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
 
             for (int i = 0; i < 4; ++i)
                 words[i].SetSetting(ae.Words[i]);
 
             wordsData = ae.Words;
+            successStr = ae.SuccessStr;
+            failStr = ae.FailStr;
+
+            isSubmit = false;
         }
         public void OnUpdate()
         {
+            if (isSubmit && gm.IsKeyDown())
+                gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
         }
         public void Release()
         {
@@ -562,23 +566,18 @@ namespace YS
         }
         private void Submit()
         {
+            gm.arStruct.isSubmit = true;
             for (int i = 0; i < 4; ++i)
             {
-                if (wordsData[i].correctIndex != words[i].Index)
+                if (!gm.arStruct.wordsData[i].isFixedWord && gm.arStruct.wordsData[i].correctIndex != gm.arStruct.words[i].Index)
                 {
-                    Fail();
+                    mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
+                    gm.arStruct.descTMP.text = gm.arStruct.failStr;
                     return;
                 }
             }
-            Success();
-        }
-        private void Fail()
-        {
-
-        }
-        private void Success()
-        {
-
+            mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
+            gm.arStruct.descTMP.text = gm.arStruct.successStr;
         }
         #endregion
     }

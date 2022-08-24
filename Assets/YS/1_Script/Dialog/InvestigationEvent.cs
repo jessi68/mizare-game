@@ -8,7 +8,7 @@ namespace YS
     {
         [SerializeField]
         [Tooltip("조사를 진행할 캐릭터")]
-        private CHARACTER_IMAGE_INDEX character;
+        private Sprite character;
 
         public override void OnEnter()
         {

@@ -10,7 +10,7 @@ namespace YS
         #region Fields
         [SerializeField]
         [LabelText("추리를 진행할 캐릭터")]
-        private CHARACTER_IMAGE_INDEX charIndex;
+        private Sprite charIndex;
         [SerializeField]
         [LabelText("추리할 아이템")]
         private ITEM_INDEX itemIndex;
@@ -26,7 +26,7 @@ namespace YS
         #endregion
 
         #region Properties
-        public CHARACTER_IMAGE_INDEX CharacterIndex => charIndex;
+        public Sprite CharacterIndex => charIndex;
         public ITEM_INDEX ItemIndex => itemIndex;
         public InferenceDialogData[] ChoiceDatas => choiceDatas;
         public DialogEvent TwiceFailDialogData => twiceFailDialogData;

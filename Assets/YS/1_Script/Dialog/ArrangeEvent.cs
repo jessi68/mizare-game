@@ -12,13 +12,25 @@ namespace YS
         [LabelText("질문 내용")]
         private string question;
         [SerializeField]
-        [LabelText("단어")]
+        [LabelText("단어"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true), DisableContextMenu]
         private Word[] words = new Word[4];
+        [SerializeField, TextArea]
+        [LabelText("힌트")]
+        private string hintStr;
+        [SerializeField, TextArea]
+        [LabelText("성공 시 내용")]
+        private string successStr;
+        [SerializeField, TextArea]
+        [LabelText("실패 시 내용")]
+        private string failStr;
         #endregion
 
         #region Properties
         public string Question => question;
         public Word[] Words => words;
+        public string HintStr => hintStr;
+        public string SuccessStr => successStr;
+        public string FailStr => failStr;
         #endregion
 
         public override void OnEnter()
@@ -29,6 +41,7 @@ namespace YS
         }
         protected override void OnUpdate()
         {
+            gm.arStruct.OnUpdate();
         }
         public override void OnExit()
         {
@@ -37,7 +50,7 @@ namespace YS
             base.OnExit();
         }
 
-        [System.Serializable]
+        [System.Serializable, DisableContextMenu]
         public struct Word
         {
             [LabelText("고정단어인가?")]
@@ -48,7 +61,7 @@ namespace YS
             [HideIf("isFixedWord")]
             [LabelText("선택단어 문자열들")]
             public string[] choiceWords;
-            [SerializeField, MaxValue("@choiceWords.Length - 1")]
+            [SerializeField, HideIf("isFixedWord"), MinValue("@choiceWords.Length == 0 ? 0 : 1"), MaxValue("@choiceWords.Length")]
             [LabelText("정답"), Tooltip("추리 선택지들중 올바른 답")]
             public int correctIndex;
         }

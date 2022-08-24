@@ -201,10 +201,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -213,10 +213,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 21300000, guid: 2240dc533c519f44caf3548b08eaa260, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: ???
@@ -225,10 +225,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -238,10 +238,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -252,10 +252,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: ???
@@ -264,10 +264,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -278,10 +278,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -292,10 +292,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: ???
@@ -304,10 +304,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 5
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 5
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uAC80\uC740 \uB85C\uBE0C\uC758 \uAD34\uC778"
@@ -317,10 +317,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -329,10 +329,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -341,10 +341,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -353,10 +353,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -365,10 +365,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 1
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -378,10 +378,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -393,10 +393,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 2
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -406,10 +406,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -420,10 +420,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -432,10 +432,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -444,10 +444,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -457,10 +457,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -469,10 +469,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -482,10 +482,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -495,10 +495,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -508,10 +508,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -522,10 +522,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -535,10 +535,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -549,10 +549,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -561,10 +561,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -574,10 +574,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -586,10 +586,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -598,10 +598,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -613,10 +613,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 3
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -625,10 +625,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -638,10 +638,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -652,10 +652,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -666,10 +666,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -678,10 +678,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -692,10 +692,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -705,10 +705,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -718,10 +718,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -730,10 +730,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -744,10 +744,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -757,10 +757,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -771,10 +771,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -785,10 +785,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -807,10 +807,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -819,10 +819,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -833,10 +833,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -845,10 +845,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -858,10 +858,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -871,10 +871,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -883,10 +883,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -895,10 +895,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -907,10 +907,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: 3
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -921,10 +921,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 3
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -938,10 +938,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 3
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -952,10 +952,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 3
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -966,10 +966,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -978,10 +978,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -991,10 +991,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1006,10 +1006,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1020,10 +1020,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1034,10 +1034,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1047,10 +1047,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1060,10 +1060,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1072,10 +1072,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1086,10 +1086,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1099,10 +1099,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1113,10 +1113,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1126,10 +1126,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 3
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1138,10 +1138,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1159,10 +1159,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1171,10 +1171,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1184,10 +1184,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -1196,10 +1196,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -1208,10 +1208,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1221,10 +1221,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1234,10 +1234,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1247,10 +1247,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1258,15 +1258,15 @@ MonoBehaviour:
     00000053:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        character: 1
+        character: {fileID: 0}
     00000054:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1277,10 +1277,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -1289,10 +1289,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1301,10 +1301,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1314,10 +1314,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1326,10 +1326,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: 
@@ -1338,10 +1338,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 0
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1350,10 +1350,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1363,10 +1363,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1375,10 +1375,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1388,10 +1388,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1400,10 +1400,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1416,10 +1416,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1428,10 +1428,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1443,10 +1443,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1459,10 +1459,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1472,10 +1472,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1484,10 +1484,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1496,10 +1496,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1511,10 +1511,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1523,10 +1523,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1537,10 +1537,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 2
         name: "\uC54C\uCF54\uB974"
@@ -1549,10 +1549,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1567,10 +1567,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1590,10 +1590,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1608,10 +1608,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1626,10 +1626,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1638,10 +1638,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1651,10 +1651,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1664,10 +1664,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1678,10 +1678,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1692,10 +1692,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1705,10 +1705,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1718,10 +1718,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1730,10 +1730,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1744,10 +1744,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1757,15 +1757,15 @@ MonoBehaviour:
     00000078:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        character: 2
+        character: {fileID: 0}
     00000079:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1775,10 +1775,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1788,10 +1788,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1802,10 +1802,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1814,10 +1814,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1828,10 +1828,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1840,10 +1840,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1853,10 +1853,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1865,10 +1865,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1877,10 +1877,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1889,10 +1889,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1902,10 +1902,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1916,10 +1916,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -1928,10 +1928,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1941,10 +1941,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1961,10 +1961,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1976,10 +1976,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1988,10 +1988,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2000,10 +2000,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2013,10 +2013,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2026,10 +2026,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2040,10 +2040,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2054,10 +2054,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2066,10 +2066,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2086,10 +2086,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2100,10 +2100,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2113,10 +2113,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2125,10 +2125,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uB2E4\uB974"
@@ -2138,10 +2138,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2153,10 +2153,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2173,10 +2173,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2188,10 +2188,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2201,10 +2201,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2216,10 +2216,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2229,10 +2229,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2243,10 +2243,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2256,10 +2256,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2269,10 +2269,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2284,10 +2284,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2296,10 +2296,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2308,10 +2308,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: 2
+        rightImage: {fileID: 0}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2321,10 +2321,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2344,10 +2344,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2357,10 +2357,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2369,10 +2369,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2383,10 +2383,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2403,10 +2403,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2417,10 +2417,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2430,10 +2430,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: 1
+        leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: 0
+        rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"

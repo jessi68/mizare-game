@@ -52,8 +52,6 @@ namespace YS
         private Material bgMtrl;
 
         [HideInInspector]
-        public Sprite[] charImgs = new Sprite[(int)CHARACTER_IMAGE_INDEX.MAX];
-        [HideInInspector]
         public Coroutine bgFXCoroutine;
 
         private SaveData currentData;
@@ -75,26 +73,6 @@ namespace YS
             base.Awake();
 
             bgMtrl = ResourceManager.GetResource<Material>("BGFXShader");
-
-            // 사용할 캐릭터들 이미지 로딩
-            charImgs[(int)CHARACTER_IMAGE_INDEX.NONE] = null;
-            charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Normal");
-            charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Normal");
-            charImgs[(int)CHARACTER_IMAGE_INDEX.SENIOR] = ResourceManager.GetResource<Sprite>("Characters/Senior/Senior");
-            charImgs[(int)CHARACTER_IMAGE_INDEX.SCHOLAR] = ResourceManager.GetResource<Sprite>("Characters/Scholar/Scholar");
-            charImgs[(int)CHARACTER_IMAGE_INDEX.BLACKROBE] = ResourceManager.GetResource<Sprite>("Characters/BlackRobe/BlackRobe");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_NORMAL] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Normal");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SMILE1] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Smile1");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SMILE2] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Smile2");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_WINK] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Wink");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.MIZAR_SURPRISED] = ResourceManager.GetResource<Sprite>("Characters/Mizar/Mizar_Surprised");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR_NORMAL] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Normal");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.ALCOR_ANGRY] = ResourceManager.GetResource<Sprite>("Characters/Alcor/Alcor_Angry");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.SENIOR] = ResourceManager.GetResource<Sprite>("Characters/Senior/Senior");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.CHLID] = ResourceManager.GetResource<Sprite>("Characters/Child/Child");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.WOMAN] = ResourceManager.GetResource<Sprite>("Characters/Woman/Woman");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.SCHOLAR] = ResourceManager.GetResource<Sprite>("Characters/Scholar/Scholar");
-            //charImgs[(int)CHARACTER_IMAGE_INDEX.BLACKROBE] = ResourceManager.GetResource<Sprite>("Characters/BlackRobe/BlackRobe");
         }
         void Start()
         {
@@ -106,6 +84,7 @@ namespace YS
             choiceStruct.Initialize();
             ivStruct.Initialize();
             ifStruct.Initialize();
+            arStruct.Initialize();
 
             // 나중에 로드시 로드한 index값으로 설정
             scriptData.SetScript(0);

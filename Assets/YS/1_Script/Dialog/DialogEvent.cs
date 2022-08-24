@@ -14,7 +14,7 @@ namespace YS
 
         [BoxGroup("왼쪽 캐릭터", true, true), SerializeField]
         [LabelText("이미지"), Tooltip("캐릭터 이미지")]
-        private CHARACTER_IMAGE_INDEX leftImage;
+        private Sprite leftImage;
         [BoxGroup("왼쪽 캐릭터"), SerializeField]
         [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
         private bool leftHighlight;
@@ -23,7 +23,7 @@ namespace YS
         private CHARACTER_EFFECT_INDEX leftEffect;
         [BoxGroup("오른쪽 캐릭터", true, true), SerializeField]
         [LabelText("이미지"), Tooltip("캐릭터 이미지")]
-        private CHARACTER_IMAGE_INDEX rightImage;
+        private Sprite rightImage;
         [BoxGroup("오른쪽 캐릭터"), SerializeField]
         [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
         private bool rightHighlight;
@@ -40,10 +40,10 @@ namespace YS
 
         #region Properties
         public SCREEN_EFFECT ScreenEffect => screenEffect;
-        public CHARACTER_IMAGE_INDEX LeftImage => leftImage;
+        public Sprite LeftImage => leftImage;
         public bool LeftHighlight => leftHighlight;
         public CHARACTER_EFFECT_INDEX LeftEffect => leftEffect;
-        public CHARACTER_IMAGE_INDEX RightImage => rightImage;
+        public Sprite RightImage => rightImage;
         public bool RightHighlight => rightHighlight;
         public CHARACTER_EFFECT_INDEX RightEffect => rightEffect;
         public string Name => name;

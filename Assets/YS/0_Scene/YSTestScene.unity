@@ -2549,22 +2549,14 @@ MonoBehaviour:
     - {fileID: 913244566}
     - {fileID: 2001048575}
     - {fileID: 1199203196}
-    dialogUI: {fileID: 0}
-    nameTMP: {fileID: 0}
-    descTMP: {fileID: 0}
-    submitBtn: {fileID: 0}
+    mizarImg: {fileID: 1314480167}
+    descTMP: {fileID: 968428660}
+    submitBtn: {fileID: 1395879477}
   logTMP: {fileID: 236268519}
-  scriptData: {fileID: 11400000, guid: fe8d1b12d7c37c642be69e9ea0ae4e2a, type: 2}
+  scriptData: {fileID: 11400000, guid: c680a24da5cf1b54d87604169ce3d27d, type: 2}
   itemData: {fileID: 11400000, guid: 8309f41304dfa534390612ee98d40755, type: 2}
   invenComp: {fileID: 1343145470}
   bgUI: {fileID: 549581127}
-  charImgs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &471057962
 Transform:
   m_ObjectHideFlags: 0
@@ -9114,6 +9106,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1499370527}
+  - component: {fileID: 1499370529}
+  - component: {fileID: 1499370528}
   m_Layer: 5
   m_Name: ArrangePanel
   m_TagString: Untagged
@@ -9145,6 +9139,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1499370528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499370526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 0.8235294}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1499370529
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499370526}
+  m_CullTransparentMesh: 1
 --- !u!1 &1500093992
 GameObject:
   m_ObjectHideFlags: 0
@@ -10790,7 +10822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1785617738
 RectTransform:
   m_ObjectHideFlags: 0

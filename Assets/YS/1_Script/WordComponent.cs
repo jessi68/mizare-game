@@ -21,7 +21,7 @@ namespace YS
         private int maxIndex;
         private int index = 0;
 
-        public int Index => index;
+        public int Index => index + 1;
 
         private void Start()
         {
