@@ -431,40 +431,47 @@ MonoBehaviour:
   - id: 393
   - id: 393
   - id: 394
-  insertIndex: 86
+  insertIndex: 293
   swapIndex: {x: 0, y: 0}
   references:
     version: 1
     00000000:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 1
+        leftImage: {fileID: 0}
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: {fileID: 0}
+        rightHighlight: 0
+        rightEffect: 0
+        name: 
+        script: 
+    00000001:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
-    00000001:
+    00000002:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
-    00000002:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 0}
-        delay: 0
     00000003:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 21300000, guid: 563318f05730e394cb923695f5b42aeb, type: 3}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 21300000, guid: 9c0870f11709cca4b93a6c409fa00a58, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC544\uC774"
-        script: ..
+        script: .......
     00000004:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -475,7 +482,7 @@ MonoBehaviour:
     00000005:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
+        audioBGM: {fileID: 8300000, guid: 7a1328e2efe307d4da340f21a92568b7, type: 3}
     00000006:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
@@ -485,7 +492,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -497,7 +504,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -513,20 +520,20 @@ MonoBehaviour:
     0000000A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 1
-        leftImage: {fileID: 0}
-        leftHighlight: 0
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
+        leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
         rightHighlight: 0
         rightEffect: 0
-        name: 
-        script: 
+        name: "\uC544\uC774"
+        script: "....\uAC70\uAE30.. \uB204\uAD6C \uACC4\uC2E0\uAC00\uC694..?"
     0000000B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -538,7 +545,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2fb2a31ac4a21a045a065be007c0e14c, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -555,7 +562,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -564,18 +571,25 @@ MonoBehaviour:
         name: ???
         script: "\uC7A1\uC544! \uB193\uCE58\uBA74 \uC548\uB3FC!"
     0000000F:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        audioFX: {fileID: 0}
-        delay: 0
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 0}
+        rightHighlight: 0
+        rightEffect: 0
+        name: ???
+        script: "..\uC6C0\uC9C1\uC774\uC9C0 \uBABB\uD558\uB3C4\uB85D.. \uB2E4\uB9AC\uB97C..."
     00000010:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: ???
@@ -584,22 +598,22 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         rightHighlight: 0
         rightEffect: 0
-        name: 
+        name: ???
         script: "..\uC774\uC81C \uC5B4\uB5A1\uD558\uC9C0?"
     00000012:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: ???
@@ -608,31 +622,19 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b7ec750087602a2429eb49b8cceec486, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: ???
         script: "..\uADF8\uB0E5 \uB194 \uB46C. \uADF8\uB798\uC57C \uBAB0\uB9AC\uC9C0."
     00000014:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 1
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: ???
-        script: .....
-    00000015:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 0}
-    00000016:
+    00000015:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -644,15 +646,14 @@ MonoBehaviour:
         rightEffect: 0
         name: ???
         script: "\uC774\uC81C \uAD00\uC744 \uB04C\uC5B4\uB77C."
-    00000017:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
+    00000016:
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioFX: {fileID: 0}
-        delay: 0
-    00000018:
+        audioBGM: {fileID: 8300000, guid: cc232c795d286c8429cea6b0c6f3e41b, type: 3}
+    00000017:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        screenEffect: 1
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
@@ -662,22 +663,35 @@ MonoBehaviour:
         name: 
         script: "2\uC6D4 13\uC77C \uC0C8\uBCBD 2\uC2DC 45\uBD84, \uD50C\uB77C\uC6B0
           \uC911\uC559 \uC9C0\uC5ED-\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
-    00000019:
+    00000018:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-    0000001A:
+    00000019:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: .....
+    0000001A:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
+        script: "\uC774\uBC88 \uC2E4\uC885\uC73C\uB85C \uCD1D \uC77C\uACF1.. \uADF8\uB9C8\uC800\uB3C4
+          \uCD5C\uC18C\uB85C\uAD70."
     0000001B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -685,32 +699,19 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: "\uC774\uBC88 \uC2E4\uC885\uC73C\uB85C \uCD1D \uC77C\uACF1.. \uADF8\uB9C8\uC800\uB3C4
-          \uCD5C\uC18C\uB85C\uAD70."
-    0000001C:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uADF8\uB798.. \uBCA0\uB9AC\uD0C0\uC2A4\uB294 \uC5B4\uB5A4 \uBC18\uC751\uC778\uAC00?"
-    0000001D:
+    0000001C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -718,6 +719,19 @@ MonoBehaviour:
           \uC0C1\uD0DC\uC785\uB2C8\uB2E4. \uC218\uC0AC \uD300\uC5D0\uB294 \uBCA0\uB9AC\uD0C0\uC2A4
           \uD559\uD30C \uCD9C\uC2E0\uC758 \uBC95\uC758\uD559\uC790\uB3C4 \uC788\uB2E4\uACE0
           \uD569\uB2C8\uB2E4."
+    0000001D:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
+        script: " ..\uD765, \uC6B0\uB9AC\uAC00 \uC218\uC0AC\uB97C \uC694\uCCAD\uD588\uC744
+          \uB550 \uB4E4\uC740 \uCC99\uB3C4 \uC548 \uD558\uB354\uB2C8.."
     0000001E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -725,36 +739,37 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: " ..\uD765, \uC6B0\uB9AC\uAC00 \uC218\uC0AC\uB97C \uC694\uCCAD\uD588\uC744
-          \uB550 \uB4E4\uC740 \uCC99\uB3C4 \uC548 \uD558\uB354\uB2C8.."
-    0000001F:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC5B4\uB51C\uAC00\uB4E0 \uB299\uC740 \uACF0\uD321\uC774\uAC00 \uBB38\uC81C\uB85C\uAD70."
-    00000020:
+    0000001F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: .....
+    00000020:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
+        script: "\uC6B0\uB9AC\uAC00 \uD558\uB294 \uC77C\uC740 \uBC14\uB00C\uC9C0
+          \uC54A\uB294\uB2E4. \uBB34\uC2A8 \uC77C\uC774 \uC788\uC5B4\uB3C4 \uC2E4\uC885\uC790\uB97C
+          \uCC3E\uC544\uC57C \uD558\uB124."
     00000021:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -762,65 +777,65 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: "\uC6B0\uB9AC\uAC00 \uD558\uB294 \uC77C\uC740 \uBC14\uB00C\uC9C0
-          \uC54A\uB294\uB2E4. \uBB34\uC2A8 \uC77C\uC774 \uC788\uC5B4\uB3C4 \uC2E4\uC885\uC790\uB97C
-          \uCC3E\uC544\uC57C \uD558\uB124."
-    00000022:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC0AC\uB77C\uC9C4 \uC0AC\uB78C\uB4E4\uC774 \uADF8\uB188\uB4E4\uC740
           \uC2E0\uACBD \uC4F0\uC9C0 \uC54A\uB294 '\uBE48\uBBFC'\uC774\uB77C\uACE0
           \uD574\uB3C4 \uB9D0\uC77C\uC138."
-    00000023:
+    00000022:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "..\uADF8 \uB9D0\uC500\uC740?"
-    00000024:
+    00000023:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC2E4\uB9AC\uBCF4\uB2E8 \uC724\uB9AC\uC640 \uB3C4\uB355\uC744 \uC911\uC694\uC2DC
           \uD558\uB294 \uAC78 \uBCF4\uC5EC\uC8FC\uACA0\uB2E4.. \uBB34\uC2A8 \uC758\uBBF8\uC778\uC9C0
           \uC54C\uACA0\uC9C0?"
-    00000025:
+    00000024:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uB124..."
+    00000025:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
+        script: "\uC774\uC81C\uBD80\uD134 \uC2DC\uAC04 \uC2F8\uC6C0\uC774\uC57C..
+          \uC6B0\uB9AC\uC5D0\uAC90 \uC870\uAE08\uC774\uB77C\uB3C4 \uB354 \uC2DC\uAC04\uC774
+          \uD544\uC694\uD558\uB124."
     00000026:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -828,39 +843,39 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
-        script: "\uC774\uC81C\uBD80\uD134 \uC2DC\uAC04 \uC2F8\uC6C0\uC774\uC57C..
-          \uC6B0\uB9AC\uC5D0\uAC90 \uC870\uAE08\uC774\uB77C\uB3C4 \uB354 \uC2DC\uAC04\uC774
-          \uD544\uC694\uD558\uB124."
-    00000027:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
         script: "\uC790\uB124\uB294 \uB2F9\uC7A5 \uB0A8\uBD80 \uC9C0\uC5ED\uC73C\uB85C
           \uAC00\uB3C4\uB85D \uD558\uAC8C\uB098."
-    00000028:
+    00000027:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uB0A8\uBD80 \uC9C0\uC5ED.. \uC124\uB9C8 '\uBBF8\uC790\uB974'\uB97C
           \uBD80\uB974\uC2E4 \uAC74\uAC00\uC694..?"
+    00000028:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
+        script: "\uAD34\uC9DC\uB3C4 \uC368\uBA39\uAE30 \uB098\uB984\uC774\uC9C0.
+          \uADF8\uB140\uB294 \uBD84\uBA85 \uC6B0\uB9AC\uC5D0\uAC8C \uD070 \uC804\uB825\uC774
+          \uB420 \uAC78\uC138."
     00000029:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -868,26 +883,24 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: "\uAD34\uC9DC\uB3C4 \uC368\uBA39\uAE30 \uB098\uB984\uC774\uC9C0.
-          \uADF8\uB140\uB294 \uBD84\uBA85 \uC6B0\uB9AC\uC5D0\uAC8C \uD070 \uC804\uB825\uC774
-          \uB420 \uAC78\uC138."
-    0000002A:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uAC8C\uB2E4\uAC00 \uADF8\uB140\uB77C\uBA74.. \uC774\uB7F0 '\uC7AC\uBBF8\uC788\uB294'
           \uC0AC\uAC74\uC744 \uADF8\uB0E5 \uB193\uCE60\uB9AC\uAC00 \uC5C6\uC9C0 \uC54A\uB098?"
+    0000002A:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 0}
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
+        rightHighlight: 1
+        rightEffect: 0
+        name: "\uC120\uBC30"
+        script: "\uC544... \uD558\uAE34 \uADF8\uB807\uACA0\uB124\uC694.."
     0000002B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -895,40 +908,29 @@ MonoBehaviour:
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 1
-        rightEffect: 0
-        name: "\uC120\uBC30"
-        script: "\uC544... \uD558\uAE34 \uADF8\uB807\uACA0\uB124\uC694.."
-    0000002C:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "...\uCD5C\uB300\uD55C \uBE68\uB9AC \uC9C4\uD589\uD558\uACA0\uC2B5\uB2C8\uB2E4."
-    0000002D:
+    0000002C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC74C, \uBD80\uD0C1\uD558\uB124."
-    0000002E:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+    0000002D:
+      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 0}
-    0000002F:
+        audioFX: {fileID: 0}
+        delay: 0
+    0000002E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -942,7 +944,7 @@ MonoBehaviour:
         script: "...\uADF8\uB798, \uBCA0\uB9AC\uD0C0\uC2A4\uAC00 '\uADF8 \uB140\uC11D'\uC744
           \uBCF4\uB0C8\uB2E4\uBA74, \uC6B0\uB9AC \uBE44\uD558\uC774\uBE0C\uB294 \uBBF8\uC790\uB974
           \uBC16\uC5D0 \uC5C6\uC9C0."
-    00000030:
+    0000002F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -955,7 +957,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uADF8 \uC544\uC774 \uC815\uB3C4\uAC00 \uC544\uB2C8\uBA74 \uB204\uAC00
           \uAC10\uB2F9\uC744 \uD558\uACA0\uC5B4?"
-    00000031:
+    00000030:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -967,7 +969,7 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "..\uC774\uAC70 \uCC38."
-    00000032:
+    00000031:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -978,9 +980,9 @@ MonoBehaviour:
         rightHighlight: 0
         rightEffect: 0
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5 \uC6B0\uC5F0\uC774\uB77C\uACE0
-          \uD574\uB3C4.. \uCC38\uC73C\uB85C \uC584\uAD82\uAD6C\uB9CC,,,"
-    00000033:
+        script: "\uC6B0\uC5F0\uC774\uB77C\uACE0 \uD574\uB3C4.. \uCC38\uC73C\uB85C
+          \uC584\uAD82\uAD6C\uB9CC,,,"
+    00000032:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -992,19 +994,15 @@ MonoBehaviour:
         rightEffect: 0
         name: 
         script: 
-    00000034:
+    00000033:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-    00000035:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-    00000036:
+    00000034:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1012,16 +1010,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: ..................
-    00000037:
+    00000035:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
         delay: 0
-    00000038:
+    00000036:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1029,11 +1027,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "..\uC774\uAC70 \uC644\uC804 \uB5A0\uB118\uAE30\uAE30 \uC2DD\uC774\uC796\uC544?"
-    00000039:
+    00000037:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1042,23 +1040,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uC9C0\uB9CC \uC7AC\uBBF8\uB294 \uC788\uACA0\uB124. \uBBF8\uB9AC
           \uC900\uBE44\uD574\uC57C\uACA0\uC5B4!"
-    0000003A:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 1
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: 
-        script: 
-    0000003B:
+    00000038:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 0}
-    0000003C:
+        audioBGM: {fileID: 8300000, guid: b1f855572aa84464cbfa3b9f254ee125, type: 3}
+    00000039:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -1070,10 +1056,10 @@ MonoBehaviour:
         rightEffect: 0
         name: 
         script: "CHAPTER 1: \uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74"
-    0000003D:
+    0000003A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 1
+        screenEffect: 0
         leftImage: {fileID: 0}
         leftHighlight: 0
         leftEffect: 0
@@ -1083,15 +1069,15 @@ MonoBehaviour:
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 9\uC2DC 23\uBD84, \uD50C\uB77C\uC6B0
           \uB0A8\uBD80 \uC9C0\uC5ED-\uBBF8\uC790\uB974 \uD0D0\uC815 \uC0AC\uBB34\uC18C"
-    0000003E:
+    0000003B:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-    0000003F:
+    0000003C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: e18a205d3203afd43996ca398b69db74, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1099,15 +1085,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974? \uC548\uC5D0 \uC788\uB2C8?"
-    00000040:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+    0000003D:
+      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 8300000, guid: 2947823f702ed43b9867d418f837e0da, type: 3}
-    00000041:
+        audioFX: {fileID: 0}
+        delay: 0
+    0000003E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1115,11 +1102,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974??"
-    00000042:
+    0000003F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1127,16 +1114,20 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uC774\uC0C1\uD558\uB2E4..? \uBB38\uC744 \uC5F4\uB824\uC788\uB294\uB370.."
-    00000043:
+    00000040:
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+      data:
+        audioBGM: {fileID: 8300000, guid: 91f51d98ad34f46eaa29dc9830b5aaf2, type: 3}
+    00000041:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
         delay: 0
-    00000044:
+    00000042:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1144,11 +1135,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: '!!'
-    00000045:
+    00000043:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1156,16 +1147,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBC29\uAE08 \uC18C\uB9AC\uB294..?"
-    00000046:
+    00000044:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
         delay: 0
-    00000047:
+    00000045:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1173,11 +1164,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBBF8..\uBBF8\uC790\uB974..?"
-    00000048:
+    00000046:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1185,16 +1176,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uB108 \uB9DE\uB2C8..?"
-    00000049:
+    00000047:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
-        audioFX: {fileID: 0}
+        audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         delay: 0
-    0000004A:
+    00000048:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1202,15 +1193,15 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uAE84\uC545!!!!"
-    0000004B:
+    00000049:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
-    0000004C:
+    0000004A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1218,73 +1209,73 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4? \uC120\uBC30, \uC654\uC5C8\uC5B4\uC694?"
-    0000004D:
+    0000004B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uBBF8\uC548\uD574\uC694~ \uC800\uB141\uCBE4\uC5D0\uB098 \uC62C\uC904
           \uC54C\uC558\uB294\uB370."
-    0000004E:
+    0000004C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBB50..\uBB50\uB2C8!! \uAC11\uC790\uAE30 \uADF8\uB807\uAC8C \uBB38\uC744
           \uC138\uAC8C \uC5F4\uBA74 \uB180\uB77C\uC796\uC544!!"
-    0000004F:
+    0000004D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC81C \uC9D1\uC5D0\uC11C \uC81C\uAC00 \uBB38\uC744 \uC5EC\uB294\uB370
           \uADF8\uB7F0 \uAC78 \uC65C \uC2E0\uACBD\uC368\uC694?"
-    00000050:
+    0000004E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uBCF4\uB2E4 \uC2E4\uC885 \uC0AC\uAC74 \uC758\uB8B0\uD558\uB7EC
-          \uC628 \uAC70\uC8E0? \uC77C\uB2E8 \uC790\uB9AC\uC5D0 \uC549\uC73C\uC138\uC694.
-          \uC774\uAC83\uB9CC \uCC3D\uACE0\uC5D0 \uB123\uC744\uD14C\uB2C8\uAE4C."
-    00000051:
+          \uC628 \uAC70\uC8E0? \uC77C\uB2E8 \uC790\uB9AC\uC5D0 \uC549\uC73C\uC138\uC694.\n\uC774\uAC83\uB9CC
+          \uCC3D\uACE0\uC5D0 \uB123\uC744\uD14C\uB2C8\uAE4C."
+    0000004F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uC0AC..\uAC74\uC744 \uC758\uB8B0\uD558\uB7EC \uC628 \uAC74 \uB9DE\uB294\uB370..
           \uADF8\uAC74 \uB3C4\uB300\uCCB4 \uBB50\uB2C8..?"
-    00000052:
+    00000050:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1296,54 +1287,54 @@ MonoBehaviour:
         rightEffect: 0
         name: 
         script: "\uB9C8\uB124\uD0B9 \uC778\uD615"
-    00000053:
+    00000051:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
-        script: "\uC544~ \uBCC4 \uAC70  \uC544\uB2C8\uC5D0\uC694. \uB454\uAE30\uB97C
+        script: "\uC544~ \uBCC4 \uAC70  \uC544\uB2C8\uC5D0\uC694.\n\uB454\uAE30\uB97C
           \uD718\uB450\uB978 \uAC01\uB3C4\uC5D0 \uB530\uB77C\uC11C \uBA38\uB9AC\uAC00
           \uC5B4\uB5BB\uAC8C \uCC0C\uADF8\uB7EC\uC9C0\uB098 \uD655\uC778\uD55C \uAC70\uB2C8\uAE4C."
-    00000054:
+    00000052:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120"
         script: "\uB454\uAE30\uB77C\uB2C8.. \uADF8\uAC74 \uC65C...?"
-    00000055:
+    00000053:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uB0A9\uCE58\uC758 \uC815\uC11D\uC740 \uAE30\uC808\uC2DC\uD0A8 \uB2E4\uC74C\uC5D0
           \uB370\uB824\uAC00\uB294 \uAC70\uC8E0.\n\uADF8\uB807\uB2E4\uD574\uB3C4
           \uC774\uAC74 \uC544\uB2CC \uAC70 \uAC19\uC544\uC694.\r"
-    00000056:
+    00000054:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1351,66 +1342,66 @@ MonoBehaviour:
           \uC815\uB3C4\uB85C \uC138\uAC8C \uD718\uB450\uB974\uBA74, \uC870\uAE08\uC774\uB77C\uB3C4
           \uD608\uD754\uC774 \uB0A8\uC744 \uD150\uB370...\n\uC0AC\uAC74 \uD604\uC7A5\uC5D0\uC120
           \uC544\uBB34 \uD754\uC801\uC774 \uC5C6\uC5C8\uB2E4\uBA74\uC11C\uC694?"
-    00000057:
+    00000055:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uADF8\uAC8C \uB3C4\uB300\uCCB4 \uBB34\uC2A8 \uB9D0\uC774\uC57C?
           \uC774\uD574\uAC00 \uC548\uB3FC!"
-    00000058:
+    00000056:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74\uC774\uC694!
           \uADF8\uAC70 \uB54C\uBB38\uC5D0 \uC628 \uC904 \uC54C\uC558\uB294\uB370?"
-    00000059:
+    00000057:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "...\uD639\uC2DC \uB204\uAC00 \uBBF8\uB9AC \uC5F0\uB77D\uC774\uB77C\uB3C4?"
-    0000005A:
+    00000058:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uAD73\uC774 \uB9D0\uD558\uBA74 \uC0AC\uB78C\uB4E4\uC774\uC8E0.
           \uBE48\uBBFC\uAC00\uB97C \uC911\uC2EC\uC73C\uB85C \uD749\uD749\uD55C \uC18C\uBB38\uC774
           \uD30C\uB2E4\uD558\uAC70\uB4E0\uC694."
-    0000005B:
+    00000059:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1418,40 +1409,40 @@ MonoBehaviour:
           \uAC70 \uAC19\uC544\uC694. \uAE38\uAC70\uB9AC\uC5D0\uC11C \uB4E4\uB9AC\uB294
           \uC774\uC57C\uAE30\uB9CC \uB4E4\uC5B4\uB3C4 \uD544\uC694\uD55C \uC815\uBCF4\uB294
           \uB2E4 \uB4E4\uC5B4\uC624\uB2C8.."
-    0000005C:
+    0000005A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC218\uC0AC \uC778\uC6D0\uC774 \uBAA8\uB450 \uBCA0\uB9AC\uD0C0\uC2A4
           \uD559\uD30C \uCD9C\uC2E0\uC778 \uAC70 \uBD80\uD130\uAC00 \uAE00\uB7EC\uBA39\uC5C8\uC9C0\uB9CC..."
-    0000005D:
+    0000005B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974.. \uCD9C\uC2E0 \uD559\uD30C\uB85C \uC0AC\uB78C\uC744
           \uD568\uBD80\uB85C \uD3C9\uAC00\uD558\uBA74.."
-    0000005E:
+    0000005C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1460,14 +1451,14 @@ MonoBehaviour:
           \uC704\uACC4\uB97C \uB04C\uC5B4\uC62C\uB9B0\uB2F5\uC2DC\uACE0, \uC721\uCCB4\uB97C
           \uAC1C\uC870\uD558\uB294 \uB188\uB4E4\uC774 \uC774 \uB098\uB77C\uC758 \uCD5C\uACE0
           \uD559\uD30C\uB77C\uB2C8.."
-    0000005F:
+    0000005D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1475,27 +1466,27 @@ MonoBehaviour:
           \uB9CC\uB4E4\uC5B4\uC11C, \uBAA8\uB4E0 \uC0DD\uAC01\uACFC \uAC10\uC815\uC744
           \uACF5\uC720\uD558\uACA0\uB2E4\uB294, \uC6B0\uB9AC \uBE44\uD558\uC774\uBE0C\uC758
           \uBAA9\uD45C\uAC00 \uB354 \uC2E4\uC6A9\uC801\uC774\uC8E0."
-    00000060:
+    0000005E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uAC11\uC790\uAE30 \uC774\uC57C\uAE30\uB97C \uADF8\uCABD\uC73C\uB85C..
           \uC4F8\uB370\uC5C6\uB294 \uC774\uC57C\uAE30\uB97C \uD560 \uC2DC\uAC04\uC774.."
-    00000061:
+    0000005F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1503,67 +1494,71 @@ MonoBehaviour:
           \uD63C\uC790 \uC0B0 \uAF2D\uB300\uAE30 \uC704\uC5D0 \uC62C\uB77C\uAC00\uC11C,
           \uBC11\uC5D0 \uC788\uB294 \uC0AC\uB78C\uC744 \uC9C0\uCF1C\uBCF4\uB294 \uAC8C
           \uC5BC\uB9C8\uB098 \uACE0\uC5ED\uC778\uC9C0 \uBAA8\uB974\uC796\uC544\uC694."
-    00000062:
+    00000060:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "..\uD6C4, \uADF8\uB798. \uADF8 \uC774\uC57C\uAE34 \uB098\uC911\uC5D0
           \uB9C8\uC800 \uD558\uC790."
-    00000063:
+    00000061:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uC77C\uB2E8 \uB09C \uC5EC\uAE30 \uC628 \uBAA9\uC801\uC744 \uC5B4\uB5BB\uAC8C\uB4E0
           \uC774\uB904\uC57C \uD560 \uAC70 \uAC19\uC544. \uC774\uD574\uD558\uACA0\uB2C8?"
-    00000064:
+    00000062:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uAC70\uC57C \uB2F9\uC5F0\uD558\uC8E0. \uADF8\uB798\uB3C4
           \uC124\uBA85\uC744 \uD574\uC57C\uACA0\uB2E4\uBA74 \uC6D0\uD558\uC2DC\uB294
           \uB300\uB85C \uD558\uC138\uC694."
-    00000065:
+    00000063:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uADF8\uAC70 \uCC38 \uACE0\uB9D9\uAD6C\uB098."
-    00000066:
+    00000064:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 0}
-    00000067:
+        audioBGM: {fileID: 8300000, guid: a79a5353ad9e7a645a6e7f249ed9318d, type: 3}
+    00000065:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
+    00000066:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1573,11 +1568,11 @@ MonoBehaviour:
         script: "\uB0B4\uAC00 \uCC3E\uC544\uC628 \uC774\uC720\uB294 \uB108\uC5D0\uAC8C
           '\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74'\uC744 \uC870\uC0AC\uD574\uB2EC\uB77C\uB294
           \uC758\uB8B0\uB97C \uD558\uAE30 \uC704\uD574\uC11C\uC57C."
-    00000068:
+    00000067:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1587,11 +1582,11 @@ MonoBehaviour:
         script: "\uCD94\uC815\uB418\uB294 \uB0A0\uC740 \uD55C\uB2EC \uC804.. \uBE48\uBBFC\uAC00\uC758
           \uBE48\uBBFC\uB4E4\uC774 \uD558\uB098, \uB458 \uC0AC\uB77C\uC9C0\uAE30
           \uC2DC\uC791\uD588\uC5B4."
-    00000069:
+    00000068:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1600,11 +1595,11 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uCC98\uC74C\uC5D4 \uB2E8\uC21C\uD788 \uB2E4\uB978 \uACF3\uC73C\uB85C
           \uC774\uB3D9\uD55C \uAC78\uB85C \uC54C\uC558\uC9C0\uB9CC.."
-    0000006A:
+    00000069:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1614,11 +1609,11 @@ MonoBehaviour:
         script: "\uB4B7\uB3D9\uC0B0\uC5D0\uC11C \uC0AC\uB0E5\uC744 \uD558\uB358 \uB0A8\uC790\uAC00
           \uC0AC\uB77C\uC9C4 \uB124 \uBC88\uC9F8 \uC0AC\uAC74\uBD80\uD130 \uBB34\uC5B8\uAC00
           \uC774\uC0C1\uD558\uB2E4\uB294 \uC0AC\uC2E4\uC744 \uC54C\uAC8C \uB410\uC9C0."
-    0000006B:
+    0000006A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1629,11 +1624,11 @@ MonoBehaviour:
           \uACF3\uC5D0\uB294 \uADF8\uC758 \uC637\uAC00\uC9C0\uB9CC\uC774 \uC788\uC744
           \uBFD0\uC774\uACE0, \uADF8 \uC678\uC5D0 \uB2E4\uB978 \uD754\uC801\uC740
           \uC804\uD600 \uCC3E\uC744 \uC218 \uC5C6\uC5C8\uB2E8\uB2E4."
-    0000006C:
+    0000006B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1643,11 +1638,11 @@ MonoBehaviour:
         script: "\uB9C8\uCE58 \uADF8 \uC790\uB9AC\uC5D0\uC11C \uAC10\uC790\uAE30
           \uC99D\uBC1C\uC774\uB77C\uACE0 \uD55C \uAC83\uCC98\uB7FC, \uC0AC\uB78C\uC774
           \uC0AC\uB77C\uC9C0\uACE0 \uB9CC \uAC70\uC57C."
-    0000006D:
+    0000006C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1656,11 +1651,11 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uADF8\uB9AC\uACE0 \uC774\uBC88\uC5D0 \uC5B4\uB9B0 \uB0A8\uC790\uC544\uC774\uAC00
           \uC0AC\uB77C\uC9C4 \uC77C\uACF1 \uBC88\uC9F8 \uC0AC\uAC74.."
-    0000006E:
+    0000006D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1671,11 +1666,11 @@ MonoBehaviour:
           \uD55C \uC99D\uC5B8\uC5D0 \uB530\uB974\uBA74. \uADF8 \uB0A0 \uC544\uC774\uB294
           \uB204\uAD70\uAC00\uB97C \uB9CC\uB098\uB7EC \uC9D1\uC744 \uB098\uAC14\uB2E4\uACE0
           \uD588\uC5B4."
-    0000006F:
+    0000006E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1686,73 +1681,77 @@ MonoBehaviour:
           \uC54A\uACE0.. \uC57D\uC18D \uC7A5\uC18C\uC600\uB2E4\uB294 \uACE8\uBAA9\uAE38\uC5D0\uB294
           \uC544\uC774\uC758 \uBAA8\uC790\uB9CC \uB0A8\uC544\uC788\uC5C8\uB2E4\uACE0
           \uD574."
-    00000070:
+    0000006F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "'\uADF8 \uC678\uC5D0 \uB2E4\uB978 \uD754\uC801\uC740 \uCC3E\uC744
           \uC218 \uC5C6\uC5C8\uB2E4.' ..\uACE0 \uBCF4\uACE0\uD588\uACA0\uC8E0?"
-    00000071:
+    00000070:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+        leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
+        rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uACE8\uBAA9\uAE38\uC5D0 \uC4F0\uB808\uAE30\uB098 \uC7A1\uB3D9\uC0AC\uB2C8\uAC00
           \uB108\uBB34 \uB9CE\uC544\uC11C.. \uBB50\uAC00 \uC99D\uAC70\uC778\uC9C0\uB3C4
           \uC54C \uC218 \uC5C6\uB294 \uC0C1\uD669\uC774\uC5C8\uC73C\uB2C8\uAE4C."
-    00000072:
+    00000071:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+        leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
+        rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uD53C\uD574\uC790\uC758 \uD589\uBC29\uC740 \uBB3C\uB860\uC774\uACE0,
           \uBC94\uC778\uC758 \uC18C\uC7AC\uC9C0, \uC815\uCCB4, \uBAA9\uC801.. \uC804\uBD80
           \uC54C \uC218\uAC00 \uC5C6\uC5B4."
-    00000073:
+    00000072:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+        leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
+        rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uC218\uC0AC\uBD80\uB294 \uACC4\uC18D \uC218\uC0AC\uB97C \uD558\uACE0
           \uC788\uC9C0\uB9CC.. \uBCC4 \uAE30\uB300\uB294 \uD560 \uC218 \uC5C6\uC744
           \uAC70\uC57C."
-    00000074:
+    00000073:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 0}
+        audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
+    00000074:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
     00000075:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1763,10 +1762,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1778,10 +1777,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1791,10 +1790,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1805,10 +1804,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1825,8 +1824,8 @@ MonoBehaviour:
         rightHighlight: 0
         rightEffect: 0
         name: "\uC120\uBC30"
-        script: "\uC5B4\uB54C? '\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74'..
-          \uC758\uB8B0\uB97C \uB9E1\uC544\uC8FC\uACA0\uB2C8?"
+        script: "\uC5B4\uB54C? <color=\"red\">'\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885
+          \uC0AC\uAC74'</color>.. \uC758\uB8B0\uB97C \uB9E1\uC544\uC8FC\uACA0\uB2C8?"
     0000007B:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -1839,7 +1838,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 3dcc85ed4020fe04e94e808e4e77c8ef, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1855,7 +1854,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -1868,10 +1867,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1882,10 +1881,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 41683cb2febedfa4dabe4622d26697cd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1895,10 +1894,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1907,10 +1906,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1920,10 +1919,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1933,10 +1932,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1946,10 +1945,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1960,10 +1959,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1972,10 +1971,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -1984,10 +1983,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -1997,10 +1996,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2009,10 +2008,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2022,10 +2021,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2035,10 +2034,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2047,10 +2046,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2060,10 +2059,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2073,10 +2072,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2086,10 +2085,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2099,10 +2098,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2112,10 +2111,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2126,10 +2125,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2139,10 +2138,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2152,10 +2151,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2165,10 +2164,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 648dab952ed6d3b48abceff5cdc2c8cb, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
@@ -2179,29 +2178,25 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC120\uBC30"
         script: "\uADF8\uB798\uB3C4 \uB0B4 \uB9D0\uB3C4 \uD55C \uBC88 \uC0DD\uAC01\uD574\uC8FC\uB834.
           \uADF8\uB7FC \uBD80\uD0C1\uD560\uAC8C!"
     00000098:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioBGM: {fileID: 0}
-    00000099:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
-        audioFX: {fileID: 0}
+        audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         delay: 0
-    0000009A:
+    00000099:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2209,11 +2204,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uC5EC\uD2BC \uAC71\uC815\uC774 \uB9CE\uB2E4\uB2C8\uAE4C.."
-    0000009B:
+    0000009A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2221,11 +2216,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "..\uBB34\uC2A8 \uC2EC\uC815\uC778\uC9C0\uB294 \uC54C\uACA0\uC9C0\uB9CC."
-    0000009C:
+    0000009B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2233,11 +2228,11 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uBCF4\uC790\uC544.. \uADF8\uB7FC \uC5B4\uB5BB\uAC8C \uD560\uAE4C?"
-    0000009D:
+    0000009C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2246,19 +2241,19 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB0A8\uC790\uAC00 \uC2E4\uC885\uB41C \uB4B7\uB3D9\uC0B0? \uC544\uC774\uAC00
           \uC2E4\uC885\uB41C \uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38?"
-    0000009E:
+    0000009D:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
         - str: "\uB4B7\uB3D9\uC0B0"
-          nextIdx: 159
+          nextIdx: 158
         - str: "\uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38"
-          nextIdx: 162
-    0000009F:
+          nextIdx: 161
+    0000009E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2266,7 +2261,7 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uB4B7\uB3D9\uC0B0\uBD80\uD130 \uAC00\uBCF4\uC790!"
-    000000A0:
+    0000009F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -2278,11 +2273,11 @@ MonoBehaviour:
         rightEffect: 0
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 10\uC2DC 37\uBD84"
-    000000A1:
+    000000A0:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 164
-    000000A2:
+        nextIndex: 163
+    000000A1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2295,15 +2290,23 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38\uBD80\uD130
           \uAC00\uBCF4\uC790!"
-    000000A3:
+    000000A2:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 186
+        nextIndex: 185
+    000000A3:
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+      data:
+        audioBGM: {fileID: 8300000, guid: e4491bc319252144a9423833bba57050, type: 3}
     000000A4:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: 3b6c09b8047cc9f458fcd0db3b922820, type: 3}
+    000000A5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2312,16 +2315,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5EC\uAE30\uAC00 \uB4B7\uB3D9\uC0B0\uC778\uAC00? \uC0DD\uAC01\uD588\uB358
           \uAC70 \uBCF4\uB2E4 \uB354 \uD55C\uC0B0\uD55C \uAC78?"
-    000000A5:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 0}
-        delay: 0
     000000A6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2333,7 +2331,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2345,7 +2343,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2358,8 +2356,8 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+        leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
         rightHighlight: 0
@@ -2370,7 +2368,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 2
         rightImage: {fileID: 0}
@@ -2382,7 +2380,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2395,7 +2393,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2408,7 +2406,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2422,7 +2420,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2434,7 +2432,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2447,7 +2445,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2456,15 +2454,19 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uB7FC \uC5EC\uAE30\uC11C\uBD80\uD130 \uC2DC\uC791\uD560\uAE4C?"
     000000B1:
+      type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        character: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+    000000B2:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         itemIndex: 1
         choiceDatas:
         - choiceStr: "\uC0AC\uB0E5\uAFBC\uC774 \uC0AC\uC6A9\uD55C \uB3C5\uC57D\uC77C\uAE4C?"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2474,7 +2476,7 @@ MonoBehaviour:
             script: "...\uC544\uB2C8\uC57C, \uADF8\uB807\uB2E4 \uD558\uAE30\uC5D4
               \uB108\uBB34 \uC9C0\uB098\uCCD0."
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2489,7 +2491,7 @@ MonoBehaviour:
         - choiceStr: "\uD53C\uD574\uC790\uB97C \uAE30\uC808\uC2DC\uD0A8 \uC57D\uBB3C\uC778\uAC00?"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2500,7 +2502,7 @@ MonoBehaviour:
               \uC544\uB9C8\uB3C4 \uB9C8\uCDE8\uC81C \uC131\uBD84\uC774 \uC11E\uC778
               \uC57D\uBB3C.."
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2512,7 +2514,7 @@ MonoBehaviour:
               \uB193\uACE0 \uAC04 \uAC78\uAEBC\uC57C."
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
+          leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
           leftHighlight: 1
           leftEffect: 0
           rightImage: {fileID: 0}
@@ -2521,11 +2523,11 @@ MonoBehaviour:
           name: "\uBBF8\uC790\uB974"
           script: "\uC624\uB298 \uBA38\uB9AC\uAC00 \uBC14\uBCF4\uAC00 \uB410\uB098?"
         correctIndex: 1
-    000000B2:
+    000000B3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2533,16 +2535,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uC57C..."
-    000000B3:
+    000000B4:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         itemIndex: 0
         choiceDatas:
         - choiceStr: "\uC791\uC740 \uB3D9\uBB3C\uB4E4\uC758 \uC2DC\uCCB4\uAC00 \uC788\uC73C\uB2C8\uAE4C"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2556,7 +2558,7 @@ MonoBehaviour:
             \uBAA8\uB974\uACA0\uB124"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
             rightImage: {fileID: 0}
@@ -2567,7 +2569,7 @@ MonoBehaviour:
               \uBAA8\uB974\uACA0\uB124."
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
+          leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
           leftHighlight: 1
           leftEffect: 0
           rightImage: {fileID: 0}
@@ -2576,11 +2578,11 @@ MonoBehaviour:
           name: "\uBBF8\uC790\uB974"
           script: "\uD558\uC544... \uC624\uB298 \uBA38\uB9AC\uAC00 \uC774\uC0C1\uD558\uB124."
         correctIndex: 0
-    000000B4:
+    000000B5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2589,11 +2591,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC791\uC740 \uB3D9\uBB3C\uC744 \uC0C1\uB300\uB85C
           \uC774\uB7F0 \uC77C\uC744..."
-    000000B5:
+    000000B6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2602,11 +2604,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uAC74 \uB098\uC911\uC5D0 \uC131\uBD84 \uBD84\uC11D\uC744
           \uC694\uCCAD\uD574\uC57C\uACA0\uC5B4."
-    000000B6:
+    000000B7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2615,11 +2617,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC74F\uCC28.. \uCC3E\uC744 \uC218 \uC788\uB294 \uAC74 \uC804\uBD80
           \uCC3E\uC558\uB124."
-    000000B7:
+    000000B8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2628,15 +2630,15 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB2E4\uC74C\uC740 \uC544\uC774\uAC00 \uB0A9\uCE58\uB41C \uC5B4\uB450\uC6B4
           \uB4B7\uACE8\uBAA9\uC774\uC57C."
-    000000B8:
+    000000B9:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 0}
-    000000B9:
+        audioBGM: {fileID: 8300000, guid: 2947823f702ed43b9867d418f837e0da, type: 3}
+    000000BA:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-    000000BA:
+        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
+    000000BB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -2648,7 +2650,7 @@ MonoBehaviour:
         rightEffect: 0
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 11\uC2DC 07\uBD84"
-    000000BB:
+    000000BC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -2661,11 +2663,11 @@ MonoBehaviour:
         name: 
         script: "\uBA40\uB9AC\uC11C \uC0AC\uB78C\uB4E4\uC758 \uB9D0\uC18C\uB9AC\uAC00
           \uB4E4\uB824\uC628\uB2E4."
-    000000BC:
+    000000BD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2674,11 +2676,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544..\uD558~ \uCC3E\uC558\uB2E4. \uC0AC\uB78C\uB4E4\uC774 \uC5C4\uCCAD\uB098\uAC8C
           \uBAA8\uC5EC\uC788\uB124?"
-    000000BD:
+    000000BE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -2686,24 +2688,16 @@ MonoBehaviour:
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "..\uC99D\uAC70 \uD6FC\uC190\uC740 \uC548 \uD588\uC73C\uBA74 \uC88B\uACA0\uB294\uB370~"
-    000000BE:
+    000000BF:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
         delay: 0
-    000000BF:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: 
-        script: 
     000000C0:
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+      data:
+        audioBGM: {fileID: 8300000, guid: 72368974817d70142815fb02c6691d3d, type: 3}
+    000000C1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -2711,27 +2705,23 @@ MonoBehaviour:
         leftHighlight: 0
         leftEffect: 0
         rightImage: {fileID: 0}
-        rightHighlight: 1
+        rightHighlight: 0
         rightEffect: 0
-        name: "\uC54C\uCF54\uB974"
+        name: 
         script: "\uC5B4\uC774.. \uAC70\uAE30 \uBA48\uCDB0\uB77C."
-    000000C1:
+    000000C2:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
         delay: 0
-    000000C2:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioBGM: {fileID: 0}
     000000C3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2741,10 +2731,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2753,10 +2743,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2766,10 +2756,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2778,10 +2768,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2792,10 +2782,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2810,10 +2800,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2822,10 +2812,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2834,23 +2824,23 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
+        rightHighlight: 1
         rightEffect: 0
-        name: 
+        name: "\uBBF8\uC790\uB974"
         script: "\uC77C\uAC1C \uC2DC\uBBFC\uC5D0\uAC8C \uC0AC\uAC74\uC744 \uC758\uB8B0\uD558\uB2E4\uB2C8..
           \uADF8\uB188\uB4E4\uB3C4 \uC815\uC2E0\uC774 \uB098\uAC14\uAD70."
     000000CD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2861,10 +2851,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2874,10 +2864,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2887,10 +2877,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2899,10 +2889,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2913,10 +2903,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2927,10 +2917,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2940,10 +2930,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 1
         name: "\uC54C\uCF54\uB974"
@@ -2952,10 +2942,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2966,10 +2956,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -2981,10 +2971,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -2994,10 +2984,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3009,10 +2999,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3024,10 +3014,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3040,10 +3030,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3055,14 +3045,14 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
-        script: "\uADF8 \uB2E4\uC74C\uC740 \uC26C\uC6CC.\n\uBAA8\uC885\uC758 \uC774\uC720\uB85C
+        script: "\uADF8 \uB2E4\uC74C\uC740 \uC26C\uC6CC. \uBAA8\uC885\uC758 \uC774\uC720\uB85C
           \uACC4\uC18D \uAC00\uBA74\uC744 \uC4F0\uACE0 \uC788\uB294 \uAE34\uC7A5
           \uC0C1\uD0DC\uC774\uB2C8, \uC5B4\uB5A4 \uC2DD\uC73C\uB85C\uB4E0 \uC2E0\uD638\uB97C
           \uBCF4\uB0B4\uAE30 \uB9C8\uB828\uC774\uC9C0."
@@ -3070,10 +3060,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3085,10 +3075,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3101,10 +3091,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3114,10 +3104,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3126,10 +3116,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3138,10 +3128,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3151,10 +3141,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3165,10 +3155,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3177,10 +3167,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3190,10 +3180,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3204,10 +3194,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3218,10 +3208,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3230,10 +3220,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3243,10 +3233,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3261,7 +3251,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -3275,7 +3265,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -3288,7 +3278,7 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -3300,12 +3290,12 @@ MonoBehaviour:
     000000EF:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        character: {fileID: 0}
+        character: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
     000000F0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
         rightImage: {fileID: 0}
@@ -3318,10 +3308,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3331,10 +3321,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3346,10 +3336,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3358,10 +3348,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3371,10 +3361,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3383,10 +3373,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3396,10 +3386,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3408,10 +3398,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3420,10 +3410,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3432,10 +3422,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3445,10 +3435,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3458,10 +3448,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3470,10 +3460,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3483,10 +3473,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3494,16 +3484,16 @@ MonoBehaviour:
     000000FF:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
         itemIndex: 2
         choiceDatas:
         - choiceStr: "\uBAA8\uC790\uC758 \uBC1C\uC790\uAD6D\uC744 \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3515,21 +3505,21 @@ MonoBehaviour:
         - choiceStr: "\uBAA8\uC790\uC758 \uC0C1\uD45C\uB97C \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
             script: "\uBAA8\uC790\uC758 \uC0C1\uD45C...?"
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
-          leftHighlight: 1
+          leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
+          leftHighlight: 0
           leftEffect: 0
           rightImage: {fileID: 0}
-          rightHighlight: 0
+          rightHighlight: 1
           rightEffect: 0
           name: "\uC54C\uCF54\uB974"
           script: "\uC9C0\uAE08 \uC218\uC0AC\uAC00 \uC7A5\uB09C\uC774\uB77C\uACE0
@@ -3539,10 +3529,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3551,10 +3541,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3566,10 +3556,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3579,10 +3569,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3594,10 +3584,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3609,10 +3599,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3621,10 +3611,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3632,16 +3622,16 @@ MonoBehaviour:
     00000107:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
         itemIndex: 2
         choiceDatas:
         - choiceStr: "\uBC1C\uC790\uAD6D\uC758 \uBB38\uC591\uC744 \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3651,10 +3641,10 @@ MonoBehaviour:
         - choiceStr: "\uBC1C\uC790\uAD6D\uC774 \uCC0D\uD78C \uD615\uD0DC\uB97C \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3662,10 +3652,10 @@ MonoBehaviour:
               \uC54A\uC544?"
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
+          leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
           leftHighlight: 1
           leftEffect: 0
-          rightImage: {fileID: 0}
+          rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
           rightHighlight: 0
           rightEffect: 0
           name: "\uBBF8\uC790\uB974"
@@ -3675,10 +3665,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3687,10 +3677,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3700,10 +3690,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3715,10 +3705,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3726,16 +3716,16 @@ MonoBehaviour:
     0000010C:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
         itemIndex: 3
         choiceDatas:
         - choiceStr: "\uAC80\uC740 \uCC9C \uC870\uAC01"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3746,10 +3736,10 @@ MonoBehaviour:
         - choiceStr: "\uC544\uC774\uAC00 \uB0A9\uCE58\uB41C \uB0A0"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3757,29 +3747,29 @@ MonoBehaviour:
               \uC720\uB3D9\uC778\uAD6C\uAC00 \uD3C9\uC18C\uBCF4\uB2E4 \uB9CE\uC558\uC9C0."
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
+          leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
           leftHighlight: 0
           leftEffect: 0
-          rightImage: {fileID: 0}
+          rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
           rightHighlight: 1
           rightEffect: 0
-          name: "\uBBF8\uC790\uB974"
+          name: "\uC54C\uCF54\uB974"
           script: "\uB611\uAC19\uC740 \uB9D0\uC744 \uC65C \uBC18\uBCF5\uD558\uC9C0?
             \uBA38\uB9AC\uAC00 \uBC8C\uC368 \uC774\uC0C1\uD574\uC9C4\uAC74\uAC00?"
         correctIndex: 0
     0000010D:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 0}
+        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
         itemIndex: 4
         choiceDatas:
         - choiceStr: "\uBD80\uC11C\uC9C4 \uC2DC\uACC4\uB97C \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
-            leftHighlight: 0
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+            leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3788,10 +3778,10 @@ MonoBehaviour:
         - choiceStr: "\uBD80\uC11C\uC9C4 \uC2DC\uACC4\uC758 \uC2DC\uAC04\uC744 \uBCF8\uB2E4"
           dialogs:
           - screenEffect: 0
-            leftImage: {fileID: 0}
+            leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
             leftHighlight: 1
             leftEffect: 0
-            rightImage: {fileID: 0}
+            rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
             rightHighlight: 0
             rightEffect: 0
             name: "\uBBF8\uC790\uB974"
@@ -3800,24 +3790,24 @@ MonoBehaviour:
               \uC218 \uC788\uACA0\uB124."
         twiceFailDialogData:
           screenEffect: 0
-          leftImage: {fileID: 0}
-          leftHighlight: 1
+          leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
+          leftHighlight: 0
           leftEffect: 0
-          rightImage: {fileID: 0}
-          rightHighlight: 0
+          rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
+          rightHighlight: 1
           rightEffect: 0
-          name: "\uBBF8\uC790\uB974"
-          script: "'\uB2E4\uB978 \uAC83\uB3C4 \uC0DD\uAC01\uD560 \uC218 \uC788\uC5C8\uC9C0
-            \uC54A\uC744\uAE4C?'"
+          name: "\uC54C\uCF54\uB974"
+          script: "\uB611\uAC19\uC740 \uB9D0\uC744 \uBC18\uBCF5\uD558\uB2E4\uB2C8...
+            \uC9C0\uAE08 \uB098\uB791 \uC7A5\uB09C\uD558\uC790\uB294 \uAC74\uAC00?"
         correctIndex: 1
     0000010E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3829,10 +3819,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3842,10 +3832,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3855,10 +3845,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3868,10 +3858,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3881,10 +3871,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 41683cb2febedfa4dabe4622d26697cd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3896,10 +3886,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3908,10 +3898,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3920,10 +3910,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3933,10 +3923,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3947,10 +3937,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3960,10 +3950,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -3972,10 +3962,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3986,10 +3976,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -3998,10 +3988,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4011,10 +4001,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4024,10 +4014,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4037,10 +4027,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4049,10 +4039,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4063,10 +4053,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4075,10 +4065,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4089,10 +4079,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4102,289 +4092,289 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8eb348d5bd639814a9f4d720187953dd, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uC9C4\uC9DC \uC8FD\uC5EC\uBC84\uB9AC\uACE0 \uC2F6\uAD70..."
     00000125:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
-        leftEffect: 2
-        rightImage: {fileID: 0}
-        rightHighlight: 0
-        rightEffect: 0
-        name: "\uBBF8\uC790\uB974"
-        script: "\uC7A0\uAE50...!"
+        audioBGM: {fileID: 0}
     00000126:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 1
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
+        leftHighlight: 1
+        leftEffect: 2
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
+        rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
-        script: ..?
+        script: "\uC7A0\uAE50...!"
     00000127:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: b25ad9784acbe0c49a74a2c20d9f21e9, type: 3}
+        rightHighlight: 1
+        rightEffect: 0
+        name: "\uBBF8\uC790\uB974"
+        script: ..?
+    00000128:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC800\uAE30.. \uC800\uAE38 \uBD10."
-    00000128:
+    00000129:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 0}
-    00000129:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 1
-        rightEffect: 0
-        name: "\uC54C\uCF54\uB974"
-        script: "\uC800 \uB140\uC11D\uC740.."
+        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
     0000012A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: 8fc2e70a76929124ca64b61ba4e64bf2, type: 3}
+        rightHighlight: 1
+        rightEffect: 0
+        name: "\uC54C\uCF54\uB974"
+        script: "\uC800 \uB140\uC11D\uC740.."
+    0000012B:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uAE4C \uBCF8 \uACE0\uAE09 \uC18C\uC7AC\uB85C \uB9CC\uB4E0
           \uC637\uC774\uC57C.. \uBB34\uC2A8 \uB9D0\uC778\uC9C0 \uC54C\uC9C0?"
-    0000012B:
+    0000012C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uC124\uB9C8 \uC81C\uBC1C\uB85C \uB098\uD0C0\uB0A0 \uC904\uC774\uC57C..
           \uC9C0\uAE08 \uB2F9\uC7A5.."
-    0000012C:
+    0000012D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uAE30\uB2E4\uB824! \uD568\uBD80\uB85C \uC6C0\uC9C1\uC774\uBA74
           \uB3C4\uB9DD\uCE60 \uAC70\uB77C\uACE0."
-    0000012D:
+    0000012E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB7FC \uC5B4\uCA4C\uB780 \uAC70\uB0D0? \uC774\uB300\uB85C
           \uB450 \uC190 \uB193\uACE0 \uBCF4\uACE0 \uC788\uC73C\uB77C\uACE0?"
-    0000012E:
+    0000012F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824.. \uC77C\uB2E8\uC740.."
-    0000012F:
+    00000130:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
         - str: "\uC790\uC5F0\uC2A4\uB7FD\uAC8C \uB9D0\uC744 \uAC74\uB2E4"
-          nextIdx: 304
+          nextIdx: 305
         - str: "\uC7AC\uBE68\uB9AC \uBD99\uC7A1\uB294\uB2E4"
-          nextIdx: 306
-    00000130:
+          nextIdx: 307
+    00000131:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC77C\uB2E8 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uB9D0\uC744 \uAC78\uC790.\r\n\uC544\uC9C1\uAE4C\uC9C0
           \uB208\uCE58\uB97C \uBCF4\uB294 \uAC78 \uBCF4\uB2C8\uAE4C \uC644\uC804\uD788
           \uC54C\uC544\uCC48 \uAC74 \uC544\uB2C8\uC57C."
-    00000131:
+    00000132:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 307
-    00000132:
+        nextIndex: 308
+    00000133:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uC2E0\uD638\uB97C \uC8FC\uBA74 \uBC14\uB85C \uB6F0\uC5B4\uAC00\uC11C
           \uBD99\uC7A1\uC790.\r\n\uC218\uC0AC \uC778\uC6D0\uC774 \uB9CE\uC73C\uB2C8\uAE4C
           \uAE08\uBC29 \uD3EC\uC704\uD560 \uC218 \uC788\uC744 \uAC70\uC57C."
-    00000133:
+    00000134:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB807\uB2E4\uBA74 \uB0B4\uAC00 \uBA3C\uC800 \uAC00\uC9C0.
           \uB108\uBCF4\uB2E8 \uB098\uC744 \uAC70\uB2E4."
-    00000134:
+    00000135:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "..\uBB54\uAC00 \uB418\uAC8C \uAE30\uBD84 \uB098\uC05C\uB370, \uAE30\uBD84
           \uD0D3\uC774\uC57C?"
-    00000135:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 1
-        rightEffect: 0
-        name: "\uC54C\uCF54\uB974"
-        script: "\uB098\uBCF4\uB2E4 \uBE60\uB974\uB2E4\uBA74 \uC0C1\uAD00 \uC5C6\uB2E4\uB9CC?"
     00000136:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 1
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
+        rightHighlight: 1
         rightEffect: 0
-        name: "\uBBF8\uC790\uB974"
-        script: "\uB2E4\uB9AC \uC808\uB8E9\uAC70\uB9AC\uB294 \uC8FC\uC81C\uC5D0 \uBB34\uC2A8.."
+        name: "\uC54C\uCF54\uB974"
+        script: "\uB098\uBCF4\uB2E4 \uBE60\uB974\uB2E4\uBA74 \uC0C1\uAD00 \uC5C6\uB2E4\uB9CC?"
     00000137:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
+        leftHighlight: 1
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
+        rightHighlight: 0
+        rightEffect: 0
+        name: "\uBBF8\uC790\uB974"
+        script: "\uB2E4\uB9AC \uC808\uB8E9\uAC70\uB9AC\uB294 \uC8FC\uC81C\uC5D0 \uBB34\uC2A8.."
+    00000138:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uC2EC\uB9AC\uC801\uC778 \uC694\uC778\uC774\uB77C\uACE0 \uB124\uAC00
           \uB9D0\uD558\uC9C0 \uC54A\uC558\uB098? \uB9C8\uC74C \uBA39\uC73C\uBA74
           \uC800 \uC815\uB3C4\uB294 \uAE08\uBC29\uC774\uB2E4."
-    00000138:
+    00000139:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC5B4\uB290\uCABD\uC774\uB4E0 \uC88B\uC544. \uC77C\uB2E8
           \uAC00\uC790."
-    00000139:
+    0000013A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uD639\uC2DC\uB098 \uD574\uC11C \uD558\uB294 \uC774\uC57C\uAE30\uC9C0\uB9CC
           \uC870\uC2EC\uD558\uB294 \uAC8C \uC88B\uC544. \uD638\uC2E0\uC6A9\uC73C\uB85C
           \uBB58 \uAC00\uC9C0\uACE0 \uC788\uC744\uC9C0 \uBAB0\uB77C."
-    0000013A:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftImage: {fileID: 0}
-        leftHighlight: 0
-        leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 1
-        rightEffect: 0
-        name: "\uC54C\uCF54\uB974"
-        script: ...........
     0000013B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
+        rightHighlight: 1
+        rightEffect: 0
+        name: "\uC54C\uCF54\uB974"
+        script: ...........
+    0000013C:
+      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        screenEffect: 0
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        leftHighlight: 0
+        leftEffect: 0
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uC54C\uACA0\uB2E4."
-    0000013C:
-      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
-      data:
-        bgPrefab: {fileID: 0}
     0000013D:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
@@ -4394,10 +4384,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4415,10 +4405,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 219eea904b6d0444d843983826303824, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4427,31 +4417,31 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: b130673b837b0bb49ab5248ddb0c1b06, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uB9DD\uD560..! \uC5B4\uC774! \uC800\uAE30 \uB3C4\uB9DD\uAC00\uB294
           \uB140\uC11D\uC744 \uC7A1\uC544!!"
     00000143:
-      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
-      data:
-        bgPrefab: {fileID: 0}
-    00000144:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 0}
+    00000144:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: e6936888a36d4c743a19cdc7a69e3673, type: 3}
     00000145:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4461,11 +4451,11 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
-        rightHighlight: 0
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
+        rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8 \uB140\uC11D\uC740?!"
@@ -4473,10 +4463,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4485,10 +4475,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4498,10 +4488,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4511,10 +4501,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4524,10 +4514,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4536,10 +4526,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4549,10 +4539,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4562,10 +4552,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4575,10 +4565,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 4bf4fdc2181e7bf49858685637b9b3fc, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uBBF8\uC790\uB974"
@@ -4588,10 +4578,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         leftHighlight: 0
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: 806668a353088eb4f8b421b7a9d6f6a1, type: 3}
         rightHighlight: 1
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
@@ -4601,10 +4591,10 @@ MonoBehaviour:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
-        leftImage: {fileID: 0}
+        leftImage: {fileID: 21300000, guid: d869235f67f621f429ee81c5fa918c20, type: 3}
         leftHighlight: 1
         leftEffect: 0
-        rightImage: {fileID: 0}
+        rightImage: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
         rightHighlight: 0
         rightEffect: 0
         name: "\uC54C\uCF54\uB974"
