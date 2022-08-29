@@ -2478,7 +2478,7 @@ MonoBehaviour:
     descTMP: {fileID: 968428660}
     submitBtn: {fileID: 1395879477}
   logTMP: {fileID: 236268519}
-  scriptData: {fileID: 11400000, guid: fe8d1b12d7c37c642be69e9ea0ae4e2a, type: 2}
+  scriptData: {fileID: 11400000, guid: c680a24da5cf1b54d87604169ce3d27d, type: 2}
   itemData: {fileID: 11400000, guid: 8309f41304dfa534390612ee98d40755, type: 2}
   invenComp: {fileID: 1343145470}
   bgUI: {fileID: 549581127}
@@ -10636,7 +10636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1785617738
 RectTransform:
   m_ObjectHideFlags: 0

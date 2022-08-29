@@ -431,6 +431,9 @@ MonoBehaviour:
   - id: 393
   - id: 393
   - id: 394
+  addKey: "\uC2E0\uBB38\uBC30\uB2EC\uBD80 \uC18C\uB144 \uC120\uD0DD \uC5EC\uBD80"
+  addType: 0
+  removeKey: 
   insertIndex: 293
   swapIndex: {x: 0, y: 0}
   references:
@@ -2741,8 +2744,10 @@ MonoBehaviour:
       data:
         choices:
         - str: "\uC758\uB8B0\uB97C \uBC1B\uB294\uB2E4"
+          cmp: []
           nextIdx: 126
         - str: "\uC758\uB8B0\uB97C \uBC1B\uC9C0 \uC54A\uB294\uB2E4"
+          cmp: []
           nextIdx: 124
     0000007C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
@@ -3436,8 +3441,10 @@ MonoBehaviour:
       data:
         choices:
         - str: "\uB4B7\uB3D9\uC0B0"
+          cmp: []
           nextIdx: 158
         - str: "\uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38"
+          cmp: []
           nextIdx: 161
     0000009E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
@@ -6728,8 +6735,10 @@ MonoBehaviour:
       data:
         choices:
         - str: "\uC790\uC5F0\uC2A4\uB7FD\uAC8C \uB9D0\uC744 \uAC74\uB2E4"
+          cmp: []
           nextIdx: 305
         - str: "\uC7AC\uBE68\uB9AC \uBD99\uC7A1\uB294\uB2E4"
+          cmp: []
           nextIdx: 307
     00000131:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
@@ -7355,10 +7364,13 @@ MonoBehaviour:
       data:
         choices:
         - str: "\uC57D\uC7AC\uBC29"
+          cmp: []
           nextIdx: 339
         - str: "\uCC3B\uC9D1"
+          cmp: []
           nextIdx: 0
         - str: "\uC2E0\uBB38\uBC30\uB2EC\uBD80 \uC18C\uB144"
+          cmp: []
           nextIdx: 0
     00000153:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
