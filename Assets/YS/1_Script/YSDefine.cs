@@ -189,8 +189,7 @@ namespace YS
             for (int i = 0; i < 2; ++i)
                 sideImg[i].transform.position = SidePosition[i];
 
-            gm.SetBGCurTime(0.0f);
-            gm.SetBGFadeInOut(true);
+            gm.SetBGCurTime(1.0f);
             gm.ResetFlash();
         }
         #endregion
