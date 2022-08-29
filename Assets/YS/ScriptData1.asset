@@ -464,7 +464,7 @@ MonoBehaviour:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
-        volume: 0.437
+        volume: 1
     00000003:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -511,12 +511,12 @@ MonoBehaviour:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 7a1328e2efe307d4da340f21a92568b7, type: 3}
-        volume: 0
+        volume: 1
     00000006:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
-        volume: 0
+        volume: 1
         delay: 0
     00000007:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
@@ -564,7 +564,7 @@ MonoBehaviour:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 0}
-        volume: 0
+        volume: 1
         delay: 0
     0000000A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}

@@ -156,6 +156,7 @@ namespace YS
         private void SetCharSetting(SIDE_IMAGE side, DialogEvent.CharacterStruct character)
         {
             sideImg[(int)side].sprite = character.image;
+            sideImg[(int)side].transform.localScale = new Vector3(character.isMirror ? -1.0f : 1.0f, 1.0f, 1.0f);
 
             if (character.image == null)
                 sideImg[(int)side].color = Color.clear;

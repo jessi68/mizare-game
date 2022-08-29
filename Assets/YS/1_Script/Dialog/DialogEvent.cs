@@ -10,8 +10,6 @@ namespace YS
         [LabelText("화면 효과"), Tooltip("화면 효과\nNONE : 화면 효과 없음\nFADE_IN : 검은 화면에서 점차 배경 화면으로 전환\nFADE_OUT : 배경 화면에서 점차 검은 화면으로 전환\nRED_FLASH : 화면 빨간색으로 깜빡임")]
         private SCREEN_EFFECT screenEffect;
 
-        [Space(10.0f)]
-
         [FoldoutGroup("왼쪽 캐릭터"), SerializeField]
         [HideLabel]
         private CharacterStruct leftCharacter;
@@ -44,13 +42,11 @@ namespace YS
 
             gm.dialogStruct.Setup(this);
         }
-
         protected override void OnUpdate()
         {
             if (gm.IsKeyDown())
                 gm.dialogStruct.OnDialogEvent(this);
         }
-
         public override void OnExit()
         {
             gm.dialogStruct.Release();
@@ -60,16 +56,16 @@ namespace YS
         [System.Serializable]
         public struct CharacterStruct
         {
-            [BoxGroup("캐릭터", true, true), SerializeField]
+            [SerializeField]
             [LabelText("이미지"), Tooltip("캐릭터 이미지")]
             public Sprite image;
-            [BoxGroup("캐릭터"), SerializeField]
+            [SerializeField, DisableIf("@image == null")]
             [LabelText("좌우 반전"), Tooltip("캐릭터 이미지를 좌우 반전 시킬것인가")]
             public bool isMirror;
-            [BoxGroup("캐릭터"), SerializeField]
+            [SerializeField, DisableIf("@image == null")]
             [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
             public bool isHighlight;
-            [BoxGroup("캐릭터"), SerializeField]
+            [SerializeField, DisableIf("@image == null")]
             [LabelText("효과"), Tooltip("이미지 효과\nNONE : 효과 없음\nSHAKE_VERTICAL : 이미지 상하 흔들기\nSHAKE_HORIZONTAL : 이미지 좌우 흔들기\nSHAKE_RANDOM : 이미지 무작위 방향으로 흔들기\nBOUNCE : 뛰어오르기")]
             public CHARACTER_EFFECT_INDEX effect;
         }
