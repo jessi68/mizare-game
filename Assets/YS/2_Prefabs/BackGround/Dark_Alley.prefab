@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1840710139639414994}
   - component: {fileID: 1840710139639414993}
   m_Layer: 5
-  m_Name: Mizare_Office
+  m_Name: Dark_Alley
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fb2bf22f1051c54a8e91b5f1c03d7f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8fc6b0de54c79a4dab388470186107f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
