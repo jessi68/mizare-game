@@ -12,24 +12,15 @@ namespace YS
 
         [Space(10.0f)]
 
-        [BoxGroup("왼쪽 캐릭터", true, true), SerializeField]
-        [LabelText("이미지"), Tooltip("캐릭터 이미지")]
-        private Sprite leftImage;
-        [BoxGroup("왼쪽 캐릭터"), SerializeField]
-        [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
-        private bool leftHighlight;
-        [BoxGroup("왼쪽 캐릭터"), SerializeField]
-        [LabelText("효과"), Tooltip("이미지 효과\nNONE : 효과 없음\nSHAKE_VERTICAL : 이미지 상하 흔들기\nSHAKE_HORIZONTAL : 이미지 좌우 흔들기\nSHAKE_RANDOM : 이미지 무작위 방향으로 흔들기\nBOUNCE : 뛰어오르기")]
-        private CHARACTER_EFFECT_INDEX leftEffect;
-        [BoxGroup("오른쪽 캐릭터", true, true), SerializeField]
-        [LabelText("이미지"), Tooltip("캐릭터 이미지")]
-        private Sprite rightImage;
-        [BoxGroup("오른쪽 캐릭터"), SerializeField]
-        [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
-        private bool rightHighlight;
-        [BoxGroup("오른쪽 캐릭터"), SerializeField]
-        [LabelText("효과"), Tooltip("이미지 효과\nNONE : 효과 없음\nSHAKE_VERTICAL : 이미지 상하 흔들기\nSHAKE_HORIZONTAL : 이미지 좌우 흔들기\nSHAKE_RANDOM : 이미지 무작위 방향으로 흔들기\nBOUNCE : 뛰어오르기")]
-        private CHARACTER_EFFECT_INDEX rightEffect;
+        [FoldoutGroup("왼쪽 캐릭터"), SerializeField]
+        [HideLabel]
+        private CharacterStruct leftCharacter;
+        [FoldoutGroup("중앙 캐릭터"), SerializeField]
+        [HideLabel]
+        private CharacterStruct centerCharacter;
+        [FoldoutGroup("오른쪽 캐릭터"), SerializeField]
+        [HideLabel]
+        private CharacterStruct rightCharacter;
 
         [BoxGroup("다이얼로그 UI", true, true), SerializeField]
         [LabelText("제목"), Tooltip("대화 상자의 이름\n빈칸일 시 이름 칸 UI 숨김")]
@@ -40,12 +31,9 @@ namespace YS
 
         #region Properties
         public SCREEN_EFFECT ScreenEffect => screenEffect;
-        public Sprite LeftImage => leftImage;
-        public bool LeftHighlight => leftHighlight;
-        public CHARACTER_EFFECT_INDEX LeftEffect => leftEffect;
-        public Sprite RightImage => rightImage;
-        public bool RightHighlight => rightHighlight;
-        public CHARACTER_EFFECT_INDEX RightEffect => rightEffect;
+        public CharacterStruct LeftCharacter => leftCharacter;
+        public CharacterStruct CenterCharacter => centerCharacter;
+        public CharacterStruct RightCharacter => rightCharacter;
         public string Name => name;
         public string Script => script;
         #endregion
@@ -68,6 +56,22 @@ namespace YS
             gm.dialogStruct.Release();
 
             base.OnExit();
+        }
+        [System.Serializable]
+        public struct CharacterStruct
+        {
+            [BoxGroup("캐릭터", true, true), SerializeField]
+            [LabelText("이미지"), Tooltip("캐릭터 이미지")]
+            public Sprite image;
+            [BoxGroup("캐릭터"), SerializeField]
+            [LabelText("좌우 반전"), Tooltip("캐릭터 이미지를 좌우 반전 시킬것인가")]
+            public bool isMirror;
+            [BoxGroup("캐릭터"), SerializeField]
+            [LabelText("강조 여부"), Tooltip("캐릭터가 화자인가")]
+            public bool isHighlight;
+            [BoxGroup("캐릭터"), SerializeField]
+            [LabelText("효과"), Tooltip("이미지 효과\nNONE : 효과 없음\nSHAKE_VERTICAL : 이미지 상하 흔들기\nSHAKE_HORIZONTAL : 이미지 좌우 흔들기\nSHAKE_RANDOM : 이미지 무작위 방향으로 흔들기\nBOUNCE : 뛰어오르기")]
+            public CHARACTER_EFFECT_INDEX effect;
         }
     }
 }

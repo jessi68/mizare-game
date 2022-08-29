@@ -8,7 +8,7 @@ namespace YS
     public class ScriptData : ScriptableObject
     {
         [SerializeReference]
-        [ListDrawerSettings(ShowIndexLabels = true)]
+        [ListDrawerSettings(ShowIndexLabels = true, NumberOfItemsPerPage = 10), Searchable]
         private List<BaseScriptEvent> scripts;
         private BaseScriptEvent curScript;
         private int curIndex;

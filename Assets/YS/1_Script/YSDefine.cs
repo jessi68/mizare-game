@@ -9,7 +9,7 @@ namespace YS
 {
     public class ImageReference
     {
-        public const string Mizar_Normal = "아트/미자르/미자르3-무표정2.png";
+        public const string Mizar_Normal = "Characters/Mizare/Right/mizare_origin.png";
     }
     public enum ITEM_INDEX
     {
@@ -23,6 +23,7 @@ namespace YS
     public enum SIDE_IMAGE
     {
         LEFT_SIDE,
+        CENTER_SIDE,
         RIGHT_SIDE
     }
     public enum SCREEN_EFFECT
@@ -52,7 +53,7 @@ namespace YS
         [LabelText("다이얼로그 패널 UI"), Tooltip("다이얼로그 루트 게임오브젝트")]
         public GameObject dialogUI;
         [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
-        [LabelText("양쪽 이미지"), Tooltip("다이얼로그 왼쪽/오른쪽 Image 컴포넌트")]
+        [LabelText("이미지 위치"), Tooltip("다이얼로그 왼쪽/중앙/오른쪽 Image 컴포넌트")]
         public Image[] sideImg;
         [FoldoutGroup("다이얼로그 UI")]
         [LabelText("이름 TMP"), Tooltip("다이얼로그 창 이름 TMP")]
@@ -92,9 +93,9 @@ namespace YS
         {
             gm = GameManager.Instance;
 
-            sidePos = new Vector3[2];
+            sidePos = new Vector3[3];
             // 초기화를 위해 처음의 Left, Right 사이드 이미지의 위치 얻기
-            for (int i = 0; i < 2; ++i)
+            for (int i = 0; i < 3; ++i)
                 sidePos[i] = sideImg[i].transform.position;
 
             sideFXCoroutine = new Coroutine[2];
@@ -125,8 +126,9 @@ namespace YS
             nameTMP.SetText(de.Name);
             scriptTMP.SetText(de.Script);
 
-            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftImage, de.LeftHighlight, de.LeftEffect);
-            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightImage, de.RightHighlight, de.RightEffect);
+            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftCharacter);
+            SetCharSetting(SIDE_IMAGE.CENTER_SIDE, de.CenterCharacter);
+            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightCharacter);
         }
         public void Release()
         {
@@ -151,24 +153,24 @@ namespace YS
         /// <param name="charImgIdx">보여줄 이미지</param>
         /// <param name="isHighlight">하이라이트 여부</param>
         /// <param name="charFX">사이드 이미지에 줄 효과</param>
-        private void SetCharSetting(SIDE_IMAGE side, Sprite charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
+        private void SetCharSetting(SIDE_IMAGE side, DialogEvent.CharacterStruct character)
         {
-            sideImg[(int)side].sprite = charImgIdx;
+            sideImg[(int)side].sprite = character.image;
 
-            if (charImgIdx == null)
+            if (character.image == null)
                 sideImg[(int)side].color = Color.clear;
             else
             {
-                sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
+                sideImg[(int)side].color = character.isHighlight ? Color.white : Color.gray;
                 sideImg[(int)side].SetNativeSize();
             }
 
-            switch (charFX)
+            switch (character.effect)
             {
                 case CHARACTER_EFFECT_INDEX.SHAKE_HORIZONTAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_VERTICAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_RANDOM:
-                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, shakeIntensity, shakeTime, shakeIntervalTime, charFX));
+                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, shakeIntensity, shakeTime, shakeIntervalTime, character.effect));
                     break;
 
                 case CHARACTER_EFFECT_INDEX.BOUNCE:
@@ -186,7 +188,7 @@ namespace YS
             if (sideFXCoroutine[1] != null) gm.StopCoroutine(sideFXCoroutine[1]);
             if (gm.bgFXCoroutine != null) gm.StopCoroutine(gm.bgFXCoroutine);
 
-            for (int i = 0; i < 2; ++i)
+            for (int i = 0; i < 3; ++i)
                 sideImg[i].transform.position = SidePosition[i];
 
             gm.SetBGCurTime(1.0f);
