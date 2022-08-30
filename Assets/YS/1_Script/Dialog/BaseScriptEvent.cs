@@ -15,6 +15,7 @@ namespace YS
         {
             gm = GameManager.Instance;
             gm.OnUpdateEvent += OnUpdate;
+            Debug.Log($"{gm.scriptData.CurrentIndex} 스크립트 시작");
         }
         public virtual void OnExit()
         {

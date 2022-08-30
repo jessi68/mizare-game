@@ -8,13 +8,15 @@ namespace YS
     {
         [SerializeField, LabelText("πË∞Ê¿Ωæ«"), Tooltip("πË∞Ê¿Ωæ« º±≈√\nnull¿œ Ω√ πË∞Ê¿Ωæ« ¿Áª˝¿ª ∏ÿ√‰¥œ¥Ÿ.")]
         private AudioClip audioBGM;
+        [SerializeField, LabelText("∫º∑˝"), Range(0.0f, 1.0f)]
+        private float volume = 1.0f;
 
         public override void OnEnter()
         {
             base.OnEnter();
 
             if (audioBGM != null)
-                AudioManager.PlayBGM(audioBGM);
+                AudioManager.PlayBGM(audioBGM, volume);
             else
                 AudioManager.StopBGM();
 

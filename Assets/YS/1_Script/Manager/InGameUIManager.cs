@@ -133,9 +133,9 @@ namespace YS
             
             settingBtn.onClick.AddListener(() => { OnPushState(INGAME_UI_STATE.SETTING); });
             closeSettingBtn.onClick.AddListener(() => { PopState(stateStack.Pop()); });
-            volumeSlider.onValueChanged.AddListener((float value) => { AudioManager.BGMVolume = value; });
+            volumeSlider.onValueChanged.AddListener((float value) => { AudioManager.BaseBGMVolume = value; });
             typingSlider.onValueChanged.AddListener((float value) => { SettingManager.ChangeTypingSpeed((TYPING_SPEED)value); });
-            volumeSlider.value = AudioManager.BGMVolume;
+            volumeSlider.value = AudioManager.BaseBGMVolume;
             typingSlider.value = (float)SettingManager.GetTypingSpeed();
             
             logBtn.onClick.AddListener(() => { OnPushState(INGAME_UI_STATE.LOG); });

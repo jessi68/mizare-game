@@ -12,81 +12,139 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a7715a9c50eda54f995ce5f05397eee, type: 3}
   m_Name: TestScriptData
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: varTable
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\uD30C\uB780 \uBCF4\uC11D"
+    - Name: $v
+      Entry: 7
+      Data: 2|System.Boolean, mscorlib
+    - Name: 
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\uBE68\uAC04 \uBCF4\uC11D"
+    - Name: $v
+      Entry: 7
+      Data: 3|System.Boolean, mscorlib
+    - Name: 
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+    - Name: $v
+      Entry: 7
+      Data: 4|System.Int32, mscorlib
+    - Name: 
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   scripts:
   - id: 0
   - id: 1
-  - id: 2
-  - id: 3
-  insertIndex: -1
+  addKey: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+  addType: 1
+  removeKey: 
+  insertIndex: 0
   swapIndex: {x: 5, y: 6}
   references:
     version: 1
     00000000:
-      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      type: {class: SetVariableEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
+        changeVars:
+        - varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+          type: 1
+          valueBool: 1
+          valueInt: 5
+          valueFloat: 0
     00000001:
-      type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
+      type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        audioBGM: {fileID: 8300000, guid: ddbb5c598218ed24fb0e8d1b0d1323b2, type: 3}
-    00000002:
-      type: {class: ArrangeEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        question: "\uD558\uC580 \uAC00\uB8E8\uB294 \uBB34\uC5C7\uC778\uAC00?"
-        words:
-        - isFixedWord: 1
-          fixedWord: "\uD558\uC580 \uAC00\uB8E8\uB294"
-          choiceWords: []
-          correctIndex: -1
-        - isFixedWord: 0
-          fixedWord: 
-          choiceWords:
-          - "\uD558\uC218\uB3C4 \uC791\uC740 \uBC29\uC5D0\uC11C \uCC3E\uC740 \uB9C8\uCDE8\uC57D\uACFC
-            \uAC19\uC740 \uC131\uBD84\uC73C\uB85C"
-          - "\uC2DD\uB2F9\uC5D0\uC11C"
-          - 
-          - 
-          correctIndex: 1
-        - isFixedWord: 0
-          fixedWord: 
-          choiceWords:
-          - "\uB9C8\uC57D\uC131 \uC9C4\uD1B5\uC81C"
-          - "\uC124\uD0D5"
-          - "\uC18C\uAE08"
-          correctIndex: 1
-        - isFixedWord: 1
-          fixedWord: "\uC758 \uC5ED\uD560\uB85C \uC0AC\uC6A9\uB418\uC5C8\uB2E4"
-          choiceWords: []
-          correctIndex: -1
-        hintStr: "\uCCAB\uBC88\uC9F8 \uD78C\uD2B8 \uB0B4\uC6A9"
-        successStr: "\uC131\uACF5\uD588\uB124?"
-        failStr: "\uBC14\uBCF4\uC57C,,?"
-    00000003:
-      type: {class: ArrangeEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        question: "\uB450\uBC88\uC9F8 \uC9C8\uBB38 \uD14C\uC2A4\uD2B8"
-        words:
-        - isFixedWord: 1
-          fixedWord: 
-          choiceWords: []
-          correctIndex: -1
-        - isFixedWord: 0
-          fixedWord: 
-          choiceWords:
-          - 11111
-          - "22222 \uC815\uB2F5"
-          correctIndex: 2
-        - isFixedWord: 0
-          fixedWord: 
-          choiceWords:
-          - 11111
-          - 22222
-          - "33333 \uC815\u3137\uC555"
-          correctIndex: 3
-        - isFixedWord: 1
-          fixedWord: "\uB784\uAE4C?"
-          choiceWords: []
-          correctIndex: 0
-        hintStr: "\uB450\uBC88\uC9F8 \uD78C\uD2B8 \uB0B4\uC6A9"
-        successStr: "\uC798\uD588\uC5B4"
-        failStr: "\uC5D0\uD734.."
+        choices:
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 5\uC774\uC0C1"
+          cmp:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 4
+            valueBool: 1
+            valueInt: 5
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 0
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 \uAC00 5"
+          cmp:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 0
+            valueBool: 1
+            valueInt: 5
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 0
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 5\uBBF8\uB9CC"
+          cmp:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 3
+            valueBool: 1
+            valueInt: 5
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 0

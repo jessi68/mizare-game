@@ -9,7 +9,7 @@ namespace YS
 {
     public class ImageReference
     {
-        public const string Mizar_Normal = "아트/미자르/미자르3-무표정2.png";
+        public const string Mizar_Normal = "Characters/Mizare/Right/mizare_origin.png";
     }
     public enum ITEM_INDEX
     {
@@ -23,6 +23,7 @@ namespace YS
     public enum SIDE_IMAGE
     {
         LEFT_SIDE,
+        CENTER_SIDE,
         RIGHT_SIDE
     }
     public enum SCREEN_EFFECT
@@ -40,6 +41,147 @@ namespace YS
         SHAKE_RANDOM,
         BOUNCE
     }
+    public enum ADDABLE_TYPE
+    {
+        [LabelText("조건")]
+        BOOL,
+        [LabelText("정수")]
+        INT,
+        [LabelText("실수")]
+        FLOAT
+    }
+    public enum LOGIC_CALC
+    {
+        AND,
+        OR
+    }
+    public enum COMPARE_TYPE
+    {
+        [LabelText("==")]
+        EQUAL,
+        [LabelText("!=")]
+        NOT_EQUAL,
+        [LabelText(">")]
+        GREATER,
+        [LabelText(">=")]
+        EQUAL_GREATER,
+        [LabelText("<")]
+        LESS,
+        [LabelText("<=")]
+        EQUAL_LESS
+    }
+    [System.Serializable]
+    public struct CompareVariableInTable
+    {
+        [LabelText("변수 타입"), SerializeField]
+        private ADDABLE_TYPE varType;
+        [HorizontalGroup("변수 비교 그룹", Width = 0.4f)]
+        [HideLabel, SerializeField]
+        private string varName;
+        [HorizontalGroup("변수 비교 그룹", Width = 0.1f)]
+        [HideLabel, SerializeField]
+        private COMPARE_TYPE compareType;
+        [HorizontalGroup("변수 비교 그룹")]
+        [HideLabel, SerializeField]
+        [ShowIf("varType", ADDABLE_TYPE.BOOL)]
+        private bool valueBool;
+        [HorizontalGroup("변수 비교 그룹")]
+        [HideLabel, SerializeField]
+        [ShowIf("varType", ADDABLE_TYPE.INT)]
+        private int valueInt;
+        [HorizontalGroup("변수 비교 그룹")]
+        [HideLabel, SerializeField]
+        [ShowIf("varType", ADDABLE_TYPE.FLOAT)]
+        private float valueFloat;
+        [HorizontalGroup("변수 비교 그룹", Width = 0.12f)]
+        [HideLabel, SerializeField]
+        private LOGIC_CALC logicCalc;
+
+        public LOGIC_CALC LogicCalc => logicCalc;
+
+        public bool Compare()
+        {
+            var table = GameManager.Instance.scriptData.VariablesTable;
+
+            if (!table.ContainsKey(varName))
+                throw new UnityException("존재하지 않는 변수명입니다.");
+
+            switch (varType)
+            {
+                case ADDABLE_TYPE.BOOL:
+                    return Compare(compareType, (bool)table[varName], valueBool);
+                case ADDABLE_TYPE.INT:
+                    return Compare(compareType, (int)table[varName], valueInt);
+                case ADDABLE_TYPE.FLOAT:
+                    return Compare(compareType, (float)table[varName], valueFloat);
+                default:
+                    throw new UnityException("올바르지 않은 연산입니다");
+            }
+        }
+
+        bool Compare(COMPARE_TYPE ct, bool lhs, bool rhs)
+        {
+            switch (ct)
+            {
+                case COMPARE_TYPE.EQUAL:
+                    return lhs == rhs;
+                default:
+                    throw new UnityException("올바르지 않은 연산입니다");
+            }
+        }
+        bool Compare(COMPARE_TYPE ct, int lhs, int rhs)
+        {
+            switch (ct)
+            {
+                case COMPARE_TYPE.EQUAL:
+                    return lhs == rhs;
+                case COMPARE_TYPE.NOT_EQUAL:
+                    return lhs != rhs;
+                case COMPARE_TYPE.GREATER:
+                    return lhs > rhs;
+                case COMPARE_TYPE.EQUAL_GREATER:
+                    return lhs >= rhs;
+                case COMPARE_TYPE.LESS:
+                    return lhs < rhs;
+                case COMPARE_TYPE.EQUAL_LESS:
+                    return lhs <= rhs;
+                default:
+                    throw new UnityException("올바르지 않은 연산입니다");
+            }
+        }
+        bool Compare(COMPARE_TYPE ct, float lhs, float rhs)
+        {
+            switch (ct)
+            {
+                case COMPARE_TYPE.EQUAL:
+                    return lhs == rhs;
+                case COMPARE_TYPE.GREATER:
+                    return lhs > rhs;
+                case COMPARE_TYPE.EQUAL_GREATER:
+                    return lhs >= rhs;
+                case COMPARE_TYPE.LESS:
+                    return lhs < rhs;
+                case COMPARE_TYPE.EQUAL_LESS:
+                    return lhs <= rhs;
+                default:
+                    throw new UnityException("올바르지 않은 연산입니다");
+            }
+        }
+    }
+    [System.Serializable]
+    public struct ChangeVariableDataInTable
+    {
+        [LabelText("변수 이름")]
+        public string varName;
+        [LabelText("변수 타입")]
+        public ADDABLE_TYPE type;
+        [LabelText("상태"), ShowIf("type", ADDABLE_TYPE.BOOL)]
+        public bool valueBool;
+        [LabelText("숫자"), ShowIf("type", ADDABLE_TYPE.INT)]
+        public int valueInt;
+        [LabelText("소수"), ShowIf("type", ADDABLE_TYPE.FLOAT)]
+        public float valueFloat;
+    }
     public struct SaveData
     {
         public int scriptIndex;
@@ -52,7 +194,7 @@ namespace YS
         [LabelText("다이얼로그 패널 UI"), Tooltip("다이얼로그 루트 게임오브젝트")]
         public GameObject dialogUI;
         [FoldoutGroup("다이얼로그 UI"), ListDrawerSettings(HideAddButton = true, HideRemoveButton = true)]
-        [LabelText("양쪽 이미지"), Tooltip("다이얼로그 왼쪽/오른쪽 Image 컴포넌트")]
+        [LabelText("이미지 위치"), Tooltip("다이얼로그 왼쪽/중앙/오른쪽 Image 컴포넌트")]
         public Image[] sideImg;
         [FoldoutGroup("다이얼로그 UI")]
         [LabelText("이름 TMP"), Tooltip("다이얼로그 창 이름 TMP")]
@@ -92,9 +234,9 @@ namespace YS
         {
             gm = GameManager.Instance;
 
-            sidePos = new Vector3[2];
+            sidePos = new Vector3[3];
             // 초기화를 위해 처음의 Left, Right 사이드 이미지의 위치 얻기
-            for (int i = 0; i < 2; ++i)
+            for (int i = 0; i < 3; ++i)
                 sidePos[i] = sideImg[i].transform.position;
 
             sideFXCoroutine = new Coroutine[2];
@@ -125,8 +267,9 @@ namespace YS
             nameTMP.SetText(de.Name);
             scriptTMP.SetText(de.Script);
 
-            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftImage, de.LeftHighlight, de.LeftEffect);
-            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightImage, de.RightHighlight, de.RightEffect);
+            SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftCharacter);
+            SetCharSetting(SIDE_IMAGE.CENTER_SIDE, de.CenterCharacter);
+            SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightCharacter);
         }
         public void Release()
         {
@@ -151,24 +294,25 @@ namespace YS
         /// <param name="charImgIdx">보여줄 이미지</param>
         /// <param name="isHighlight">하이라이트 여부</param>
         /// <param name="charFX">사이드 이미지에 줄 효과</param>
-        private void SetCharSetting(SIDE_IMAGE side, Sprite charImgIdx, bool isHighlight, CHARACTER_EFFECT_INDEX charFX)
+        private void SetCharSetting(SIDE_IMAGE side, DialogEvent.CharacterStruct character)
         {
-            sideImg[(int)side].sprite = charImgIdx;
+            sideImg[(int)side].sprite = character.image;
+            sideImg[(int)side].transform.localScale = new Vector3(character.isMirror ? -1.0f : 1.0f, 1.0f, 1.0f);
 
-            if (charImgIdx == null)
+            if (character.image == null)
                 sideImg[(int)side].color = Color.clear;
             else
             {
-                sideImg[(int)side].color = isHighlight ? Color.white : Color.gray;
+                sideImg[(int)side].color = character.isHighlight ? Color.white : Color.gray;
                 sideImg[(int)side].SetNativeSize();
             }
 
-            switch (charFX)
+            switch (character.effect)
             {
                 case CHARACTER_EFFECT_INDEX.SHAKE_HORIZONTAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_VERTICAL:
                 case CHARACTER_EFFECT_INDEX.SHAKE_RANDOM:
-                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, shakeIntensity, shakeTime, shakeIntervalTime, charFX));
+                    sideFXCoroutine[(int)side] = gm.StartCoroutine(gm.ShakeEffect(sideImg[(int)side].gameObject.transform, shakeIntensity, shakeTime, shakeIntervalTime, character.effect));
                     break;
 
                 case CHARACTER_EFFECT_INDEX.BOUNCE:
@@ -186,11 +330,10 @@ namespace YS
             if (sideFXCoroutine[1] != null) gm.StopCoroutine(sideFXCoroutine[1]);
             if (gm.bgFXCoroutine != null) gm.StopCoroutine(gm.bgFXCoroutine);
 
-            for (int i = 0; i < 2; ++i)
+            for (int i = 0; i < 3; ++i)
                 sideImg[i].transform.position = SidePosition[i];
 
-            gm.SetBGCurTime(0.0f);
-            gm.SetBGFadeInOut(true);
+            gm.SetBGCurTime(1.0f);
             gm.ResetFlash();
         }
         #endregion
@@ -200,8 +343,15 @@ namespace YS
     {
         [LabelText("선택지 내용"), Tooltip("선택지 내용")]
         public string str;
+        [LabelText("선택지 비활성화 여부"), Tooltip("해당 조건에 해당한다면 비활성화")]
+        public CompareVariableInTable[] cmp;
         [LabelText("선택 후 이동될 이벤트 번호"), Tooltip("해당 선택지 선택시 이동할 이벤트 번호")]
         public int nextIdx;
+    }
+    public struct CheckCondition
+    {
+        public string varName;
+        public ADDABLE_TYPE type;
     }
     [System.Serializable]
     public struct ChoiceStruct
@@ -241,6 +391,24 @@ namespace YS
             float height = 1.0f;
             for (int i = 0; i < choices.Length; ++i)
             {
+                bool result = false;
+                foreach (var cmp in choices[i].cmp)
+                {
+                    result = cmp.Compare();
+                    if (result)
+                    {
+                        if (cmp.LogicCalc == LOGIC_CALC.AND) continue;
+                        else break;
+                    }
+                    else
+                    {
+                        if (cmp.LogicCalc == LOGIC_CALC.AND) break;
+                        else continue;
+                    }
+                }
+
+                choiceBtns[i].GetComponent<Button>().interactable = !result;
+
                 choiceTMPs[i].SetText(choices[i].str);
                 choiceBtns[i].gameObject.SetActive(true);
                 height -= padding;

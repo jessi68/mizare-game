@@ -8,6 +8,11 @@ namespace YS
         #region Field
         private AudioSource audioBGM;
         private AudioSource audioFX;
+
+        private float audioBGMVolume;
+        private float audioFXVolume;
+        private float audioBGMTempVolume;
+        private float audioFXTempVolume;
         #endregion
 
         #region Unity Methods
@@ -18,44 +23,73 @@ namespace YS
             audioBGM = transform.GetChild(0).GetComponent<AudioSource>();
             audioFX = transform.GetChild(1).GetComponent<AudioSource>();
             DontDestroyOnLoad(gameObject);
+
+            // 볼륨도 저장데이터에 포함된다면 여기서 초기화.
+            //Instance.audioBGMVolume = saveData.volume;
+            //Instance.audioFXVolume = saveData.volumeFX;
+            audioBGMVolume = 1.0f;
+            audioFXVolume = 1.0f;
         }
         #endregion
 
         #region Properties
-        public static float BGMVolume
+        public static float TotalBGMVolume => Instance.audioBGM.volume;
+        public static float TotalFXVolume => Instance.audioFX.volume;
+        public static float BaseBGMVolume
         {
-            get => Instance.audioBGM.volume;
-            set => Instance.audioBGM.volume = value;
+            get => Instance.audioBGMVolume;
+            set
+            {
+                Instance.audioBGMVolume = value;
+                Instance.audioBGM.volume = value * TempBGMVolume;
+            }
         }
-        public static float FXVolume
+        private static float TempBGMVolume
         {
-            get => Instance.audioFX.volume;
-            set => Instance.audioFX.volume = value;
+            get => Instance.audioBGMTempVolume;
+            set
+            {
+                Instance.audioBGMTempVolume = value;
+                Instance.audioBGM.volume = value * BaseBGMVolume;
+            }
+        }
+        public static float BaseFXVolume
+        {
+            get => Instance.audioFXVolume;
+            set
+            {
+                Instance.audioFXVolume = value;
+                Instance.audioFX.volume = value * TempFXVolume;
+            }
+        }       
+        private static float TempFXVolume
+        {
+            get => Instance.audioFXTempVolume;
+            set
+            {
+                Instance.audioFXTempVolume = value;
+                Instance.audioFX.volume = value * BaseFXVolume;
+            }
         }
         #endregion
 
         #region Methods
-        public static void Initialize()
-        {
-            // 볼륨도 저장데이터에 포함된다면 여기서 초기화.
-            //Instance.audioSource.volume = saveData.volume;
-            // 슬라이더도 볼륨에 맞게 조정
-            //Instance.volumeSlider.value = Instance.audioSource.volume;
-        }
-        public static void PlayBGM(AudioClip newBGM)
+        public static void PlayBGM(AudioClip newBGM, float tempVolume = 1.0f)
         {
             var am = Instance;
 
             am.audioBGM.Stop();
+            TempBGMVolume = tempVolume;
             am.audioBGM.clip = newBGM;
             am.audioBGM.Play();
         }
-        public static void PlayFX(AudioClip newBGM, float delay = 0.0f)
+        public static void PlayFX(AudioClip newFX, float tempVolume = 1.0f, float delay = 0.0f)
         {
             var am = Instance;
 
             am.audioFX.Stop();
-            am.audioFX.clip = newBGM;
+            TempFXVolume = tempVolume;
+            am.audioFX.clip = newFX;
             if (delay == 0.0f)
                 am.audioFX.Play();
             else
