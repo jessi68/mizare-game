@@ -5,58 +5,99 @@ using Sirenix.OdinInspector;
 namespace YS
 {
     [CreateAssetMenu(fileName = "ScriptData", menuName = ("AddData/ScriptData"))]
-    public class ScriptData : SerializedScriptableObject
+    public class ScriptData : ScriptableObject
     {
         [SerializeReference]
-        [ListDrawerSettings(ShowIndexLabels = true, NumberOfItemsPerPage = 1), Searchable]
+        [ListDrawerSettings(ShowIndexLabels = true, NumberOfItemsPerPage = 10), Searchable]
         private List<BaseScriptEvent> scripts;
         private BaseScriptEvent curScript;
         private int curIndex;
-        [LabelText("현재 추가된 변수들")]
-        public Dictionary<string, object> varTable = new Dictionary<string, object>();
+        [LabelText("커스텀 변수들"), SerializeField]
+        [ListDrawerSettings(HideAddButton = true), DisableContextMenu]
+        private List<VariableData> varDatas;
+
+        public BaseScriptEvent CurrentScript => curScript;
+        public int CurrentIndex => curIndex;
+        public List<VariableData> VariableDatas => varDatas;
+
+        public void SetScript(int index)
+        {
+            curScript?.OnExit();
+            curScript = scripts[curIndex = index];
+            curScript.OnEnter();
+        }
+        public void Clear()
+        {
+            curScript = null;
+        }
 
 #if UNITY_EDITOR
-        [HorizontalGroup("변수 테이블 조작", LabelWidth = 75)]
-        [BoxGroup("변수 테이블 조작/변수 추가"), SerializeField]
-        [LabelText("변수 이름")]
+        [HorizontalGroup("변수 조작", LabelWidth = 75)]
+        [BoxGroup("변수 조작/변수 추가"), SerializeField, ValidateInput(nameof(ValidateHasNotKey), "존재하는 변수명입니다.")]
+        [LabelText("변수명")]
         private string addKey;
-        [BoxGroup("변수 테이블 조작/변수 추가"), SerializeField]
-        [LabelText("변수 타입")]
-        private ADDABLE_TYPE addType;
-        [BoxGroup("변수 테이블 조작/변수 추가"), SerializeField]
-        [Button(Name = "변수 추가")]
+        [BoxGroup("변수 조작/변수 추가"), SerializeReference]
+        [LabelText("변수 데이터")]
+        private ADDABLE_TYPE addValue;
+        [BoxGroup("변수 조작/변수 추가"), SerializeField]
+        [Button(Name = "추가")]
         private void AddVarInTable()
         {
-            object value = null;
-            switch (addType)
+            if (ValidateHasKey(addKey))
+                throw new UnityException("존재하는 변수명입니다.");
+
+            VariableData data = new VariableData { name = addKey, value = null };
+
+            switch (addValue)
             {
                 case ADDABLE_TYPE.BOOL:
-                    value = new bool();
+                    data.value = new BoolVariable(false);
                     break;
                 case ADDABLE_TYPE.INT:
-                    value = new int();
+                    data.value = new IntVariable(0);
                     break;
                 case ADDABLE_TYPE.FLOAT:
-                    value = new float();
+                    data.value = new FloatVariable(0.0f);
                     break;
             }
-            if (varTable.ContainsKey(addKey))
-                throw new UnityException("이미 존재하는 변수명입니다.");
 
-            varTable.Add(addKey, value);
+            varDatas.Add(data);
+            addKey = "";
         }
-        [HorizontalGroup("변수 테이블 조작")]
-        [BoxGroup("변수 테이블 조작/변수 제거"), SerializeField]
-        [LabelText("변수 이름")]
+        [HorizontalGroup("변수 조작")]
+        [BoxGroup("변수 조작/변수 삭제"), SerializeField, ValidateInput(nameof(ValidateHasKey), "존재하지 않는 변수명입니다.")]
+        [LabelText("변수명")]
         private string removeKey;
-        [BoxGroup("변수 테이블 조작/변수 제거"), SerializeField]
-        [Button(Name = "변수 제거")]
+        [BoxGroup("변수 조작/변수 삭제"), SerializeField]
+        [Button(Name = "삭제")]
         private void RemoveVarInTable()
         {
-            if (varTable.ContainsKey(removeKey))
-                varTable.Remove(removeKey);
-            else
+            if (ValidateHasNotKey(removeKey))
                 throw new UnityException("존재하지 않는 변수명입니다.");
+
+            foreach (var data in varDatas)
+            {
+                if (data.name == removeKey)
+                {
+                    varDatas.Remove(data);
+                    break;
+                }
+            }
+
+            removeKey = "";
+        }
+        private bool ValidateHasNotKey(string newKey)
+        {
+            HashSet<string> set = new HashSet<string>();
+
+            foreach (var data in varDatas)
+                set.Add(data.name);
+
+            return set.Add(newKey);
+        }
+        private bool ValidateHasKey(string newKey)
+        {
+            return !ValidateHasNotKey(newKey);
         }
         [BoxGroup("스크립트 삽입", true, true)]
         [SerializeField, Min(0), MaxValue("@scripts.Count - 1")]
@@ -80,20 +121,5 @@ namespace YS
             (scripts[swapIndex.x], scripts[swapIndex.y]) = (scripts[swapIndex.y], scripts[swapIndex.x]);
         }
 #endif
-
-        public BaseScriptEvent CurrentScript => curScript;
-        public int CurrentIndex => curIndex;
-        public Dictionary<string, object> VariablesTable => varTable;
-
-        public void SetScript(int index)
-        {
-            curScript?.OnExit();
-            curScript = scripts[curIndex = index];
-            curScript.OnEnter();
-        }
-        public void Clear()
-        {
-            curScript = null;
-        }
     }
 }

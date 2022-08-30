@@ -55,6 +55,8 @@ namespace YS
         public Coroutine bgFXCoroutine;
 
         private SaveData currentData;
+        [LabelText("현재 커스텀 변수들 상태"), ShowInInspector]
+        private Dictionary<string, CustomVariable> varTable = new Dictionary<string, CustomVariable>();
         private InGameUIManager um;
         private StringBuilder log = new StringBuilder();
 
@@ -65,6 +67,7 @@ namespace YS
         #region Properties
         public int ItemCount => bgUI.transform.childCount;
         public SaveData CurrentData => currentData;
+        public Dictionary<string, CustomVariable> VariablesTable => varTable;
         #endregion
 
         #region Unity Methods
@@ -85,6 +88,9 @@ namespace YS
             ivStruct.Initialize();
             ifStruct.Initialize();
             arStruct.Initialize();
+
+            foreach (var data in scriptData.VariableDatas)
+                varTable.Add(data.name, data.value.Instantiate());
 
             // 나중에 로드시 로드한 index값으로 설정
             scriptData.SetScript(0);

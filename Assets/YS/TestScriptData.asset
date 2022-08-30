@@ -12,139 +12,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a7715a9c50eda54f995ce5f05397eee, type: 3}
   m_Name: TestScriptData
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: varTable
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
-        mscorlib]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: "\uD30C\uB780 \uBCF4\uC11D"
-    - Name: $v
-      Entry: 7
-      Data: 2|System.Boolean, mscorlib
-    - Name: 
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: "\uBE68\uAC04 \uBCF4\uC11D"
-    - Name: $v
-      Entry: 7
-      Data: 3|System.Boolean, mscorlib
-    - Name: 
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
-    - Name: $v
-      Entry: 7
-      Data: 4|System.Int32, mscorlib
-    - Name: 
-      Entry: 3
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
   scripts:
   - id: 0
   - id: 1
-  addKey: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
-  addType: 1
-  removeKey: 
-  insertIndex: 0
+  - id: 2
+  - id: 3
+  - id: 4
+  varDatas:
+  - name: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+    value:
+      id: 5
+  - name: "\uC120\uBB3C \uC5EC\uBD80"
+    value:
+      id: 6
+  addKey: 
+  addValue: 1
+  removeKey: "\uC120\uBB3C \uC5EC\uBD80"
+  insertIndex: 4
   swapIndex: {x: 5, y: 6}
   references:
     version: 1
     00000000:
-      type: {class: SetVariableEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        changeVars:
-        - varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
-          type: 1
-          valueBool: 1
-          valueInt: 5
-          valueFloat: 0
-    00000001:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
         - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 5\uC774\uC0C1"
-          cmp:
+          cmps:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 5
+            valueBool: 0
+            valueInt: 5
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 1
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 3\uCD08\uACFC"
+          cmps:
           - varType: 1
             varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
             compareType: 4
-            valueBool: 1
+            valueBool: 0
+            valueInt: 3
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 1
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 5\uBBF8\uB9CC"
+          cmps:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 2
+            valueBool: 0
             valueInt: 5
             valueFloat: 0
             logicCalc: 0
-          nextIdx: 0
-        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 \uAC00 5"
-          cmp:
-          - varType: 1
-            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+          nextIdx: 1
+        - str: "\uC54C\uCF54\uB974\uC5D0\uAC8C \uC120\uBB3C\uC744 \uC8FC\uACE0 \uD638\uAC10\uB3C4
+            3\uC774\uC0C1"
+          cmps:
+          - varType: 0
+            varName: "\uC120\uBB3C \uC5EC\uBD80"
             compareType: 0
             valueBool: 1
-            valueInt: 5
+            valueInt: 0
             valueFloat: 0
             logicCalc: 0
-          nextIdx: 0
-        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 5\uBBF8\uB9CC"
-          cmp:
           - varType: 1
             varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
-            compareType: 3
-            valueBool: 1
-            valueInt: 5
+            compareType: 5
+            valueBool: 0
+            valueInt: 3
             valueFloat: 0
             logicCalc: 0
+          nextIdx: 1
+    00000001:
+      type: {class: BranchEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        branches:
+        - cmps:
+          - varType: 0
+            varName: "\uC120\uBB3C \uC5EC\uBD80"
+            compareType: 0
+            valueBool: 1
+            valueInt: 0
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 3
+        - cmps:
+          - varType: 1
+            varName: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4"
+            compareType: 4
+            valueBool: 0
+            valueInt: 3
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 4
+    00000002:
+      type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        choices:
+        - str: "\uC870\uAC74 \uB9CC\uC871 \uBABB\uD568"
+          cmps: []
           nextIdx: 0
+    00000003:
+      type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        choices:
+        - str: "\uC120\uBB3C \uD68D\uB4DD \uD588\uB2E4"
+          cmps: []
+          nextIdx: 0
+    00000004:
+      type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
+      data:
+        choices:
+        - str: "\uC54C\uCF54\uB974 \uD638\uAC10\uB3C4 3 \uCD08\uACFC\uC774\uB2E4"
+          cmps: []
+          nextIdx: 0
+    00000005:
+      type: {class: IntVariable, ns: YS, asm: Assembly-CSharp}
+    00000006:
+      type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
