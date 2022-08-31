@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -22,6 +23,12 @@ namespace YS
         [HideLabel]
         private CharacterStruct rightCharacter;
 
+        [SerializeField]
+        [LabelText("자동 넘김 사용")]
+        private bool isAuto;
+        [SerializeField, Indent, ShowIf("isAuto")]
+        [LabelText("자동 넘김 시간")]
+        private float autoTime = 1.0f;
         [BoxGroup("다이얼로그 UI", true, true), SerializeField]
         [LabelText("제목"), Tooltip("대화 상자의 이름\n빈칸일 시 이름 칸 UI 숨김")]
         private string name;
@@ -34,6 +41,8 @@ namespace YS
         public CharacterStruct LeftCharacter => leftCharacter;
         public CharacterStruct CenterCharacter => centerCharacter;
         public CharacterStruct RightCharacter => rightCharacter;
+        public bool IsAuto => isAuto;
+        public float AutoTime => autoTime;
         public string Name => name;
         public string Script => script;
         #endregion
@@ -156,6 +165,9 @@ namespace YS
             SetCharSetting(SIDE_IMAGE.LEFT_SIDE, de.LeftCharacter);
             SetCharSetting(SIDE_IMAGE.CENTER_SIDE, de.CenterCharacter);
             SetCharSetting(SIDE_IMAGE.RIGHT_SIDE, de.RightCharacter);
+
+            if (de.IsAuto)
+                gm.StartCoroutine(AutoPaging(de.AutoTime));
         }
         public void Release()
         {
@@ -167,6 +179,8 @@ namespace YS
         /// </summary>
         public void OnDialogEvent(DialogEvent de)
         {
+            if (de.IsAuto) return;
+
             // 마우스 클릭시 타이핑이 안끝났다면 타이핑 끝내고, 타이핑이 다 되어있는 상태라면 다음 다이얼로그 설정
             if (!scriptTMP.IsDoneTyping)
                 scriptTMP.SkipTyping();
@@ -221,6 +235,12 @@ namespace YS
 
             gm.SetBGCurTime(1.0f);
             gm.ResetFlash();
+        }
+        private IEnumerator AutoPaging(float time)
+        {
+            yield return CachedWaitForSeconds.Get(time);
+
+            gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
         }
         #endregion
     }
