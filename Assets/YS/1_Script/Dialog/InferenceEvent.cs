@@ -18,10 +18,19 @@ namespace YS
         private ITEM_INDEX itemIndex;
         [SerializeField]
         [LabelText("선택지들")]
-        private InferenceDialogData[] choiceDatas;
-        [BoxGroup("틀렸던 선택지 선택시 나오는 문구", true, true), SerializeField]
+        private InferenceDialogData[] choiceDatas = new InferenceDialogData[1];
+        [FoldoutGroup("틀렸던 선택지 선택시 나오는 문구", false), SerializeField]
         [HideLabel]
         private DialogEvent twiceFailDialogData;
+        [FoldoutGroup("스코어에 따른 변수 제어", false), SerializeField]
+        [FoldoutGroup("스코어에 따른 변수 제어/한번에 성공"), HideLabel]
+        private ChangeVariableInTable[] perfectChange = new ChangeVariableInTable[0];
+        [FoldoutGroup("스코어에 따른 변수 제어"), SerializeField]
+        [FoldoutGroup("스코어에 따른 변수 제어/두번만에 성공"), HideLabel]
+        private ChangeVariableInTable[] greatChange = new ChangeVariableInTable[0];
+        [FoldoutGroup("스코어에 따른 변수 제어"), SerializeField]
+        [FoldoutGroup("스코어에 따른 변수 제어/실패"), HideLabel]
+        private ChangeVariableInTable[] failChange = new ChangeVariableInTable[0];
         [SerializeField, MaxValue("@choiceDatas.Length - 1")]
         [LabelText("정답"), Tooltip("추리 선택지들중 올바른 답")]
         private uint correctIndex;
@@ -32,6 +41,9 @@ namespace YS
         public ITEM_INDEX ItemIndex => itemIndex;
         public InferenceDialogData[] ChoiceDatas => choiceDatas;
         public DialogEvent TwiceFailDialogData => twiceFailDialogData;
+        public ChangeVariableInTable[] PerfectChange => perfectChange;
+        public ChangeVariableInTable[] GreatChange => greatChange;
+        public ChangeVariableInTable[] FailChange => failChange;
         public uint CorrectIndex => correctIndex;
         #endregion
 
@@ -83,6 +95,9 @@ namespace YS
         private TMP_Text[] choiceTMPs;
         private InferenceDialogData[] choiceDatas;
         private DialogEvent twiceFailDialogData;
+        private ChangeVariableInTable[] perfectChange;
+        private ChangeVariableInTable[] greatChange;
+        private ChangeVariableInTable[] failChange;
         private uint correctIndex;
         private int lastChoiceIndex;
         private int curDialogIndex;
@@ -116,6 +131,11 @@ namespace YS
                 choiceBtns[i].gameObject.SetActive(true);
             }
             twiceFailDialogData = ie.TwiceFailDialogData;
+
+            perfectChange = ie.PerfectChange;
+            greatChange = ie.GreatChange;
+            failChange = ie.FailChange;
+
             correctIndex = ie.CorrectIndex;
             lastChoiceIndex = -1;
             curDialogIndex = 0;
@@ -137,10 +157,29 @@ namespace YS
             curDialogIndex = 0;
             rootObj.SetActive(false);
 
-            // 정답이거나 2번의 기회를 다 사용헀는지
-            if (choiceIndex == correctIndex || lastChoiceIndex != -1)
+            // 성공
+            if (choiceIndex == correctIndex)
             {
                 bExit = true;
+
+                // 한번에 성공
+                if (lastChoiceIndex == -1)
+                    foreach (var changeVar in perfectChange)
+                        changeVar.Calculate();
+                // 두번만에 성공
+                else
+                    foreach (var changeVar in greatChange)
+                        changeVar.Calculate();
+            }
+            // 실패
+            else if (lastChoiceIndex != -1)
+            {
+                bExit = true;
+
+                foreach (var changeVar in failChange)
+                    changeVar.Calculate();
+
+                // 같은 선택지로 실패
                 if (lastChoiceIndex == choiceIndex)
                 {
                     gm.dialogStruct.Setup(twiceFailDialogData);

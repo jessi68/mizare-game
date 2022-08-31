@@ -232,7 +232,7 @@ namespace YS
 
             if (!table.ContainsKey(varName))
                     throw new UnityException("존재하지 않는 변수명입니다.");
-
+            Debug.Log($"{varName}를 {calcType} 연산!");
             switch (varType)
             {
                 case ADDABLE_TYPE.BOOL:

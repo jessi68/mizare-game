@@ -22,9 +22,15 @@ namespace YS
         [SerializeField, TextArea]
         [LabelText("성공 시 내용")]
         private string successStr;
+        [SerializeField]
+        [LabelText("성공 시 변수 변화")]
+        private ChangeVariableInTable[] successChanges = new ChangeVariableInTable[0];
         [SerializeField, TextArea]
         [LabelText("실패 시 내용")]
         private string failStr;
+        [SerializeField]
+        [LabelText("실패 시 변수 변화")]
+        private ChangeVariableInTable[] failChanges = new ChangeVariableInTable[0];
         #endregion
 
         #region Properties
@@ -32,7 +38,9 @@ namespace YS
         public Word[] Words => words;
         public string HintStr => hintStr;
         public string SuccessStr => successStr;
+        public ChangeVariableInTable[] SuccessChanges => successChanges;
         public string FailStr => failStr;
+        public ChangeVariableInTable[] FailChanges => failChanges;
         #endregion
 
         public override void OnEnter()
@@ -93,6 +101,7 @@ namespace YS
 
         private ArrangeEvent.Word[] wordsData;
         private string successStr, failStr;
+        private ChangeVariableInTable[] successChanges, failChanges;
         private bool isSubmit;
         private GameManager gm;
         #endregion
@@ -117,6 +126,8 @@ namespace YS
 
             wordsData = ae.Words;
             successStr = ae.SuccessStr;
+            successChanges = ae.SuccessChanges;
+            failChanges = ae.FailChanges;
             failStr = ae.FailStr;
 
             isSubmit = false;
@@ -132,18 +143,27 @@ namespace YS
         }
         private void Submit()
         {
-            gm.arStruct.isSubmit = true;
-            for (int i = 0; i < 4; ++i)
+            if (gm.arStruct.isSubmit)
+                gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
+            else
             {
-                if (!gm.arStruct.wordsData[i].isFixedWord && gm.arStruct.wordsData[i].correctIndex != gm.arStruct.words[i].Index)
+                gm.arStruct.isSubmit = true;
+                for (int i = 0; i < 4; ++i)
                 {
-                    mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
-                    gm.arStruct.descTMP.text = gm.arStruct.failStr;
-                    return;
+                    if (!gm.arStruct.wordsData[i].isFixedWord && gm.arStruct.wordsData[i].correctIndex != gm.arStruct.words[i].Index)
+                    {
+                        mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
+                        gm.arStruct.descTMP.text = gm.arStruct.failStr;
+                        foreach (var change in gm.arStruct.failChanges)
+                            change.Calculate();
+                        return;
+                    }
                 }
+                mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
+                gm.arStruct.descTMP.text = gm.arStruct.successStr;
+                foreach (var change in gm.arStruct.successChanges)
+                    change.Calculate();
             }
-            mizarImg.sprite = ResourceManager.GetResource<Sprite>(ImageReference.Mizar_Normal);
-            gm.arStruct.descTMP.text = gm.arStruct.successStr;
         }
         #endregion
     }
