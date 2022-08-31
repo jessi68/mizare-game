@@ -8157,7 +8157,7 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 1
-          nextIdx: 390
+          nextIdx: 389
     00000159:
       type: {class: BranchEvent, ns: YS, asm: Assembly-CSharp}
       data:
