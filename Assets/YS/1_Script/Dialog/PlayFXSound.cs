@@ -18,7 +18,7 @@ namespace YS
             base.OnEnter();
 
             if (audioFX != null)
-                AudioManager.PlayFX(audioFX, delay, volume);
+                AudioManager.PlayFX(audioFX, volume, delay);
 
             gm.scriptData.SetScript(gm.scriptData.CurrentIndex + 1);
         }

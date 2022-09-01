@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Sirenix.OdinInspector;
 
 namespace YS
 {
@@ -46,11 +47,22 @@ namespace YS
     }
     public enum ITEM_INDEX
     {
+        [LabelText("쥐")]
         RAT,
+        [LabelText("액체가 일부 남아있는 병")]
         EMPTY_BOTTLE,
+        [LabelText("모자")]
         HAT,
+        [LabelText("하얀 가루가 묻은 검은 천 조각")]
         BLACK_CLOTH,
+        [LabelText("부서진 회중시계")]
         CLOCK,
+        [LabelText("불에 탄 서류 뭉치")]
+        BURN_DOCS,
+        [LabelText("하얀가루")]
+        DRUG,
+        [LabelText("진흙과 솔잎")]
+        ROADOTCRIME,
         MAX
     }
 }
