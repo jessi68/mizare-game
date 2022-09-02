@@ -161,6 +161,7 @@ namespace YS
             newBGTr.anchorMin = Vector2.zero;
             newBGTr.anchorMax = Vector2.one;
             newBGTr.sizeDelta = Vector2.zero;
+            newBGTr.localScale = Vector3.one;
 
             Destroy(bgUI);
 
