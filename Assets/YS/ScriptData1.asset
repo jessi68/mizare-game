@@ -915,9 +915,13 @@ MonoBehaviour:
         audioBGM: {fileID: 8300000, guid: cc232c795d286c8429cea6b0c6f3e41b, type: 3}
         volume: 1
     00000019:
+      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
+      data:
+        bgPrefab: {fileID: 1840710139639415007, guid: 692dbef58a92553429713652b87cf9af, type: 3}
+    0000001A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        screenEffect: 2
         leftCharacter:
           image: {fileID: 0}
           isMirror: 0
@@ -938,14 +942,10 @@ MonoBehaviour:
         name: 
         script: "2\uC6D4 13\uC77C \uC0C8\uBCBD 2\uC2DC 45\uBD84, \uD50C\uB77C\uC6B0
           \uC911\uC559 \uC9C0\uC5ED-\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
-    0000001A:
-      type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
-      data:
-        bgPrefab: {fileID: 1840710139639415007, guid: 692dbef58a92553429713652b87cf9af, type: 3}
     0000001B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 2
+        screenEffect: 0
         leftCharacter:
           image: {fileID: 0}
           isMirror: 0
@@ -1656,7 +1656,7 @@ MonoBehaviour:
     0000003C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        screenEffect: 2
         leftCharacter:
           image: {fileID: 0}
           isMirror: 0
@@ -1685,7 +1685,7 @@ MonoBehaviour:
     0000003E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 2
+        screenEffect: 0
         leftCharacter:
           image: {fileID: 0}
           isMirror: 0
@@ -2068,7 +2068,7 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         isAuto: 1
-        autoTime: 1
+        autoTime: 3
         name: 
         script: "\uB9C8\uB124\uD0B9 \uC778\uD615"
     00000054:
@@ -2172,7 +2172,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC0AC\uB78C\uC744 \uAE30\uC808\uC2DC\uD0AC \uC218 \uC788\uC744
           \uC815\uB3C4\uB85C \uC138\uAC8C \uD718\uB450\uB974\uBA74, \uC870\uAE08\uC774\uB77C\uB3C4
-          \uD608\uD754\uC774 \uB0A8\uC744 \uD150\uB370... \uC0AC\uAC74 \uD604\uC7A5\uC5D0\uC120
+          \uD608\uD754\uC774 \uB0A8\uC744 \uD150\uB370...\n\uC0AC\uAC74 \uD604\uC7A5\uC5D0\uC120
           \uC544\uBB34 \uD754\uC801\uC774 \uC5C6\uC5C8\uB2E4\uBA74\uC11C\uC694?"
     00000059:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
@@ -3041,7 +3041,7 @@ MonoBehaviour:
         - str: "\uC758\uB8B0\uB97C \uBC1B\uB294\uB2E4"
           cmps: []
           nextIdx: 130
-        - str: "\uC758\uB8B0\uB97C \uBC1B\uC9C0 \uC54A\uB294\uB2E4."
+        - str: "\uC758\uB8B0\uB97C \uBC1B\uC9C0 \uC54A\uB294\uB2E4"
           cmps: []
           nextIdx: 128
     00000080:
@@ -5310,7 +5310,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBCA0\uB9AC\uD0C0\uC2A4\uC758 \uC218\uC0AC\uBD80\uC6D0\uC774 \uC815\uC2E0\uC801\uC778
           \uD2B8\uB77C\uC6B0\uB9C8\uB85C \uB2E4\uB9AC\uB97C \uC808\uBA74\uC11C, \uC5BC\uAD74\uC744
-          \uAC00\uB9AC\uACE0 \uC788\uB2E4\uBA74 \uBED4\uD558\uC796\uC544? \uB2F9\uC2E0\uACFC
+          \uAC00\uB9AC\uACE0 \uC788\uB2E4\uBA74 \uBED4\uD558\uC796\uC544?\n\uB2F9\uC2E0\uACFC
           \uAC19\uC740 \uC0AC\uB78C\uB4E4\uC758 \uC774\uC57C\uAE30\uB294 \uAF64\uB098
           \uC720\uBA85\uD558\uB2C8\uAE4C.\r"
     000000E3:
@@ -8136,7 +8136,7 @@ MonoBehaviour:
             valueBool: 1
             valueInt: 0
             valueFloat: 0
-            logicCalc: 0
+            logicCalc: 1
           nextIdx: 347
         - str: "\uCC3B\uC9D1"
           cmps:
@@ -8185,6 +8185,15 @@ MonoBehaviour:
             valueFloat: 0
             logicCalc: 0
           nextIdx: 404
+        - cmps:
+          - varType: 0
+            varName: True
+            compareType: 0
+            valueBool: 1
+            valueInt: 0
+            valueFloat: 0
+            logicCalc: 0
+          nextIdx: 344
     0000015A:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
