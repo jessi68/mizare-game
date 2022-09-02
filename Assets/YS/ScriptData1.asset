@@ -509,25 +509,19 @@ MonoBehaviour:
   - id: 493
   - id: 494
   - id: 495
-  - id: 496
-  - id: 497
-  - id: 498
-  - id: 499
-  - id: 500
-  - id: 501
   varDatas:
   - name: "\uC57D\uBC29"
     value:
-      id: 502
+      id: 496
   - name: "\uCC3B\uC9D1"
     value:
-      id: 503
+      id: 497
   - name: "\uC18C\uB144"
     value:
-      id: 504
+      id: 498
   - name: True
     value:
-      id: 505
+      id: 499
   addKey: 
   addValue: 0
   removeKey: 
@@ -544,6 +538,9 @@ MonoBehaviour:
       data:
         audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
         volume: 0.5
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
     00000002:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -595,6 +592,9 @@ MonoBehaviour:
       data:
         audioBGM: {fileID: 8300000, guid: 7a1328e2efe307d4da340f21a92568b7, type: 3}
         volume: 0.5
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
     00000005:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
@@ -735,12 +735,6 @@ MonoBehaviour:
         volume: 1
         delay: 0
     0000000E:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 8300000, guid: 472d875e77c7ae74d890d630a2fbe287, type: 3}
-        volume: 0.5
-        delay: 0
-    0000000F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -763,13 +757,13 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: "\uC7A1\uC544! \uB193\uCE58\uBA74 \uC548\uB3FC!"
-    00000010:
+    0000000F:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 049bd42427ea16a45bed37ed9b732482, type: 3}
         volume: 1
         delay: 0
-    00000011:
+    00000010:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -792,7 +786,7 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: "..\uC6C0\uC9C1\uC774\uC9C0 \uBABB\uD558\uB3C4\uB85D.. \uB2E4\uB9AC\uB97C..."
-    00000012:
+    00000011:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -815,7 +809,7 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: ...
-    00000013:
+    00000012:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -838,7 +832,7 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: "..\uC774\uC81C \uC5B4\uB5A1\uD558\uC9C0?"
-    00000014:
+    00000013:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -861,7 +855,7 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: "\uC800\uAC83\uB4E4\uC740..?"
-    00000015:
+    00000014:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -884,12 +878,15 @@ MonoBehaviour:
         autoTime: 1
         name: ???
         script: "..\uADF8\uB0E5 \uB194 \uB46C. \uADF8\uB798\uC57C \uBAB0\uB9AC\uC9C0."
-    00000016:
+    00000015:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: f10e9483952c29942b40f217f916d4ba, type: 3}
         volume: 1
-    00000017:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000016:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -912,16 +909,19 @@ MonoBehaviour:
         autoTime: 3
         name: ???
         script: "\uC774\uC81C \uAD00\uC744 \uB04C\uC5B4\uB77C."
-    00000018:
+    00000017:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: cc232c795d286c8429cea6b0c6f3e41b, type: 3}
         volume: 1
-    00000019:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000018:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 692dbef58a92553429713652b87cf9af, type: 3}
-    0000001A:
+    00000019:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -945,7 +945,7 @@ MonoBehaviour:
         name: 
         script: "2\uC6D4 13\uC77C \uC0C8\uBCBD 2\uC2DC 45\uBD84, \uD50C\uB77C\uC6B0
           \uC911\uC559 \uC9C0\uC5ED-\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
-    0000001B:
+    0000001A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -968,7 +968,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: .....
-    0000001C:
+    0000001B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC774\uBC88 \uC2E4\uC885\uC73C\uB85C \uCD1D \uC77C\uACF1.. \uADF8\uB9C8\uC800\uB3C4
           \uCD5C\uC18C\uB85C\uAD70."
-    0000001D:
+    0000001C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1014,8 +1014,9 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
-        script: "\uADF8\uB798.. \uBCA0\uB9AC\uD0C0\uC2A4\uB294 \uC5B4\uB5A4 \uBC18\uC751\uC778\uAC00?"
-    0000001E:
+        script: "\uADF8\uB798.. <color=\"blue\">\uBCA0\uB9AC\uD0C0\uC2A4</color>\uB294
+          \uC5B4\uB5A4 \uBC18\uC751\uC778\uAC00?"
+    0000001D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1041,7 +1042,7 @@ MonoBehaviour:
           \uC0C1\uD0DC\uC785\uB2C8\uB2E4. \uC218\uC0AC \uD300\uC5D0\uB294 \uBCA0\uB9AC\uD0C0\uC2A4
           \uD559\uD30C \uCD9C\uC2E0\uC758 \uBC95\uC758\uD559\uC790\uB3C4 \uC788\uB2E4\uACE0
           \uD569\uB2C8\uB2E4."
-    0000001F:
+    0000001E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1065,7 +1066,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: " ..\uD765, \uC6B0\uB9AC\uAC00 \uC218\uC0AC\uB97C \uC694\uCCAD\uD588\uC744
           \uB550 \uB4E4\uC740 \uCC99\uB3C4 \uC548 \uD558\uB354\uB2C8.."
-    00000020:
+    0000001F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1088,7 +1089,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC5B4\uB51C\uAC00\uB4E0 \uB299\uC740 \uACF0\uD321\uC774\uAC00 \uBB38\uC81C\uB85C\uAD70."
-    00000021:
+    00000020:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1111,7 +1112,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: .....
-    00000022:
+    00000021:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1136,7 +1137,7 @@ MonoBehaviour:
         script: "\uC6B0\uB9AC\uAC00 \uD558\uB294 \uC77C\uC740 \uBC14\uB00C\uC9C0
           \uC54A\uB294\uB2E4. \uBB34\uC2A8 \uC77C\uC774 \uC788\uC5B4\uB3C4 \uC2E4\uC885\uC790\uB97C
           \uCC3E\uC544\uC57C \uD558\uB124."
-    00000023:
+    00000022:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1159,9 +1160,9 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC0AC\uB77C\uC9C4 \uC0AC\uB78C\uB4E4\uC774 \uADF8\uB188\uB4E4\uC740
-          \uC2E0\uACBD \uC4F0\uC9C0 \uC54A\uB294 '\uBE48\uBBFC'\uC774\uB77C\uACE0
+          \uC2E0\uACBD \uC4F0\uC9C0 \uC54A\uB294 <color=\"red\">'\uBE48\uBBFC'</color>\uC774\uB77C\uACE0
           \uD574\uB3C4 \uB9D0\uC77C\uC138."
-    00000024:
+    00000023:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1184,7 +1185,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "..\uADF8 \uB9D0\uC500\uC740?"
-    00000025:
+    00000024:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1209,7 +1210,7 @@ MonoBehaviour:
         script: "\uC2E4\uB9AC\uBCF4\uB2E8 \uC724\uB9AC\uC640 \uB3C4\uB355\uC744 \uC911\uC694\uC2DC
           \uD558\uB294 \uAC78 \uBCF4\uC5EC\uC8FC\uACA0\uB2E4.. \uBB34\uC2A8 \uC758\uBBF8\uC778\uC9C0
           \uC54C\uACA0\uC9C0?"
-    00000026:
+    00000025:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1232,7 +1233,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uB124..."
-    00000027:
+    00000026:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1253,11 +1254,11 @@ MonoBehaviour:
           effect: 0
         isAuto: 0
         autoTime: 1
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC774\uC81C\uBD80\uD134 \uC2DC\uAC04 \uC2F8\uC6C0\uC774\uC57C..
           \uC6B0\uB9AC\uC5D0\uAC90 \uC870\uAE08\uC774\uB77C\uB3C4 \uB354 \uC2DC\uAC04\uC774
           \uD544\uC694\uD558\uB124."
-    00000028:
+    00000027:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1278,10 +1279,10 @@ MonoBehaviour:
           effect: 0
         isAuto: 0
         autoTime: 1
-        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C"
+        name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC790\uB124\uB294 \uB2F9\uC7A5 \uB0A8\uBD80 \uC9C0\uC5ED\uC73C\uB85C
           \uAC00\uB3C4\uB85D \uD558\uAC8C\uB098."
-    00000029:
+    00000028:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1305,7 +1306,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uB0A8\uBD80 \uC9C0\uC5ED.. \uC124\uB9C8 '\uBBF8\uC790\uB974'\uB97C
           \uBD80\uB974\uC2E4 \uAC74\uAC00\uC694..?"
-    0000002A:
+    00000029:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1330,7 +1331,7 @@ MonoBehaviour:
         script: "\uAD34\uC9DC\uB3C4 \uC368\uBA39\uAE30 \uB098\uB984\uC774\uC9C0.
           \uADF8\uB140\uB294 \uBD84\uBA85 \uC6B0\uB9AC\uC5D0\uAC8C \uD070 \uC804\uB825\uC774
           \uB420 \uAC78\uC138."
-    0000002B:
+    0000002A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1354,7 +1355,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uAC8C\uB2E4\uAC00 \uADF8\uB140\uB77C\uBA74.. \uC774\uB7F0 '\uC7AC\uBBF8\uC788\uB294'
           \uC0AC\uAC74\uC744 \uADF8\uB0E5 \uB193\uCE60\uB9AC\uAC00 \uC5C6\uC9C0 \uC54A\uB098?"
-    0000002C:
+    0000002B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1377,7 +1378,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC544... \uD558\uAE34 \uADF8\uB807\uACA0\uB124\uC694.."
-    0000002D:
+    0000002C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1400,7 +1401,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "...\uCD5C\uB300\uD55C \uBE68\uB9AC \uC9C4\uD589\uD558\uACA0\uC2B5\uB2C8\uB2E4."
-    0000002E:
+    0000002D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1423,13 +1424,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC74C, \uBD80\uD0C1\uD558\uB124."
-    0000002F:
+    0000002E:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         volume: 1
         delay: 0
-    00000030:
+    0000002F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -1454,7 +1455,7 @@ MonoBehaviour:
         script: "...\uADF8\uB798, \uBCA0\uB9AC\uD0C0\uC2A4\uAC00 <color=\"red>'\uADF8
           \uB140\uC11D'</color>\uC744 \uBCF4\uB0C8\uB2E4\uBA74, \uC6B0\uB9AC \uBE44\uD558\uC774\uBE0C\uB294
           \uBBF8\uC790\uB974 \uBC16\uC5D0 \uC5C6\uC9C0."
-    00000031:
+    00000030:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1478,7 +1479,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uADF8 \uC544\uC774 \uC815\uB3C4\uAC00 \uC544\uB2C8\uBA74 \uB204\uAC00
           \uAC10\uB2F9\uC744 \uD558\uACA0\uC5B4?"
-    00000032:
+    00000031:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1501,7 +1502,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "..\uC774\uAC70 \uCC38."
-    00000033:
+    00000032:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1525,7 +1526,7 @@ MonoBehaviour:
         name: "\uBE44\uD558\uC774\uBE0C \uD611\uD68C\uC7A5"
         script: "\uC6B0\uC5F0\uC774\uB77C\uACE0 \uD574\uB3C4.. \uCC38\uC73C\uB85C
           \uC584\uAD82\uAD6C\uB9CC,,,"
-    00000034:
+    00000033:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -1545,19 +1546,22 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         isAuto: 0
-        autoTime: 1
+        autoTime: 2
         name: 
         script: 
-    00000035:
+    00000034:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: b1f855572aa84464cbfa3b9f254ee125, type: 3}
         volume: 1
-    00000036:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000035:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-    00000037:
+    00000036:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -1580,13 +1584,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: ..................
-    00000038:
+    00000037:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 8e7b879f031f2fb4690feb5e22ade211, type: 3}
         volume: 1
         delay: 0
-    00000039:
+    00000038:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1609,7 +1613,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "..\uC774\uAC70 \uC644\uC804 \uB5A0\uB118\uAE30\uAE30 \uC2DD\uC774\uC796\uC544?"
-    0000003A:
+    00000039:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1633,7 +1637,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uC9C0\uB9CC \uC7AC\uBBF8\uB294 \uC788\uACA0\uB124. \uBBF8\uB9AC
           \uC900\uBE44\uD574\uC57C\uACA0\uC5B4!"
-    0000003B:
+    0000003A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -1656,7 +1660,7 @@ MonoBehaviour:
         autoTime: 3
         name: 
         script: "CHAPTER 1: \uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74"
-    0000003C:
+    0000003B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -1680,12 +1684,15 @@ MonoBehaviour:
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 9\uC2DC 23\uBD84, \uD50C\uB77C\uC6B0
           \uB0A8\uBD80 \uC9C0\uC5ED-\uBBF8\uC790\uB974 \uD0D0\uC815 \uC0AC\uBB34\uC18C"
-    0000003D:
+    0000003C:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
         volume: 1
-    0000003E:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    0000003D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1708,13 +1715,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974? \uC548\uC5D0 \uC788\uB2C8?"
-    0000003F:
+    0000003E:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         volume: 1
         delay: 0
-    00000040:
+    0000003F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1737,7 +1744,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974??"
-    00000041:
+    00000040:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1760,18 +1767,21 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC774\uC0C1\uD558\uB2E4..? \uBB38\uC744 \uC5F4\uB824\uC788\uB294\uB370.."
-    00000042:
+    00000041:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 91f51d98ad34f46eaa29dc9830b5aaf2, type: 3}
         volume: 1
-    00000043:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000042:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: de64a0a81da50274b817944284380689, type: 3}
         volume: 1
         delay: 0
-    00000044:
+    00000043:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1794,7 +1804,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: '!!'
-    00000045:
+    00000044:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1817,13 +1827,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uBC29\uAE08 \uC18C\uB9AC\uB294..?"
-    00000046:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
-        volume: 1
-        delay: 0
-    00000047:
+    00000045:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1846,7 +1850,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uBBF8..\uBBF8\uC790\uB974..?"
-    00000048:
+    00000046:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1869,13 +1873,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uB108 \uB9DE\uB2C8..?"
-    00000049:
+    00000047:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         volume: 1
         delay: 0
-    0000004A:
+    00000048:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1898,12 +1902,15 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uAE84\uC545!!!!"
-    0000004B:
+    00000049:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
         volume: 1
-    0000004C:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    0000004A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -1926,7 +1933,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4? \uC120\uBC30, \uC654\uC5C8\uC5B4\uC694?"
-    0000004D:
+    0000004B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1950,7 +1957,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBBF8\uC548\uD574\uC694~ \uC800\uB141\uCBE4\uC5D0\uB098 \uC62C\uC904
           \uC54C\uC558\uB294\uB370."
-    0000004E:
+    0000004C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1974,7 +1981,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uBB50..\uBB50\uB2C8!! \uAC11\uC790\uAE30 \uADF8\uB807\uAC8C \uBB38\uC744
           \uC138\uAC8C \uC5F4\uBA74 \uB180\uB77C\uC796\uC544!!"
-    0000004F:
+    0000004D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -1998,7 +2005,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC81C \uC9D1\uC5D0\uC11C \uC81C\uAC00 \uBB38\uC744 \uC5EC\uB294\uB370
           \uADF8\uB7F0 \uAC78 \uC65C \uC2E0\uACBD\uC368\uC694?"
-    00000050:
+    0000004E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2023,7 +2030,7 @@ MonoBehaviour:
         script: "\uADF8\uBCF4\uB2E4 \uC2E4\uC885 \uC0AC\uAC74 \uC758\uB8B0\uD558\uB7EC
           \uC628 \uAC70\uC8E0? \uC77C\uB2E8 \uC790\uB9AC\uC5D0 \uC549\uC73C\uC138\uC694.
           \uC774\uAC83\uB9CC \uCC3D\uACE0\uC5D0 \uB123\uC744\uD14C\uB2C8\uAE4C."
-    00000051:
+    0000004F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2039,19 +2046,19 @@ MonoBehaviour:
           effect: 0
         rightCharacter:
           image: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
-          isMirror: 1
-          isHighlight: 0
+          isMirror: 0
+          isHighlight: 1
           effect: 0
         isAuto: 0
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC0AC..\uAC74\uC744 \uC758\uB8B0\uD558\uB7EC \uC628 \uAC74 \uB9DE\uB294\uB370..
           \uADF8\uAC74 \uB3C4\uB300\uCCB4 \uBB50\uB2C8..?"
-    00000052:
+    00000050:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 327f7db58f57ec342a8fd5cb3963bcf4, type: 3}
-    00000053:
+    00000051:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2074,11 +2081,11 @@ MonoBehaviour:
         autoTime: 3
         name: 
         script: "\uB9C8\uB124\uD0B9 \uC778\uD615"
-    00000054:
+    00000052:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-    00000055:
+    00000053:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2103,7 +2110,7 @@ MonoBehaviour:
         script: "\uC544~ \uBCC4 \uAC70  \uC544\uB2C8\uC5D0\uC694. \uB454\uAE30\uB97C
           \uD718\uB450\uB978 \uAC01\uB3C4\uC5D0 \uB530\uB77C\uC11C \uBA38\uB9AC\uAC00
           \uC5B4\uB5BB\uAC8C \uCC0C\uADF8\uB7EC\uC9C0\uB098 \uD655\uC778\uD55C \uAC70\uB2C8\uAE4C."
-    00000056:
+    00000054:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2126,7 +2133,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120"
         script: "\uB454\uAE30\uB77C\uB2C8.. \uADF8\uAC74 \uC65C...?"
-    00000057:
+    00000055:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2151,7 +2158,7 @@ MonoBehaviour:
         script: "\uB0A9\uCE58\uC758 \uC815\uC11D\uC740 \uAE30\uC808\uC2DC\uD0A8 \uB2E4\uC74C\uC5D0
           \uB370\uB824\uAC00\uB294 \uAC70\uC8E0.\n\uADF8\uB807\uB2E4\uD574\uB3C4
           \uC774\uAC74 \uC544\uB2CC \uAC70 \uAC19\uC544\uC694.\r"
-    00000058:
+    00000056:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2177,7 +2184,7 @@ MonoBehaviour:
           \uC815\uB3C4\uB85C \uC138\uAC8C \uD718\uB450\uB974\uBA74, \uC870\uAE08\uC774\uB77C\uB3C4
           \uD608\uD754\uC774 \uB0A8\uC744 \uD150\uB370...\n\uC0AC\uAC74 \uD604\uC7A5\uC5D0\uC120
           \uC544\uBB34 \uD754\uC801\uC774 \uC5C6\uC5C8\uB2E4\uBA74\uC11C\uC694?"
-    00000059:
+    00000057:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2201,7 +2208,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uADF8\uAC8C \uB3C4\uB300\uCCB4 \uBB34\uC2A8 \uB9D0\uC774\uC57C?
           \uC774\uD574\uAC00 \uC548\uB3FC!"
-    0000005A:
+    00000058:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2225,7 +2232,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74\uC774\uC694!
           \uADF8\uAC70 \uB54C\uBB38\uC5D0 \uC628 \uC904 \uC54C\uC558\uB294\uB370?"
-    0000005B:
+    00000059:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2248,7 +2255,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "...\uD639\uC2DC \uB204\uAC00 \uBBF8\uB9AC \uC5F0\uB77D\uC774\uB77C\uB3C4?"
-    0000005C:
+    0000005A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2273,7 +2280,7 @@ MonoBehaviour:
         script: "\uAD73\uC774 \uB9D0\uD558\uBA74 \uC0AC\uB78C\uB4E4\uC774\uC8E0.
           \uBE48\uBBFC\uAC00\uB97C \uC911\uC2EC\uC73C\uB85C \uD749\uD749\uD55C \uC18C\uBB38\uC774
           \uD30C\uB2E4\uD558\uAC70\uB4E0\uC694."
-    0000005D:
+    0000005B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2299,7 +2306,7 @@ MonoBehaviour:
           \uAC70 \uAC19\uC544\uC694. \uAE38\uAC70\uB9AC\uC5D0\uC11C \uB4E4\uB9AC\uB294
           \uC774\uC57C\uAE30\uB9CC \uB4E4\uC5B4\uB3C4 \uD544\uC694\uD55C \uC815\uBCF4\uB294
           \uB2E4 \uB4E4\uC5B4\uC624\uB2C8.."
-    0000005E:
+    0000005C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2323,7 +2330,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC218\uC0AC \uC778\uC6D0\uC774 \uBAA8\uB450 \uBCA0\uB9AC\uD0C0\uC2A4
           \uD559\uD30C \uCD9C\uC2E0\uC778 \uAC70 \uBD80\uD130\uAC00 \uAE00\uB7EC\uBA39\uC5C8\uC9C0\uB9CC..."
-    0000005F:
+    0000005D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2347,7 +2354,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uBBF8\uC790\uB974.. \uCD9C\uC2E0 \uD559\uD30C\uB85C \uC0AC\uB78C\uC744
           \uD568\uBD80\uB85C \uD3C9\uAC00\uD558\uBA74.."
-    00000060:
+    0000005E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2374,7 +2381,7 @@ MonoBehaviour:
           \uC704\uACC4\uB97C \uB04C\uC5B4\uC62C\uB9B0\uB2F5\uC2DC\uACE0, \uC721\uCCB4\uB97C
           \uAC1C\uC870\uD558\uB294 \uB188\uB4E4\uC774 \uC774 \uB098\uB77C\uC758 \uCD5C\uACE0
           \uD559\uD30C\uB77C\uB2C8.."
-    00000061:
+    0000005F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2398,9 +2405,9 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC815\uC2E0 \uCCB4\uACC4\uC758 \uD1B5\uC77C \uACBD\uB85C\uB97C
           \uB9CC\uB4E4\uC5B4\uC11C, \uBAA8\uB4E0 \uC0DD\uAC01\uACFC \uAC10\uC815\uC744
-          \uACF5\uC720\uD558\uACA0\uB2E4\uB294, \uC6B0\uB9AC \uBE44\uD558\uC774\uBE0C\uC758
+          \uACF5\uC720\uD558\uACA0\uB2E4\uB294, \uC6B0\uB9AC <color=\"orange\">\uBE44\uD558\uC774\uBE0C</color>\uC758
           \uBAA9\uD45C\uAC00 \uB354 \uC2E4\uC6A9\uC801\uC774\uC8E0."
-    00000062:
+    00000060:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2424,7 +2431,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uAC11\uC790\uAE30 \uC774\uC57C\uAE30\uB97C \uADF8\uCABD\uC73C\uB85C..
           \uC4F8\uB370\uC5C6\uB294 \uC774\uC57C\uAE30\uB97C \uD560 \uC2DC\uAC04\uC774.."
-    00000063:
+    00000061:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2450,7 +2457,7 @@ MonoBehaviour:
           \uD63C\uC790 \uC0B0 \uAF2D\uB300\uAE30 \uC704\uC5D0 \uC62C\uB77C\uAC00\uC11C,
           \uBC11\uC5D0 \uC788\uB294 \uC0AC\uB78C\uC744 \uC9C0\uCF1C\uBCF4\uB294 \uAC8C
           \uC5BC\uB9C8\uB098 \uACE0\uC5ED\uC778\uC9C0 \uBAA8\uB974\uC796\uC544\uC694."
-    00000064:
+    00000062:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2474,7 +2481,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "..\uD6C4, \uADF8\uB798. \uADF8 \uC774\uC57C\uAE34 \uB098\uC911\uC5D0
           \uB9C8\uC800 \uD558\uC790."
-    00000065:
+    00000063:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2498,7 +2505,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uC77C\uB2E8 \uB09C \uC5EC\uAE30 \uC628 \uBAA9\uC801\uC744 \uC5B4\uB5BB\uAC8C\uB4E0
           \uC774\uB904\uC57C \uD560 \uAC70 \uAC19\uC544. \uC774\uD574\uD558\uACA0\uB2C8?"
-    00000066:
+    00000064:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2523,7 +2530,7 @@ MonoBehaviour:
         script: "\uADF8\uAC70\uC57C \uB2F9\uC5F0\uD558\uC8E0. \uADF8\uB798\uB3C4
           \uC124\uBA85\uC744 \uD574\uC57C\uACA0\uB2E4\uBA74 \uC6D0\uD558\uC2DC\uB294
           \uB300\uB85C \uD558\uC138\uC694."
-    00000067:
+    00000065:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2546,16 +2553,19 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uADF8\uAC70 \uCC38 \uACE0\uB9D9\uAD6C\uB098."
-    00000068:
+    00000066:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: a79a5353ad9e7a645a6e7f249ed9318d, type: 3}
         volume: 1
-    00000069:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000067:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 9ea3066091050c24da63eee49644cdc6, type: 3}
-    0000006A:
+    00000068:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -2578,9 +2588,9 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uB0B4\uAC00 \uCC3E\uC544\uC628 \uC774\uC720\uB294 \uB108\uC5D0\uAC8C
-          '\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74'\uC744 \uC870\uC0AC\uD574\uB2EC\uB77C\uB294
-          \uC758\uB8B0\uB97C \uD558\uAE30 \uC704\uD574\uC11C\uC57C."
-    0000006B:
+          <color=\"red\">'\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74'</color>\uC744
+          \uC870\uC0AC\uD574\uB2EC\uB77C\uB294 \uC758\uB8B0\uB97C \uD558\uAE30 \uC704\uD574\uC11C\uC57C."
+    00000069:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2605,7 +2615,7 @@ MonoBehaviour:
         script: "\uCD94\uC815\uB418\uB294 \uB0A0\uC740 \uD55C\uB2EC \uC804.. \uBE48\uBBFC\uAC00\uC758
           \uBE48\uBBFC\uB4E4\uC774 \uD558\uB098, \uB458 \uC0AC\uB77C\uC9C0\uAE30
           \uC2DC\uC791\uD588\uC5B4."
-    0000006C:
+    0000006A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2629,7 +2639,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uCC98\uC74C\uC5D4 \uB2E8\uC21C\uD788 \uB2E4\uB978 \uACF3\uC73C\uB85C
           \uC774\uB3D9\uD55C \uAC78\uB85C \uC54C\uC558\uC9C0\uB9CC.."
-    0000006D:
+    0000006B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2654,7 +2664,7 @@ MonoBehaviour:
         script: "\uB4B7\uB3D9\uC0B0\uC5D0\uC11C \uC0AC\uB0E5\uC744 \uD558\uB358 \uB0A8\uC790\uAC00
           \uC0AC\uB77C\uC9C4 \uB124 \uBC88\uC9F8 \uC0AC\uAC74\uBD80\uD130 \uBB34\uC5B8\uAC00
           \uC774\uC0C1\uD558\uB2E4\uB294 \uC0AC\uC2E4\uC744 \uC54C\uAC8C \uB410\uC9C0."
-    0000006E:
+    0000006C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2680,7 +2690,7 @@ MonoBehaviour:
           \uACF3\uC5D0\uB294 \uADF8\uC758 \uC637\uAC00\uC9C0\uB9CC\uC774 \uC788\uC744
           \uBFD0\uC774\uACE0, \uADF8 \uC678\uC5D0 \uB2E4\uB978 \uD754\uC801\uC740
           \uC804\uD600 \uCC3E\uC744 \uC218 \uC5C6\uC5C8\uB2E8\uB2E4."
-    0000006F:
+    0000006D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2705,7 +2715,7 @@ MonoBehaviour:
         script: "\uB9C8\uCE58 \uADF8 \uC790\uB9AC\uC5D0\uC11C \uAC10\uC790\uAE30
           \uC99D\uBC1C\uC774\uB77C\uACE0 \uD55C \uAC83\uCC98\uB7FC, \uC0AC\uB78C\uC774
           \uC0AC\uB77C\uC9C0\uACE0 \uB9CC \uAC70\uC57C."
-    00000070:
+    0000006E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2728,8 +2738,8 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uADF8\uB9AC\uACE0 \uC774\uBC88\uC5D0 \uC5B4\uB9B0 \uB0A8\uC790\uC544\uC774\uAC00
-          \uC0AC\uB77C\uC9C4 \uC77C\uACF1 \uBC88\uC9F8 \uC0AC\uAC74.."
-    00000071:
+          \uC0AC\uB77C\uC9C4 <color=\"red\">\uC77C\uACF1 \uBC88\uC9F8 \uC0AC\uAC74</color>.."
+    0000006F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2755,7 +2765,7 @@ MonoBehaviour:
           \uD55C \uC99D\uC5B8\uC5D0 \uB530\uB974\uBA74. \uADF8 \uB0A0 \uC544\uC774\uB294
           \uB204\uAD70\uAC00\uB97C \uB9CC\uB098\uB7EC \uC9D1\uC744 \uB098\uAC14\uB2E4\uACE0
           \uD588\uC5B4."
-    00000072:
+    00000070:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2781,7 +2791,7 @@ MonoBehaviour:
           \uC54A\uACE0.. \uC57D\uC18D \uC7A5\uC18C\uC600\uB2E4\uB294 \uACE8\uBAA9\uAE38\uC5D0\uB294
           \uC544\uC774\uC758 \uBAA8\uC790\uB9CC \uB0A8\uC544\uC788\uC5C8\uB2E4\uACE0
           \uD574."
-    00000073:
+    00000071:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2805,7 +2815,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "'\uADF8 \uC678\uC5D0 \uB2E4\uB978 \uD754\uC801\uC740 \uCC3E\uC744
           \uC218 \uC5C6\uC5C8\uB2E4.' ..\uACE0 \uBCF4\uACE0\uD588\uACA0\uC8E0?"
-    00000074:
+    00000072:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2830,7 +2840,7 @@ MonoBehaviour:
         script: "\uACE8\uBAA9\uAE38\uC5D0 \uC4F0\uB808\uAE30\uB098 \uC7A1\uB3D9\uC0AC\uB2C8\uAC00
           \uB108\uBB34 \uB9CE\uC544\uC11C.. \uBB50\uAC00 \uC99D\uAC70\uC778\uC9C0\uB3C4
           \uC54C \uC218 \uC5C6\uB294 \uC0C1\uD669\uC774\uC5C8\uC73C\uB2C8\uAE4C."
-    00000075:
+    00000073:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2855,7 +2865,7 @@ MonoBehaviour:
         script: "\uD53C\uD574\uC790\uC758 \uD589\uBC29\uC740 \uBB3C\uB860\uC774\uACE0,
           \uBC94\uC778\uC758 \uC18C\uC7AC\uC9C0, \uC815\uCCB4, \uBAA9\uC801.. \uC804\uBD80
           \uC54C \uC218\uAC00 \uC5C6\uC5B4."
-    00000076:
+    00000074:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2880,16 +2890,19 @@ MonoBehaviour:
         script: "\uC218\uC0AC\uBD80\uB294 \uACC4\uC18D \uC218\uC0AC\uB97C \uD558\uACE0
           \uC788\uC9C0\uB9CC.. \uBCC4 \uAE30\uB300\uB294 \uD560 \uC218 \uC5C6\uC744
           \uAC70\uC57C."
-    00000077:
+    00000075:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
         volume: 1
-    00000078:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000076:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: ca236ede670c26647a268494929628b6, type: 3}
-    00000079:
+    00000077:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2914,7 +2927,7 @@ MonoBehaviour:
         script: "\uADF8\uB7EC\uB2C8\uAE4C \uADF8\uB7F0 \uBA4D\uCCAD\uC774\uB4E4\uC740
           \uBB34\uC2DC\uD558\uB77C\uB2C8\uAE4C\uC694. \uB3C4\uC6C0\uB3C4 \uC548 \uB418\uB294
           \uAC83\uB4E4\uC778\uB370."
-    0000007A:
+    00000078:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2940,7 +2953,7 @@ MonoBehaviour:
           \uB2E4\uD574 \uC0AC\uAC74\uC744 \uC870\uC0AC\uD558\uACE0 \uC788\uC5B4.
           \uADF8\uB7F0 \uB9D0\uC740 \uC870\uC2EC\uD558\uB294 \uAC8C \uC88B\uC744
           \uAC70 \uAC19\uB2E4."
-    0000007B:
+    00000079:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2964,7 +2977,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4\uB828\uD558\uC2DC\uACA0\uC5B4\uC694~ \uADF8\uB798\uC11C!
           \uB2E4\uC74C\uC740\uC694?"
-    0000007C:
+    0000007A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -2989,7 +3002,7 @@ MonoBehaviour:
         script: "..\uB354 \uC774\uC0C1 \uC6B0\uB9AC\uB3C4 \uB450 \uC190 \uB193\uACE0
           \uC788\uC744 \uC2DC\uAC04\uC774 \uC5C6\uC5B4. \uC9C0\uAE08 \uC774 \uC21C\uAC04\uC5D0\uB3C4
           \uC2E4\uC885\uC790\uC758 \uC548\uC804\uC774 \uC704\uD5D8\uD574\uC9C8 \uAC70\uC57C."
-    0000007D:
+    0000007B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3013,7 +3026,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uC2E4\uC885\uC790\uC758 \uAC00\uC871\uC744 \uC704\uD574\uC11C\uB77C\uB3C4
           \uC2E0\uC18D\uD788 \uC0AC\uAC74\uC744 \uD574\uACB0\uD574\uC57C \uD574."
-    0000007E:
+    0000007C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3037,17 +3050,17 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uC5B4\uB54C? <color=\"red\">'\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885
           \uC0AC\uAC74'</color>.. \uC758\uB8B0\uB97C \uB9E1\uC544\uC8FC\uACA0\uB2C8?"
-    0000007F:
+    0000007D:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
         - str: "\uC758\uB8B0\uB97C \uBC1B\uB294\uB2E4"
           cmps: []
-          nextIdx: 130
+          nextIdx: 128
         - str: "\uC758\uB8B0\uB97C \uBC1B\uC9C0 \uC54A\uB294\uB2E4"
           cmps: []
-          nextIdx: 128
-    00000080:
+          nextIdx: 126
+    0000007E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3070,11 +3083,11 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "'\uBBF8\uCCE4\uC5B4?? \uC5B4\uB5BB\uAC8C \uC7A1\uC740 \uC0AC\uAC74\uC778\uB370??'"
-    00000081:
+    0000007F:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 127
-    00000082:
+        nextIndex: 125
+    00000080:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3098,7 +3111,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB2F9\uC5F0\uD788 \uBC1B\uC544\uC57C\uC8E0. \uC800 \uC778\uD615\uB4E4\uC774
           \uC65C \uC800\uB807\uAC8C \uB410\uB294\uB370!"
-    00000083:
+    00000081:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3123,7 +3136,7 @@ MonoBehaviour:
         script: "\uC2E4\uD5D8\uC740 \uB300\uCDA9 \uB05D\uB0AC\uC73C\uB2C8\uAE4C,
           \uC774\uC81C \uC9C1\uC811 \uD604\uC7A5\uC744 \uD655\uC778\uB9CC \uD558\uBA74
           \uB3FC\uC694."
-    00000084:
+    00000082:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3147,7 +3160,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBB50.. \uAC71\uC815\uC740 \uB123\uC5B4\uB450\uC154\uB3C4 \uAD1C\uCC2E\uACA0\uC8E0!
           \uAE38\uC5B4\uC57C \uC774\uD2C0? \uC0AC\uD758?"
-    00000085:
+    00000083:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3170,7 +3183,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "..\uADF8\uB798, \uC548\uC2EC\uC774 \uB418\uB294\uAD6C\uB098."
-    00000086:
+    00000084:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3194,7 +3207,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uADF8\uB7FC \uC218\uC0AC\uBD80 \uCABD\uC5D0 \uBBF8\uB9AC \uC5F0\uB77D\uC744
           \uB123\uC744\uAC8C."
-    00000087:
+    00000085:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3218,7 +3231,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uB110 \uADF8\uB807\uAC8C \uBC18\uAC00\uC6CC \uD558\uC9C0\uB294
           \uC54A\uACA0\uC9C0\uB9CC.."
-    00000088:
+    00000086:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3242,7 +3255,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uB7F0 \uACE0\uC9C0\uC2DD\uD55C \uB188\uB4E4\uD55C\uD150 \uBCC4
           \uAE30\uB300\uB3C4 \uC548 \uD574\uC694."
-    00000089:
+    00000087:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3267,7 +3280,7 @@ MonoBehaviour:
         script: "\uADF8\uCABD\uC5D0\uC11C \uC6D0\uD558\uB4E0, \uC6D0\uD558\uC9C0
           \uC54A\uB4E0.. \uC0AC\uAC74\uC740 \uC81C\uB300\uB85C \uC218\uC0AC\uD558\uBA74
           \uADF8\uB9CC\uC774\uC8E0."
-    0000008A:
+    00000088:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3290,7 +3303,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC751, \uADF8 \uC218 \uBC16\uC5D0 \uC5C6\uACA0\uAD6C\uB098."
-    0000008B:
+    00000089:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3313,7 +3326,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC0AC\uAC74 \uD604\uC7A5\uC778 \uB4B7\uACE8\uBAA9\uC740 \uC5EC\uAE30\uC5D0\uC11C.."
-    0000008C:
+    0000008A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3337,7 +3350,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544, \uC7A0\uAE50! \uC120\uBC30 \uD639\uC2DC \uC218\uC0AC\uBD80\uC5D0\uC11C
           \uB4B7\uB3D9\uC0B0\uC740 \uC870\uC0AC\uD588\uB098\uC694?"
-    0000008D:
+    0000008B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3360,7 +3373,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC751? \uB4B7\uB3D9\uC0B0?"
-    0000008E:
+    0000008C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3384,7 +3397,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB124 \uBC88\uC9F8 \uC2E4\uC885\uC790\uAC00 \uB9C8\uC9C0\uB9C9\uC73C\uB85C
           \uBAA9\uACA9\uB41C \uACF3\uC774\uC694!"
-    0000008F:
+    0000008D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3408,7 +3421,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uBC88\uC5D0 \uC0C8\uB85C \uD30C\uACAC\uB41C \uC0AC\uB78C\uB4E4\uC774
           \uAC70\uAE30\uB294 \uC870\uC0AC\uD588\uB0D0\uB294 \uAC70\uC8E0."
-    00000090:
+    0000008E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3431,7 +3444,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC120\uBC30"
         script: "\uC544\uB2C8, \uC7AC\uC870\uC0AC\uB294 \uD558\uC9C0 \uC54A\uC558\uC5B4."
-    00000091:
+    0000008F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3455,7 +3468,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uC9C0\uB09C \uC870\uC0AC \uB54C \uC544\uBB34 \uD754\uC801\uC774
           \uBC1C\uACAC \uB418\uC9C0 \uC54A\uC558\uAC70\uB4E0."
-    00000092:
+    00000090:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3479,7 +3492,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC624\uD638\uB77C! \uADF8\uB7EC\uBA74 \uB54C \uBB3B\uC9C0 \uC54A\uC740
           \uC99D\uAC70\uB97C \uD655\uBCF4\uD560 \uC218\uB3C4 \uC788\uACA0\uB124\uC694!"
-    00000093:
+    00000091:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3503,7 +3516,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uB7F4 \uB550 \uBA4D\uCCAD\uD55C \uAC8C \uB3C4\uC6C0\uC774
           \uB41C\uB2E4\uB2C8\uAE4C!"
-    00000094:
+    00000092:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3520,14 +3533,14 @@ MonoBehaviour:
         rightCharacter:
           image: {fileID: 21300000, guid: 52d74818409ae5e4db6a56afcd62c732, type: 3}
           isMirror: 0
-          isHighlight: 0
+          isHighlight: 1
           effect: 0
         isAuto: 0
         autoTime: 1
         name: "\uC120\uBC30"
-        script: "\uC5B4\u2026 \uC7A0\uAE50, \uC7A0\uAE50! \uAC70\uAE30\uB294 \uC65C
+        script: "\uC5B4... \uC7A0\uAE50, \uC7A0\uAE50! \uAC70\uAE30\uB294 \uC65C
           \uB2E4\uC2DC \uC870\uC0AC\uD558\uB824\uB294 \uAC70\uC57C?"
-    00000095:
+    00000093:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3551,7 +3564,7 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uADF8\uACF3\uBCF4\uB2E4\uB294 \uBC14\uB85C \uC0AC\uAC74 \uD604\uC7A5\uC73C\uB85C
           \uAC00\uB294 \uAC8C \uC88B\uC9C0 \uC54A\uC744\uAE4C?"
-    00000096:
+    00000094:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3576,7 +3589,7 @@ MonoBehaviour:
         script: "\uC81C \uC608\uC0C1\uC774 \uB9DE\uB2E4\uBA74\uC694, \uC544\uB9C8
           \uAC70\uAE30\uC5D0 \uC4F8\uBAA8 \uC788\uB294 \uB2E8\uC11C \uBA87 \uAC1C\uAC00
           \uC788\uC744\uC9C0\uB3C4 \uBAB0\uB77C\uC694."
-    00000097:
+    00000095:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3600,7 +3613,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB3C4\uAD74\uAFBC\uC740 \uAC19\uC740 \uBB34\uB364\uC744 \uB450
           \uBC88 \uD30C\uB824\uD558\uC9C0 \uC54A\uB294\uB2E4\uB294 \uB9D0 \uC544\uC2DC\uC8E0?"
-    00000098:
+    00000096:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3624,7 +3637,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uAE00\uC384.. \uB09C \uC798 \uBAA8\uB974\uACA0\uC5B4. \uD55C\uC2DC\uAC00
           \uAE09\uD55C \uC0C1\uD669\uC778\uB370.."
-    00000099:
+    00000097:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3648,7 +3661,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "...\uC120\uBC30, \uAE09\uD560\uC218\uB85D \uB3CC\uC544\uAC00\uB77C\uB294
           \uC720\uD615\uC758 \uC0C1\uD669\uC774\uC5D0\uC694."
-    0000009A:
+    00000098:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3673,7 +3686,7 @@ MonoBehaviour:
         script: "...\uC77C\uB2E8 \uB108\uC758 \uD310\uB2E8\uC5D0 \uB9E1\uAE38\uAC8C.
           \uB0B4\uAC00 \uADF8\uAC83\uAE4C\uC9C0 \uBB50\uB77C\uD560 \uC218\uB294 \uC5C6\uC744
           \uAC70 \uAC19\uB124."
-    0000009B:
+    00000099:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3697,13 +3710,13 @@ MonoBehaviour:
         name: "\uC120\uBC30"
         script: "\uADF8\uB798\uB3C4 \uB0B4 \uB9D0\uB3C4 \uD55C \uBC88 \uC0DD\uAC01\uD574\uC8FC\uB834.
           \uADF8\uB7FC \uBD80\uD0C1\uD560\uAC8C!"
-    0000009C:
+    0000009A:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 37b4e427a4980a94eb6589bb943c9b67, type: 3}
         volume: 1
         delay: 0
-    0000009D:
+    0000009B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3726,7 +3739,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uC5EC\uD2BC \uAC71\uC815\uC774 \uB9CE\uB2E4\uB2C8\uAE4C.."
-    0000009E:
+    0000009C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3749,7 +3762,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "..\uBB34\uC2A8 \uC2EC\uC815\uC778\uC9C0\uB294 \uC54C\uACA0\uC9C0\uB9CC."
-    0000009F:
+    0000009D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3772,7 +3785,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uBCF4\uC790\uC544.. \uADF8\uB7FC \uC5B4\uB5BB\uAC8C \uD560\uAE4C?"
-    000000A0:
+    0000009E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3796,17 +3809,17 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB0A8\uC790\uAC00 \uC2E4\uC885\uB41C \uB4B7\uB3D9\uC0B0? \uC544\uC774\uAC00
           \uC2E4\uC885\uB41C \uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38?"
-    000000A1:
+    0000009F:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
         - str: "\uB4B7\uB3D9\uC0B0"
           cmps: []
-          nextIdx: 162
+          nextIdx: 160
         - str: "\uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38"
           cmps: []
-          nextIdx: 165
-    000000A2:
+          nextIdx: 163
+    000000A0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3829,7 +3842,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uB4B7\uB3D9\uC0B0\uBD80\uD130 \uAC00\uBCF4\uC790!"
-    000000A3:
+    000000A1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -3852,11 +3865,11 @@ MonoBehaviour:
         autoTime: 3
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 10\uC2DC 37\uBD84"
-    000000A4:
+    000000A2:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 167
-    000000A5:
+        nextIndex: 165
+    000000A3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3880,20 +3893,23 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC5B4\uB450\uC6B4 \uACE8\uBAA9\uAE38\uBD80\uD130
           \uAC00\uBCF4\uC790!"
-    000000A6:
+    000000A4:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 189
-    000000A7:
+        nextIndex: 187
+    000000A5:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: e4491bc319252144a9423833bba57050, type: 3}
         volume: 1
-    000000A8:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000000A6:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: c3eb736d97bda6a47bb0f99d3a929b0a, type: 3}
-    000000A9:
+    000000A7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -3917,7 +3933,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5EC\uAE30\uAC00 \uB4B7\uB3D9\uC0B0\uC778\uAC00? \uC0DD\uAC01\uD588\uB358
           \uAC70 \uBCF4\uB2E4 \uB354 \uD55C\uC0B0\uD55C \uAC78?"
-    000000AA:
+    000000A8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3940,7 +3956,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC774 \uB0C4\uC0C8\uB294..."
-    000000AB:
+    000000A9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3963,7 +3979,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uB2E8 \uB0B4\uC5D0... \uCD08\uC0B0\uC778\uAC00?"
-    000000AC:
+    000000AA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -3987,7 +4003,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uB7F0 \uAC74 \uD55C \uBC88\uB3C4 \uB9E1\uC544\uBCF8 \uC801\uC774
           \uC5C6\uB294\uB370."
-    000000AD:
+    000000AB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4010,7 +4026,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: .........................
-    000000AE:
+    000000AC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4033,7 +4049,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC5ED\uC2DC..! \uC81C\uB300\uB85C \uCC3E\uC544\uC654\uB2E4\uB2C8\uAE4C!"
-    000000AF:
+    000000AD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4057,7 +4073,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uBBF8 \uC624\uB798 \uC804\uC5D0 \uC870\uC0AC\uB97C \uB05D\uB0B8
           \uACF3\uC740 \uC0C1\uB300\uC801\uC73C\uB85C \uAD00\uC2EC\uC774 \uB35C \uAC00\uC9C0."
-    000000B0:
+    000000AE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4081,7 +4097,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD604\uC7A5\uC744 \uACC4\uC18D \uC9C0\uD0AC \uC778\uC6D0\uC744
           \uBC30\uCE58\uD558\uB294 \uAC74.. \uD55C\uACC4\uAC00 \uC788\uACE0 \uB9D0\uC774\uC57C."
-    000000B1:
+    000000AF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4106,7 +4122,7 @@ MonoBehaviour:
         script: "\uBB50\u2026\uC774\uB807\uAC8C '\uB300\uB193\uACE0 \uC900\uBE44'\uB97C
           \uD55C \uAC78 \uBCF4\uBA74 \uADF8\uCABD\uB3C4 \uBA38\uB9AC\uAC00 \uBCF5\uC7A1\uD55C\uAC00
           \uBCF4\uB124."
-    000000B2:
+    000000B0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4129,7 +4145,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC88B\uC544..! \uD604\uC7A5 \uC870\uC0AC\uB2E4!"
-    000000B3:
+    000000B1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4153,7 +4169,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "'\uC218\uC0C1\uD574 \uBCF4\uC774\uB294 \uBB3C\uAC74'\uC740 \uC804\uBD80
           \uAC74\uB4DC\uB824 \uBCF4\uB294 \uAC70\uC57C!!"
-    000000B4:
+    000000B2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4176,14 +4192,14 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uB7FC \uC5EC\uAE30\uC11C\uBD80\uD130 \uC2DC\uC791\uD560\uAE4C?"
-    000000B5:
+    000000B3:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
         character: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
-    000000B6:
+    000000B4:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 1e3bb6666e184e64bb9f815596992fd8, type: 3}
+        charImg: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         itemIndex: 1
         choiceDatas:
         - choiceStr: "\uC0AC\uB0E5\uAFBC\uC774 \uC0AC\uC6A9\uD55C \uB3C5\uC57D\uC77C\uAE4C?"
@@ -4304,7 +4320,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 1
-    000000B7:
+    000000B5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4327,10 +4343,10 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uC57C..."
-    000000B8:
+    000000B6:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 8a215c84620f8724db6d57be63d68d6f, type: 3}
+        charImg: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
         itemIndex: 0
         choiceDatas:
         - choiceStr: "\uC791\uC740 \uB3D9\uBB3C\uB4E4\uC758 \uC2DC\uCCB4\uAC00 \uC788\uC73C\uB2C8\uAE4C"
@@ -4406,7 +4422,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    000000B9:
+    000000B7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4430,7 +4446,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC791\uC740 \uB3D9\uBB3C\uC744 \uC0C1\uB300\uB85C
           \uC774\uB7F0 \uC77C\uC744..."
-    000000BA:
+    000000B8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4454,7 +4470,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uAC74 \uB098\uC911\uC5D0 \uC131\uBD84 \uBD84\uC11D\uC744
           \uC694\uCCAD\uD574\uC57C\uACA0\uC5B4."
-    000000BB:
+    000000B9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4478,7 +4494,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC74F\uCC28.. \uCC3E\uC744 \uC218 \uC788\uB294 \uAC74 \uC804\uBD80
           \uCC3E\uC558\uB124."
-    000000BC:
+    000000BA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4502,16 +4518,19 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB2E4\uC74C\uC740 \uC544\uC774\uAC00 \uB0A9\uCE58\uB41C \uC5B4\uB450\uC6B4
           \uB4B7\uACE8\uBAA9\uC774\uC57C."
-    000000BD:
+    000000BB:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 2947823f702ed43b9867d418f837e0da, type: 3}
         volume: 1
-    000000BE:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000000BC:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 9ea3066091050c24da63eee49644cdc6, type: 3}
-    000000BF:
+    000000BD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -4534,7 +4553,7 @@ MonoBehaviour:
         autoTime: 2
         name: 
         script: "2\uC6D4 13\uC77C \uC624\uC804 11\uC2DC 07\uBD84"
-    000000C0:
+    000000BE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -4558,7 +4577,7 @@ MonoBehaviour:
         name: 
         script: "\uBA40\uB9AC\uC11C \uC0AC\uB78C\uB4E4\uC758 \uB9D0\uC18C\uB9AC\uAC00
           \uB4E4\uB824\uC628\uB2E4."
-    000000C1:
+    000000BF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4582,7 +4601,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544..\uD558~ \uCC3E\uC558\uB2E4. \uC0AC\uB78C\uB4E4\uC774 \uC5C4\uCCAD\uB098\uAC8C
           \uBAA8\uC5EC\uC788\uB124?"
-    000000C2:
+    000000C0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4605,18 +4624,21 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "..\uC99D\uAC70 \uD6FC\uC190\uC740 \uC548 \uD588\uC73C\uBA74 \uC88B\uACA0\uB294\uB370~"
-    000000C3:
+    000000C1:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         volume: 1
         delay: 0
-    000000C4:
+    000000C2:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 72368974817d70142815fb02c6691d3d, type: 3}
         volume: 1
-    000000C5:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000000C3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -4639,13 +4661,13 @@ MonoBehaviour:
         autoTime: 3
         name: 
         script: "\uC5B4\uC774.. \uAC70\uAE30 \uBA48\uCDB0\uB77C."
-    000000C6:
+    000000C4:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 410046078565763478adc6b3d0f733d8, type: 3}
         volume: 1
         delay: 0
-    000000C7:
+    000000C5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4669,7 +4691,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC5EC\uAE30\uC11C\uBD80\uD130\uB294 \uAD00\uACC4\uC790\uC678 \uCD9C\uC785\uAE08\uC9C0
           \uAD6C\uC5ED\uC774\uB2E4. \uB3CC\uC544\uAC00\uB77C."
-    000000C8:
+    000000C6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4692,7 +4714,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC751? \uB2F9\uC2E0\uC740 \uB204\uAD6C\uC2DC\uC8E0?"
-    000000C9:
+    000000C7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4716,7 +4738,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB300\uB2F5\uD560 \uC758\uBB34\uB294 \uC5C6\uB2E4. \uC5EC\uAE34
           \uC0AC\uAC74 \uD604\uC7A5\uC774\uC57C. \uBE68\uB9AC \uB3CC\uC544\uAC00."
-    000000CA:
+    000000C8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4739,7 +4761,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C\u2026 \uCC38 \uC090\uB531\uD558\uC2DC\uB124."
-    000000CB:
+    000000C9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4761,10 +4783,10 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
-        script: "\uBBF8\uC548\uD558\uC9C0\uB9CC \uC804 \uBE44\uD558\uC774\uBE0C \uD559\uD30C\uC758
-          \uC0AC\uB77C\uC9C4 \uC544\uC774\uB97C \uCC3E\uC544\uB2EC\uB77C\uB294 \uC758\uB8B0\uB97C
-          \uBC1B\uACE0 \uC628 \uD0D0\uC815\uC774\uB77C\uC11C\uC694."
-    000000CC:
+        script: "\uBBF8\uC548\uD558\uC9C0\uB9CC \uC804 <color=\"orange\">\uBE44\uD558\uC774\uBE0C</color>
+          \uD559\uD30C\uC758 \uC0AC\uB77C\uC9C4 \uC544\uC774\uB97C \uCC3E\uC544\uB2EC\uB77C\uB294
+          \uC758\uB8B0\uB97C \uBC1B\uACE0 \uC628 \uD0D0\uC815\uC774\uB77C\uC11C\uC694."
+    000000CA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4788,13 +4810,13 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC790, \uC5EC\uAE30 \uC0AC\uAC74 \uD604\uC7A5\uC744 \uC870\uC0AC\uD560
           \uC218 \uC788\uB294 \uD5C8\uAC00\uC11C\uB3C4 \uC788\uAC70\uB4E0\uC694?"
-    000000CD:
+    000000CB:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 8e7b879f031f2fb4690feb5e22ade211, type: 3}
         volume: 1
         delay: 0
-    000000CE:
+    000000CC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4817,7 +4839,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: .....
-    000000CF:
+    000000CD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4840,7 +4862,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "...\uAFC0\uBC8C\uB188\uB4E4\uC774 \uBFCC\uB9B0 \uC7BF\uBC25\uC778\uAC00?"
-    000000D0:
+    000000CE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4864,7 +4886,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC77C\uAC1C \uC2DC\uBBFC\uC5D0\uAC8C \uC0AC\uAC74\uC744 \uC758\uB8B0\uD558\uB2E4\uB2C8..
           \uADF8\uB188\uB4E4\uB3C4 \uC815\uC2E0\uC774 \uB098\uAC14\uAD70."
-    000000D1:
+    000000CF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4889,7 +4911,7 @@ MonoBehaviour:
         script: "\uD5C8\uAC00\uC11C\uAC00 \uC788\uB4E0 \uC5C6\uB4E0 \uC911\uC694\uD558\uC9C0
           \uC54A\uB2E4. \uBA3C\uC800 \uC6B0\uB9AC\uB4E4\uC774 \uD604\uC7A5\uC744
           '\uBCF4\uC874', '\uC870\uC0AC'\uD574\uC57C\uB9CC \uD55C\uB2E4. "
-    000000D2:
+    000000D0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4913,7 +4935,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB124\uAC00 \uC870\uC0AC\uB97C \uD558\uB294 \uAC74 \uADF8 \uB2E4\uC74C\uC774\uC57C.
           \uAD1C\uD788 \uB098\uC11C\uC11C \uC77C\uC744 \uB9DD\uCE58\uC9C0 \uB9D0\uC544\uB77C."
-    000000D3:
+    000000D1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4937,7 +4959,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uAC00\uBA74 \uC548 \uCABD, \uD654\uC0C1\uC774\uB098 \uC0C1\uCC98\uB294
           \uC544\uB2C8\uB124? \uBB34\uC2A8 \uC2E4\uD5D8\uC758 \uBD80\uC791\uC6A9\uC774\uC57C?"
-    000000D4:
+    000000D2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4960,7 +4982,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "...\uBB50?"
-    000000D5:
+    000000D3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -4985,7 +5007,7 @@ MonoBehaviour:
         script: "\uB2E4\uB9AC\uB97C \uC800\uB294 \uAC74 \uC2E4\uD5D8 \uB54C\uBB38\uC740
           \uC544\uB2CC \uAC70 \uAC19\uACE0.. \uD2B8\uB77C\uC6B0\uB9C8\uB77C\uB3C4
           \uC788\uC5C8\uB098\uBD10? \uD798\uB4E4\uC5C8\uACA0\uB124~"
-    000000D6:
+    000000D4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5010,7 +5032,7 @@ MonoBehaviour:
         script: "\uC6D0\uD55C\uB2E4\uBA74 \uC88B\uC740 \uCC3B\uC9D1 \uD558\uB098
           \uC18C\uAC1C \uC2DC\uCF1C\uC904\uAC8C~ \uB2F9\uC2E0\uC774 \uC990\uAE30\uB294
           \uC5BC \uADF8\uB808\uC774 \uD2F0 \uB9DB\uC774 \uAE30\uAC00 \uB9C9\uD788\uB2E4\uACE0?"
-    000000D7:
+    000000D5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5034,7 +5056,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC369\uC740 \uBB3C\uB85C \uD0C4 \uD64D\uCC28\uD558\uACE0\uB294
           \uB9DB\uC774 \uB2E4\uB974\uAC70\uB4E0."
-    000000D8:
+    000000D6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5057,7 +5079,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "...\uB108 \uADF8\uAC78 \uC5B4\uB5BB\uAC8C \uC548 \uAC70\uB0D0?"
-    000000D9:
+    000000D7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5082,7 +5104,7 @@ MonoBehaviour:
         script: "\uC5B4\uB5A4 \uAC70?\n\uB2F9\uC2E0\uC774 \uC5BC\uAD74\uC744 \uAC00\uB9B0
           \uAC8C \uBB3C\uB9AC\uC801\uC778 \uC0C1\uCC98\uAC00 \uC544\uB2CC \uC2E4\uD5D8\uC5D0
           \uC758\uD55C \uBD80\uC791\uC6A9\uC774\uB77C\uB294 \uAC70?\n"
-    000000DA:
+    000000D8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5108,7 +5130,7 @@ MonoBehaviour:
           \uD2B8\uB77C\uC6B0\uB9C8\uB85C \uB2E4\uB9AC\uB97C \uC800\uB294 \uAC70?\n\uADF8\uAC83\uB3C4
           \uC544\uB2C8\uBA74 \uC88B\uC544\uD558\uB294 \uD64D\uCC28\uAC00 \uB2E4\uB978
           \uC885\uB958\uC600\uB098?"
-    000000DB:
+    000000D9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5132,7 +5154,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: ".....\uB124 \uB188, \uB4B7\uC870\uC0AC\uB77C\uB3C4 \uD55C \uAC70\uB0D0?
           \uB354\uB7EC\uC6B4 \uC4F0\uB808\uAE30\uAC00..!"
-    000000DC:
+    000000DA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5158,7 +5180,7 @@ MonoBehaviour:
           \uB9C8\uC2A4\uD06C\uB85C \uC5BC\uAD74\uC744 \uAC00\uB9AC\uACE0 \uC788\uB2E4\uBA74
           \uC2EC\uB9AC\uC801\uC774\uB4E0 \uBB3C\uB9AC\uC801\uC774\uB4E0 \uD53C\uD574\uB97C
           \uBD24\uC73C\uB2C8\uAE4C \uC544\uB0D0?"
-    000000DD:
+    000000DB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5184,7 +5206,7 @@ MonoBehaviour:
           \uAC00\uBA74\uC744 \uC4F0\uACE0 \uC0AC\uB78C\uACFC \uAE30\uD53C\uD560 \uC815\uB3C4\uBA74
           \uD604\uC7A5\uC744 \uC9C1\uC811 \uB6F0\uC5B4\uB2E4\uB2C8\uB294 \uC218\uC0AC\uBD80\uB294
           \uC808\uB300\uB85C \uBABB\uD558\uC9C0."
-    000000DE:
+    000000DC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5211,7 +5233,7 @@ MonoBehaviour:
           \uB9D0\uC744 \uD558\uBA74\uC11C\uB3C4 \uACE0\uD1B5\uC2A4\uB7EC\uC6B4 \uAE30\uC0C9\uC774
           \uBCF4\uC774\uC9C0 \uC54A\uC544.\n\uC801\uC5B4\uB3C4 \uD6C4\uC720\uC99D\uC774
           \uC5C6\uB294 \uC218\uC900\uC758 \uC0C1\uCC98\uB780 \uAC70\uC57C. "
-    000000DF:
+    000000DD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5237,7 +5259,7 @@ MonoBehaviour:
           \uC4F0\uC9C4 \uC54A\uC744 \uAC70 \uC796\uC544?\n\uADF8\uB7EC\uBA74 \uC5B4\uB5A4
           \uC774\uC720\uC5D0\uC11C\uB4E0 \uC5BC\uAD74\uC744 \uAC00\uB9AC\uAC70\uB098,
           \uAC00\uB9AC\uACE0 \uC2F6\uC740 \uAC70\uACA0\uC9C0."
-    000000E0:
+    000000DE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5263,7 +5285,7 @@ MonoBehaviour:
           \uACC4\uC18D \uAC00\uBA74\uC744 \uC4F0\uACE0 \uC788\uB294 \uAE34\uC7A5
           \uC0C1\uD0DC\uC774\uB2C8, \uC5B4\uB5A4 \uC2DD\uC73C\uB85C\uB4E0 \uC2E0\uD638\uB97C
           \uBCF4\uB0B4\uAE30 \uB9C8\uB828\uC774\uC9C0."
-    000000E1:
+    000000DF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5289,7 +5311,7 @@ MonoBehaviour:
           \uAE34\uC7A5\uACFC \uC2A4\uD2B8\uB808\uC2A4.. \uD639\uC740 \uADF8\uAC78
           \uC720\uBC1C\uD558\uB294 \uACFC\uAC70\uC758 \uAE30\uC5B5 \uB54C\uBB38\uC77C
           \uAC70\uC57C."
-    000000E2:
+    000000E0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5316,7 +5338,7 @@ MonoBehaviour:
           \uAC00\uB9AC\uACE0 \uC788\uB2E4\uBA74 \uBED4\uD558\uC796\uC544?\n\uB2F9\uC2E0\uACFC
           \uAC19\uC740 \uC0AC\uB78C\uB4E4\uC758 \uC774\uC57C\uAE30\uB294 \uAF64\uB098
           \uC720\uBA85\uD558\uB2C8\uAE4C.\r"
-    000000E3:
+    000000E1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5340,7 +5362,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD1F4\uC5ED \uAD70\uC778\uC744 \uC751\uC6D0\uD558\uB294 \uD3B8\uC9C0
           \uD55C \uB450 \uC7A5 \uC815\uB3C4\uB294 \uBC1B\uC558\uC744 \uAC70 \uAC19\uC740\uB370?"
-    000000E4:
+    000000E2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5363,7 +5385,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: .....
-    000000E5:
+    000000E3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5386,7 +5408,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "..\uD64D\uCC28\uB294 \uC5B4\uB5BB\uAC8C \uC548 \uAC70\uB0D0?"
-    000000E6:
+    000000E4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5410,7 +5432,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4? \uC815\uB9D0 \uC88B\uC544\uD574? \uBC18\uC740 \uADF8\uB0E5
           \uCC0D\uC740 \uAC70\uC600\uB294\uB370."
-    000000E7:
+    000000E5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5435,7 +5457,7 @@ MonoBehaviour:
         script: "\uB2F9\uC2E0\uC774 \uAC00\uC9C0\uACE0 \uC788\uB294 \uC190\uC218\uAC74..
           \uBAA8\uB9AC\uC2A8 \uCE74\uD398\uC5D0\uC11C \uB098\uB220\uC8FC\uB294 \uAC70\uC9C0?
           \uAC70\uAE30 \uC5BC \uADF8\uB808\uC774 \uD2F0\uAC00 \uB9DB\uC788\uC5B4\uC11C\uC57C."
-    000000E8:
+    000000E6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5458,7 +5480,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: ...............
-    000000E9:
+    000000E7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5482,7 +5504,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "...\uC88B\uB2E4. \uB124 \uB188\uC774 \uC5B4\uB290\uC815\uB3C4\uC758
           \uC5ED\uB7C9\uC744 \uAC16\uCD98 \uC0AC\uB78C\uC774\uB780 \uAC74 \uC778\uC815\uD558\uB9C8."
-    000000EA:
+    000000E8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5507,7 +5529,7 @@ MonoBehaviour:
         script: "\uB0B4\uAC00 \uBCF4\uB294 \uC55E\uC774\uB77C\uB294 \uC804\uC81C
           \uD558\uC5D0 '\uAC04\uB2E8\uD55C \uC218\uC0AC'\uB97C \uD5C8\uAC00\uD558\uC9C0.
           \uB2E8, \uD5C8\uD2BC \uC9D3\uC740 \uD560 \uC218 \uC5C6\uC744 \uAC70\uB2E4."
-    000000EB:
+    000000E9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5532,7 +5554,7 @@ MonoBehaviour:
         script: "\uD604\uC7A5\uC5D0 \uB108\uBB34 \uC624\uB79C \uC2DC\uAC04 \uC788\uC744\uC218\uB3C4
           \uC5C6\uB2E4. \uADF8\uB798\uB3C4 \uC0C1\uAD00 \uC5C6\uB2E4\uBA74 \uD604\uC7A5\uC5D0
           \uCD9C\uC785\uC744 \uD5C8\uAC00\uD55C\uB2E4."
-    000000EC:
+    000000EA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5555,7 +5577,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "...\uCABC\uC794\uD558\uAE30\uB294. \uC11C\uBE44\uC2A4\uB294 \uC5C6\uC5B4?"
-    000000ED:
+    000000EB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5579,7 +5601,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uAC1C\uC18C\uB9AC \uB9D0\uACE0 \uC218\uC0AC\uB098 \uC2DC\uC791\uD574\uB77C.
           \uD604\uC7A5\uC740 \uC774 \uC55E\uC774\uB2E4."
-    000000EE:
+    000000EC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5603,13 +5625,13 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB531\uB531\uD558\uAE34! \uB204\uAC00 \uAF30\uB300 \uD559\uD30C
           \uC544\uB2C8\uB784\uAE4C\uBD10!"
-    000000EF:
+    000000ED:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 410046078565763478adc6b3d0f733d8, type: 3}
         volume: 1
         delay: 0
-    000000F0:
+    000000EE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5634,7 +5656,7 @@ MonoBehaviour:
         script: "\u2026\uADF8\uB798\uB3C4 \uC0DD\uAC01\uBCF4\uB2E4 \uC81C\uB300\uB85C
           \uB41C \uC0AC\uB78C\uC774 \uC654\uB124. \uCD9C\uC785\uD5C8\uAC00\uB97C
           \uB0B4\uB824\uC8FC\uB2E4\uB2C8."
-    000000F1:
+    000000EF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5658,7 +5680,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBAB0\uB798 \uC228\uC5B4\uB4E4\uC5B4\uAC08\uB824 \uD588\uB294\uB370,
           \uC218\uACE0\uB97C \uB35C\uC5C8\uC5B4."
-    000000F2:
+    000000F0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5682,11 +5704,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB098\uC911\uC5D0 \uC81C\uB300\uB85C \uC774\uC57C\uAE30\uB77C\uB3C4
           \uD574\uC57C\uACA0\uB2E4! \uC77C\uB2E8 \uC870\uC0AC\uBD80\uD130!"
-    000000F3:
+    000000F1:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
         character: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
-    000000F4:
+    000000F2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5710,7 +5732,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC774\uB807\uAC8C\uB098 \uB2E8\uC11C\uAC00 \uC794\uB729..!
           \uB180\uC774\uACF5\uC6D0\uC5D0\uB77C\uB3C4 \uC628 \uAC70 \uAC19\uB124!"
-    000000F5:
+    000000F3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5734,7 +5756,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB180\uC774\uACF5\uC6D0..? \uC5EC\uAE34 \uC0AC\uAC74 \uD604\uC7A5\uC774\uB2E4.
           \uACBD\uC194\uD55C \uBC1C\uC5B8\uC740 \uC0BC\uAC00\uB77C, \uBA4D\uCCAD\uC774."
-    000000F6:
+    000000F4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5760,7 +5782,7 @@ MonoBehaviour:
           \uB4E3\uAE30 \uC2EB\uAC70\uB4E0? \uC99D\uAC70\uAC00 \uC0B0\uCC98\uB7FC
           \uC313\uC600\uB294\uB370, \uC218\uC0AC\uC5D0 \uB09C\uD56D\uC744 \uC65C
           \uACAA\uC5B4?"
-    000000F7:
+    000000F5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5783,7 +5805,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC99D\uAC70? \uADF8\uB7F0 \uC7A1\uB3D9\uC0AC\uB2C8\uAC00 \uB9D0\uC774\uB0D0?"
-    000000F8:
+    000000F6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5807,7 +5829,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uAC78 \uC7A1\uB3D9\uC0AC\uB2C8\uB85C \uBCF4\uB294 \uC2DC\uC810\uC5D0\uC11C,
           \uB2F9\uC2E0 \uC218\uC900\uC744 \uC54C\uB824\uC8FC\uB294 \uAC70\uC57C."
-    000000F9:
+    000000F7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5830,7 +5852,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uB124\uAC00 \uBBF8\uCE5C \uC99D\uAC70\uAC00 \uC544\uB2CC\uAC70\uB0D0?"
-    000000FA:
+    000000F8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5854,7 +5876,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544! \uB410\uC5B4! \uADF8\uB7FC \uC774\uAC78 \uBCF4\uACE0 \uCD94\uB9AC\uB77C\uACE0
           \uD574\uBCFC\uB798? \uB0B4\uAC00 \uCC3E\uC740 \uC99D\uAC70\uB85C \uB9D0\uC57C!"
-    000000FB:
+    000000F9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5877,7 +5899,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: ...
-    000000FC:
+    000000FA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5899,8 +5921,8 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
-        script: "\uBAA8\uC790\u2026\uCC9C \uC870\uAC01\u2026\uBD80\uC234\uC9C4 \uD68C\uC911\uC2DC\uACC4\uC778\uAC00\u2026"
-    000000FD:
+        script: "\uBAA8\uC790...\uCC9C \uC870\uAC01...\uBD80\uC234\uC9C4 \uD68C\uC911\uC2DC\uACC4\uC778\uAC00..."
+    000000FB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5923,7 +5945,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC54C\uACA0\uC5B4?"
-    000000FE:
+    000000FC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5947,7 +5969,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uBB58 \uC54C\uACA0\uB0D0\uB294 \uAC70\uC9C0? \uC774\uB7F0 \uB4B7\uACE8\uBAA9\uC5D4
           \uD754\uD788 \uBCFC \uC218 \uC788\uB294 \uC4F0\uB808\uAE30 \uC544\uB2CC\uAC00?"
-    000000FF:
+    000000FD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5971,7 +5993,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uB7EC\uB2C8\uAE4C \uB124\uAC00 \uBA4D\uCCAD\uD558\uB2E4\uB294
           \uAC70\uC57C, \uC774 \uBA4D\uCCAD\uC544!"
-    00000100:
+    000000FE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -5994,7 +6016,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC544\uAE4C\uBD80\uD130 \uAC1C\uC18C\uB9AC\uB97C.."
-    00000101:
+    000000FF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6018,7 +6040,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBB50, \uB410\uC5B4. \uC5B4\uCC28\uD53C \uD070 \uAE30\uB300\uB3C4
           \uC548 \uD588\uACE0."
-    00000102:
+    00000100:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6041,10 +6063,10 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC790, \uC798\uBD10."
-    00000103:
+    00000101:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
         itemIndex: 2
         choiceDatas:
         - choiceStr: "\uBAA8\uC790\uC758 \uBC1C\uC790\uAD6D\uC744 \uBCF8\uB2E4"
@@ -6121,7 +6143,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    00000104:
+    00000102:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6144,7 +6166,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uAC8C \uC0AC\uAC74\uC774\uB791 \uBB34\uC2A8 \uAD00\uB828.."
-    00000105:
+    00000103:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6170,7 +6192,7 @@ MonoBehaviour:
           \uC548 \uC88B\uC73C\uB2C8\uAE4C. \uC774\uAC74 \uC5B4\uB9B0 \uC544\uC774\uB4E4\uC774
           \uC4F0\uB294 \uAC70\uC57C. \uADF8\uAC83\uB3C4 \uB3C8\uC774 \uC5C6\uB294
           \uC544\uC774\uB4E4."
-    00000106:
+    00000104:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6194,7 +6216,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8 \uBAA8\uC790\uAC00 \uC2E4\uC885\uB41C \uC544\uC774\uC758
           \uAC83\uC774\uB77C\uACE0?"
-    00000107:
+    00000105:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6220,7 +6242,7 @@ MonoBehaviour:
           \uC790\uAE30 \uC7AC\uC0B0\uC744 \uBAA9\uC228\uBCF4\uB2E4 \uC911\uC694\uD558\uAC8C
           \uC0DD\uAC01\uD574.\n\uC6EC\uB9CC\uD07C \uD070 \uC77C\uC774 \uC544\uB2C8\uBA74,
           \uB098\uC911\uC5D0\uB77C\uB3C4 \uB2E4\uC2DC \uCC3E\uC73C\uB7EC \uC624\uC9C0."
-    00000108:
+    00000106:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6246,7 +6268,7 @@ MonoBehaviour:
           \uAC19\uC740 \uC544\uC774\uC758 \uBAA8\uC790, \uC8FC\uC778\uC740 \uBED4\uD558\uC9C0.\n\uADF8
           \uC2DC\uAC01\uC5D0 \uC5EC\uAE30 \uC788\uB358 \uC544\uC774\uAC00 \uB610
           \uB204\uAC00\uC788\uACA0\uC5B4?"
-    00000109:
+    00000107:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6269,7 +6291,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: .....
-    0000010A:
+    00000108:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6292,10 +6314,10 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uAC83\uB9CC\uC774 \uC544\uB2C8\uC57C."
-    0000010B:
+    00000109:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
         itemIndex: 2
         choiceDatas:
         - choiceStr: "\uBC1C\uC790\uAD6D\uC758 \uBB38\uC591\uC744 \uBCF8\uB2E4"
@@ -6370,7 +6392,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    0000010C:
+    0000010A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6393,7 +6415,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB807\uB2E4\uBA74..."
-    0000010D:
+    0000010B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6417,7 +6439,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uC774\uB294 \uB0A9\uCE58\uB41C \uAC70\uC9C0. \uC0C1\uB958\uCE35\uC758
           \uC18D\uD55C \uB204\uAD70\uAC00\uC5D0."
-    0000010E:
+    0000010C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6443,7 +6465,7 @@ MonoBehaviour:
           \uAC74\uAC00?\n\uC123\uBD88\uB9AC \uADF8\uB4E4\uC744 \uC758\uC2EC\uD588\uB2E4\uAC04
           \uB3C4\uB9AC\uC5B4 \uC218\uC0AC\uAC00 \uAC15\uC81C \uC885\uB8CC\uB418\uACE0
           \uB9D0\uAC70\uB2E4!"
-    0000010F:
+    0000010D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6466,10 +6488,10 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uD655\uC99D? \uADF8\uC57C \uC788\uC9C0."
-    00000110:
+    0000010E:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
         itemIndex: 3
         choiceDatas:
         - choiceStr: "\uAC80\uC740 \uCC9C \uC870\uAC01"
@@ -6546,10 +6568,10 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    00000111:
+    0000010F:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 714774d946e6b45429b1f0e852edf2c9, type: 3}
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
         itemIndex: 4
         choiceDatas:
         - choiceStr: "\uBD80\uC11C\uC9C4 \uC2DC\uACC4\uB97C \uBCF8\uB2E4"
@@ -6625,7 +6647,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    00000112:
+    00000110:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6651,7 +6673,7 @@ MonoBehaviour:
           \uC54C\uB824\uC8FC\uACE0 \uC788\uC5B4.\n\uB2F9\uC2E0\uC740 \uC774\uAC8C
           \uC99D\uAC70\uC778\uC9C0\uB3C4 \uBAB0\uB790\uB358 \uAC83 \uAC19\uC9C0\uB9CC..
           \uC5B4\uB54C?"
-    00000113:
+    00000111:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6675,7 +6697,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "...\uBE4C\uC5B4\uBA39\uC744 \uC774\uAC74 \uB208 \uB72C \uC7A5\uB2D8\uC774\uB098
           \uB2E4\uB984\uC5C6\uC5C8\uAD70."
-    00000114:
+    00000112:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6699,7 +6721,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4\uB77C? \uC758\uC678\uB85C \uBE68\uB9AC \uC778\uC815\uD558\uB124?
           \uBA87 \uBC88 \uC815\uC2E0\uC2B9\uB9AC\uB77C\uB3C4 \uD560 \uAC70 \uAC19\uC558\uB294\uB370."
-    00000115:
+    00000113:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6723,7 +6745,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC544\uC774\uC758 \uC0DD\uBA85\uC774 \uC5B4\uCC0C\uB420\uC9C0 \uBAA8\uB974\uB294
           \uB9C8\uB2F9\uC5D0 \uADF8\uB534 \uC9D3\uC744 \uD558\uACA0\uB098?"
-    00000116:
+    00000114:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6747,7 +6769,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "..\uD750\uD765! \uC5ED\uC2DC \uB0B4\uAC00 \uC0AC\uB78C\uBCF4\uB294
           \uB208\uC774 \uC788\uB2E4\uB2C8\uAE4C."
-    00000117:
+    00000115:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6762,7 +6784,7 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         rightCharacter:
-          image: {fileID: 21300000, guid: b25ad9784acbe0c49a74a2c20d9f21e9, type: 3}
+          image: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
           isMirror: 0
           isHighlight: 0
           effect: 0
@@ -6773,7 +6795,7 @@ MonoBehaviour:
           \uC0BC\uC544\uC11C \uC774 \uC99D\uAC70\uB97C \uC218\uC0AC \uBCF8\uBD80\uC5D0
           \uAC10\uC815 \uC758\uB8B0\uD574\uC8FC\uC2DC\uC9C0 \uC54A\uC744\uB798?\n\uAE4C\uB9C8\uADC0
           \uC624\uBE60?"
-    00000118:
+    00000116:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6796,7 +6818,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uAE4C\uB9C8..."
-    00000119:
+    00000117:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6819,7 +6841,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "...\uADF8\uB798, \uC54C\uC558\uB2E4."
-    0000011A:
+    00000118:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6843,7 +6865,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC5B4\uC774! \uC774\uAC78 \uAC00\uC9C0\uACE0 \uB3CC\uC544\uAC00\uB77C.
           \uAC10\uC815 \uC758\uB8B0\uB97C \uB9E1\uACA8."
-    0000011B:
+    00000119:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6866,9 +6888,9 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uACB0\uACFC\uB294 \uB098\uC624\uC790\uB9C8\uC790 \uBC14\uB85C \uC54C\uB824\uC918.
-          \uBB50\u2026\uC544\uB9C8 \uC608\uC0C1\uD55C \uAC70\uB791 \uBE44\uC2B7\uD558\uAE34
+          \uBB50...\uC544\uB9C8 \uC608\uC0C1\uD55C \uAC70\uB791 \uBE44\uC2B7\uD558\uAE34
           \uD558\uACA0\uC9C0\uB9CC.."
-    0000011C:
+    0000011A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6892,7 +6914,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uC790\uC2E0\uAC10 \uD558\uB098\uB294 \uB118\uCE58\uB294\uAD70.
           \uB2E4\uC74C\uC740 \uC5B4\uB51C \uC870\uC0AC\uD560 \uC608\uC815\uC774\uB0D0?"
-    0000011D:
+    0000011B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6915,7 +6937,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4? \uB098\uB791 \uAC19\uC774 \uACC4\uC18D \uC870\uC0AC\uD558\uAC8C?"
-    0000011E:
+    0000011C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6940,7 +6962,7 @@ MonoBehaviour:
         script: "\uB124\uAC00 \uD604\uC7A5\uC744 \uC870\uC0AC\uD560 \uC218 \uC788\uB294
           \uAC74, \uC218\uC0AC\uBD80\uC778 \uB098\uC758 \uAC10\uC2DC\uD558\uC5D0
           \uC788\uAE30 \uB54C\uBB38\uC774\uB2E4."
-    0000011F:
+    0000011D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6963,7 +6985,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uBC8C\uC368 \uADF8\uAC78 \uAE4C\uBA39\uC740 \uAC74 \uC544\uB2C8\uACA0\uC9C0?"
-    00000120:
+    0000011E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -6987,7 +7009,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC74C... \uC5B4\uAE68\uC5D0 \uAE4C\uB9C8\uADC0 \uB2EC\uACE0 \uC218\uC0AC\uD558\uBA74
           \uD6A8\uC728\uC774 \uB5A8\uC5B4\uC9C0\uB294\uB370?"
-    00000121:
+    0000011F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7011,7 +7033,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB204\uAC00 \uAE4C\uB9C8\uADC0\uB77C\uB294 \uAC70\uB0D0? \uBE4C\uC5B4\uBA39\uC744
           \uB188\uC774.."
-    00000122:
+    00000120:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7035,7 +7057,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB108\uC9C0 \uB204\uAD6C\uC57C? \uC544\uBB34\uD2BC \uC774\uC81C
           \uC6C0\uC9C1\uC77C \uC218 \uC788\uB294 \uC778\uC6D0 \uC880 \uBAA8\uC544\uBD10."
-    00000123:
+    00000121:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7058,7 +7080,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uD568\uBD80\uB85C \uBA85\uB839\uD558\uC9C0 \uB9C8\uB77C!"
-    00000124:
+    00000122:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7083,7 +7105,7 @@ MonoBehaviour:
         script: "\uC774\uC820 \uC544\uC774\uC758 \uB3D9\uC120\uC744 \uB530\uB77C\uC11C,
           \uD0D0\uBB38 \uC218\uC0AC\uB97C \uC9C4\uD589\uD558\uB294 \uAC8C \uC88B\uC744
           \uAC70\uC57C. \uC218\uC0AC\uBD80 \uC778\uC6D0 \uD480\uBA74 \uAC04\uB2E8\uD558\uC9C0?"
-    00000125:
+    00000123:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7106,7 +7128,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uBB50...?"
-    00000126:
+    00000124:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7131,7 +7153,7 @@ MonoBehaviour:
         script: "\uD558...\uC77C\uB2E8 \uB9D0\uC740 \uC804\uD574\uC8FC\uB9C8. \uD558\uC9C0\uB9CC
           \uB2E4\uB978 \uC218\uC0AC\uBD80\uC6D0\uC774 \uB098 \uAC19\uC744 \uAC70\uB77C\uB294
           \uAE30\uB300\uB294 \uBC84\uB9AC\uB294\uAC8C \uC88B\uC544."
-    00000127:
+    00000125:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7155,7 +7177,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uC544~ \uADF8\uB098\uB9C8 \uC598\uAE30\uB97C \uB4E4\uC5B4\uC8FC\uB294
           \uAC8C \uC774\uB807\uAC8C \uBB34\uB2A5\uD574\uC11C\uC57C.."
-    00000128:
+    00000126:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7178,12 +7200,15 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC9C4\uC9DC \uC8FD\uC5EC\uBC84\uB9AC\uACE0 \uC2F6\uAD70..."
-    00000129:
+    00000127:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 7a1328e2efe307d4da340f21a92568b7, type: 3}
         volume: 1
-    0000012A:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000128:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7206,7 +7231,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC7A0\uAE50...!"
-    0000012B:
+    00000129:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7229,7 +7254,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: ..?
-    0000012C:
+    0000012A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7252,11 +7277,11 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC800\uAE30.. \uC800\uAE38 \uBD10."
-    0000012D:
+    0000012B:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: eabd6a7c2d39bad4998dd881a112a377, type: 3}
-    0000012E:
+    0000012C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -7276,10 +7301,10 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         isAuto: 0
-        autoTime: 1
+        autoTime: 2
         name: 
         script: 
-    0000012F:
+    0000012D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7302,7 +7327,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC800 \uB140\uC11D\uC740.."
-    00000130:
+    0000012E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7326,7 +7351,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uAE4C \uBCF8 \uACE0\uAE09 \uC18C\uC7AC\uB85C \uB9CC\uB4E0
           \uC637\uC774\uC57C.. \uBB34\uC2A8 \uB9D0\uC778\uC9C0 \uC54C\uC9C0?"
-    00000131:
+    0000012F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7350,7 +7375,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC124\uB9C8 \uC81C\uBC1C\uB85C \uB098\uD0C0\uB0A0 \uC904\uC774\uC57C..
           \uC9C0\uAE08 \uB2F9\uC7A5.."
-    00000132:
+    00000130:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7374,7 +7399,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uAE30\uB2E4\uB824! \uD568\uBD80\uB85C \uC6C0\uC9C1\uC774\uBA74
           \uB3C4\uB9DD\uCE60 \uAC70\uB77C\uACE0."
-    00000133:
+    00000131:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7398,7 +7423,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB7FC \uC5B4\uCA4C\uB780 \uAC70\uB0D0? \uC774\uB300\uB85C
           \uB450 \uC190 \uB193\uACE0 \uBCF4\uACE0 \uC788\uC73C\uB77C\uACE0?"
-    00000134:
+    00000132:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7421,7 +7446,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824.. \uC77C\uB2E8\uC740.."
-    00000135:
+    00000133:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
@@ -7431,7 +7456,7 @@ MonoBehaviour:
         - str: "\uC7AC\uBE68\uB9AC \uBD99\uC7A1\uB294\uB2E4"
           cmps: []
           nextIdx: 313
-    00000136:
+    00000134:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7456,11 +7481,11 @@ MonoBehaviour:
         script: "\uC77C\uB2E8 \uC790\uC5F0\uC2A4\uB7FD\uAC8C \uB9D0\uC744 \uAC78\uC790.\r\n\uC544\uC9C1\uAE4C\uC9C0
           \uB208\uCE58\uB97C \uBCF4\uB294 \uAC78 \uBCF4\uB2C8\uAE4C \uC644\uC804\uD788
           \uC54C\uC544\uCC48 \uAC74 \uC544\uB2C8\uC57C."
-    00000137:
+    00000135:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
         nextIndex: 314
-    00000138:
+    00000136:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7485,7 +7510,7 @@ MonoBehaviour:
         script: "\uC2E0\uD638\uB97C \uC8FC\uBA74 \uBC14\uB85C \uB6F0\uC5B4\uAC00\uC11C
           \uBD99\uC7A1\uC790.\r\n\uC218\uC0AC \uC778\uC6D0\uC774 \uB9CE\uC73C\uB2C8\uAE4C
           \uAE08\uBC29 \uD3EC\uC704\uD560 \uC218 \uC788\uC744 \uAC70\uC57C."
-    00000139:
+    00000137:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7509,7 +7534,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB807\uB2E4\uBA74 \uB0B4\uAC00 \uBA3C\uC800 \uAC00\uC9C0.
           \uB108\uBCF4\uB2E8 \uB098\uC744 \uAC70\uB2E4."
-    0000013A:
+    00000138:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7533,7 +7558,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "..\uBB54\uAC00 \uB418\uAC8C \uAE30\uBD84 \uB098\uC05C\uB370, \uAE30\uBD84
           \uD0D3\uC774\uC57C?"
-    0000013B:
+    00000139:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7556,7 +7581,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uB098\uBCF4\uB2E4 \uBE60\uB974\uB2E4\uBA74 \uC0C1\uAD00 \uC5C6\uB2E4\uB9CC?"
-    0000013C:
+    0000013A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7579,7 +7604,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uB2E4\uB9AC \uC808\uB8E9\uAC70\uB9AC\uB294 \uC8FC\uC81C\uC5D0 \uBB34\uC2A8.."
-    0000013D:
+    0000013B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7604,7 +7629,7 @@ MonoBehaviour:
         script: "\uC2EC\uB9AC\uC801\uC778 \uC694\uC778\uC774\uB77C\uACE0 \uB124\uAC00
           \uB9D0\uD558\uC9C0 \uC54A\uC558\uB098? \uB9C8\uC74C \uBA39\uC73C\uBA74
           \uC800 \uC815\uB3C4\uB294 \uAE08\uBC29\uC774\uB2E4."
-    0000013E:
+    0000013C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7628,7 +7653,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uC5B4\uB290\uCABD\uC774\uB4E0 \uC88B\uC544. \uC77C\uB2E8
           \uAC00\uC790."
-    0000013F:
+    0000013D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7653,7 +7678,7 @@ MonoBehaviour:
         script: "\uD639\uC2DC\uB098 \uD574\uC11C \uD558\uB294 \uC774\uC57C\uAE30\uC9C0\uB9CC
           \uC870\uC2EC\uD558\uB294 \uAC8C \uC88B\uC544. \uD638\uC2E0\uC6A9\uC73C\uB85C
           \uBB58 \uAC00\uC9C0\uACE0 \uC788\uC744\uC9C0 \uBAB0\uB77C."
-    00000140:
+    0000013E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7676,7 +7701,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: ...........
-    00000141:
+    0000013F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7699,13 +7724,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC54C\uACA0\uB2E4."
-    00000142:
+    00000140:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         volume: 1
         delay: 0
-    00000143:
+    00000141:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7728,18 +7753,21 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "...\uC5B4?!"
-    00000144:
+    00000142:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
-        volume: 1
+        volume: 0.5
         delay: 0
-    00000145:
+    00000143:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 00a28d18bc2ae5942a4b3027b8d8a224, type: 3}
         volume: 1
-    00000146:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000144:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7762,7 +7790,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "!! \uB3C4\uB9DD\uCE5C\uB2E4!"
-    00000147:
+    00000145:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7786,7 +7814,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB9DD\uD560..! \uC5B4\uC774! \uC800\uAE30 \uB3C4\uB9DD\uAC00\uB294
           \uB140\uC11D\uC744 \uC7A1\uC544!!"
-    00000148:
+    00000146:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -7806,19 +7834,22 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         isAuto: 0
-        autoTime: 1
+        autoTime: 2
         name: 
         script: 
-    00000149:
+    00000147:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 13e1daa4f39c08c4abff429cd13d4fab, type: 3}
         volume: 1
-    0000014A:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    00000148:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: e9b7368dbbc586a45b2ab21b836d0e06, type: 3}
-    0000014B:
+    00000149:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -7842,7 +7873,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD5C9\u2026 \uD5C9\u2026 \uC544~ \uB2EC\uB9AC\uB294 \uAC74 \uB0B4
           \uC77C\uC774 \uC544\uB2C8\uB77C\uACE0!!"
-    0000014C:
+    0000014A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7865,7 +7896,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8 \uB140\uC11D\uC740?!"
-    0000014D:
+    0000014B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7888,7 +7919,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "..\uB193\uCCD0\uBC84\uB838\uAD70."
-    0000014E:
+    0000014C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7912,7 +7943,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uB807\uAC8C \uC21C\uC2DD\uAC04\uC5D0 \uBAA8\uC2B5\uC744 \uAC10\uCD94\uB2E4\uB2C8..
           \uC774\uAC74 \uBB54\uAC00\uC788\uB124."
-    0000014F:
+    0000014D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7936,7 +7967,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB4A4\uB97C \uBD10\uC8FC\uB294 \uC0AC\uB78C\uC774\uB4E0.. \uC544\uB2D8
           \uC18D\uC784\uC218\uB97C \uC37C\uB4E0.."
-    00000150:
+    0000014E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7960,7 +7991,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uACF5\uBC94\uC774 \uC788\uB2E4\uBA74 \uC2EC\uAC01\uD574\uC9C4\uB2E4.
           \uD53C\uD574\uAC00 \uB354 \uCEE4\uC9C8 \uAC70\uC57C."
-    00000151:
+    0000014F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -7983,7 +8014,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC774 \uC8FC\uBCC0\uC744 \uC804\uBD80 \uB4A4\uC838\uBD10\uC57C\uACA0\uC5B4."
-    00000152:
+    00000150:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8007,7 +8038,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C.. \uADF8\uB7FC \uD0D0\uBB38 \uC218\uC0AC\uB3C4 \uACB8\uD574\uBCFC\uAE4C?
           \uC2DC\uC7A5\uC740 \uBCC4\uC758 \uBCC4 \uC598\uAE30\uAC00 \uB2E4 \uB5A0\uB3C4\uB2C8\uAE4C."
-    00000153:
+    00000151:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8031,7 +8062,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uBC29\uD574\uB97C \uD558\uC9C0 \uC54A\uB294\uB2E4\uB294 \uC804\uC81C\uD558\uC5D0
           \uD5C8\uB77D\uD55C\uB2E4. \uB2E8, \uB098\uC640 \uB3D9\uD589\uC744 \uD574\uC57C\uD55C\uB2E4."
-    00000154:
+    00000152:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8055,7 +8086,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB2F9\uC2E0, \uC774 \uC815\uB3C4\uBA74 \uBB34\uC11C\uC6B4 \uAC74
           \uC54C\uC9C0?"
-    00000155:
+    00000153:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8079,7 +8110,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uBB50.. \uACBD\uD638\uC6D0 \uD558\uB098 \uC0DD\uACBC\uB2E4\uACE0
           \uC0DD\uAC01\uD558\uBA74 \uC88B\uC9C0\uB9CC~"
-    00000156:
+    00000154:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8103,7 +8134,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uBE44\uD558\uC774\uBE0C\uB294 \uC815\uC2E0\uC744 \uD1B5\uC77C \uC2DC\uCF1C\uC11C,
           \uADF8\uB7F0 \uC0DD\uAC01\uC744 \uACF5\uC720\uD558\uB824\uB294 \uAC70\uB0D0?"
-    00000157:
+    00000155:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8127,7 +8158,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uD558! \uADF8\uB7EC\uBA74 \uB0B4\uAC00 \uC880 \uB354 \uD3B8\uD574\uC9C0\uACA0\uC9C0!
           \uC544\uBB34\uD2BC \uCD9C\uBC1C\uD558\uC790!"
-    00000158:
+    00000156:
       type: {class: ChoiceEvent, ns: YS, asm: Assembly-CSharp}
       data:
         choices:
@@ -8140,7 +8171,7 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 1
-          nextIdx: 346
+          nextIdx: 344
         - str: "\uCC3B\uC9D1"
           cmps:
           - varType: 0
@@ -8150,7 +8181,7 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 1
-          nextIdx: 368
+          nextIdx: 366
         - str: "\uC2E0\uBB38\uBC30\uB2EC\uBD80 \uC18C\uB144"
           cmps:
           - varType: 0
@@ -8160,8 +8191,8 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 1
-          nextIdx: 389
-    00000159:
+          nextIdx: 387
+    00000157:
       type: {class: BranchEvent, ns: YS, asm: Assembly-CSharp}
       data:
         branches:
@@ -8187,7 +8218,7 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 0
-          nextIdx: 404
+          nextIdx: 401
         - cmps:
           - varType: 0
             varName: True
@@ -8196,12 +8227,12 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 0
-          nextIdx: 344
-    0000015A:
+          nextIdx: 342
+    00000158:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: e45421200017e7b45ab8754603d1c91c, type: 3}
-    0000015B:
+    00000159:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -8224,7 +8255,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC2E4\uB840\uD558\uACA0\uC2B5\uB2C8\uB2E4~"
-    0000015C:
+    0000015A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8248,7 +8279,7 @@ MonoBehaviour:
         name: "\uC57D\uC7AC\uC0C1"
         script: "\uC5B4\uC11C\uC624\uC2DC\uC8E0, \uC190\uB2D8. \uC624\uB298\uC740
           \uBB34\uC2A8 \uC77C\uB85C \uC624\uC168\uC2B5\uB2C8\uAE4C?"
-    0000015D:
+    0000015B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8274,7 +8305,7 @@ MonoBehaviour:
           \uBC29\uAE08 \uC804\uC5D0, \uC544\uB2C8\uBA74 \uCD5C\uADFC\uC5D0\uB77C\uB3C4
           \uACE0\uAE09\uC2A4\uB7FD\uAC8C \uC0DD\uAE34 \uAC80\uC740 \uB85C\uBE0C\uB97C
           \uC4F4 \uC0AC\uB78C \uBCF4\uC168\uB098\uC694?"
-    0000015E:
+    0000015C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8296,9 +8327,9 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uC57D\uC7AC\uC0C1"
-        script: "\uACE0\uAE09\uC81C \uAC80\uC740 \uB85C\uBE0C\uB77C\u2026 \uADF8\uB7EC\uACE0\uBCF4\uB2C8
+        script: "\uACE0\uAE09\uC81C \uAC80\uC740 \uB85C\uBE0C\uB77C... \uADF8\uB7EC\uACE0\uBCF4\uB2C8
           \uD55C \uBC88 \uBD24\uB358 \uAC70 \uAC19\uC740\uB370.."
-    0000015F:
+    0000015D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8321,7 +8352,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC57D\uC7AC\uC0C1"
         script: "\uC7A0\uC2DC\uB9CC\uC694. \uC7A5\uBD80\uB97C \uCC3E\uC544\uBCF4\uACA0\uC2B5\uB2C8\uB2E4."
-    00000160:
+    0000015E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8343,9 +8374,9 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uC57D\uC7AC\uC0C1"
-        script: "\u2026\uD750\uC74C. \uC544, \uC5EC\uAE44\uAD70! \uAE30\uC5B5\uC774
+        script: "...\uD750\uC74C. \uC544, \uC5EC\uAE44\uAD70! \uAE30\uC5B5\uC774
           \uB098\uB294\uAD70\uC694."
-    00000161:
+    0000015F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8370,7 +8401,7 @@ MonoBehaviour:
         script: "\uC774 \uC190\uB2D8\uC774 \uAC00\uC2DC\uACE0, \uACE7\uBC14\uB85C
           \uBE44\uAC00 \uB0B4\uB824\uC11C \uAE30\uC5B5\uD569\uB2C8\uB2E4. \uC5C4\uCCAD
           \uC2DC\uCEE4\uBA3C\uD55C \uB9DD\uD1A0\uB97C \uB450\uB974\uACE0 \uC788\uC5C8\uC9C0\uC694."
-    00000162:
+    00000160:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8395,7 +8426,7 @@ MonoBehaviour:
         script: "\uC6B0\uB9AC\uAC00 \uCC3E\uB294 \uC0AC\uB78C\uC774 \uB9DE\uB294
           \uAC83 \uAC19\uAD70. \uD639\uC2DC \uBB50\uB97C \uC0AC\uAC14\uB294\uC9C0
           \uC54C \uC218 \uC788\uB098?"
-    00000163:
+    00000161:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8417,10 +8448,10 @@ MonoBehaviour:
         isAuto: 0
         autoTime: 1
         name: "\uC57D\uC7AC\uC0C1"
-        script: "\uC73C\uC74C\u2026 \uC190\uB2D8, \uC774\uAC8C \uB9D0\uC774\uC8E0..
+        script: "\uC73C\uC74C... \uC190\uB2D8, \uC774\uAC8C \uB9D0\uC774\uC8E0..
           \uC81C\uAC00 \uC57D\uBC29\uC744 \uD558\uBA74\uC11C \uC6D0\uCE59\uC774\uB77C\uB294\uAC8C
           \uC788\uC2B5\uB2C8\uB2E4."
-    00000164:
+    00000162:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8446,7 +8477,7 @@ MonoBehaviour:
           \uC54C\uB824\uC904 \uC21C \uC5C6\uC5B4\uC694.\n\uC5EC\uAE30\uC5D4 \uD559\uC790\uBD84\uB4E4\uB3C4
           \uAC00\uB054 \uCC3E\uC544\uC624\uC154\uC11C.. \uC5F0\uAD6C\uC5D0 \uBC29\uD574\uAC00
           \uB420 \uC218 \uC788\uAC70\uB4E0\uC694."
-    00000165:
+    00000163:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8469,7 +8500,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4\uBA38! \uAD49\uC7A5\uD788 \uC88B\uC740 \uC2E0\uB150\uC774\uB124\uC694."
-    00000166:
+    00000164:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8496,7 +8527,7 @@ MonoBehaviour:
           \uC911\uC785\uB2C8\uB2E4.\n\uC5B4\uCA4C\uBA74 \uC120\uC0DD\uB2D8\uC758
           \uC99D\uC5B8\uC73C\uB85C \uC0AC\uB77C\uC9C4 \uC544\uC774\uC5D0 \uB300\uD55C
           \uD589\uBC29\uC744 \uCC3E\uC744\uC9C0\uB3C4 \uBAB0\uB77C\uC694."
-    00000167:
+    00000165:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8520,7 +8551,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC5EC\uAE30 \uC2E0\uBD84\uC774\uB77C\uBA74 \uD655\uC2E4\uD558\uAC8C
           \uC99D\uBA85\uD560 \uC218 \uC788\uB2E4. \uB3C4\uC640\uC8FC\uC9C0 \uC54A\uACA0\uB098?"
-    00000168:
+    00000166:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8544,7 +8575,7 @@ MonoBehaviour:
         name: "\uC57D\uC7AC\uC0C1"
         script: "\uC2E4\uC885\uC0AC\uAC74! \uC544\uC544.. \uADF8\uB7AC\uAD70\uC694.
           \uADF8\uB807\uB2E4\uBA74 \uC548 \uC54C\uB824\uC904 \uC774\uC720\uAC00 \uC5C6\uC8E0."
-    00000169:
+    00000167:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8570,7 +8601,7 @@ MonoBehaviour:
           \uC9C4\uD1B5\uC81C\uC8E0.\n\uCD5C\uADFC\uC5D4 \uC704\uD5D8\uC131 \uB54C\uBB38\uC5D0
           \uC790\uC8FC \uC0AC\uC6A9\uC740 \uC548 \uB3FC\uC11C, \uC7AC\uACE0\uAC00
           \uC801\uC5C8\uC2B5\uB2C8\uB2E4."
-    0000016A:
+    00000168:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8595,7 +8626,7 @@ MonoBehaviour:
         script: "\uD558\uC9C0\uB9CC. \uC791\uC740 \uC218\uB7C9\uC73C\uB85C \uD6A8\uACFC\uAC00
           \uB6F0\uC5B4\uB098\uC8E0. \uD55C \uBC88 \uC7A0\uB4E4\uBA74 \uC6EC\uB9CC\uD574\uC120
           \uAE68\uC5B4\uB098\uC9C0 \uC54A\uC544\uC694."
-    0000016B:
+    00000169:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8620,7 +8651,7 @@ MonoBehaviour:
         script: "...\uADF8\uB807\uAD70\uC694. \uB3C4\uC6C0 \uB9CE\uC774 \uB410\uC5B4\uC694!
           \uC800\uB294 \uB2E4\uB978 \uACF3\uB3C4 \uC54C\uC544\uBD10\uC57C\uD574\uC11C
           \uB2E4\uC74C\uC5D0 \uB610 \uC62C\uAC8C\uC694~"
-    0000016C:
+    0000016A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8644,7 +8675,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB108.....\uC0DD\uAC01\uBCF4\uB2E4 \uC608\uC758\uAC00 \uC788\uAD70.
           \uD55C\uBC14\uD0D5 \uB4A4\uC5CE\uC744 \uC904 \uC54C\uC558\uB294\uB370."
-    0000016D:
+    0000016B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8667,7 +8698,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uAC8C \uBB34\uC2A8 \uC758\uBBF8\uC57C?"
-    0000016E:
+    0000016C:
       type: {class: SetVariableEvent, ns: YS, asm: Assembly-CSharp}
       data:
         changeVars:
@@ -8677,21 +8708,21 @@ MonoBehaviour:
           valueBool: 1
           valueInt: 0
           valueFloat: 0
-    0000016F:
+    0000016D:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 345
-    00000170:
+        nextIndex: 343
+    0000016E:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 0faf09c8419921b4da958fe70b1256db, type: 3}
-    00000171:
+    0000016F:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 6abc4088840dee94c858ac58667455cf, type: 3}
         volume: 0.5
         delay: 0
-    00000172:
+    00000170:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -8715,7 +8746,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD750\uC74C~ \uB2EC\uCF64\uD55C \uB514\uC800\uD2B8 \uB0C4\uC0C8
           \uB108\uBB34 \uC88B\uB2E4~"
-    00000173:
+    00000171:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8739,7 +8770,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uB098\uC058\uC9C0 \uC54A\uAD70. \uC81C\uBC95 \uC591\uC9C8\uC758
           \uC7AC\uB8CC\uB97C \uC4F0\uB098\uBCF4\uAD70."
-    00000174:
+    00000172:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8763,7 +8794,7 @@ MonoBehaviour:
         name: "\uCC3B\uC9D1 \uC9C1\uC6D0"
         script: "\uADF8\uB7FC\uC694~ \uC5EC\uAE34 \uB0A8\uBD80 \uC9C0\uC5ED\uC5D0\uC11C\uB3C4
           \uBA85\uBB3C\uB85C \uAF3D\uD788\uB294 \uACF3\uC774\uB77C\uAD6C\uC694?"
-    00000175:
+    00000173:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8787,7 +8818,7 @@ MonoBehaviour:
         name: "\uCC3B\uC9D1 \uC9C1\uC6D0"
         script: "\uC190\uB2D8\uB4E4\uC740.. \uCEE4\uD50C\uC774\uC2E0\uAC00\uC694?
           \uC790\uB9AC\uB294 \uC548 \uCABD\uC73C\uB85C \uC548\uB0B4\uD574\uB4DC\uB9B4\uAC8C\uC694!"
-    00000176:
+    00000174:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8810,7 +8841,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uB204\uAC00 \uC774\uB7F0 \uC5EC\uC790\uC640.."
-    00000177:
+    00000175:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8835,7 +8866,7 @@ MonoBehaviour:
         script: "\uC544\uD558\uD558! \uC5EC\uAE30 \uD64D\uCC28 \uD55C \uC794 \uC8FC\uC2DC\uACE0\uC694.
           \uD639\uC2DC \uC0AC\uC7A5\uB2D8 \uC880 \uBD88\uB7EC\uC8FC\uC2E4 \uC218
           \uC788\uC744\uAE4C\uC694?"
-    00000178:
+    00000176:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8858,7 +8889,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uCC3B\uC9D1 \uC9C1\uC6D0"
         script: "\uB124? \uC0AC\uC7A5\uB2D8\uC744\uC694?"
-    00000179:
+    00000177:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8883,7 +8914,7 @@ MonoBehaviour:
         script: "\uC2E4\uC740.. \uC800\uD76C\uAC00 '\uBE48\uBBFC\uAC00 \uC5F0\uC1C4
           \uC2E4\uC885 \uC0AC\uAC74'\uC744 \uC218\uC0AC\uD558\uACE0 \uC788\uC5B4\uC11C\uC694~
           \uC870\uC0AC\uCC28 \uC774\uC57C\uAE30\uB97C \uB4E4\uC73C\uB7EC \uC654\uC2B5\uB2C8\uB2E4."
-    0000017A:
+    00000178:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8906,13 +8937,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uCC3B\uC9D1 \uC9C1\uC6D0"
         script: "\uD5C8, \uD5D9!! \uBC14\uB85C \uBD88\uB7EC\uB4DC\uB9B4\uAC8C\uC694!!"
-    0000017B:
+    00000179:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         volume: 1
         delay: 0
-    0000017C:
+    0000017A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8936,7 +8967,7 @@ MonoBehaviour:
         name: "\uCC3B\uC9D1 \uC8FC\uC778"
         script: "\uC774\uC57C\uAE30\uB294 \uB4E4\uC5C8\uC2B5\uB2C8\uB2E4. \uBB34\uC2A8
           \uC77C\uC774\uC8E0?"
-    0000017D:
+    0000017B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8962,7 +8993,7 @@ MonoBehaviour:
           \uBC29\uAE08 \uC804\uC5D0, \uC544\uB2C8\uBA74 \uCD5C\uADFC\uC5D0\uB77C\uB3C4
           \uC870\uAE08 \uACE0\uAE09\uC2A4\uB7FD\uAC8C \uC0DD\uAE34 \uAC80\uC740 \uB85C\uBE0C\uB97C
           \uC4F4 \uC0AC\uB78C \uBCF4\uC168\uB098\uC694?"
-    0000017E:
+    0000017C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -8985,7 +9016,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uCC3B\uC9D1 \uC8FC\uC778"
         script: "\uAC80\uC740 \uB85C\uBE0C..? \uC544! \uD639\uC2DC \uADF8 \uC0AC\uB78C\uC778\uAC00?"
-    0000017F:
+    0000017D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9008,7 +9039,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uCC3B\uC9D1 \uC8FC\uC778"
         script: "\uBE44\uAC00 \uB9CE\uC774 \uC654\uB358 \uB0A0\uC5D0 \uBD24\uC5C8\uC2B5\uB2C8\uB2E4!"
-    00000180:
+    0000017E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9034,7 +9065,7 @@ MonoBehaviour:
           \uC774\uC0C1\uD55C \uC18C\uB9AC\uAC00 \uB098\uC11C \uAC00\uBD24\uB354\uB2C8
           \uAC80\uC740 \uB85C\uBE0C \uC4F4 \uC0AC\uB78C\uB4E4\uC774 \uB6F0\uC5B4\uAC00\uB294
           \uAC78 \uBD24\uC5B4\uC694."
-    00000181:
+    0000017F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9061,7 +9092,7 @@ MonoBehaviour:
           \uC774\uC57C\uAE30\uB97C \uD558\uB294 \uAC83 \uAC19\uB354\uB77C\uAD6C\uC694.\n\uC548
           \uADF8\uB798\uB3C4 \uBB34\uC12D\uACE0 \uBD88\uC548\uD574\uC11C \uC790\uACBD\uB2E8\uD55C\uD14C
           \uB9D0\uD574\uB1A8\uB294\uB370\u2026"
-    00000182:
+    00000180:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9086,7 +9117,7 @@ MonoBehaviour:
         script: "\uD760\u2026\uADF8\uB7EC\uC168\uAD70\uC694. \uACE0\uB9C8\uC6CC\uC694!
           \uB3C4\uC6C0 \uB9CE\uC774 \uB410\uC5B4\uC694! \uB2E4\uC74C\uC5D0 \uB514\uC800\uD2B8
           \uBA39\uC73C\uB7EC \uC62C\uAC8C\uC694!"
-    00000183:
+    00000181:
       type: {class: SetVariableEvent, ns: YS, asm: Assembly-CSharp}
       data:
         changeVars:
@@ -9096,15 +9127,15 @@ MonoBehaviour:
           valueBool: 1
           valueInt: 0
           valueFloat: 0
-    00000184:
+    00000182:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 345
-    00000185:
+        nextIndex: 343
+    00000183:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: e9b7368dbbc586a45b2ab21b836d0e06, type: 3}
-    00000186:
+    00000184:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -9128,7 +9159,7 @@ MonoBehaviour:
         name: "\uC18C\uB144"
         script: "\uC624\uB298 \uB530\uB048\uB530\uB048\uD55C \uC18C\uC2DD\uC785\uB2C8\uB2E4~
           '\uBE48\uBBFC\uAC00 \uC5F0\uC1C4 \uC2E4\uC885 \uC0AC\uAC74'!!"
-    00000187:
+    00000185:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9151,7 +9182,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC5B4\uC774, \uC5EC\uAE30 \uD558\uB098."
-    00000188:
+    00000186:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9175,7 +9206,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uC18C\uBB38 \uCC38 \uBE60\uB974\uAD70. \uBC8C\uC368 \uC774\uB7F0
           \uAC8C.."
-    00000189:
+    00000187:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9200,7 +9231,7 @@ MonoBehaviour:
         script: "\uC7A0\uAE50 \uC598\uC57C! \uBC29\uAE08 \uC804\uC5D0, \uC544\uB2C8\uBA74
           \uCD5C\uADFC\uC5D0\uB77C\uB3C4 \uACE0\uAE09\uC2A4\uB7FD\uAC8C \uC0DD\uAE34
           \uAC80\uC740 \uB85C\uBE0C\uB97C \uC4F4 \uC0AC\uB78C \uBCF8 \uC801 \uC788\uB2C8?"
-    0000018A:
+    00000188:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9224,7 +9255,7 @@ MonoBehaviour:
         name: "\uC18C\uB144"
         script: "\uAC80\uC740 \uB85C\uBE0C\uC694? \uADF8\uB7EC\uACE0\uBCF4\uB2C8
           \uBD24\uC5C8\uB358 \uAC70 \uAC19\uAE30\uB3C4 \uD558\uACE0..?"
-    0000018B:
+    00000189:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9247,7 +9278,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "!! \uD639\uC2DC \uC5B4\uB514\uC11C \uBD24\uB294\uC9C0 \uAE30\uC5B5\uD574?"
-    0000018C:
+    0000018A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9272,7 +9303,7 @@ MonoBehaviour:
         script: "\u2026\uC544\uC544, \uC190\uC774 \uB108\uBB34 \uAC00\uBCCD\uB2E4.
           \uC190\uC774 \uBB34\uAC70\uC6CC\uC9C0\uBA74 \uC785\uC774 \uC5F4\uB9B4 \uAC83
           \uAC19\uAE30\uB3C4 \uD55C\uB370.."
-    0000018D:
+    0000018B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9295,7 +9326,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "...\uC5EC\uAE30 \uC774 \uC815\uB3C4\uBA74 \uB418\uACA0\uB2C8?"
-    0000018E:
+    0000018C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9320,7 +9351,7 @@ MonoBehaviour:
         script: "\uD5E4\uD5E4! \uC880 \uD070 \uD0A4\uC758 \uAC80\uC740 \uB85C\uBE0C\uB97C
           \uC4F4 \uC0AC\uB78C\uC774\uC8E0?\n\uBC29\uAE08 \uC804\uC5D0 \uD558\uC218\uB3C4
           \uB4B7\uACE8\uBAA9\uC73C\uB85C \uC0AC\uB77C\uC84C\uC5B4\uC694."
-    0000018F:
+    0000018D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9343,7 +9374,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC88B\uC544, \uB2E4\uC74C\uC5D0\uB3C4 \uB610 \uBD80\uD0C1\uD574."
-    00000190:
+    0000018E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9368,7 +9399,7 @@ MonoBehaviour:
         script: "\uB124, \uC190\uB2D8! \uC790\uC8FC \uC774\uC6A9\uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4~\n\uC624\uB298
           \uB530\uB048\uB530\uB048\uD55C \uC18C\uC2DD\uC785\uB2C8\uB2E4~ \uB2E8\uB3C8
           1\uD2B8\uB9AC\uC628! \uC2F8\uB2E4\uC2F8\uB2E4!"
-    00000191:
+    0000018F:
       type: {class: SetVariableEvent, ns: YS, asm: Assembly-CSharp}
       data:
         changeVars:
@@ -9378,14 +9409,14 @@ MonoBehaviour:
           valueBool: 1
           valueInt: 0
           valueFloat: 0
-    00000192:
+    00000190:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 345
-    00000193:
+        nextIndex: 343
+    00000191:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 1
+        screenEffect: 2
         leftCharacter:
           image: {fileID: 0}
           isMirror: 0
@@ -9405,14 +9436,14 @@ MonoBehaviour:
         autoTime: 1
         name: 
         script: 
-    00000194:
+    00000192:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: e9b7368dbbc586a45b2ab21b836d0e06, type: 3}
-    00000195:
+    00000193:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 2
+        screenEffect: 0
         leftCharacter:
           image: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
           isMirror: 0
@@ -9433,7 +9464,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC4F0\uB808\uAE30\uB4E4\uC774 \uC791\uB2F9\uC744 \uD558\uACE0 \uC788\uC5C8\uAD70.
           \uB300\uCDA9 \uB4E4\uC5B4\uB3C4 \uC0C1\uB2F9\uD55C \uADDC\uBAA8\uB2E4."
-    00000196:
+    00000194:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9457,7 +9488,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD558\uC218\uB3C4 \uB4B7\uACE8\uBAA9\uC774\uB77C.. \uC218\uC0C1\uD55C
           \uACF3\uB9CC \uACE8\uB77C\uC11C \uC6C0\uC9C1\uC774\uB124."
-    00000197:
+    00000195:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9481,7 +9512,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC218\uC0AC\uBD80\uC5D0 \uB9E1\uACBC\uB358 \uC99D\uAC70\uD488 \uC870\uC0AC\uB294
           \uC5B4\uB5BB\uAC8C \uB410\uC5B4?"
-    00000198:
+    00000196:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9506,7 +9537,7 @@ MonoBehaviour:
         script: "\uC544\uC9C1 \uC9C4\uD589 \uC911.. \uC774\uC9C0\uB9CC, \uB124 \uB9D0\uB300\uB85C
           \uB9C8\uCDE8\uC81C \uC131\uBD84\uC774 \uC11E\uC5EC\uC788\uC744 \uAC70\uB77C\uB294
           \uC608\uC0C1\uC774 \uB098\uC654\uB2E4."
-    00000199:
+    00000197:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9531,7 +9562,7 @@ MonoBehaviour:
         script: "\uC5ED\uC2DC \uC57D\uC7AC\uBC29\uC5D0\uC11C \uAD6C\uD55C \uAC70\uAD6C\uB098..
           \uD558\uD544\uC774\uBA74 \uCD94\uC801\uC774 \uC26C\uC6B4 \uAC78 \uC0AC\uC6A9\uD558\uB2E4\uB2C8..
           \uAE30\uBD84 \uB098\uC058\uB124."
-    0000019A:
+    00000198:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9554,7 +9585,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uAE30\uBD84\uC774 \uB098\uC058\uB2E4\uB2C8? \uC5B4\uC9F8\uC11C\uB0D0."
-    0000019B:
+    00000199:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9577,7 +9608,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uAC74 \uB098\uC911\uC5D0 \uC598\uAE30\uD574\uC904\uAC8C."
-    0000019C:
+    0000019A:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9601,7 +9632,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uC9C1\uAE4C\uC9C4 \uD655\uC2E0\uC744 \uD560 \uC218 \uC5C6\uC5B4\uC11C
           \uB9D0\uC57C."
-    0000019D:
+    0000019B:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9625,7 +9656,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC2F1\uAC81\uAD70.. \uC774\uB798\uC11C \uADF8 \uB188\uB4E4\uC744
           \uC7A1\uC744 \uC218 \uC788\uACA0\uB098?"
-    0000019E:
+    0000019C:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9649,7 +9680,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC5B4\uBA38! \uB204\uAC00 \uB204\uAD74 \uD6C8\uACC4\uD574! \uADF8
           \uC0AC\uB78C\uC744 \uB193\uCE5C \uAC74 \uC218\uC0AC\uBD80\uAC70\uB4E0?"
-    0000019F:
+    0000019D:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9675,7 +9706,7 @@ MonoBehaviour:
           \uC0AC\uB78C\uB4E4\uC758 \uCD9C\uC785\uC744 \uB9C9\uACE0 \uC788\uB294 \uAC83\uB3C4
           \uC218\uC0AC\uBD80\uC9C0. \uBD10\uB77C, \uB188\uC774 \uADF8\uACF3\uC73C\uB85C
           \uB3C4\uB9DD\uCCE4\uB2E4\uBA74 \uC774\uC81C \uAE08\uBC29\uC774\uB2E4."
-    000001A0:
+    0000019E:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9700,7 +9731,7 @@ MonoBehaviour:
         script: "\uD638\uC624! \uC5B8\uC81C \uADF8\uB7F0 \uAC78 \uBA85\uB839\uD588\uB370?
           \uAC00\uB9CC\uD788 \uBA4D\uB54C\uB9AC\uB294 \uC904 \uC54C\uC558\uB294\uB370,
           \uADF8\uC0C8 \uC2E0\uD638\uB97C \uBCF4\uB0C8\uB098\uBD10?"
-    000001A1:
+    0000019F:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9724,13 +9755,13 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB098\uC5D0 \uB300\uD55C \uCD94\uB9AC\uB294 \uC774\uC81C \uAD00\uB46C\uB77C.
           \uAC04\uB2E4."
-    000001A2:
+    000001A0:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         volume: 1
         delay: 0
-    000001A3:
+    000001A1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -9753,19 +9784,22 @@ MonoBehaviour:
         autoTime: 1
         name: 
         script: 
-    000001A4:
+    000001A2:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 2feb179aa40411a4cab7a4ab8216d101, type: 3}
         volume: 1
-    000001A5:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000001A3:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 7e839805f3cedc64daf0b925023a568d, type: 3}
-    000001A6:
+    000001A4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
+        screenEffect: 2
         leftCharacter:
           image: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
           isMirror: 0
@@ -9785,7 +9819,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "..\uC5EC\uAE30\uB85C\uAD70."
-    000001A7:
+    000001A5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9809,7 +9843,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "...\uB0C4\uC0C8\uAC00 \uBBF8\uBB18\uD558\uB124. \uC548\uC5D0 \uBB54\uAC00
           \uC788\uC5B4."
-    000001A8:
+    000001A6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9833,7 +9867,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uD558\uC218\uB3C4\uC5D0\uC11C \uB0C4\uC0C8\uAC00 \uB098\uB294 \uAC74
           \uB2F9\uC5F0\uD558\uB2E4."
-    000001A9:
+    000001A7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9857,7 +9891,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8\uB7F0 \uC774\uC57C\uAE30\uAC00 \uC544\uB2C8\uC57C. \uC548\uC5D0
           \uC5B4\uCA4C\uBA74..."
-    000001AA:
+    000001A8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9880,7 +9914,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: ................
-    000001AB:
+    000001A9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9904,7 +9938,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC77C\uB2E8 \uC548\uC73C\uB85C \uB4E4\uC5B4\uAC00\uC790. \uB2E4\uB978
           \uCD9C\uC785\uAD6C\uB294 \uC5C6\uC9C0?"
-    000001AC:
+    000001AA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9930,7 +9964,7 @@ MonoBehaviour:
           \uD1B5\uB85C\uB294 \uC911\uAC04\uC5D0 \uB9C9\uD600\uC788\uB2E4. \uC950\uB9CC\uD07C
           \uC791\uC740 \uB140\uC11D\uC774 \uC544\uB2C8\uB77C\uBA74 \uB3C4\uB9DD\uCE60
           \uC21C \uC5C6\uC744 \uAC70\uB2E4."
-    000001AD:
+    000001AB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9954,7 +9988,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC911\uAC04\uC5D0 \uB098\uC624\uAC70\uB098 \uB4E4\uC5B4\uAC04 \uC0AC\uB78C\uC740
           \uC5C6\uC5C8\uB2E4. \uC218\uC0AC\uBD80\uAC00 \uAC10\uC2DC\uD558\uACE0 \uC788\uC5C8\uC73C\uB2C8\uAE4C."
-    000001AE:
+    000001AC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -9977,7 +10011,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC88B\uC544, \uADF8\uB7FC \uBB38\uC81C \uC5C6\uC744 \uAC70\uC57C."
-    000001AF:
+    000001AD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10000,7 +10034,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC548\uC73C\uB85C \uB4E4\uC5B4\uAC00\uBCF4\uC790."
-    000001B0:
+    000001AE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10023,7 +10057,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: ...
-    000001B1:
+    000001AF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10046,7 +10080,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "..\uC65C \uADF8\uB798?"
-    000001B2:
+    000001B0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10069,7 +10103,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uB108.. \uC544\uB2C8, \uB410\uB2E4."
-    000001B3:
+    000001B1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10093,7 +10127,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uAC71\uC815\uD560 \uD544\uC698 \uC5C6\uC5B4, \uADF8\uB0E5.. \uC548
           \uC88B\uC740 \uC608\uAC10\uC774 \uB4E4\uC5B4\uC11C \uADF8\uB7F0 \uAC70\uB2C8\uAE4C."
-    000001B4:
+    000001B2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 1
@@ -10116,22 +10150,19 @@ MonoBehaviour:
         autoTime: 1
         name: 
         script: 
-    000001B5:
+    000001B3:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: a827a0ee363716946a27e7b66bdbe5c5, type: 3}
         volume: 1
-    000001B6:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000001B4:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: 29ef47b4f4927a141ab8a2a17a0e0a46, type: 3}
-    000001B7:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
-        volume: 1
-        delay: 0
-    000001B8:
+    000001B5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10155,7 +10186,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC81C\uAE38.. \uC55E\uC774 \uC804\uD600 \uC548 \uBCF4\uC774\uB294
           \uAD70. \uC81C\uB300\uB85C \uAC00\uACE0 \uC788\uB294 \uAC74\uAC00?"
-    000001B9:
+    000001B6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10178,7 +10209,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC751, \uACC4\uC18D \uC55E\uC73C\uB85C \uAC00\uBA74 \uB3FC."
-    000001BA:
+    000001B7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10202,7 +10233,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC606\uC744 \uACC4\uC18D \uD655\uC778\uD558\uACE0 \uC788\uB294\uB370,
           \uB530\uB85C \uD1B5\uB85C\uB294 \uC5C6\uB294 \uAC70 \uAC19\uC544."
-    000001BB:
+    000001B8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10225,7 +10256,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "..\uC7AC\uC8FC\uB3C4 \uC88B\uAD70. \uC55E\uC774 \uBCF4\uC774\uB098?"
-    000001BC:
+    000001B9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10249,7 +10280,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774 \uC815\uB3C4\uB294 \uD0D0\uC815\uC758 \uAE30\uBCF8 \uC18C\uC591\uC774\uC57C!
           \uD55C \uBC88 \uBC30\uC6CC\uBCFC\uB798?"
-    000001BD:
+    000001BA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10272,45 +10303,19 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "..\uAC70\uC808\uD55C\uB2E4."
-    000001BE:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
-        volume: 1
-        delay: 0
-    000001BF:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 1
-        leftCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        centerCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        rightCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        isAuto: 0
-        autoTime: 1
-        name: 
-        script: 
-    000001C0:
+    000001BB:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: 2feb179aa40411a4cab7a4ab8216d101, type: 3}
         volume: 1
-    000001C1:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000001BC:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: effe20be405bfb14b9cfebd9f5908a3d, type: 3}
-    000001C2:
+    000001BD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -10333,7 +10338,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC5EC\uAE30\uAC00 \uBCF8\uAC70\uC9C0\uC778\uAC00?"
-    000001C3:
+    000001BE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10356,7 +10361,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC545\uCDE8\uAC00... \uC0C1\uB2F9\uD558\uAD70.."
-    000001C4:
+    000001BF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10380,11 +10385,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB2E8\uC21C\uD55C \uC624\uBB3C \uB0C4\uC0C8\uAC00 \uC544\uB2C8\uB77C
           \uC369\uC740 \uB0B4\uC57C. \uC800\uAC78 \uBD10\uBD10."
-    000001C5:
+    000001C0:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: dcca2c1b893e2604b8373c363b57fb49, type: 3}
-    000001C6:
+    000001C1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10407,11 +10412,11 @@ MonoBehaviour:
         autoTime: 1
         name: 
         script: 
-    000001C7:
+    000001C2:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
         bgPrefab: {fileID: 1840710139639415007, guid: effe20be405bfb14b9cfebd9f5908a3d, type: 3}
-    000001C8:
+    000001C3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10434,7 +10439,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "!! \uC2DC\uCCB4?! \uC544\uB2C8 \uD558\uC9C0\uB9CC..!"
-    000001C9:
+    000001C4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10458,7 +10463,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC7A0\uAE50 \uC9C4\uC815\uD574! \uC637\uC744 \uBD10, \uAC80\uC740
           \uB85C\uBE0C\uC57C."
-    000001CA:
+    000001C5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10482,7 +10487,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB85C\uBE0C.. \uADF8\uB807\uB2E4\uBA74 \uB188\uB4E4 \uC911 \uD55C
           \uBA85\uC774\uB77C\uB294 \uAC74\uAC00?"
-    000001CB:
+    000001C6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10506,13 +10511,13 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC544\uC9C1 \uBB50\uB77C\uACE0 \uD655\uC2E0\uD560 \uC21C \uC5C6\uC5B4.
           \uB2E8\uC11C\uAC00 \uB108\uBB34 \uBD80\uC871\uD558\uB2C8\uAE4C."
-    000001CC:
+    000001C7:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 8e7b879f031f2fb4690feb5e22ade211, type: 3}
         volume: 1
         delay: 0
-    000001CD:
+    000001C8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10537,7 +10542,7 @@ MonoBehaviour:
         script: "...\uC804\uBD80 \uC778\uCCB4\uC5D0 \uB300\uD55C \uD559\uC220 \uC790\uB8CC\uC57C.
           \uC801\uC5B4\uB3C4 \uC5EC\uAE30\uC11C \uC0AC\uB78C\uC5D0 \uB300\uD574 \uC5F0\uAD6C\uD55C
           \uAC74 \uD655\uC2E4\uD55C \uAC70 \uAC19\uC544."
-    000001CE:
+    000001C9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10562,7 +10567,7 @@ MonoBehaviour:
         script: "\uBBF8\uCE5C \uAC83\uB4E4.. \uD559\uC790\uC758 \uAE30\uBCF8 \uC18C\uC591\uC740
           \uC778\uAC04\uC73C\uB85C\uC11C\uC758 \uC120\uC744 \uB119\uC9C0 \uC54A\uB294
           \uAC83\uC774\uAC70\uB298..!"
-    000001CF:
+    000001CA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10587,13 +10592,7 @@ MonoBehaviour:
         script: "\uC774\uBD10! \uB2F9\uC7A5 \uCD9C\uC785\uAD6C\uB97C \uC9C0\uCF1C\uB77C!
           \uB09C \uC774\uACF3\uC5D0\uC11C \uD0D0\uC815\uACFC \uD568\uAED8 \uC99D\uAC70\uB97C
           \uC870\uC0AC\uD558\uACA0\uB2E4."
-    000001D0:
-      type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
-      data:
-        audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
-        volume: 1
-        delay: 0
-    000001D1:
+    000001CB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10618,7 +10617,7 @@ MonoBehaviour:
         script: "\uC99D\uAC70\uB97C \uC778\uBA78\uD558\uB824\uB294 \uC2DC\uB3C4\uAC00
           \uC788\uB358 \uAC70 \uAC19\uC544. \uD558\uC9C0\uB9CC.. \uC5ED\uC2DC \uC804\uBD80
           \uC18C\uBA78\uB418\uC9C4 \uC54A\uC558\uC5B4."
-    000001D2:
+    000001CC:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10641,7 +10640,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uC5ED\uC2DC\uB77C\uACE0? \uADF8\uAC8C \uBB34\uC2A8 \uB9D0\uC774\uB0D0?"
-    000001D3:
+    000001CD:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10665,7 +10664,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uADF8 \uB188\uB4E4\uC774 \uC6B0\uB9AC\uC5D0\uAC8C \uAF2C\uB9AC\uB97C
           \uCE58\uACE0 \uC788\uB2E4\uB294 \uC774\uC57C\uAE30\uC57C."
-    000001D4:
+    000001CE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10689,14 +10688,14 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uAC74 \uC6EC\uB9CC\uD55C \uBCC0\uD0DC\uB3C4 \uD558\uC9C0
           \uC54A\uB294 \uC9D3\uC778\uB370.."
-    000001D5:
+    000001CF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
         leftCharacter:
-          image: {fileID: 0}
+          image: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
           isMirror: 0
-          isHighlight: 0
+          isHighlight: 1
           effect: 0
         centerCharacter:
           image: {fileID: 0}
@@ -10704,7 +10703,7 @@ MonoBehaviour:
           isHighlight: 0
           effect: 0
         rightCharacter:
-          image: {fileID: 0}
+          image: {fileID: 21300000, guid: af11f7d79647c264dbba76f667a11950, type: 3}
           isMirror: 0
           isHighlight: 0
           effect: 0
@@ -10713,11 +10712,11 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC77C\uB2E8 \uC870\uC0AC\uB97C \uC2DC\uC791\uD558\uC790. \uC2DC\uAC04\uC774
           \uC5C6\uC5B4!"
-    000001D6:
+    000001D0:
       type: {class: InvestigationEvent, ns: YS, asm: Assembly-CSharp}
       data:
         character: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
-    000001D7:
+    000001D1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10741,7 +10740,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uC774\uBBF8 \uC790\uB9AC\uB97C \uB72C\uC9C0 \uC624\uB798.. \uB77C\uACE0
           \uBD10\uB3C4 \uBB34\uBC29\uD560 \uAC70 \uAC19\uC9C0?"
-    000001D8:
+    000001D2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10765,11 +10764,11 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB798, \uC18C\uAC01\uD558\uB2E4 \uB0A8\uC740 \uC99D\uAC70\uB97C
           \uC81C\uC678\uD558\uBA74 \uB0A8\uC740 \uAC8C \uC5C6\uB2E4."
-    000001D9:
+    000001D3:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
-        itemIndex: 0
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
+        itemIndex: 5
         choiceDatas:
         - choiceStr: "\uBD88\uC5D0 \uD0C4 \uC11C\uB958 \uBB49\uCE58\uB97C \uBCF8\uB2E4"
           dialogs:
@@ -10867,7 +10866,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    000001DA:
+    000001D4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10892,7 +10891,7 @@ MonoBehaviour:
         script: "\uB2F9\uC5F0\uD55C \uC18C\uB9AC \uB9D0\uC544\uB77C. \uADF8 \uC815\uB3C8
           \uD55C \uC2DC\uAC04\uB3C4 \uC548 \uB3FC\uC11C \uB2E4\uC2DC \uB9DE\uCD9C
           \uC218 \uC788\uB2E4."
-    000001DB:
+    000001D5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -10916,11 +10915,11 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uAC83\uBCF4\uB2E4 \uC774 \uD558\uC580 \uAC00\uB8E8\uB294\u2026
           \uC5B4\uB514\uC11C \uBCF8 \uAC70 \uC544\uB2CC\uAC00?"
-    000001DC:
+    000001D6:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
-        itemIndex: 0
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
+        itemIndex: 6
         choiceDatas:
         - choiceStr: "\uC57D\uC7AC\uC0C1\uC758 \uB9C8\uCDE8\uC57D"
           dialogs:
@@ -10997,7 +10996,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    000001DD:
+    000001D7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11021,7 +11020,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uAC10\uC2DD\uAD00\uB3C4 \uC544\uB9C8 \uAC19\uC740 \uC598\uAE30\uB97C
           \uD558\uACA0\uC9C0."
-    000001DE:
+    000001D8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11045,11 +11044,11 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC774\uAC83\uB4E4\uC740 \uC804\uBD80 \uBCF8\uBD80\uB85C \uBCF4\uB0B4\uB3C4\uB85D
           \uD558\uACA0\uB2E4."
-    000001DF:
+    000001D9:
       type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        charIndex: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
-        itemIndex: 0
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
+        itemIndex: 7
         choiceDatas:
         - choiceStr: "\uBC14\uB2E5\uC5D0 \uBB3B\uC740 \uC9C4\uD759\uACFC \uC194\uC78E"
           dialogs:
@@ -11126,7 +11125,7 @@ MonoBehaviour:
         greatChange: []
         failChange: []
         correctIndex: 0
-    000001E0:
+    000001DA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11149,7 +11148,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uB4B7\uB3D9\uC0B0? \uADF8\uAC8C \uBB34\uC2A8 \uB9D0\uC774\uB0D0?"
-    000001E1:
+    000001DB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11172,16 +11171,19 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uC790, \uC774\uAC78 \uBD10."
-    000001E2:
+    000001DC:
       type: {class: PlayBGM, ns: YS, asm: Assembly-CSharp}
       data:
         audioBGM: {fileID: 8300000, guid: be7de8c15cc1cee5685b2736ba2f1c3f, type: 3}
         volume: 1
-    000001E3:
+        isLoop: 1
+        playTime: 0
+        dampingTime: 0
+    000001DD:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
-        bgPrefab: {fileID: 1840710139639415007, guid: 9ea3066091050c24da63eee49644cdc6, type: 3}
-    000001E4:
+        bgPrefab: {fileID: 1840710139639415007, guid: db04bafdc3c98eb449a7aa9d93060f02, type: 3}
+    000001DE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 2
@@ -11205,7 +11207,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uB124 \uBC88\uC9F8 \uC2E4\uC885\uC790\uAC00 \uB0A9\uCE58\uB41C
           \uD604\uC7A5\uC774\uC57C."
-    000001E5:
+    000001DF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11231,7 +11233,7 @@ MonoBehaviour:
           \uC788\uB358 \uC790\uB9AC\uB77C \uBCC0\uC0C9\uC774 \uB41C \uD759\uC774
           \uAC00\uB4DD\uD558\uC9C0. \uD558\uC597\uAC8C \uC0C9\uC774 \uBC14\uB79C
           \uC194\uC78E\uC740 \uBB3C\uB860\uC774\uACE0!"
-    000001E6:
+    000001E0:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11255,7 +11257,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uB3D9\uC120\uC774 \uADF8\uB807\uAC8C \uC774\uC5B4\uC9C0\uB294
           \uAC74\uAC00..?"
-    000001E7:
+    000001E1:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11281,7 +11283,7 @@ MonoBehaviour:
           \uBA3C\uC800\uC57C. \uC544\uAE4C \uB9E1\uAE34 \uC99D\uAC70\uB97C \uD3EC\uD568\uD574\uC11C..
           \uC774\uAC83\uB3C4 \uAC10\uC2DD\uAD00\uC5D0\uAC8C \uC804\uD574\uC8FC\uBA74
           \uC88B\uACA0\uC5B4."
-    000001E8:
+    000001E2:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11307,7 +11309,7 @@ MonoBehaviour:
           \uD759\uACFC \uC194\uC78E\uC774 \uC788\uB358 \uC7A5\uC18C\uB97C \uB300\uCD08\uD558\uB824\uBA74
           \uC2DC\uAC04\uC774 \uD544\uC694\uD558\uB2E4. \uC801\uC5B4\uB3C4 \uBC18\uB098\uC808..
           \uB0B4\uC77C \uC544\uCE68\uC5D0\uC57C \uACB0\uACFC\uAC00 \uB098\uC62C \uAC70\uB2E4."
-    000001E9:
+    000001E3:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11332,7 +11334,7 @@ MonoBehaviour:
         script: "\uC5B4\uCA54 \uC218 \uC5C6\uC9C0. \uC99D\uAC70\uB3C4 \uC5C6\uB294
           \uC0C1\uD669\uC5D0\uC11C \uC6C0\uC9C1\uC774\uBA74 \uC624\uD788\uB824 \uBC1C\uC774
           \uAF2C\uC774\uB2C8\uAE4C."
-    000001EA:
+    000001E4:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11358,7 +11360,7 @@ MonoBehaviour:
           \uB124 \uB188\uC758 \uC0AC\uBB34\uC2E4 \uC55E\uC73C\uB85C \uCC3E\uC544\uAC00\uC9C0.
           \uC124\uB9C8 \uC544\uCE68\uC7A0\uC774 \uB9CE\uB2E4\uB294 \uD5DB\uC18C\uB9B4
           \uD558\uC9C4 \uC54A\uACA0\uC9C0?"
-    000001EB:
+    000001E5:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11383,7 +11385,7 @@ MonoBehaviour:
         script: "\uC5B4\uBA38? \uB0A0 \uC218\uC0AC\uC5D0 \uB07C\uC6CC\uC8FC\uAC8C?
           \uC774\uC81C \uD604\uC7A5\uC5D4 \uBC1C\uB3C4 \uB4E4\uC774\uBC00\uC9C0 \uB9D0\uB77C\uACE0
           \uD558\uC9C0 \uC54A\uACE0?"
-    000001EC:
+    000001E6:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11407,7 +11409,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB2A5\uB825\uACFC \uC2E4\uC801\uC744 \uC99D\uBA85\uD55C \uC0AC\uB78C\uC5D0\uAC90,
           \uADF8\uC5D0 \uC5B4\uC6B8\uB9AC\uB294 \uC790\uACA9\uC744 \uC918\uC57C\uD55C\uB2E4."
-    000001ED:
+    000001E7:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11431,7 +11433,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uC218\uC0AC\uB97C \uD558\uB294\uB370 \uC788\uC5B4\uC120 \uB098\uBCF4\uB2E4
           \uB2A5\uB825\uC774 \uB6F0\uC5B4\uB098\uB2C8 \uB2F9\uC5F0\uD55C \uACB0\uB860\uC774\uC9C0."
-    000001EE:
+    000001E8:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11455,7 +11457,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uD638\uC624... \uC194\uC9C1\uD558\uAD6C\uB098! \uC5ED\uC2DC \uC0DD\uAC01\uBCF4\uB2E8
           \uCC29\uD55C \uC544\uC774\uC57C!"
-    000001EF:
+    000001E9:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11479,7 +11481,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "..\uC131\uACA9\uC740 \uAD49\uC7A5\uD788 \uC131\uAC00\uC2DC\uC9C0\uB9CC,
           \uBB50 \uB410\uB2E4."
-    000001F0:
+    000001EA:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11503,7 +11505,7 @@ MonoBehaviour:
         name: "\uC54C\uCF54\uB974"
         script: "\uB0B4\uC77C \uC544\uD649 \uC2DC\uC5D0 \uC624\uC9C0. \uADF8\uC804\uAE4C\uC9C0
           \uC900\uBE44\uB97C \uB9C8\uCCD0\uB77C."
-    000001F1:
+    000001EB:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11526,13 +11528,13 @@ MonoBehaviour:
         autoTime: 1
         name: "\uC54C\uCF54\uB974"
         script: "\uADF8\uB7FC..."
-    000001F2:
+    000001EC:
       type: {class: PlayFXSound, ns: YS, asm: Assembly-CSharp}
       data:
         audioFX: {fileID: 8300000, guid: 5856b9d9e08dbc54a8e60568a0feaf1e, type: 3}
         volume: 1
         delay: 0
-    000001F3:
+    000001ED:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11555,7 +11557,7 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "..\uC7AC\uBBF8\uC788\uB124, \uC815\uB9D0."
-    000001F4:
+    000001EE:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11579,7 +11581,7 @@ MonoBehaviour:
         name: "\uBBF8\uC790\uB974"
         script: "\uACC4\uC18D \uAF2C\uB9AC\uB97C \uB4E4\uC774\uBBF8\uB294 \uBC94\uC778\uB4E4..
           \uADF8\uB9AC\uACE0 \uC2E4\uC885\uC790..."
-    000001F5:
+    000001EF:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
         screenEffect: 0
@@ -11602,11 +11604,11 @@ MonoBehaviour:
         autoTime: 1
         name: "\uBBF8\uC790\uB974"
         script: "\uB0B4\uC77C\uC740 \uB354 \uACE0\uC0DD\uC774\uACA0\uC5B4!"
-    000001F6:
+    000001F0:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
-    000001F7:
+    000001F1:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
-    000001F8:
+    000001F2:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
-    000001F9:
+    000001F3:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
