@@ -14,9 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scripts:
   - id: 0
-  - id: 1
-  - id: 2
-  - id: 3
   varDatas: []
   addKey: 
   addValue: 1
@@ -26,75 +23,57 @@ MonoBehaviour:
   references:
     version: 1
     00000000:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
-        leftCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        centerCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        rightCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        isAuto: 1
-        autoTime: 5
-        name: "5\uCD08 \uC790\uB3D9 \uB118\uAE40"
-        script: "\uC815\uC9C0..?"
-    00000001:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        centerCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        rightCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        isAuto: 1
-        autoTime: 3
-        name: "3\uCD08"
-        script: "\uB118\uC5B4 \uC654\uB294\uB370"
-    00000002:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        screenEffect: 0
-        leftCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        centerCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        rightCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        isAuto: 1
-        autoTime: 1
-        name: "1\uCD08"
-        script: "1\uCD23"
-    00000003:
-      type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
-      data:
-        nextIndex: 0
+        charImg: {fileID: 21300000, guid: 66687734dee823d46832035ae5eda4b5, type: 3}
+        itemIndex: 0
+        choiceDatas:
+        - choiceStr: sdfsdf
+          dialogs:
+          - screenEffect: 0
+            leftCharacter:
+              image: {fileID: 0}
+              isMirror: 0
+              isHighlight: 0
+              effect: 0
+            centerCharacter:
+              image: {fileID: 0}
+              isMirror: 0
+              isHighlight: 0
+              effect: 0
+            rightCharacter:
+              image: {fileID: 0}
+              isMirror: 0
+              isHighlight: 0
+              effect: 0
+            isAuto: 0
+            autoTime: 1
+            name: 
+            script: 
+        - choiceStr: asdfsadf
+          dialogs: []
+        twiceFailDialogData:
+          screenEffect: 0
+          leftCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          centerCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          rightCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          isAuto: 0
+          autoTime: 1
+          name: 
+          script: 
+        perfectChange: []
+        greatChange: []
+        failChange: []
+        correctIndex: 1

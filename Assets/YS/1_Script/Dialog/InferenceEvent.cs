@@ -12,7 +12,7 @@ namespace YS
         #region Fields
         [SerializeField]
         [LabelText("추리를 진행할 캐릭터")]
-        private Sprite charIndex;
+        private Sprite charImg;
         [SerializeField]
         [LabelText("추리할 아이템")]
         private ITEM_INDEX itemIndex;
@@ -37,7 +37,7 @@ namespace YS
         #endregion
 
         #region Properties
-        public Sprite CharacterIndex => charIndex;
+        public Sprite CharacterImage => charImg;
         public ITEM_INDEX ItemIndex => itemIndex;
         public InferenceDialogData[] ChoiceDatas => choiceDatas;
         public DialogEvent TwiceFailDialogData => twiceFailDialogData;
@@ -120,7 +120,14 @@ namespace YS
         public void Setup(InferenceEvent ie)
         {
             rootObj.SetActive(true);
-            character.sprite = ie.CharacterIndex;
+            character.sprite = ie.CharacterImage;
+            character.SetNativeSize();
+            float width = (character.rectTransform.parent as RectTransform).rect.width;
+            float ratio = width / character.rectTransform.rect.width;
+            float height = character.rectTransform.rect.height * ratio;
+
+            character.rectTransform.sizeDelta = new Vector2(width, height);
+
             item.sprite = gm.itemData[ie.ItemIndex].img;
             tmp_itemDesc.text = gm.itemData[ie.ItemIndex].desc;
 
