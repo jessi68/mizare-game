@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -74,14 +75,18 @@ namespace YS
         #endregion
 
         #region Methods
-        public static void PlayBGM(AudioClip newBGM, float tempVolume = 1.0f)
+        public static void PlayBGM(AudioClip newBGM, bool isLoop = true, float playTime = 0.0f, float dampingTime = 1.0f, float tempVolume = 1.0f)
         {
             var am = Instance;
 
             am.audioBGM.Stop();
             TempBGMVolume = tempVolume;
             am.audioBGM.clip = newBGM;
+            am.audioBGM.loop = isLoop;
             am.audioBGM.Play();
+
+            if (!isLoop)
+                am.StartCoroutine(am.StopTimer(playTime, dampingTime));
         }
         public static void PlayFX(AudioClip newFX, float tempVolume = 1.0f, float delay = 0.0f)
         {
@@ -102,6 +107,20 @@ namespace YS
         public static void StopFX()
         {
             Instance.audioFX.Stop();
+        }
+        private IEnumerator StopTimer(float playTime, float dampingTime)
+        {
+            yield return CachedWaitForSeconds.Get(playTime);
+
+            float dTime = (0.1f / dampingTime) * audioBGM.volume;
+            while (dampingTime > 0.0f)
+            {
+                yield return CachedWaitForSeconds.Get(0.1f);
+
+                dampingTime -= 0.1f;
+                audioBGM.volume -= dTime;
+            }
+            audioBGM.volume = 0.0f;
         }
         #endregion
     }
