@@ -32,25 +32,35 @@ MonoBehaviour:
         playTime: 3
         dampingTime: 15
     00000001:
-      type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
+      type: {class: InferenceEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        screenEffect: 0
-        leftCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        centerCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        rightCharacter:
-          image: {fileID: 0}
-          isMirror: 0
-          isHighlight: 0
-          effect: 0
-        isAuto: 0
-        autoTime: 1
-        name: 
-        script: 
+        charImg: {fileID: 21300000, guid: 2f9c293c573913d43b773ecc53ecca3b, type: 3}
+        itemIndex: 0
+        choiceDatas:
+        - choiceStr: 
+          dialogs: []
+        twiceFailDialogData:
+          screenEffect: 0
+          leftCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          centerCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          rightCharacter:
+            image: {fileID: 0}
+            isMirror: 0
+            isHighlight: 0
+            effect: 0
+          isAuto: 0
+          autoTime: 1
+          name: 
+          script: 
+        perfectChange: []
+        greatChange: []
+        failChange: []
+        correctIndex: 0
