@@ -525,6 +525,9 @@ MonoBehaviour:
   - name: "\uC18C\uB144"
     value:
       id: 504
+  - name: True
+    value:
+      id: 505
   addKey: 
   addValue: 0
   removeKey: 
@@ -8137,7 +8140,7 @@ MonoBehaviour:
             valueInt: 0
             valueFloat: 0
             logicCalc: 1
-          nextIdx: 347
+          nextIdx: 346
         - str: "\uCC3B\uC9D1"
           cmps:
           - varType: 0
@@ -8677,7 +8680,7 @@ MonoBehaviour:
     0000016F:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 344
+        nextIndex: 345
     00000170:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
@@ -9096,7 +9099,7 @@ MonoBehaviour:
     00000184:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 344
+        nextIndex: 345
     00000185:
       type: {class: ChangeBackground, ns: YS, asm: Assembly-CSharp}
       data:
@@ -9378,7 +9381,7 @@ MonoBehaviour:
     00000192:
       type: {class: MoveScriptEvent, ns: YS, asm: Assembly-CSharp}
       data:
-        nextIndex: 344
+        nextIndex: 345
     00000193:
       type: {class: DialogEvent, ns: YS, asm: Assembly-CSharp}
       data:
@@ -11604,4 +11607,6 @@ MonoBehaviour:
     000001F7:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
     000001F8:
+      type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
+    000001F9:
       type: {class: BoolVariable, ns: YS, asm: Assembly-CSharp}
